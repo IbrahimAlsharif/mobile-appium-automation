@@ -40,9 +40,9 @@ public void setUp(String language,String appPath, String platform, String branch
     DesiredCapabilities capabilities= new DesiredCapabilities();
     capabilities.setCapability("platformName", "Android");
     capabilities.setCapability("deviceName", "Android Emulator");
-    capabilities.setCapability("app_activity",".ui.actionitem.MainActivity");
+    capabilities.setCapability("app_activity","sa.app.famcare.MainActivity");
     capabilities.setCapability("allowTestPackages","true");
-    capabilities.setCapability("app_package","jinyoung.dev.todolist");
+    capabilities.setCapability("app_package","sa.app.famcare");
     capabilities.setCapability(MobileCapabilityType.APP, appPath);
     File app = new File(appPath);
     capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
