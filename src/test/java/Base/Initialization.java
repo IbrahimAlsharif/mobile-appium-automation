@@ -39,17 +39,20 @@ public void setUp(String language,String appPath, String platform, String branch
 
     DesiredCapabilities capabilities= new DesiredCapabilities();
     capabilities.setCapability("platformName", "Android");
-    capabilities.setCapability("deviceName", "Android Emulator");
-    capabilities.setCapability("app_activity","sa.app.famcare.MainActivity");
-    capabilities.setCapability("allowTestPackages","true");
-    capabilities.setCapability("app_package","sa.app.famcare");
+   // capabilities.setCapability("deviceName", "Android Emulator");
+
+    capabilities.setCapability("deviceName", "mohammed");
+  //  capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy A6+");
+    // capabilities.setCapability("app_activity","sa.app.famcare.MainActivity");
+  //  capabilities.setCapability("allowTestPackages","true");
+  //  capabilities.setCapability("app_package","sa.app.famcare");
     capabilities.setCapability(MobileCapabilityType.APP, appPath);
     File app = new File(appPath);
     capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
     driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
     driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     initializeTestData(language, branch);
-    wait = new WebDriverWait(driver, 60);
+    wait = new WebDriverWait(driver, 30);
     javascriptExecutor = (JavascriptExecutor) driver;
     TestRailManager testRailManager = new TestRailManager();
     Utilities.testRunId = testRailManager.addTestRun();
