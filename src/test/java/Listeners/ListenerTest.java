@@ -1,13 +1,10 @@
-package Listener_Demo;
+package Listeners;
 
-import Base.Initialization;
 import Base.Shot;
-import jdk.jfr.Description;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext ;
 import org.testng.ITestListener ;
 import org.testng.ITestResult ;
-import org.testng.annotations.Listeners;
 
 public class ListenerTest   implements ITestListener {
     Shot shot;

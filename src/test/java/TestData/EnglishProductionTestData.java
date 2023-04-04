@@ -1,6 +1,6 @@
-package Base;
+package TestData;
 
-public class EnglishProductionTestData implements TestData{
+public class EnglishProductionTestData implements AbstractTestData {
 
     @Override
     public String getArabicLanguageText() {

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test Setup"
+           tests="13"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.071">
+  <properties />
+  
+  
+            <testcase name="PsychologistIsDisplayed" time="0.165" classname="mobile_tests.HomePage.HomePageTest" />
+                <testcase name="SliderAdsIsDisplayed" time="0.167" classname="mobile_tests.HomePage.HomePageTest" />
+                <testcase name="MessageWelcomeIsDisplayed" time="0.135" classname="mobile_tests.HomePage.HomePageTest" />
+                <testcase name="SupportGroupsIsDisplayed" time="0.136" classname="mobile_tests.HomePage.HomePageTest" />
+                <testcase name="ButtonFeelingIsDisplayed" time="0.153" classname="mobile_tests.HomePage.HomePageTest" />
+                <testcase name="SocialWorkerIsDisplayed" time="0.165" classname="mobile_tests.HomePage.HomePageTest" />
+                <testcase name="TitleTypesOfSpecialistsIsDisplayed" time="0.213" classname="mobile_tests.HomePage.HomePageTest" />
+                <testcase name="NotificationIconIsDisplayed" time="0.134" classname="mobile_tests.HomePage.HomePageTest" />
+                <testcase name="PsychologistDoctorIsDisplayed" time="0.218" classname="mobile_tests.HomePage.HomePageTest" />
+                <testcase name="IconCartIsDisplayed" time="0.171" classname="mobile_tests.HomePage.HomePageTest" />
+                <testcase name="FamcareLogoIsDisplayed" time="0.131" classname="mobile_tests.HomePage.HomePageTest" />
+                <testcase name="IconJalulaIsDisplayed" time="0.118" classname="mobile_tests.HomePage.HomePageTest" />
+                <testcase name="EducationalSpecialIsDisplayed" time="0.165" classname="mobile_tests.HomePage.HomePageTest" />
+      
+</testsuite>

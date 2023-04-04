@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test Setup"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="19.903">
+  <properties />
+  
+  
+            <testcase name="setUp" time="19.903" classname="Base.MobileSetupTest" />
+      
+</testsuite>

@@ -1,6 +1,5 @@
-package mobile_tests.HomePage;
+package MobileTests.HomePage;
 
-import mobile_tests.LanguageChoosePOM;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -71,6 +70,11 @@ public class HomePageTest {
     public void SupportGroupsIsDisplayed(){
         testCaseId="0";
         Assert.assertTrue(HomePagePOM.SupportGroupsIsDisplayed());
+    }
+    @Test(priority = 1)
+    public void intercomIconIsDisplayed(){
+        testCaseId="0";
+        Assert.assertTrue(HomePagePOM.intercomIconIsDisplayed());
     }
 
 

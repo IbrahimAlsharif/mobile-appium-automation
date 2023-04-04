@@ -1,11 +1,11 @@
-package mobile_tests;
-import  static Base.Initialization.testData;
+package MobileTests;
+import  static Base.MobileSetupTest.testData;
 
 import Base.Utilities;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 
-import static Base.Initialization.driver;
+import static Base.MobileSetupTest.driver;
 
 public class LanguageChoosePOM {
     public static MobileElement getWelcomeLabel() {

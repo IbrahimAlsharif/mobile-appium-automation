@@ -1,14 +1,10 @@
-package mobile_tests;
+package MobileTests;
 
-import io.appium.java_client.MobileElement;
-import mobile_tests.HomePage.HomePagePOM;
+import MobileTests.HomePage.HomePagePOM;
 import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import testrail.APIException;
-import java.io.IOException;
-import  static Base.Initialization.testData;
+
+import  static Base.MobileSetupTest.testData;
 
 
 public class LanguageChooseTest {

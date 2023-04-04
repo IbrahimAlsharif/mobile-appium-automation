@@ -1,6 +1,6 @@
-package Base;
+package TestData;
 
-public class ArabicStagingTestData implements TestData{
+public class ArabicStagingTestData implements AbstractTestData {
 
 
     @Override

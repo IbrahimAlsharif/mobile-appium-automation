@@ -3,18 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package testrail;
+package TestRail;
 
 import org.json.simple.JSONObject;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.security.Timestamp;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import java.time.Instant;
 
 /**
  *

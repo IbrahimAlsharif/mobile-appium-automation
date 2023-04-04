@@ -8,14 +8,14 @@ import org.openqa.selenium.interactions.Locatable;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestResult;
-import testrail.APIException;
-import testrail.TestRailManager;
+import TestRail.APIException;
+import TestRail.TestRailManager;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import static Base.Initialization.driver;
+import static Base.MobileSetupTest.driver;
 
 
 public  class Utilities {
@@ -46,21 +46,21 @@ public  class Utilities {
      * Scroll 150 down by javascript
      */
     public static void scrollDown150() {
-        Initialization. javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
+        MobileSetupTest. javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
     }
 
     /**
      * Scroll 50 down by javascript
      */
     public static void scrollDown50() {
-        Initialization. javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
+        MobileSetupTest. javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
     }
 
     /**
      * Scroll 30 down by javascript
      */
     public static void scrollDown30() {
-        Initialization.  javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
+        MobileSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
     }
 
     /**
@@ -71,31 +71,31 @@ public  class Utilities {
     public static void scrollBy(int value) {
         switch (value) {
             case 30:
-                Initialization.  javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
+                MobileSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
                 break;
             case 50:
-                Initialization.   javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
+                MobileSetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
                 break;
             case 100:
-                Initialization.  javascriptExecutor.executeScript("window.scrollBy(0,100)", "");
+                MobileSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,100)", "");
                 break;
             case 150:
-                Initialization.   javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
+                MobileSetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
                 break;
             case -30:
-                Initialization.   javascriptExecutor.executeScript("window.scrollBy(0,-30)", "");
+                MobileSetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,-30)", "");
                 break;
             case -50:
-                Initialization.    javascriptExecutor.executeScript("window.scrollBy(0,-50)", "");
+                MobileSetupTest.    javascriptExecutor.executeScript("window.scrollBy(0,-50)", "");
                 break;
             case -100:
-                Initialization.  javascriptExecutor.executeScript("window.scrollBy(0,-100)", "");
+                MobileSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-100)", "");
                 break;
             case -150:
-                Initialization.  javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
+                MobileSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
                 break;
             default:
-                Initialization.  javascriptExecutor.executeScript("window.scrollBy(0,-500)", "");
+                MobileSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-500)", "");
                 break;
 
         }
@@ -106,7 +106,7 @@ public  class Utilities {
      * Scroll 150 up by java script
      */
     public static void scrollUp150() {
-        Initialization.javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
+        MobileSetupTest.javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
     }
 
     public static void javascriptExecutor(String s, WebElement usedProductAllMenuItem) {
@@ -189,7 +189,7 @@ public  class Utilities {
      * @param locator
      */
     public static void waitForElementToBeVisibleBy(By locator) {
-        Initialization. wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        MobileSetupTest. wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
     /**
@@ -198,7 +198,7 @@ public  class Utilities {
      * @param locator
      */
     public static void waitForElementToBeClickableBy(By locator) {
-        Initialization. wait.until(ExpectedConditions.elementToBeClickable(locator));
+        MobileSetupTest. wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
     /**
@@ -207,7 +207,7 @@ public  class Utilities {
      * @param element
      */
     public static void waitForElementToBeClickable(WebElement element) {
-        Initialization.  wait.until(ExpectedConditions.elementToBeClickable(element));
+        MobileSetupTest.  wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     /**

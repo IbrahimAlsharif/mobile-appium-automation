@@ -1,11 +1,11 @@
-package mobile_tests.HomePage;
+package MobileTests.HomePage;
 
 import Base.Utilities;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 
-import static Base.Initialization.driver;
-import static Base.Initialization.testData;
+import static Base.MobileSetupTest.driver;
+import static Base.MobileSetupTest.testData;
 
 public class HomePagePOM {
     public static MobileElement getWelcomeMessageText() {
@@ -130,7 +130,15 @@ public class HomePagePOM {
         return getSupportGroupsText().isDisplayed();
     }
 
-
+    public static MobileElement getIntercomIcon() {
+        String xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView";
+        Utilities.waitForElementToBeVisibleBy(By.xpath(xpath));
+        Utilities.waitForElementToBeClickableBy(By.xpath(xpath));
+        return (MobileElement) driver.findElementByXPath(xpath);
+    }
+    public static boolean intercomIconIsDisplayed(){
+        return getIntercomIcon().isDisplayed();
+    }
 
 
 

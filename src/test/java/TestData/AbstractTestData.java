@@ -1,6 +1,6 @@
-package Base;
+package TestData;
 
-public  interface TestData {
+public  interface AbstractTestData {
 
 String getArabicLanguageText();
 String getChooseButtonText();
@@ -13,11 +13,4 @@ String getPsychologistText();
 String getSocialWorkerText();
 String getPsychologistDoctorText();
 String getSupportGroupsText();
-
-
-
-
-
-
-
 }
