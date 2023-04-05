@@ -1,5 +1,5 @@
-package Mobile.Tests.LanguageChoose;
-import  static Base.SetupTest.testData;
+package Mobile.Tests.Language;
+import  static Base.SetupTest.testDataMobile;
 import Base.Utilities;
 import org.openqa.selenium.WebElement;
 
@@ -38,14 +38,15 @@ public class LanguageChoose {
     }
 
     public static WebElement getSelectArabicText() {
-        String xpath="//android.widget.ImageView[@content-desc=\""+testData.getArabicLanguageText()+"\"]";
+        String xpath="//android.widget.ImageView[@content-desc=\""+testDataMobile.getArabicLanguageText()+"\"]";
         return Utilities.getByXpath(xpath,false);
+
     }
     public static void ClickOnSelectArabicText(){
         getSelectArabicText().click();
     }
     public static WebElement getChooseButton() {
-        String xpath="//android.widget.Button[@content-desc=\""+testData.getChooseButtonText()+"\"]";
+        String xpath="//android.widget.Button[@content-desc=\""+testDataMobile.getChooseButtonText()+"\"]";
         return Utilities.getByXpath(xpath,true);
 
     }
@@ -56,7 +57,7 @@ public class LanguageChoose {
         return getChooseButton().getAttribute("content-desc");
     }
     public static WebElement getIgnoreButton() {
-        String xpath="//android.widget.Button[@content-desc=\""+testData.getIgnoreButtonText()+"\"]";
+        String xpath="//android.widget.Button[@content-desc=\""+testDataMobile.getIgnoreButtonText()+"\"]";
         return Utilities.getByXpath(xpath,false);
 
     }

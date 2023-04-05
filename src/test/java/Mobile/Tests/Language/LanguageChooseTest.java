@@ -1,10 +1,9 @@
-package Mobile.Tests.LanguageChoose;
+package Mobile.Tests.Language;
 
 import Mobile.Tests.HomePage.HomePagePOM;
-import Mobile.Tests.LanguageChoose.LanguageChoose;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import  static Base.SetupTest.testData;
+import  static Base.SetupTest.testDataMobile;
 
 
 public class LanguageChooseTest {
@@ -35,7 +34,7 @@ public class LanguageChooseTest {
     public void VerifyThatTheUserAbleSelectArabicLanguage(){
         testCaseId="0";
         LanguageChoose.ClickOnSelectArabicText();
-        Assert.assertEquals(LanguageChoose.getChooseButtonText(),testData.getChooseButtonText());
+        Assert.assertEquals(LanguageChoose.getChooseButtonText(),testDataMobile.getChooseButtonText());
     }
     @Test(priority = 3)
     public void VerifyThatTheUserAbleClickChooseButton(){
