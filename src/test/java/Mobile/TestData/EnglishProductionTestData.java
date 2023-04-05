@@ -100,6 +100,17 @@ public class EnglishProductionTestData implements AbstractTestData {
         return null;
     }
 
+    @Override
+    public String getTitleAppBarOnBenchmarksPage() {
+        return null;
+    }
+
+    @Override
+    public String getDiagnosticScalesTypesText() {
+        return null;
+    }
+
+
 }
 
 
