@@ -12,40 +12,40 @@ public class LanguageChooseTest {
     @Test(priority = 1)
     public void welcomeLabelIsDisplayed(){
     testCaseId="0";
-    Assert.assertTrue(LanguageChoosePOM.welcomeTextIsDisplayed());
+    Assert.assertTrue(LanguageChoose.welcomeTextIsDisplayed());
 }
     @Test(priority = 1)
     public void welcomeLabelTextIsCorrect(){
     testCaseId="0";
-    Assert.assertEquals(LanguageChoosePOM.getWelcomeLabelText(),"Welcome to your safe space");
+    Assert.assertEquals(LanguageChoose.getWelcomeLabelText(),"Welcome to your safe space");
 }
     @Test(priority = 1)
     public void mainImageIsDisplayed(){
     testCaseId="0";
-    Assert.assertTrue(LanguageChoosePOM.mainImageIsDisplayed());
+    Assert.assertTrue(LanguageChoose.mainImageIsDisplayed());
 }
 
     @Test(priority = 1)
     public void welcomeDescriptionIsDisplayed(){
         testCaseId="0";
-        Assert.assertTrue(LanguageChoosePOM.welcomeDescriptionIsDisplayed());
+        Assert.assertTrue(LanguageChoose.welcomeDescriptionIsDisplayed());
     }
     @Test(priority = 2)
     public void VerifyThatTheUserAbleSelectArabicLanguage(){
         testCaseId="0";
-        LanguageChoosePOM.ClickOnSelectArabicText();
-        Assert.assertEquals(LanguageChoosePOM.getChooseButtonText(),testData.getChooseButtonText());
+        LanguageChoose.ClickOnSelectArabicText();
+        Assert.assertEquals(LanguageChoose.getChooseButtonText(),testData.getChooseButtonText());
     }
     @Test(priority = 3)
     public void VerifyThatTheUserAbleClickChooseButton(){
         testCaseId="0";
-        LanguageChoosePOM.ClickOnChooseButton();
-        Assert.assertTrue(LanguageChoosePOM.IgnoreButtonIsDisplayed());
+        LanguageChoose.ClickOnChooseButton();
+        Assert.assertTrue(LanguageChoose.IgnoreButtonIsDisplayed());
     }
     @Test(priority = 4)
     public void VerifyThatTheUserAbleClickIgnoreButton(){
         testCaseId="0";
-        LanguageChoosePOM.ClickOnIgnoreButton();
+        LanguageChoose.ClickOnIgnoreButton();
         Assert.assertTrue(HomePagePOM.welcomeMessageIsDisplayed());
     }
 

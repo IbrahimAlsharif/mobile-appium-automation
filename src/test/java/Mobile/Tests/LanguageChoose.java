@@ -4,7 +4,7 @@ import Base.Utilities;
 import org.openqa.selenium.WebElement;
 
 
-public class LanguageChoosePOM {
+public class LanguageChoose {
     public static WebElement getWelcomeLabel() {
         String xpath="//android.view.View[@content-desc=\"Welcome to your safe space\"]";
         return Utilities.getByXpath(xpath,false);
