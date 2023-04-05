@@ -123,6 +123,21 @@ public class ArabicProductionTestData implements AbstractTestData {
     public String getUseTermsButton() {
         return " شروط الاستخدام";
     }
+    @Override
+    public String getTitleAppBarOnBenchmarksPage() {
+        return "مقاييس التشخيص";
+    }
+    @Override
+    public String getDiagnosticScalesTypesText() {
 
+         return "مقياس القلق\n" +
+                 "7 أسئلة ";
+
+    }
+
+    @Override
+    public String getTitleAppBarOnSupportGroupsTestPage() {
+        return "مجموعات الدعم";
+    }
 
 }

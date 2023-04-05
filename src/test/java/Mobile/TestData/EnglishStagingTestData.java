@@ -101,6 +101,13 @@ public class EnglishStagingTestData implements AbstractTestData {
     public String getUseTermsButton() {
         return null;
     }
+    @Override
+    public String getTitleAppBarOnBenchmarksPage() {
+        return null;
+    }
 
-
+    @Override
+    public String getDiagnosticScalesTypesText() {
+        return null;
+    }
 }

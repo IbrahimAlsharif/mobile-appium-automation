@@ -28,10 +28,8 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 @Listeners(Listener.class)
-
 public class SetupTest {
-    public  static   AndroidDriver driver ;
-    public  static   WebDriver webDriver ;
+    public  static   WebDriver driver ;
     public static WebDriverWait wait;
     public static AbstractTestData testData;
     public static JavascriptExecutor javascriptExecutor;
@@ -60,10 +58,10 @@ public class SetupTest {
     private void initializeWebDriver(String browser, String url) {
         if (browser.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
-            webDriver = new ChromeDriver(new BrowserOptions().getChromeOptions(false,false));
+            driver = new ChromeDriver(new BrowserOptions().getChromeOptions(false,false));
         } else {
             WebDriverManager.firefoxdriver().setup();
-            webDriver = new FirefoxDriver(new BrowserOptions().getFirefixOptions(false,false));
+            driver = new FirefoxDriver(new BrowserOptions().getFirefixOptions(false,false));
         }
         wait = new WebDriverWait(driver, 60);
         javascriptExecutor = (JavascriptExecutor) driver;
