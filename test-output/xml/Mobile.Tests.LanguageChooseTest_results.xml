@@ -4,16 +4,16 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="21.659">
+           time="17.981">
   <properties />
   
   
-            <testcase name="welcomeDescriptionIsDisplayed" time="5.889" classname="Mobile.Tests.LanguageChooseTest" />
-                <testcase name="VerifyThatTheUserAbleClickChooseButton" time="2.724" classname="Mobile.Tests.LanguageChooseTest" />
-                <testcase name="welcomeLabelTextIsCorrect" time="0.076" classname="Mobile.Tests.LanguageChooseTest" />
-                <testcase name="VerifyThatTheUserAbleClickIgnoreButton" time="11.800" classname="Mobile.Tests.LanguageChooseTest" />
-                <testcase name="VerifyThatTheUserAbleSelectArabicLanguage" time="0.785" classname="Mobile.Tests.LanguageChooseTest" />
-                <testcase name="mainImageIsDisplayed" time="0.303" classname="Mobile.Tests.LanguageChooseTest" />
-                <testcase name="welcomeLabelIsDisplayed" time="0.082" classname="Mobile.Tests.LanguageChooseTest" />
+            <testcase name="welcomeLabelTextIsCorrect" time="0.092" classname="Mobile.Tests.LanguageChooseTest" />
+                <testcase name="welcomeLabelIsDisplayed" time="0.574" classname="Mobile.Tests.LanguageChooseTest" />
+                <testcase name="VerifyThatTheUserAbleSelectArabicLanguage" time="0.766" classname="Mobile.Tests.LanguageChooseTest" />
+                <testcase name="mainImageIsDisplayed" time="0.288" classname="Mobile.Tests.LanguageChooseTest" />
+                <testcase name="VerifyThatTheUserAbleClickIgnoreButton" time="10.753" classname="Mobile.Tests.LanguageChooseTest" />
+                <testcase name="welcomeDescriptionIsDisplayed" time="3.951" classname="Mobile.Tests.LanguageChooseTest" />
+                <testcase name="VerifyThatTheUserAbleClickChooseButton" time="1.557" classname="Mobile.Tests.LanguageChooseTest" />
       
 </testsuite>

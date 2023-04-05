@@ -1,6 +1,7 @@
 package Base;
 
 import com.github.javafaker.Faker;
+import io.appium.java_client.MobileElement;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.Coordinates;
@@ -248,5 +249,12 @@ public  class Utilities {
         }else {
             testRail.setResult(testRunId,testCaseId, TestRailManager.PASSED, null);
         }
+    }
+
+    public static WebElement getByXpath(String xpath, boolean isClickable){
+        waitForElementToBeVisibleBy(By.xpath(xpath));
+        if (isClickable) waitForElementToBeClickableBy(By.xpath(xpath));
+        if (driver instanceof WebDriver) return driver.findElement(By.xpath(xpath));
+        else return (MobileElement) driver.findElement(By.xpath(xpath));
     }
 }
