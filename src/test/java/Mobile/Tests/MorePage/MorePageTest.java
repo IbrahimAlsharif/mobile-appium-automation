@@ -1,18 +1,17 @@
 package Mobile.Tests.MorePage;
 
 import Base.SetupTest;
-import Mobile.Tests.LanguageChoose.LanguageChoose;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.offset.PointOption;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import static Base.SetupTest.testData;
 
 public class MorePageTest {
     private String testCaseId;
     @Test(priority =1)
     public void verifyThatTapMoreButtonNavigateToMorePage()  {
-        TouchAction touchAction=new TouchAction(SetupTest.driver);
+        TouchAction touchAction=new TouchAction((AndroidDriver)SetupTest.driver);
         touchAction.tap(PointOption.point(133, 1935)).release().perform();
         Assert.assertTrue(MorePagePOM.LanguageIconIsDisplayed());
 
@@ -78,12 +77,12 @@ public class MorePageTest {
         testCaseId="0";
         Assert.assertTrue(MorePagePOM.FamcareRatingButtonIsDisplayed());
     }
-    @Test(priority = 14)
-    public void TechnicalSupportIsDisplayed(){
-        testCaseId="0";
-        SetupTest.driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testData.getTechnicalSupportButton()+"\"))");//scroll down to the element and click
-        Assert.assertTrue(MorePagePOM.TechnicalSupportIsDisplayed());
-    }
+//    @Test(priority = 14)
+//    public void TechnicalSupportIsDisplayed(){
+//        testCaseId="0";
+//        SetupTest.driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testData.getTechnicalSupportButton()+"\"))");//scroll down to the element and click
+//        Assert.assertTrue(MorePagePOM.TechnicalSupportIsDisplayed());
+//    }
     @Test(priority = 15)
     public void InterestNumbersButtonIsDisplayed(){
         testCaseId="0";

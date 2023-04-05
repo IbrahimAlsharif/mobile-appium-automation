@@ -4,11 +4,11 @@ import Base.Utilities;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.WebElement;
 
-import static Base.SetupTest.testData;
+import static Base.SetupTest.testDataMobile;
 
 public class MorePagePOM {
     public static MobileElement getLanguageIcon() {
-        String xpath="//android.widget.ImageView[@content-desc=\""+testData.getLanguageIconText()+"\"]";
+        String xpath="//android.widget.ImageView[@content-desc=\""+testDataMobile.getLanguageIconText()+"\"]";
         return (MobileElement) Utilities.getByXpath(xpath,true);
     }
     public static boolean LanguageIconIsDisplayed(){
@@ -24,14 +24,14 @@ public class MorePagePOM {
 
 
     public static MobileElement getTheUserDoesNotHaveSubscription() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getTheUserDoesNotHaveSubscriptionText()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTheUserDoesNotHaveSubscriptionText()+"\"]";
         return (MobileElement) Utilities.getByXpath(xpath,false);
     }
     public static boolean TheUserDoesNotHaveSubscriptionTitleIsDisplayed(){
         return getTheUserDoesNotHaveSubscription().isDisplayed();
     }
     public static MobileElement getSubscribeToSubscriptionsText() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getSubscribeToSubscriptionsText()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getSubscribeToSubscriptionsText()+"\"]";
         return (MobileElement) Utilities.getByXpath(xpath,false);
     }
     public static boolean SubscribeToSubscriptionsTextIsDisplayed(){
@@ -53,70 +53,70 @@ public class MorePagePOM {
     }
 
     public static MobileElement getBrowseSubscriptionsButton() {
-        String xpath="//android.widget.Button[@content-desc=\""+testData.getBrowseSubscriptionsButton()+"\"]";
+        String xpath="//android.widget.Button[@content-desc=\""+testDataMobile.getBrowseSubscriptionsButton()+"\"]";
         return (MobileElement) Utilities.getByXpath(xpath,true);
     }
     public static boolean BrowseSubscriptionsButtonIsDisplayed(){
         return getBrowseSubscriptionsButton().isDisplayed();
     }
     public static MobileElement getAnswerAndQuestionButton() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getAnswerAndQuestionButton()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getAnswerAndQuestionButton()+"\"]";
         return (MobileElement) Utilities.getByXpath(xpath,true);
     }
     public static boolean AnswerAndQuestionButtonIsDisplayed(){
         return getAnswerAndQuestionButton().isDisplayed();
     }
     public static MobileElement getBlogButton() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getBlogButton()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getBlogButton()+"\"]";
         return (MobileElement) Utilities.getByXpath(xpath,true);
     }
     public static boolean BlogButtonIsDisplayed(){
         return getBlogButton().isDisplayed();
     }
     public static MobileElement getSignInButton() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getSignInButton()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getSignInButton()+"\"]";
         return (MobileElement) Utilities.getByXpath(xpath,true);
     }
     public static boolean SignInButtonIsDisplayed(){
         return getBlogButton().isDisplayed();
     }
     public static MobileElement getFriendsInviteButton() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getFriendsInviteButton()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getFriendsInviteButton()+"\"]";
         return (MobileElement) Utilities.getByXpath(xpath,true);
     }
     public static boolean FriendsInviteButtonIsDisplayed(){
         return getFriendsInviteButton().isDisplayed();
     }
     public static MobileElement getFamcareRatingButton() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getFamcareRatingButton()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getFamcareRatingButton()+"\"]";
         return (MobileElement) Utilities.getByXpath(xpath,true);
     }
     public static boolean FamcareRatingButtonIsDisplayed(){
         return getFamcareRatingButton().isDisplayed();
     }
     public static MobileElement getTechnicalSupportButton() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getTechnicalSupportButton()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTechnicalSupportButton()+"\"]";
         return (MobileElement) Utilities.getByXpath(xpath,true);
     }
     public static boolean TechnicalSupportIsDisplayed(){
         return getTechnicalSupportButton().isDisplayed();
     }
     public static MobileElement getInterestNumbersButton() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getInterestNumbersButton()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getInterestNumbersButton()+"\"]";
         return (MobileElement) Utilities.getByXpath(xpath,true);
     }
     public static boolean InterestNumbersButtonIsDisplayed(){
         return getInterestNumbersButton().isDisplayed();
     }
   public static MobileElement getPrivacyPolicyButton() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getPrivacyPolicyButton()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getPrivacyPolicyButton()+"\"]";
         return (MobileElement) Utilities.getByXpath(xpath,true);
     }
     public static boolean PrivacyPolicyIsDisplayed(){
         return getPrivacyPolicyButton().isDisplayed();
     }
     public static MobileElement getUseTermsButton() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getUseTermsButton()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getUseTermsButton()+"\"]";
         return (MobileElement) Utilities.getByXpath(xpath,true);
     }
     public static boolean UseTermsIsDisplayed(){

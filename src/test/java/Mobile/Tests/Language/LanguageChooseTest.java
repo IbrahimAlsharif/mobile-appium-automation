@@ -1,7 +1,6 @@
-package Mobile.Tests.LanguageChoose;
+package Mobile.Tests.Language;
 
 import Mobile.Tests.HomePage.HomePagePOM;
-import Mobile.Tests.LanguageChoose.LanguageChoose;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import  static Base.SetupTest.testDataMobile;
