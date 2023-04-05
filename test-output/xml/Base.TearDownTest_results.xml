@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="19.903">
+           time="0.095">
   <properties />
   
   
-            <testcase name="setUp" time="19.903" classname="Mobile.SetupTest" />
+            <testcase name="tearDown" time="0.095" classname="Base.TearDownTest" />
       
 </testsuite>

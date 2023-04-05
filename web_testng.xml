@@ -1,78 +1,23 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Arabic language Testing Suite">
     <test name="Test Setup">
-        <parameter name="url" value="https://academy.in2world.net/"></parameter>
+        <parameter name="url" value="https://famcare.app/"></parameter>
+        <parameter name="platform" value="web"/>
         <parameter name="language" value="Arabic"/>
         <parameter name="browser" value="chrome"/>
-        <parameter name="branch" value="Staging"></parameter>
+        <parameter name="branch" value="Production"></parameter>
+        <parameter name="appPath" value="none"></parameter>
         <classes>
-            <class name="Base.WebSetupTest"/>
+            <class name="Base.SetupTest"/>
+            <class name="Web.HomePageTest"></class>
+            <class name="Base.TearDownTest"></class>
         </classes>
     </test>
-<!--    <test name="NewlyAddedProducts">-->
-<!--        <classes>-->
-<!--            <class name="Website.NewlyAddedProducts.NewlyAddedProductsTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="UsedProducts">-->
-<!--        <classes>-->
-<!--            <class name="Website.UsedProducts.UsedProductsTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="TurkishProducts">-->
-<!--        <classes>-->
-<!--            <class name="Website.TurkishProducts.TurkishProductsTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="Footer">-->
-<!--        <classes>-->
-<!--            <class name="Website.Footer.FooterTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="Auth">-->
-<!--        <classes>-->
-<!--            <class name="Auth.SignInTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="Home">-->
-<!--        <classes>-->
-<!--            <class name="Website.HomePage.HomePageTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="Search">-->
-<!--        <classes>-->
-<!--            <class name="Website.Search.SearchTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="CartButtonOnHeader">-->
-<!--        <classes>-->
-<!--            <class name="Website.Cart.CartButtonOnHeader"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="ProductDeatils">-->
-<!--        <classes>-->
-<!--            <class name="Website.ProductDetails.ProductDetailsTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="Cart">-->
-<!--        <classes>-->
-<!--            <class name="Website.Cart.CartTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="SignOut">-->
-<!--        <classes>-->
-<!--            <class name="Auth.SigInOutTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="TearDown">-->
-<!--        <classes>-->
-<!--            <class name="Base.TearDownTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-        <listener class-name="Listeners.ListenerTest"></listener>
+        <listener class-name="Listeners.Listener"></listener>
 
     </listeners>
 </suite>

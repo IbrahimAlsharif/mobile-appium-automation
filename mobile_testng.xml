@@ -3,18 +3,21 @@
     <test name="Test Setup">
         <parameter name="appPath" value="src/app-production-release.apk"></parameter>
         <parameter name="language" value="Arabic"/>
-        <parameter name="platform" value="Android"/>
+        <parameter name="platform" value="mobile"/>
         <parameter name="branch" value="Production"></parameter>
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="none"></parameter>
+
         <classes>
-            <class name="Base.MobileSetupTest"/>
-            <class name="MobileTests.LanguageChooseTest"></class>
-            <class name="MobileTests.HomePage.HomePageTest"></class>
+            <class name="Base.SetupTest"/>
+            <class name="Mobile.Tests.LanguageChooseTest"></class>
+            <class name="Mobile.Tests.HomePage.HomePageTest"></class>
 
         </classes>
     </test>
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-        <listener class-name="Listeners.ListenerTest"></listener>
+        <listener class-name="Listeners.Listener"></listener>
     </listeners>
 </suite>

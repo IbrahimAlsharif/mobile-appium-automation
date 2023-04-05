@@ -1,4 +1,4 @@
-package TestData;
+package Mobile.TestData;
 
 public class StageTestData {
 

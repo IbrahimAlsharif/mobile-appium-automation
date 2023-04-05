@@ -1,4 +1,4 @@
-package MobileTests.HomePage;
+package Mobile.Tests.HomePage;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

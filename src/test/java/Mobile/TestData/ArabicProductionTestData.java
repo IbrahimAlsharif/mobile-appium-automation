@@ -1,52 +1,62 @@
-package TestData;
+package Mobile.TestData;
 
-public class EnglishStagingTestData implements AbstractTestData {
+public class ArabicProductionTestData implements AbstractTestData {
+
 
     @Override
     public String getArabicLanguageText() {
-        return null;
+        return "العربية";
     }
+
     @Override
     public String getChooseButtonText() {
-        return null;
+        return "اختيار";
     }
+
     @Override
     public String getIgnoreButtonText() {
-        return null;
+        return "تجاهل";
     }
+
     @Override
     public String getWelcomeMessage() {
-        return null;
+        return "أهلا بك";
     }
+
     @Override
     public String getFeelingButtonText() {
-        return null;
+        return "كيف تشعر اليوم ؟";
     }
 
     @Override
     public String getTypesOfSpecialistsTitle() {
-        return null;
+        return "ابدأ رحلتك الآن!";
     }
+
 
     @Override
     public String getEducationalSpecialistText() {
-        return null;
+        return "أخصائي تربوي";
     }
+
     @Override
     public String getPsychologistText() {
-        return null;
+        return "أخصائي نفسي";
     }
+
     @Override
     public String getSocialWorkerText() {
-        return null;
+        return "أخصائي اجتماعي";
     }
+
     @Override
     public String getPsychologistDoctorText() {
-        return null;
-
+        return "طبيب نفسي";
     }
+
     @Override
     public String getSupportGroupsText() {
-        return null;
+        return "مجموعات الدعم";
     }
+
 }

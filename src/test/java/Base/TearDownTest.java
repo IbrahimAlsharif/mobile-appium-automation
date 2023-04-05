@@ -1,15 +1,17 @@
 package Base;
 
-import Listeners.ListenerTest;
+import Listeners.Listener;
+import Base.SetupTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-@Listeners(ListenerTest.class)
+import static Base.SetupTest.driver;
+
+@Listeners(Listener.class)
 
 public class TearDownTest
 {
-
     @Test
     public void tearDown(){
-        MobileSetupTest.driver.quit();
+        driver.quit();
     }
 }

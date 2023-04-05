@@ -15,7 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import static Base.MobileSetupTest.driver;
+import static Base.SetupTest.driver;
 
 
 public  class Utilities {
@@ -46,21 +46,21 @@ public  class Utilities {
      * Scroll 150 down by javascript
      */
     public static void scrollDown150() {
-        MobileSetupTest. javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
+        SetupTest. javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
     }
 
     /**
      * Scroll 50 down by javascript
      */
     public static void scrollDown50() {
-        MobileSetupTest. javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
+        SetupTest. javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
     }
 
     /**
      * Scroll 30 down by javascript
      */
     public static void scrollDown30() {
-        MobileSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
+        SetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
     }
 
     /**
@@ -71,31 +71,31 @@ public  class Utilities {
     public static void scrollBy(int value) {
         switch (value) {
             case 30:
-                MobileSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
+                SetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
                 break;
             case 50:
-                MobileSetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
+                SetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
                 break;
             case 100:
-                MobileSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,100)", "");
+                SetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,100)", "");
                 break;
             case 150:
-                MobileSetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
+                SetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
                 break;
             case -30:
-                MobileSetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,-30)", "");
+                SetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,-30)", "");
                 break;
             case -50:
-                MobileSetupTest.    javascriptExecutor.executeScript("window.scrollBy(0,-50)", "");
+                SetupTest.    javascriptExecutor.executeScript("window.scrollBy(0,-50)", "");
                 break;
             case -100:
-                MobileSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-100)", "");
+                SetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-100)", "");
                 break;
             case -150:
-                MobileSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
+                SetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
                 break;
             default:
-                MobileSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-500)", "");
+                SetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-500)", "");
                 break;
 
         }
@@ -106,7 +106,7 @@ public  class Utilities {
      * Scroll 150 up by java script
      */
     public static void scrollUp150() {
-        MobileSetupTest.javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
+        SetupTest.javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
     }
 
     public static void javascriptExecutor(String s, WebElement usedProductAllMenuItem) {
@@ -189,7 +189,7 @@ public  class Utilities {
      * @param locator
      */
     public static void waitForElementToBeVisibleBy(By locator) {
-        MobileSetupTest. wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        SetupTest. wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
     /**
@@ -198,7 +198,7 @@ public  class Utilities {
      * @param locator
      */
     public static void waitForElementToBeClickableBy(By locator) {
-        MobileSetupTest. wait.until(ExpectedConditions.elementToBeClickable(locator));
+        SetupTest. wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
     /**
@@ -207,7 +207,7 @@ public  class Utilities {
      * @param element
      */
     public static void waitForElementToBeClickable(WebElement element) {
-        MobileSetupTest.  wait.until(ExpectedConditions.elementToBeClickable(element));
+        SetupTest.  wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     /**
