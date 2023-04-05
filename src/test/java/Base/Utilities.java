@@ -252,9 +252,31 @@ public  class Utilities {
     }
 
     public static WebElement getByXpath(String xpath, boolean isClickable){
-        waitForElementToBeVisibleBy(By.xpath(xpath));
-        if (isClickable) waitForElementToBeClickableBy(By.xpath(xpath));
-        if (driver instanceof WebDriver) return driver.findElement(By.xpath(xpath));
-        else return (MobileElement) driver.findElement(By.xpath(xpath));
+        By byXpath= By.xpath(xpath);
+        waitForElementToBeVisibleBy(byXpath);
+        if (isClickable) waitForElementToBeClickableBy(byXpath);
+        if (driver instanceof WebDriver) return driver.findElement(byXpath);
+        else return (MobileElement) driver.findElement(byXpath);
+    }
+    public static WebElement getById(String id, boolean isClickable){
+        By byId= By.xpath(id);
+        waitForElementToBeVisibleBy(byId);
+        if (isClickable) waitForElementToBeClickableBy(byId);
+        if (driver instanceof WebDriver) return driver.findElement(byId);
+        else return (MobileElement) driver.findElement(byId);
+    }
+    public static WebElement getByClassName(String className, boolean isClickable){
+        By byClassName= By.className(className);
+        waitForElementToBeVisibleBy(byClassName);
+        if (isClickable) waitForElementToBeClickableBy(byClassName);
+        if (driver instanceof WebDriver) return driver.findElement(byClassName);
+        else return (MobileElement) driver.findElement(byClassName);
+    }
+    public static WebElement getByCssSelector(String cssSelector, boolean isClickable){
+        By byCssSelector= By.cssSelector(cssSelector);
+        waitForElementToBeVisibleBy(byCssSelector);
+        if (isClickable) waitForElementToBeClickableBy(byCssSelector);
+        if (driver instanceof WebDriver) return driver.findElement(byCssSelector);
+        else return (MobileElement) driver.findElement(byCssSelector);
     }
 }
