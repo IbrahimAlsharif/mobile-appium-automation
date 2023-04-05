@@ -4,23 +4,23 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="2.235">
+           time="17.633">
   <properties />
   
   
-            <testcase name="PsychologistIsDisplayed" time="0.077" classname="Mobile.Tests.HomePage.HomePageTest" />
-                <testcase name="SocialWorkerIsDisplayed" time="0.077" classname="Mobile.Tests.HomePage.HomePageTest" />
-                <testcase name="TitleTypesOfSpecialistsIsDisplayed" time="0.066" classname="Mobile.Tests.HomePage.HomePageTest" />
-                <testcase name="IconCartIsDisplayed" time="0.185" classname="Mobile.Tests.HomePage.HomePageTest" />
-                <testcase name="MessageWelcomeIsDisplayed" time="0.136" classname="Mobile.Tests.HomePage.HomePageTest" />
-                <testcase name="EducationalSpecialIsDisplayed" time="0.678" classname="Mobile.Tests.HomePage.HomePageTest" />
-                <testcase name="SupportGroupsIsDisplayed" time="0.127" classname="Mobile.Tests.HomePage.HomePageTest" />
-                <testcase name="intercomIconIsDisplayed" time="0.135" classname="Mobile.Tests.HomePage.HomePageTest" />
-                <testcase name="IconJalulaIsDisplayed" time="0.090" classname="Mobile.Tests.HomePage.HomePageTest" />
-                <testcase name="FamcareLogoIsDisplayed" time="0.115" classname="Mobile.Tests.HomePage.HomePageTest" />
-                <testcase name="SliderAdsIsDisplayed" time="0.145" classname="Mobile.Tests.HomePage.HomePageTest" />
-                <testcase name="ButtonFeelingIsDisplayed" time="0.126" classname="Mobile.Tests.HomePage.HomePageTest" />
-                <testcase name="PsychologistDoctorIsDisplayed" time="0.128" classname="Mobile.Tests.HomePage.HomePageTest" />
-                <testcase name="NotificationIconIsDisplayed" time="0.150" classname="Mobile.Tests.HomePage.HomePageTest" />
+            <testcase name="FamcareLogoIsDisplayed" time="0.206" classname="Mobile.Tests.HomePage.HomePageTest" />
+                <testcase name="intercomIconIsDisplayed" time="0.488" classname="Mobile.Tests.HomePage.HomePageTest" />
+                <testcase name="SliderAdsIsDisplayed" time="0.679" classname="Mobile.Tests.HomePage.HomePageTest" />
+                <testcase name="IconJalulaIsDisplayed" time="0.450" classname="Mobile.Tests.HomePage.HomePageTest" />
+                <testcase name="EducationalSpecialIsDisplayed" time="0.312" classname="Mobile.Tests.HomePage.HomePageTest" />
+                <testcase name="TitleTypesOfSpecialistsIsDisplayed" time="0.384" classname="Mobile.Tests.HomePage.HomePageTest" />
+                <testcase name="PsychologistIsDisplayed" time="0.268" classname="Mobile.Tests.HomePage.HomePageTest" />
+                <testcase name="ButtonFeelingIsDisplayed" time="11.825" classname="Mobile.Tests.HomePage.HomePageTest" />
+                <testcase name="PsychologistDoctorIsDisplayed" time="0.429" classname="Mobile.Tests.HomePage.HomePageTest" />
+                <testcase name="SupportGroupsIsDisplayed" time="0.515" classname="Mobile.Tests.HomePage.HomePageTest" />
+                <testcase name="MessageWelcomeIsDisplayed" time="0.578" classname="Mobile.Tests.HomePage.HomePageTest" />
+                <testcase name="SocialWorkerIsDisplayed" time="0.405" classname="Mobile.Tests.HomePage.HomePageTest" />
+                <testcase name="IconCartIsDisplayed" time="0.652" classname="Mobile.Tests.HomePage.HomePageTest" />
+                <testcase name="NotificationIconIsDisplayed" time="0.442" classname="Mobile.Tests.HomePage.HomePageTest" />
       
 </testsuite>

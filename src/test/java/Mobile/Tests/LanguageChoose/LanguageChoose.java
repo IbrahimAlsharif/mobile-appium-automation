@@ -1,4 +1,4 @@
-package Mobile.Tests;
+package Mobile.Tests.LanguageChoose;
 import  static Base.SetupTest.testData;
 import Base.Utilities;
 import org.openqa.selenium.WebElement;
@@ -40,7 +40,6 @@ public class LanguageChoose {
     public static WebElement getSelectArabicText() {
         String xpath="//android.widget.ImageView[@content-desc=\""+testData.getArabicLanguageText()+"\"]";
         return Utilities.getByXpath(xpath,false);
-
     }
     public static void ClickOnSelectArabicText(){
         getSelectArabicText().click();

@@ -5,6 +5,7 @@ import Mobile.TestData.*;
 import TestRail.APIException;
 import TestRail.TestRailManager;
 import Web.BrowserOptions;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -29,7 +30,8 @@ import java.util.concurrent.TimeUnit;
 @Listeners(Listener.class)
 
 public class SetupTest {
-    public static WebDriver driver;
+    public  static   AndroidDriver driver ;
+    public  static   WebDriver webDriver ;
     public static WebDriverWait wait;
     public static AbstractTestData testData;
     public static JavascriptExecutor javascriptExecutor;
@@ -58,10 +60,10 @@ public class SetupTest {
     private void initializeWebDriver(String browser, String url) {
         if (browser.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver(new BrowserOptions().getChromeOptions(false,false));
+            webDriver = new ChromeDriver(new BrowserOptions().getChromeOptions(false,false));
         } else {
             WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver(new BrowserOptions().getFirefixOptions(false,false));
+            webDriver = new FirefoxDriver(new BrowserOptions().getFirefixOptions(false,false));
         }
         wait = new WebDriverWait(driver, 60);
         javascriptExecutor = (JavascriptExecutor) driver;
