@@ -1,4 +1,4 @@
-package Mobile.Tests;
+package Mobile.Tests.Language;
 import  static Base.SetupTest.testDataMobile;
 import Base.Utilities;
 import org.openqa.selenium.WebElement;
