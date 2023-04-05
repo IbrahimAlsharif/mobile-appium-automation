@@ -6,11 +6,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import static Base.SetupTest.driver;
-import static Base.SetupTest.testData;
+import static Base.SetupTest.testDataMobile;
 
 public class HomePagePOM {
     public static WebElement getWelcomeMessageText() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getWelcomeMessage()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getWelcomeMessage()+"\"]";
         Utilities.waitForElementToBeVisibleBy(By.xpath(xpath));
         Utilities.waitForElementToBeClickableBy(By.xpath(xpath));
         By xPath = By.xpath(xpath);
@@ -55,7 +55,7 @@ public class HomePagePOM {
         return getJalulaIcon().isDisplayed();
     }
     public static WebElement getFeelingButton() {
-        String xpath="//android.widget.ImageView[@content-desc=\""+testData.getFeelingButtonText()+"\"]";
+        String xpath="//android.widget.ImageView[@content-desc=\""+testDataMobile.getFeelingButtonText()+"\"]";
         return Utilities.getByXpath(xpath,true);
 
     }
@@ -71,7 +71,7 @@ public class HomePagePOM {
         return getSliderAds().isDisplayed();
     }
     public static WebElement getTitleTypesOfSpecialists() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getTypesOfSpecialistsTitle()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTypesOfSpecialistsTitle()+"\"]";
         return Utilities.getByXpath(xpath,false);
 
     }
@@ -79,7 +79,7 @@ public class HomePagePOM {
         return getTitleTypesOfSpecialists().isDisplayed();
     }
     public static WebElement getPsychologistText() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getPsychologistText()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getPsychologistText()+"\"]";
         return Utilities.getByXpath(xpath,false);
 
     }
@@ -87,7 +87,7 @@ public class HomePagePOM {
         return getPsychologistText().isDisplayed();
     }
     public static WebElement getSocialWorkerText() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getSocialWorkerText()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getSocialWorkerText()+"\"]";
         return Utilities.getByXpath(xpath,false);
 
     }
@@ -95,7 +95,7 @@ public class HomePagePOM {
         return getSocialWorkerText().isDisplayed();
     }
     public static WebElement getEducationalSpecialistText() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getEducationalSpecialistText()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getEducationalSpecialistText()+"\"]";
         return Utilities.getByXpath(xpath,false);
 
     }
@@ -104,7 +104,7 @@ public class HomePagePOM {
     }
 
     public static WebElement getPsychologistDoctorText() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getPsychologistDoctorText()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getPsychologistDoctorText()+"\"]";
         return Utilities.getByXpath(xpath,true);
 
     }
@@ -112,7 +112,7 @@ public class HomePagePOM {
         return getPsychologistDoctorText().isDisplayed();
     }
     public static WebElement getSupportGroupsText() {
-        String xpath="//android.view.View[@content-desc=\""+testData.getSupportGroupsText()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getSupportGroupsText()+"\"]";
         return Utilities.getByXpath(xpath,true);
     }
     public static boolean SupportGroupsIsDisplayed(){

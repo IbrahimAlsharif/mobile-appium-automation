@@ -5,14 +5,13 @@ import Mobile.TestData.*;
 import TestRail.APIException;
 import TestRail.TestRailManager;
 import Web.BrowserOptions;
+import Web.TestData.ArabicProductionTestDataWeb;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -31,7 +30,8 @@ import java.util.concurrent.TimeUnit;
 public class SetupTest {
     public static WebDriver driver;
     public static WebDriverWait wait;
-    public static AbstractTestData testData;
+    public static AbstractTestData testDataMobile;
+    public static Web.TestData.AbstractTestData testDataWeb;
     public static JavascriptExecutor javascriptExecutor;
 
     @Test(priority = 1)
@@ -85,19 +85,19 @@ public class SetupTest {
     private void initializeTestData(String language, String branch, String platform) {
         if (language.equals("Arabic") && branch.equals("Production")) {
             if (platform.equals("mobile")){
-            testData = new ArabicProductionTestData();
+            testDataMobile = new ArabicProductionTestDataMobile();
             }
             else {
                 //todo Add web test data
                 System.out.println("Add test data");
-                testData = new ArabicProductionTestData();
+                testDataWeb =  new ArabicProductionTestDataWeb();
             }
         } else if (language.equals("Arabic") && branch.equals("Staging")) {
-            testData = new ArabicStagingTestData();
+            testDataMobile = new ArabicStagingTestData();
         } else if (language.equals("English") && branch.equals("Staging")) {
-            testData = new EnglishStagingTestData();
+            testDataMobile = new EnglishStagingTestData();
         } else {
-            testData = new EnglishProductionTestData();
+            testDataMobile = new EnglishProductionTestData();
         }
     }
 }

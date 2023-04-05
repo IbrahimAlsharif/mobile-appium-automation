@@ -9,7 +9,7 @@
         <parameter name="appPath" value="none"></parameter>
         <classes>
             <class name="Base.SetupTest"/>
-            <class name="Web.HomePageTest"></class>
+            <class name="Web.Tests.HomePage.HomePageTest"></class>
             <class name="Base.TearDownTest"></class>
         </classes>
     </test>

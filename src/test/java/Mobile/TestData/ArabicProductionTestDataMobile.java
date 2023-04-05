@@ -1,6 +1,6 @@
 package Mobile.TestData;
 
-public class ArabicProductionTestData implements AbstractTestData {
+public class ArabicProductionTestDataMobile implements AbstractTestData {
 
 
     @Override
