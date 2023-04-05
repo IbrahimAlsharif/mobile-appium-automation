@@ -68,7 +68,7 @@ public class SetupTest {
         wait = new WebDriverWait(driver, 60);
         javascriptExecutor = (JavascriptExecutor) driver;
         driver.get(url);
-        driver.manage().window().setSize(new Dimension(300, 884));
+        driver.manage().window().setSize(new Dimension(390, 844));
     }
 
     private DesiredCapabilities getDesiredCapabilities(String appPath) {
