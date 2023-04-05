@@ -13,4 +13,18 @@ String getPsychologistText();
 String getSocialWorkerText();
 String getPsychologistDoctorText();
 String getSupportGroupsText();
+String getLanguageIconText();
+String getTheUserDoesNotHaveSubscriptionText();
+String getSubscribeToSubscriptionsText();
+String getBrowseSubscriptionsButton();
+String getAnswerAndQuestionButton();
+String getBlogButton();
+String getSignInButton();
+String getFriendsInviteButton();
+String getFamcareRatingButton();
+String getTechnicalSupportButton();
+String getInterestNumbersButton();
+String getPrivacyPolicyButton();
+String getUseTermsButton();
+
 }

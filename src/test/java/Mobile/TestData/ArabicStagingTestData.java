@@ -47,6 +47,60 @@ public class ArabicStagingTestData implements AbstractTestData {
     public String getSupportGroupsText() {
         return "مجموعات الدعم";
     }
+    @Override
+    public String getLanguageIconText() {
+        return "اللغة";
+    }
+    @Override
+    public String getTheUserDoesNotHaveSubscriptionText() {
+        return "لا تمتلك اشتراك";
+    }
+    @Override
+    public String getSubscribeToSubscriptionsText() {
+        return "اشترك الان لتتمتع بخدماتنا المتنوعة!";
+    }
+    @Override
+    public String getBrowseSubscriptionsButton() {
+        return "تصفح الاشتراكات";
+    }
+    @Override
+    public String getAnswerAndQuestionButton() {
+        return "سؤال و جواب";
+    }
+    @Override
+    public String getBlogButton() {
+        return "المدونة";
+    }
+    @Override
+    public String getSignInButton() {
+        return "تسجيل الدخول";
+    }
+    @Override
+    public String getFriendsInviteButton() {
+        return "دعوة الاصدقاء";
+    }
+    @Override
+    public String getFamcareRatingButton() {
+        return "تقييم تطبيق فامكير";
+    }
+    @Override
+    public String getTechnicalSupportButton() {
+        return "الدعم الفني";
+    }
+    @Override
+    public String getInterestNumbersButton() {
+        return "أرقام تهمك";
+    }
+    @Override
+    public String getPrivacyPolicyButton() {
+        return "سياسة الخصوصية";
+    }
+    @Override
+    public String getUseTermsButton() {
+        return " شروط الاستخدام";
+    }
+
+
 }
 
 
