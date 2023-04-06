@@ -6,4 +6,19 @@ public class ArabicProductionTestDataWeb implements AbstractTestData {
     public String getSubscriptionsTitle() {
         return "انضم لآلاف المستفيدين من خدمات فامكير";
     }
+
+    @Override
+    public String getMonthlyBronzePrice() {
+        return "SR  115.00";
+    }
+
+    @Override
+    public String getThreeMonthsBronzePrice() {
+        return "SR  230.00";
+    }
+
+    @Override
+    public String getSixMonthsBronzePrice() {
+        return "SR  345.00";
+    }
 }
