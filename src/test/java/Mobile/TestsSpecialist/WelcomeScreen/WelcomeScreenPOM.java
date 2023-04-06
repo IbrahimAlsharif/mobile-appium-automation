@@ -1,52 +1,49 @@
-package Mobile.SpecialistTests.WelcomeScreen;
+package Mobile.TestsSpecialist.WelcomeScreen;
 
 import Base.Utilities;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import java.util.List;
-
-import static Base.SetupTest.driver;
+import static Base.SetupTest.*;
 
 public class WelcomeScreenPOM {
+    public static String ImagesXpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView";
     public static WebElement getLogo(){
-        List<WebElement> Images = driver.findElements(By.className("android.widget.ImageView"));
-        Utilities.waitForElementToBeVisibleBy(By.className("android.widget.ImageView"));
-        return (MobileElement) Images.get(0);
+        String xpath = ImagesXpath + "[1]";
+        return Utilities.getByXpath(xpath, false);
     }
     public static Boolean existanceOfLogo(){
         return getLogo().isDisplayed();
     }
     public static WebElement getWelcomPicture(){
-        List<WebElement> Images = driver.findElements(By.className("android.widget.ImageView"));
-        return (MobileElement) Images.get(1);
+        String xpath = ImagesXpath + "[2]";
+        return  Utilities.getByXpath(xpath, false);
     }
     public static Boolean existanceOfWelcomPicture(){
         return getWelcomPicture().isDisplayed();
     }
     public static WebElement getMainText(){
-        return (MobileElement) driver.findElement(MobileBy.AccessibilityId("استشارة منك تغير حياة الآخرين للأفضل"));
+        return Utilities.getByAccessibilityId(testDataMobileSpecialist.getMainTextInWelcomeScreen(), false);
     }
     public static Boolean existanceOfMainText(){
         return getMainText().isDisplayed();
     }
     public static WebElement getDescriptionText(){
-        return (MobileElement) driver.findElement(MobileBy.AccessibilityId("تبدأ من انضمامك معنا وحتى تصل للعديد من العملاء من خلالنا بطرق تواصل مُيسرة"));
+        return Utilities.getByAccessibilityId(testDataMobileSpecialist.getDescriptionTextInWelcomeScreen(),false);
     }
     public static Boolean existanceOfDescriptionText(){
         return getDescriptionText().isDisplayed();
     }
     public static WebElement getLoginButton(){
-        return (MobileElement) driver.findElement(MobileBy.AccessibilityId("تسجيل الدخول"));
+        return Utilities.getByAccessibilityId(testDataMobileSpecialist.getLoginButtonInWelcomeScreen(),true);
     }
     public static Boolean existanceOfLoginButton(){
         return getLoginButton().isDisplayed();
     }
     public static WebElement getSignUpButton(){
-        return (MobileElement) driver.findElement(MobileBy.AccessibilityId("انشاء حساب جديد"));
+        return Utilities.getByAccessibilityId(testDataMobileSpecialist.getSignUpButtonInWelcomeScreen(),true);
     }
     public static Boolean existanceOfSignUpButton(){
         return getSignUpButton().isDisplayed();

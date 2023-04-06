@@ -15,7 +15,7 @@ public class SupportGroupsPOM {
         return getTitleAppBarOnSupportGroupsTestPage().isDisplayed();
     }
     public static WebElement getAllGroupsTextOnSupportGroupsTestPage() {
-        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getAllGroupsTextOnSupportGroupsTestPage()+"\"]";
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTitleAppBarOnSupportGroupsTestPage()+"\"]";
         return  Utilities.getByXpath(xpath,true);
     }
     public static boolean AllGroupsTextOnSupportGroupsTestPageIsDisplayed(){

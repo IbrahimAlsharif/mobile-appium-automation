@@ -19,7 +19,7 @@ public class BenchmarksTest {
     @Test(priority = 2)
     public void TitleAppBarOnBenchmarksPageDisplayed(){
         testCaseId="0";
-        Assert.assertTrue(BenchmarksPOM.TitleAppBarDisplayed());
+        Assert.assertTrue(BenchmarksPOM.TitleAppBarOnBenchmarksPageDisplayed());
     }
     @Test(priority = 3)
     public void DiagnosticScalesTypesIsDisplayed(){
