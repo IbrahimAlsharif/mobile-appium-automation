@@ -21,7 +21,7 @@ public class BenchmarksTest {
         testCaseId="0";
         Assert.assertTrue(BenchmarksPOM.TitleAppBarOnBenchmarksPageDisplayed());
     }
-    @Test(priority = 3,enabled = false)
+    @Test(priority = 3)
     public void DiagnosticScalesTypesIsDisplayed(){
         testCaseId="0";
         Assert.assertTrue(BenchmarksPOM.DiagnosticScalesTypesIsDisplayed());
