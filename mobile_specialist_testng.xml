@@ -10,7 +10,7 @@
 
         <classes>
             <class name="Base.SetupTest"/>
-            <class name="Mobile.SpecialistTests.WelcomeScreen.WelcomeScreenTest"></class>
+            <class name="Mobile.TestsSpecialist.WelcomeScreen.WelcomeScreenTest"></class>
 
         </classes>
     </test>

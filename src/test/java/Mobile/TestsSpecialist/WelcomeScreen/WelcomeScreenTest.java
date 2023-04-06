@@ -1,6 +1,5 @@
-package Mobile.SpecialistTests.WelcomeScreen;
+package Mobile.TestsSpecialist.WelcomeScreen;
 
-import Mobile.Tests.HomePage.HomePagePOM;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

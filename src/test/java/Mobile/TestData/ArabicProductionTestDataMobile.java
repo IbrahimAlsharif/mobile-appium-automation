@@ -140,6 +140,8 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
         return "مجموعات الدعم";
     }
 
+
+
     @Override
     public String getAllGroupsTextOnSupportGroupsTestPage() {
         return "كل المجموعات\n" +
@@ -161,5 +163,7 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     public String getEndingMeetingsTextOnSupportGroupsTestPage() {
         return "لقاءات منتهية";
     }
+
+
 
 }
