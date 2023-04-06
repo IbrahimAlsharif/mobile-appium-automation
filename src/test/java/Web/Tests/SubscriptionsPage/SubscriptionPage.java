@@ -4,7 +4,6 @@ import Base.Utilities;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import javax.swing.*;
 
 import static Base.SetupTest.driver;
 
