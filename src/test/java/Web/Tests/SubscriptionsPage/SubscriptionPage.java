@@ -2,6 +2,11 @@ package Web.Tests.SubscriptionsPage;
 
 import Base.Utilities;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+import javax.swing.*;
+
+import static Base.SetupTest.driver;
 
 public class SubscriptionPage {
     public static WebElement getSubscriptionTitle() {
@@ -161,4 +166,8 @@ public class SubscriptionPage {
         return getSixMonthsGoldButton().isDisplayed();
     }
 
+    public static void clickSixMonthsBronzeButton() {
+        Actions action = new Actions(driver);
+        action.moveToElement(getSixMonthsBronzeButton()).click().perform();
+    }
 }

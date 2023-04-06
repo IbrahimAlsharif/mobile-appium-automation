@@ -9,4 +9,5 @@ public interface AbstractTestData {
     String getThreeMonthsBronzePrice();
 
     String getSixMonthsBronzePrice();
+    String getCourseTitle();
 }

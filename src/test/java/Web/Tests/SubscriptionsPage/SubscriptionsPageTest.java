@@ -77,4 +77,11 @@ public class SubscriptionsPageTest {
     public void sixMonthsGoldIsDisplayed() {
         Assert.assertTrue(SubscriptionPage.sixMonthsGoldButtonIsDisplayed());
     }
+
+    @Test(priority = 8)
+    public void openCompleteSubscription() {
+        SubscriptionPage.clickSixMonthsBronzeButton();
+//        Assert.assertTrue(SubscriptionPage.sixMonthsGoldButtonIsDisplayed());
+    }
+
 }

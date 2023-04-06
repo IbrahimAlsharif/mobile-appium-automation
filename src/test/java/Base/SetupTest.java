@@ -58,14 +58,15 @@ public class SetupTest {
     private void initializeWebDriver(String browser, String url) {
         if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver(new BrowserOptions().getChromeOptions(false,false));
+            driver = new ChromeDriver(new BrowserOptions().getChromeOptions(false,true));
         } else {
             WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver(new BrowserOptions().getFirefixOptions(false,false));
+            driver = new FirefoxDriver(new BrowserOptions().getFirefixOptions(false,true));
         }
         wait = new WebDriverWait(driver, 60);
         javascriptExecutor = (JavascriptExecutor) driver;
         driver.get(url);
+
         driver.manage().window().setSize(new Dimension(390, 844));
     }
 
