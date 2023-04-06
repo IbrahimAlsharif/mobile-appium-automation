@@ -22,4 +22,8 @@ public class BenchmarksPOM {
     public static boolean DiagnosticScalesTypesIsDisplayed(){
         return getDiagnosticScalesTypesOnBenchmarksPage().isDisplayed();
     }
+
+    public static boolean TitleAppBarOnBenchmarksPageDisplayed(){
+        return getTitleAppBarOnBenchmarksPage().isDisplayed();
+    }
 }

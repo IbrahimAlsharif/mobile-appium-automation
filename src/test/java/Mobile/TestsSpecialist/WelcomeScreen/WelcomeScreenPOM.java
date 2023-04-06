@@ -19,33 +19,31 @@ public class WelcomeScreenPOM {
     }
     public static WebElement getWelcomPicture(){
         String xpath = ImagesXpath + "[2]";
-        Utilities.waitForElementToBeVisibleBy(By.xpath(xpath));
-        By xPath = By.xpath(xpath);
-        return  (MobileElement) driver.findElement(xPath);
+        return  Utilities.getByXpath(xpath, false);
     }
     public static Boolean existanceOfWelcomPicture(){
         return getWelcomPicture().isDisplayed();
     }
     public static WebElement getMainText(){
-        return (MobileElement) driver.findElement(MobileBy.AccessibilityId(testDataMobileSpecialist.getMainTextInWelcomeScreen()));
+        return Utilities.getByAccessibilityId(testDataMobileSpecialist.getMainTextInWelcomeScreen(), false);
     }
     public static Boolean existanceOfMainText(){
         return getMainText().isDisplayed();
     }
     public static WebElement getDescriptionText(){
-        return (MobileElement) driver.findElement(MobileBy.AccessibilityId(testDataMobileSpecialist.getDescriptionTextInWelcomeScreen()));
+        return Utilities.getByAccessibilityId(testDataMobileSpecialist.getDescriptionTextInWelcomeScreen(),false);
     }
     public static Boolean existanceOfDescriptionText(){
         return getDescriptionText().isDisplayed();
     }
     public static WebElement getLoginButton(){
-        return (MobileElement) driver.findElement(MobileBy.AccessibilityId(testDataMobileSpecialist.getLoginButtonInWelcomeScreen()));
+        return Utilities.getByAccessibilityId(testDataMobileSpecialist.getLoginButtonInWelcomeScreen(),true);
     }
     public static Boolean existanceOfLoginButton(){
         return getLoginButton().isDisplayed();
     }
     public static WebElement getSignUpButton(){
-        return (MobileElement) driver.findElement(MobileBy.AccessibilityId(testDataMobileSpecialist.getSignUpButtonInWelcomeScreen()));
+        return Utilities.getByAccessibilityId(testDataMobileSpecialist.getSignUpButtonInWelcomeScreen(),true);
     }
     public static Boolean existanceOfSignUpButton(){
         return getSignUpButton().isDisplayed();
