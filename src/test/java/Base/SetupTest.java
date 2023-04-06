@@ -37,7 +37,7 @@ public class SetupTest {
     @Test(priority = 1)
     @Parameters({"language", "appPath", "platform", "branch", "browser", "url"})
     public void setUp(String language, String appPath, String platform, String branch, String browser, String url) throws APIException, IOException {
-        if (platform.equals("mobile")) {
+        if (platform.equalsIgnoreCase("mobile")) {
             initializeMobileDriver(platform, appPath);
         } else {
             initializeWebDriver(browser, url);
@@ -49,14 +49,14 @@ public class SetupTest {
     }
 
     private void initializeMobileDriver(String platform, String appPath) throws MalformedURLException {
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), getDesiredCapabilities(appPath));
+        driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), getDesiredCapabilities(appPath));
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 30);
         javascriptExecutor = (JavascriptExecutor) driver;
     }
 
     private void initializeWebDriver(String browser, String url) {
-        if (browser.equals("chrome")) {
+        if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(new BrowserOptions().getChromeOptions(false,false));
         } else {
@@ -83,8 +83,8 @@ public class SetupTest {
     }
 
     private void initializeTestData(String language, String branch, String platform) {
-        if (language.equals("Arabic") && branch.equals("Production")) {
-            if (platform.equals("mobile")){
+        if (language.equalsIgnoreCase("Arabic") && branch.equalsIgnoreCase("Production")) {
+            if (platform.equalsIgnoreCase("mobile")){
             testDataMobile = new ArabicProductionTestDataMobile();
             }
             else {
@@ -92,9 +92,9 @@ public class SetupTest {
                 System.out.println("Add test data");
                 testDataWeb =  new ArabicProductionTestDataWeb();
             }
-        } else if (language.equals("Arabic") && branch.equals("Staging")) {
+        } else if (language.equalsIgnoreCase("Arabic") && branch.equalsIgnoreCase("Staging")) {
             testDataMobile = new ArabicStagingTestData();
-        } else if (language.equals("English") && branch.equals("Staging")) {
+        } else if (language.equalsIgnoreCase("English") && branch.equalsIgnoreCase("Staging")) {
             testDataMobile = new EnglishStagingTestData();
         } else {
             testDataMobile = new EnglishProductionTestData();

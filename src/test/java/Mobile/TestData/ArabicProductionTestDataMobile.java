@@ -123,6 +123,43 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     public String getUseTermsButton() {
         return " شروط الاستخدام";
     }
+    @Override
+    public String getTitleAppBarOnBenchmarksPage() {
+        return "مقاييس التشخيص";
+    }
+    @Override
+    public String getDiagnosticScalesTypesText() {
 
+         return "مقياس القلق\n" +
+                 "7 أسئلة ";
+
+    }
+
+    @Override
+    public String getTitleAppBarOnSupportGroupsTestPage() {
+        return "مجموعات الدعم";
+    }
+
+    @Override
+    public String getAllGroupsTextOnSupportGroupsTestPage() {
+        return "كل المجموعات\n" +
+                "علامة التبويب 1 من 2";
+    }
+
+    @Override
+    public String getMyGroupsTextOnSupportGroupsTestPage() {
+        return "مجموعاتي\n" +
+                "علامة التبويب 2 من 2";
+    }
+
+    @Override
+    public String getUpcomingMeetingsTextOnSupportGroupsTestPage() {
+        return "لقاءات قادمة";
+    }
+
+    @Override
+    public String getEndingMeetingsTextOnSupportGroupsTestPage() {
+        return "لقاءات منتهية";
+    }
 
 }
