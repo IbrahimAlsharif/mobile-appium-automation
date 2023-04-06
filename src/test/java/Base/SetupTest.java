@@ -2,6 +2,10 @@ package Base;
 
 import Listeners.Listener;
 import Mobile.TestData.*;
+import Mobile.TestDataSpecialistTests.ArabicProductionTestDataSpecialist;
+import Mobile.TestDataSpecialistTests.ArabicStagingTestDataSpecialist;
+import Mobile.TestDataSpecialistTests.EnglishProductionTestDataSpecialist;
+import Mobile.TestDataSpecialistTests.EnglishStagingTestDataSpecialist;
 import TestRail.APIException;
 import TestRail.TestRailManager;
 import Web.BrowserOptions;
@@ -35,6 +39,8 @@ public class SetupTest {
 
     public static WebDriverWait wait;
     public static AbstractTestData testDataMobile;
+    public static Mobile.TestDataSpecialistTests.AbstractTestData testDataMobileSpecialist;
+
     public static Web.TestData.AbstractTestData testDataWeb;
     public static JavascriptExecutor javascriptExecutor;
 
@@ -90,6 +96,7 @@ public class SetupTest {
         if (language.equalsIgnoreCase("Arabic") && branch.equalsIgnoreCase("Production")) {
             if (platform.equalsIgnoreCase("mobile")){
             testDataMobile = new ArabicProductionTestDataMobile();
+            testDataMobileSpecialist= new ArabicProductionTestDataSpecialist();
             }
             else {
                 //todo Add web test data
@@ -98,10 +105,13 @@ public class SetupTest {
             }
         } else if (language.equalsIgnoreCase("Arabic") && branch.equalsIgnoreCase("Staging")) {
             testDataMobile = new ArabicStagingTestData();
+            testDataMobileSpecialist = new ArabicStagingTestDataSpecialist();
         } else if (language.equalsIgnoreCase("English") && branch.equalsIgnoreCase("Staging")) {
             testDataMobile = new EnglishStagingTestData();
+            testDataMobileSpecialist = new EnglishStagingTestDataSpecialist();
         } else {
             testDataMobile = new EnglishProductionTestData();
+            testDataMobileSpecialist = new EnglishProductionTestDataSpecialist();
         }
     }
 }

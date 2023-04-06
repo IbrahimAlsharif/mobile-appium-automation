@@ -1,6 +1,7 @@
 package Base;
 
 import com.github.javafaker.Faker;
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -279,4 +280,12 @@ public  class Utilities {
         if (driver instanceof WebDriver) return driver.findElement(byCssSelector);
         else return (MobileElement) driver.findElement(byCssSelector);
     }
+    public static WebElement getByAccessibilityId(String AccessibilityId, boolean isClickable){
+        By byAccessibilityId= MobileBy.AccessibilityId(AccessibilityId);
+        waitForElementToBeVisibleBy(byAccessibilityId);
+        if (isClickable) waitForElementToBeClickableBy(byAccessibilityId);
+        if (driver instanceof WebDriver) return driver.findElement(byAccessibilityId);
+        else return (MobileElement) driver.findElement(byAccessibilityId);
+    }
+
 }

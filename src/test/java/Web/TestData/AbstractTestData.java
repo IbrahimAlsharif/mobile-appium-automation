@@ -1,6 +1,12 @@
 package Web.TestData;
 
-public  interface AbstractTestData {
+public interface AbstractTestData {
 
-String getSubscriptionsTitle();
+    String getSubscriptionsTitle();
+
+    String getMonthlyBronzePrice();
+
+    String getThreeMonthsBronzePrice();
+
+    String getSixMonthsBronzePrice();
 }
