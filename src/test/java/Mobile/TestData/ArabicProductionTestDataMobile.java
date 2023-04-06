@@ -164,6 +164,22 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
         return "لقاءات منتهية";
     }
 
+    @Override
+    public String getTitleAppBarOnMyConversationsPage() {
+        return "محادثاتي";
+    }
+    @Override
+    public String getEmptyChatTitleOnMyConversationsPage() {
+        return "ليس لديك محادثات مفتوحة";
+    }
+    @Override
+    public String getSpecialistsBrowseButtonOnMyConversationsPage() {
+        return "تصفح الأخصائيين";
+    }
+    @Override
+    public String getEmptyChatSubTitleOnMyConversationsPage() {
+        return "حجزك للجلسة الأولى تمكنك من التحدث مع الأخصائي مباشرة للحالات الطارئة فقط ولا يغني عن الجلسة، ولا تزيد عن ١٠٠ كلمة.";
+    }
 
 
 }
