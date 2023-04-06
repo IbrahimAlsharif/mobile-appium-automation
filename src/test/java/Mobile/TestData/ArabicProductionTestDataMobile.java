@@ -140,4 +140,26 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
         return "مجموعات الدعم";
     }
 
+    @Override
+    public String getAllGroupsTextOnSupportGroupsTestPage() {
+        return "كل المجموعات\n" +
+                "علامة التبويب 1 من 2";
+    }
+
+    @Override
+    public String getMyGroupsTextOnSupportGroupsTestPage() {
+        return "مجموعاتي\n" +
+                "علامة التبويب 2 من 2";
+    }
+
+    @Override
+    public String getUpcomingMeetingsTextOnSupportGroupsTestPage() {
+        return "لقاءات قادمة";
+    }
+
+    @Override
+    public String getEndingMeetingsTextOnSupportGroupsTestPage() {
+        return "لقاءات منتهية";
+    }
+
 }

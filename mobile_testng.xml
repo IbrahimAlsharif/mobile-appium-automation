@@ -11,8 +11,7 @@
         <classes>
             <class name="Base.SetupTest"/>
             <class name="Mobile.Tests.Language.LanguageChooseTest"></class>
-            <class name="Mobile.Tests.HomePage.HomePageTest"></class>
-            <class name="Mobile.Tests.MorePage.MorePageTest"></class>
+            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>
         </classes>
     </test>
     <listeners>

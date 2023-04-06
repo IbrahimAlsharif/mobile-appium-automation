@@ -9,10 +9,17 @@ import static Base.SetupTest.testDataMobile;
 public class BenchmarksPOM {
 
     public static MobileElement getTitleAppBarOnBenchmarksPage() {
-        String xpath="//android.widget.ImageView[@content-desc=\""+testDataMobile.getLanguageIconText()+"\"]";
-        return (MobileElement) Utilities.getByXpath(xpath,true);
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTitleAppBarOnBenchmarksPage()+"\"]";
+        return (MobileElement) Utilities.getByXpath(xpath,false);
     }
     public static boolean TitleAppBarDisplayed(){
         return getTitleAppBarOnBenchmarksPage().isDisplayed();
+    }
+    public static MobileElement getDiagnosticScalesTypesOnBenchmarksPage() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getDiagnosticScalesTypesText()+"\"]";
+        return (MobileElement) Utilities.getByXpath(xpath,false);
+    }
+    public static boolean DiagnosticScalesTypesIsDisplayed(){
+        return getDiagnosticScalesTypesOnBenchmarksPage().isDisplayed();
     }
 }
