@@ -26,5 +26,13 @@ String getTechnicalSupportButton();
 String getInterestNumbersButton();
 String getPrivacyPolicyButton();
 String getUseTermsButton();
+String getTitleAppBarOnBenchmarksPage();
+String getDiagnosticScalesTypesText();
+String getTitleAppBarOnSupportGroupsTestPage();
+String getAllGroupsTextOnSupportGroupsTestPage();
+String getMyGroupsTextOnSupportGroupsTestPage();
+String getUpcomingMeetingsTextOnSupportGroupsTestPage();
+String getEndingMeetingsTextOnSupportGroupsTestPage();
+
 
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Arabic language Testing Suite">
     <test name="Test Setup">
-        <parameter name="appPath" value="src/app-production-release.apk"></parameter>
+        <parameter name="appPath" value="src/app-specialist_production-debug.apk"></parameter>
         <parameter name="language" value="Arabic"/>
         <parameter name="platform" value="mobile"/>
         <parameter name="branch" value="Production"></parameter>
@@ -10,8 +10,8 @@
 
         <classes>
             <class name="Base.SetupTest"/>
-            <class name="Mobile.Tests.Language.LanguageChooseTest"></class>
-            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>
+            <class name="Mobile.SpecialistTests.WelcomeScreen.WelcomeScreenTest"></class>
+
         </classes>
     </test>
     <listeners>
