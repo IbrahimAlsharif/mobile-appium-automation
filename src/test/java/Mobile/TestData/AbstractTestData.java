@@ -33,6 +33,11 @@ String getAllGroupsTextOnSupportGroupsTestPage();
 String getMyGroupsTextOnSupportGroupsTestPage();
 String getUpcomingMeetingsTextOnSupportGroupsTestPage();
 String getEndingMeetingsTextOnSupportGroupsTestPage();
+String getTitleAppBarOnMyConversationsPage();
+String getEmptyChatTitleOnMyConversationsPage();
+String getSpecialistsBrowseButtonOnMyConversationsPage();
+String getEmptyChatSubTitleOnMyConversationsPage();
+
 
 
 }

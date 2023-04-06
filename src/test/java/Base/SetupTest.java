@@ -6,6 +6,7 @@ import TestRail.APIException;
 import TestRail.TestRailManager;
 import Web.BrowserOptions;
 import Web.TestData.ArabicProductionTestDataWeb;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -28,7 +29,10 @@ import java.util.concurrent.TimeUnit;
 @Listeners(Listener.class)
 
 public class SetupTest {
+
     public static WebDriver driver;
+    public static AndroidDriver  androidDriver;
+
     public static WebDriverWait wait;
     public static AbstractTestData testDataMobile;
     public static Web.TestData.AbstractTestData testDataWeb;
@@ -50,8 +54,8 @@ public class SetupTest {
 
     private void initializeMobileDriver(String platform, String appPath) throws MalformedURLException {
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), getDesiredCapabilities(appPath));
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver, 30);
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        wait = new WebDriverWait(driver, 60);
         javascriptExecutor = (JavascriptExecutor) driver;
     }
 

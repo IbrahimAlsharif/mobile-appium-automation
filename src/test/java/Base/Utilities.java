@@ -259,7 +259,7 @@ public  class Utilities {
         else return (MobileElement) driver.findElement(byXpath);
     }
     public static WebElement getById(String id, boolean isClickable){
-        By byId= By.xpath(id);
+        By byId= By.id(id);
         waitForElementToBeVisibleBy(byId);
         if (isClickable) waitForElementToBeClickableBy(byId);
         if (driver instanceof WebDriver) return driver.findElement(byId);

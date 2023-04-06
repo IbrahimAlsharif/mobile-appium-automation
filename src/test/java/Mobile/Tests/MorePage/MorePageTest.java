@@ -1,11 +1,16 @@
 package Mobile.Tests.MorePage;
 
 import Base.SetupTest;
+import Base.Utilities;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.offset.PointOption;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import static Base.SetupTest.androidDriver;
+import static Base.SetupTest.testDataMobile;
 
 public class MorePageTest {
     private String testCaseId;
@@ -77,12 +82,12 @@ public class MorePageTest {
         testCaseId="0";
         Assert.assertTrue(MorePagePOM.FamcareRatingButtonIsDisplayed());
     }
-//    @Test(priority = 14)
-//    public void TechnicalSupportIsDisplayed(){
-//        testCaseId="0";
-//        SetupTest.driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testData.getTechnicalSupportButton()+"\"))");//scroll down to the element and click
-//        Assert.assertTrue(MorePagePOM.TechnicalSupportIsDisplayed());
-//    }
+    @Test(priority = 14)
+    public void TechnicalSupportIsDisplayed(){
+        testCaseId="0";
+       //Utilities.js.executeScript("arguments[0].scrollIntoView();", MorePagePOM.getTechnicalSupportButton());
+        Assert.assertTrue(MorePagePOM.TechnicalSupportIsDisplayed());
+    }
     @Test(priority = 15)
     public void InterestNumbersButtonIsDisplayed(){
         testCaseId="0";

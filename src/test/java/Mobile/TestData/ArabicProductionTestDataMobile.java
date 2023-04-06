@@ -130,9 +130,7 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     @Override
     public String getDiagnosticScalesTypesText() {
 
-         return "مقياس القلق\n" +
-                 "7 أسئلة ";
-
+         return "مقياس القلق 7 أسئلة";
     }
 
     @Override
@@ -160,6 +158,26 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     @Override
     public String getEndingMeetingsTextOnSupportGroupsTestPage() {
         return "لقاءات منتهية";
+    }
+
+    @Override
+    public String getTitleAppBarOnMyConversationsPage() {
+        return "محادثاتي";
+    }
+
+    @Override
+    public String getEmptyChatTitleOnMyConversationsPage() {
+        return "ليس لديك محادثات مفتوحة";
+    }
+
+    @Override
+    public String getSpecialistsBrowseButtonOnMyConversationsPage() {
+        return "تصفح الأخصائيين";
+    }
+
+    @Override
+    public String getEmptyChatSubTitleOnMyConversationsPage() {
+        return "حجزك للجلسة الأولى تمكنك من التحدث مع الأخصائي مباشرة للحالات الطارئة فقط ولا يغني عن الجلسة، ولا تزيد عن ١٠٠ كلمة.";
     }
 
 }

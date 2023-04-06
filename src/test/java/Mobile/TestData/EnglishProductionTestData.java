@@ -130,6 +130,22 @@ public class EnglishProductionTestData implements AbstractTestData {
     public String getEndingMeetingsTextOnSupportGroupsTestPage() {
         return null;
     }
+    @Override
+    public String getTitleAppBarOnMyConversationsPage() {
+        return null;
+    }
+    @Override
+    public String getEmptyChatTitleOnMyConversationsPage() {
+        return null;
+    }
+    @Override
+    public String getSpecialistsBrowseButtonOnMyConversationsPage() {
+        return null;
+    }
+    @Override
+    public String getEmptyChatSubTitleOnMyConversationsPage() {
+        return null;
+    }
 
 }
 
