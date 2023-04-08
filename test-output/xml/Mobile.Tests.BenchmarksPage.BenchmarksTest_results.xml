@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test Setup"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="33.845">
+  <properties />
+  
+  
+            <testcase name="verifyThatTapDiagnosticButtonNavigateToDiagnosticPage" time="0.178" classname="Mobile.Tests.BenchmarksPage.BenchmarksTest" />
+                <testcase name="DiagnosticScalesTypesIsDisplayed" time="0.097" classname="Mobile.Tests.BenchmarksPage.BenchmarksTest" />
+                <testcase name="TitleAppBarOnBenchmarksPageDisplayed" time="33.570" classname="Mobile.Tests.BenchmarksPage.BenchmarksTest" />
+      
+</testsuite>

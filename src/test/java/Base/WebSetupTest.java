@@ -1,0 +1,71 @@
+package Base;
+
+import Listeners.Listener;
+import Mobile.TestData.*;
+import TestRail.APIException;
+import TestRail.TestRailManager;
+import Web.BrowserOptions;
+import Web.TestData.ArabicProductionTestDataWeb;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import java.io.IOException;
+
+
+@Listeners(Listener.class)
+
+public class WebSetupTest {
+
+    public static WebDriver webDriver;
+    public static WebDriverWait wait;
+    public static AbstractTestData testDataMobile;
+    public static Mobile.TestDataSpecialistTests.AbstractTestData testDataMobileSpecialist;
+    public static Web.TestData.AbstractTestData testDataWeb;
+    public static JavascriptExecutor javascriptExecutor;
+
+    @Test(priority = 1)
+    @Parameters({"language", "branch", "browser", "url"})
+    public void setUp(String language, String branch, String browser, String url) throws APIException, IOException {
+        initializeWebDriver(browser, url);
+        initializeTestData(language, branch);
+        TestRailManager testRailManager = new TestRailManager();
+        WebFinder.testRunId = testRailManager.addTestRun();
+        Assert.assertTrue(true);
+    }
+
+
+    private void initializeWebDriver(String browser, String url) {
+        if (browser.equalsIgnoreCase("chrome")) {
+            WebDriverManager.chromedriver().setup();
+            webDriver = new ChromeDriver(new BrowserOptions().getChromeOptions(false,true));
+        } else {
+            WebDriverManager.firefoxdriver().setup();
+            webDriver = new FirefoxDriver(new BrowserOptions().getFirefixOptions(false,true));
+        }
+        wait = new WebDriverWait(webDriver, 60);
+        javascriptExecutor = (JavascriptExecutor) webDriver;
+        webDriver.get(url);
+
+        webDriver.manage().window().setSize(new Dimension(390, 844));
+    }
+
+
+    private void initializeTestData(String language, String branch) {
+        if (language.equalsIgnoreCase("Arabic") && branch.equalsIgnoreCase("Production")) {
+            testDataWeb =  new ArabicProductionTestDataWeb();
+        } else if (language.equalsIgnoreCase("Arabic") && branch.equalsIgnoreCase("Staging")) {
+           //
+        } else if (language.equalsIgnoreCase("English") && branch.equalsIgnoreCase("Staging")) {
+            //
+        } else {
+            //
+        }
+    }
+}

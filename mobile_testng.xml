@@ -3,20 +3,17 @@
     <test name="Test Setup">
         <parameter name="appPath" value="src/app-production-release.apk"></parameter>
         <parameter name="language" value="Arabic"/>
-        <parameter name="platform" value="mobile"/>
         <parameter name="branch" value="Production"></parameter>
-        <parameter name="browser" value="chrome"></parameter>
-        <parameter name="url" value="none"></parameter>
 
         <classes>
-            <class name="Base.SetupTest"/>
+            <class name="Base.MobileSetupTest"/>
             <class name="Mobile.Tests.Language.LanguageChooseTest"></class>
 <!--            <class name="Mobile.Tests.HomePage.HomePageTest"></class>-->
 <!--            <class name="Mobile.Tests.MyConversations.MyConversationsTest"></class>-->
 <!--            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>-->
-            <class name="Mobile.Tests.BenchmarksPage.BenchmarksTest"></class>
-<!--            <class name="Mobile.Tests.MorePage.MorePageTest"></class>-->
-
+<!--            <class name="Mobile.Tests.BenchmarksPage.BenchmarksTest"></class>-->
+            <class name="Mobile.Tests.MorePage.MorePageTest"></class>
+            <class name="Base.TearDownTest"></class>
         </classes>
     </test>
     <listeners>

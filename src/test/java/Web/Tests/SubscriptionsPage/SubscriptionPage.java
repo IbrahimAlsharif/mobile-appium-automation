@@ -1,16 +1,16 @@
 package Web.Tests.SubscriptionsPage;
 
-import Base.Utilities;
+import Base.WebFinder;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 
-import static Base.SetupTest.driver;
+import static Base.WebSetupTest.webDriver;
 
 public class SubscriptionPage {
     public static WebElement getSubscriptionTitle() {
         String xpath = "/html/body/div[1]/div/h5";
-        return Utilities.getByXpath(xpath, false);
+        return WebFinder.getByXpath(xpath, false);
     }
 
     public static String getSubscriptionTitleText() {
@@ -19,7 +19,7 @@ public class SubscriptionPage {
 
     public static WebElement getMonthlyButton() {
         String xpath = "//*[@id=\"filter\"]/li[1]/a";
-        return Utilities.getByXpath(xpath, true);
+        return WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean monthlyButtonIsDisplayed() {
@@ -32,7 +32,7 @@ public class SubscriptionPage {
 
     public static WebElement getThreeMonthsButton() {
         String xpath = "//*[@id=\"filter\"]/li[2]/a";
-        return Utilities.getByXpath(xpath, true);
+        return WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean threeMonthsButtonIsDisplayed() {
@@ -45,7 +45,7 @@ public class SubscriptionPage {
 
     public static WebElement getSixMonthsButton() {
         String xpath = "//*[@id=\"filter\"]/li[3]/a";
-        return Utilities.getByXpath(xpath, true);
+        return WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean sixMonthsButtonIsDisplayed() {
@@ -58,7 +58,7 @@ public class SubscriptionPage {
 
     public static WebElement getMonthlyBronzePrice() {
         String xpath = "//*[@id=\"163747\"]/h3[2]";
-        return Utilities.getByXpath(xpath, false);
+        return WebFinder.getByXpath(xpath, false);
     }
 
     public static String getMonthlyBronzePriceText() {
@@ -67,7 +67,7 @@ public class SubscriptionPage {
 
     public static WebElement getMonthlyBronzeButton() {
         String xpath = "//*[@id=\"163747\"]/button";
-        return Utilities.getByXpath(xpath, true);
+        return WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean monthlyBronzeButtonIsDisplayed() {
@@ -76,7 +76,7 @@ public class SubscriptionPage {
 
     public static WebElement getMonthlySilverButton() {
         String xpath = "//*[@id=\"171851\"]/button";
-        return Utilities.getByXpath(xpath, true);
+        return WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean monthlySilverButtonIsDisplayed() {
@@ -85,7 +85,7 @@ public class SubscriptionPage {
 
     public static WebElement getMonthlyGoldButton() {
         String xpath = "//*[@id=\"171851\"]/button";
-        return Utilities.getByXpath(xpath, true);
+        return WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean monthlyGoldButtonIsDisplayed() {
@@ -94,7 +94,7 @@ public class SubscriptionPage {
 
     public static WebElement getThreeMonthsBronzePrice() {
         String xpath = "//*[@id=\"171834\"]/h3[2]";
-        return Utilities.getByXpath(xpath, false);
+        return WebFinder.getByXpath(xpath, false);
     }
 
     public static String getThreeMonthsBronzePriceText() {
@@ -103,7 +103,7 @@ public class SubscriptionPage {
 
     public static WebElement getThreeMonthsBronzeButton() {
         String xpath = "//*[@id=\"171834\"]/button";
-        return Utilities.getByXpath(xpath, true);
+        return WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean threeMonthsBronzeButtonIsDisplayed() {
@@ -113,7 +113,7 @@ public class SubscriptionPage {
 
     public static WebElement getThreeMonthsSilverButton() {
         String xpath = "//*[@id=\"171848\"]/button";
-        return Utilities.getByXpath(xpath, true);
+        return WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean threeMonthsSilverButtonIsDisplayed() {
@@ -122,7 +122,7 @@ public class SubscriptionPage {
 
     public static WebElement getThreeMonthsGoldButton() {
         String xpath = "//*[@id=\"171849\"]/button";
-        return Utilities.getByXpath(xpath, true);
+        return WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean threeMonthsGoldButtonIsDisplayed() {
@@ -131,7 +131,7 @@ public class SubscriptionPage {
 
     public static WebElement getSixMonthsBronzePrice() {
         String xpath = "//*[@id=\"177902\"]/h3[2]";
-        return Utilities.getByXpath(xpath, false);
+        return WebFinder.getByXpath(xpath, false);
     }
 
     public static String getSixMonthsBronzePriceText() {
@@ -140,7 +140,7 @@ public class SubscriptionPage {
 
     public static WebElement getSixMonthsBronzeButton() {
         String xpath = "//*[@id=\"177902\"]/button";
-        return Utilities.getByXpath(xpath, true);
+        return WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean sixMonthsBronzeButtonIsDisplayed() {
@@ -149,7 +149,7 @@ public class SubscriptionPage {
 
     public static WebElement getSixMonthsSilverButton() {
         String xpath = "//*[@id=\"178053\"]/button";
-        return Utilities.getByXpath(xpath, true);
+        return WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean sixMonthsSilverButtonIsDisplayed() {
@@ -158,7 +158,7 @@ public class SubscriptionPage {
 
     public static WebElement getSixMonthsGoldButton() {
         String xpath = "//*[@id=\"178054\"]/button";
-        return Utilities.getByXpath(xpath, true);
+        return WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean sixMonthsGoldButtonIsDisplayed() {
@@ -166,7 +166,7 @@ public class SubscriptionPage {
     }
 
     public static void clickSixMonthsBronzeButton() {
-        Actions action = new Actions(driver);
+        Actions action = new Actions(webDriver);
         action.moveToElement(getSixMonthsBronzeButton()).click().perform();
     }
 }

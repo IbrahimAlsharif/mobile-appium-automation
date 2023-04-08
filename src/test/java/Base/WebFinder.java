@@ -2,7 +2,6 @@ package Base;
 
 import com.github.javafaker.Faker;
 import io.appium.java_client.MobileBy;
-import io.appium.java_client.MobileElement;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.Coordinates;
@@ -16,17 +15,16 @@ import TestRail.TestRailManager;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+import static Base.WebSetupTest.webDriver;
 
-import static Base.SetupTest.driver;
 
-
-public  class Utilities {
+public  class WebFinder {
 
     public static Faker faker = new Faker();
-    private static Shot shot= new Shot(driver);
-    private static TestRailManager testRail= new TestRailManager();
+    private static final Shot shot= new Shot(webDriver);
+    private static final TestRailManager testRail= new TestRailManager();
     public static String testRunId;
-    public static  JavascriptExecutor js = (JavascriptExecutor) driver;
+    public static  JavascriptExecutor js = (JavascriptExecutor) webDriver;
 
      public static void doubleClick(WebDriver driver, WebElement element) {
         {
@@ -40,29 +38,26 @@ public  class Utilities {
         }
     }
 
-//    public static void tearDown() {
-//        Base.Initialization.  driver.quit();
-//    }
 
     /**
      * Scroll 150 down by javascript
      */
     public static void scrollDown150() {
-        SetupTest. javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
+        WebSetupTest. javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
     }
 
     /**
      * Scroll 50 down by javascript
      */
     public static void scrollDown50() {
-        SetupTest. javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
+        WebSetupTest. javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
     }
 
     /**
      * Scroll 30 down by javascript
      */
     public static void scrollDown30() {
-        SetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
+        WebSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
     }
 
     /**
@@ -73,31 +68,31 @@ public  class Utilities {
     public static void scrollBy(int value) {
         switch (value) {
             case 30:
-                SetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
+                WebSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
                 break;
             case 50:
-                SetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
+                WebSetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
                 break;
             case 100:
-                SetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,100)", "");
+                WebSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,100)", "");
                 break;
             case 150:
-                SetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
+                WebSetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
                 break;
             case -30:
-                SetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,-30)", "");
+                WebSetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,-30)", "");
                 break;
             case -50:
-                SetupTest.    javascriptExecutor.executeScript("window.scrollBy(0,-50)", "");
+                WebSetupTest.    javascriptExecutor.executeScript("window.scrollBy(0,-50)", "");
                 break;
             case -100:
-                SetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-100)", "");
+                WebSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-100)", "");
                 break;
             case -150:
-                SetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
+                WebSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
                 break;
             default:
-                SetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-500)", "");
+                WebSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-500)", "");
                 break;
 
         }
@@ -108,7 +103,7 @@ public  class Utilities {
      * Scroll 150 up by java script
      */
     public static void scrollUp150() {
-        SetupTest.javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
+        WebSetupTest.javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
     }
 
     public static void javascriptExecutor(String s, WebElement usedProductAllMenuItem) {
@@ -137,7 +132,7 @@ public  class Utilities {
 
     public static void highlightelement(WebElement element) {
         for (int i = 0; i < 4; i++) {
-            JavascriptExecutor js = (JavascriptExecutor) driver;
+            JavascriptExecutor js = (JavascriptExecutor) webDriver;
             js.executeScript("arguments[0].setAttribute('style', arguments[1]);",
                     element, "color: yellow; border: 4px solid blue;");
             js.executeScript("arguments[0].setAttribute('style’' arguments[1]);",
@@ -151,7 +146,7 @@ public  class Utilities {
      * @param id
      */
     public static void clickItem(String id) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) webDriver;
 //        System.out.println("id= " + id);
         switch (id) {
             case "payfort_fort":
@@ -173,7 +168,7 @@ public  class Utilities {
      * @return focused element
      */
     public static WebElement getFocusedElement() {
-        return driver.switchTo().activeElement();
+        return webDriver.switchTo().activeElement();
     }
 
     /**
@@ -182,7 +177,7 @@ public  class Utilities {
      * @param numOfSeconds
      */
     public static void Wait(int numOfSeconds) {
-        driver.manage().timeouts().implicitlyWait(numOfSeconds, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().implicitlyWait(numOfSeconds, TimeUnit.SECONDS);
     }
 
     /**
@@ -191,7 +186,7 @@ public  class Utilities {
      * @param locator
      */
     public static void waitForElementToBeVisibleBy(By locator) {
-        SetupTest. wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        WebSetupTest.wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
     /**
@@ -200,7 +195,7 @@ public  class Utilities {
      * @param locator
      */
     public static void waitForElementToBeClickableBy(By locator) {
-        SetupTest. wait.until(ExpectedConditions.elementToBeClickable(locator));
+        WebSetupTest. wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
     /**
@@ -209,7 +204,7 @@ public  class Utilities {
      * @param element
      */
     public static void waitForElementToBeClickable(WebElement element) {
-        SetupTest.  wait.until(ExpectedConditions.elementToBeClickable(element));
+        WebSetupTest.wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     /**
@@ -230,7 +225,7 @@ public  class Utilities {
      */
     public static void clickUntillVisibilityOfBy(WebElement toClick, By by) {
         waitForElementToBeClickable(toClick);
-        while (driver.findElements(by).size() < 1) {
+        while (webDriver.findElements(by).size() < 1) {
             toClick.click();
             Wait(10);
         }
@@ -255,37 +250,33 @@ public  class Utilities {
     public static WebElement getByXpath(String xpath, boolean isClickable){
         By byXpath= By.xpath(xpath);
         waitForElementToBeVisibleBy(byXpath);
-        if (isClickable) waitForElementToBeClickableBy(byXpath);
-        if (driver instanceof WebDriver) return driver.findElement(byXpath);
-        else return (MobileElement) driver.findElement(byXpath);
+        if (isClickable) {waitForElementToBeClickableBy(byXpath);}
+        return webDriver.findElement(byXpath);
     }
     public static WebElement getById(String id, boolean isClickable){
         By byId= By.id(id);
         waitForElementToBeVisibleBy(byId);
-        if (isClickable) waitForElementToBeClickableBy(byId);
-        if (driver instanceof WebDriver) return driver.findElement(byId);
-        else return (MobileElement) driver.findElement(byId);
+        if (isClickable) {waitForElementToBeClickableBy(byId);}
+        return webDriver.findElement(byId);
+
     }
     public static WebElement getByClassName(String className, boolean isClickable){
         By byClassName= By.className(className);
         waitForElementToBeVisibleBy(byClassName);
-        if (isClickable) waitForElementToBeClickableBy(byClassName);
-        if (driver instanceof WebDriver) return driver.findElement(byClassName);
-        else return (MobileElement) driver.findElement(byClassName);
+        if (isClickable) {waitForElementToBeClickableBy(byClassName);}
+        return webDriver.findElement(byClassName);
     }
     public static WebElement getByCssSelector(String cssSelector, boolean isClickable){
         By byCssSelector= By.cssSelector(cssSelector);
         waitForElementToBeVisibleBy(byCssSelector);
-        if (isClickable) waitForElementToBeClickableBy(byCssSelector);
-        if (driver instanceof WebDriver) return driver.findElement(byCssSelector);
-        else return (MobileElement) driver.findElement(byCssSelector);
+        if (isClickable) {waitForElementToBeClickableBy(byCssSelector);}
+        return webDriver.findElement(byCssSelector);
     }
     public static WebElement getByAccessibilityId(String AccessibilityId, boolean isClickable){
         By byAccessibilityId= MobileBy.AccessibilityId(AccessibilityId);
         waitForElementToBeVisibleBy(byAccessibilityId);
-        if (isClickable) waitForElementToBeClickableBy(byAccessibilityId);
-        if (driver instanceof WebDriver) return driver.findElement(byAccessibilityId);
-        else return (MobileElement) driver.findElement(byAccessibilityId);
+        if (isClickable) {waitForElementToBeClickableBy(byAccessibilityId);}
+        return webDriver.findElement(byAccessibilityId);
     }
 
 }

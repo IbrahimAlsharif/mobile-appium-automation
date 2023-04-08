@@ -3,7 +3,7 @@ package Web.Tests.SubscriptionsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static Base.SetupTest.testDataWeb;
+import static Base.WebSetupTest.testDataWeb;
 
 public class SubscriptionsPageTest {
     @Test(priority = 1)

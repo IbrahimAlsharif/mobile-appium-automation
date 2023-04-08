@@ -9,8 +9,9 @@
         <parameter name="url" value="none"></parameter>
 
         <classes>
-            <class name="Base.SetupTest"/>
+            <class name="Base.MobileSetupTest"/>
             <class name="Mobile.TestsSpecialist.WelcomeScreen.WelcomeScreenTest"></class>
+            <class name="Base.TearDownTest"></class>
 
         </classes>
     </test>

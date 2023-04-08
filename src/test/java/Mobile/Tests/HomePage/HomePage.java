@@ -1,20 +1,13 @@
 package Mobile.Tests.HomePage;
 
-import Base.Utilities;
-import io.appium.java_client.MobileElement;
-import org.openqa.selenium.By;
+import Base.MobileFinder;
 import org.openqa.selenium.WebElement;
+import static Base.WebSetupTest.testDataMobile;
 
-import static Base.SetupTest.driver;
-import static Base.SetupTest.testDataMobile;
-
-public class HomePagePOM {
+public class HomePage {
     public static WebElement getWelcomeMessageText() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getWelcomeMessage()+"\"]";
-        Utilities.waitForElementToBeVisibleBy(By.xpath(xpath));
-        Utilities.waitForElementToBeClickableBy(By.xpath(xpath));
-        By xPath = By.xpath(xpath);
-        return  (MobileElement) driver.findElement(xPath);
+        return  MobileFinder.getByXpath(xpath, false);
     }
     public static boolean welcomeMessageIsDisplayed(){
         return getWelcomeMessageText().isDisplayed();
@@ -22,7 +15,7 @@ public class HomePagePOM {
     public static WebElement getIconNotification() {
 
         String xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.widget.ImageView[1]";
-        return Utilities.getByXpath(xpath,true);
+        return MobileFinder.getByXpath(xpath,true);
 
     }
     public static boolean NotificationIconIsDisplayed(){
@@ -31,7 +24,7 @@ public class HomePagePOM {
 
     public static WebElement getFamcareLogo() {
         String xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.widget.ImageView[2]";
-        return Utilities.getByXpath(xpath,false);
+        return MobileFinder.getByXpath(xpath,false);
 
     }
     public static boolean FamcareLogoIsDisplayed(){
@@ -39,7 +32,7 @@ public class HomePagePOM {
     }
     public static WebElement getCartIcon() {
         String xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.widget.ImageView[3]";
-        return Utilities.getByXpath(xpath,true);
+        return MobileFinder.getByXpath(xpath,true);
 
     }
     public static boolean CartIconIsDisplayed(){
@@ -48,7 +41,7 @@ public class HomePagePOM {
 
     public static WebElement getJalulaIcon() {
         String xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.widget.ImageView[4]";
-        return Utilities.getByXpath(xpath,false);
+        return MobileFinder.getByXpath(xpath,false);
 
     }
     public static boolean JalulaIconIsDisplayed(){
@@ -56,7 +49,7 @@ public class HomePagePOM {
     }
     public static WebElement getFeelingButton() {
         String xpath="//android.widget.ImageView[@content-desc=\""+testDataMobile.getFeelingButtonText()+"\"]";
-        return Utilities.getByXpath(xpath,true);
+        return MobileFinder.getByXpath(xpath,true);
 
     }
     public static boolean FeelingButtonIsDisplayed(){
@@ -64,7 +57,7 @@ public class HomePagePOM {
     }
     public static WebElement getSliderAds() {
         String xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ScrollView/android.view.View[3]/android.view.View/android.view.View";
-        return Utilities.getByXpath(xpath,true);
+        return MobileFinder.getByXpath(xpath,true);
 
     }
     public static boolean SliderAdsIsDisplayed(){
@@ -72,7 +65,7 @@ public class HomePagePOM {
     }
     public static WebElement getTitleTypesOfSpecialists() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTypesOfSpecialistsTitle()+"\"]";
-        return Utilities.getByXpath(xpath,false);
+        return MobileFinder.getByXpath(xpath,false);
 
     }
     public static boolean TypesOfSpecialistsTitleIsDisplayed(){
@@ -80,7 +73,7 @@ public class HomePagePOM {
     }
     public static WebElement getPsychologistText() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getPsychologistText()+"\"]";
-        return Utilities.getByXpath(xpath,false);
+        return MobileFinder.getByXpath(xpath,false);
 
     }
     public static boolean PsychologistIsDisplayed(){
@@ -88,7 +81,7 @@ public class HomePagePOM {
     }
     public static WebElement getSocialWorkerText() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getSocialWorkerText()+"\"]";
-        return Utilities.getByXpath(xpath,false);
+        return MobileFinder.getByXpath(xpath,false);
 
     }
     public static boolean SocialWorkerIsDisplayed(){
@@ -96,7 +89,7 @@ public class HomePagePOM {
     }
     public static WebElement getEducationalSpecialistText() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getEducationalSpecialistText()+"\"]";
-        return Utilities.getByXpath(xpath,false);
+        return MobileFinder.getByXpath(xpath,false);
 
     }
     public static boolean EducationalSpecialistIsDisplayed(){
@@ -105,7 +98,7 @@ public class HomePagePOM {
 
     public static WebElement getPsychologistDoctorText() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getPsychologistDoctorText()+"\"]";
-        return Utilities.getByXpath(xpath,true);
+        return MobileFinder.getByXpath(xpath,true);
 
     }
     public static boolean PsychologistDoctorIsDisplayed(){
@@ -113,7 +106,7 @@ public class HomePagePOM {
     }
     public static WebElement getSupportGroupsText() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getSupportGroupsText()+"\"]";
-        return Utilities.getByXpath(xpath,true);
+        return MobileFinder.getByXpath(xpath,true);
     }
     public static boolean SupportGroupsIsDisplayed(){
         return getSupportGroupsText().isDisplayed();
@@ -121,7 +114,7 @@ public class HomePagePOM {
 
     public static WebElement getIntercomIcon() {
         String xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView";
-       return Utilities.getByXpath(xpath,true);
+       return MobileFinder.getByXpath(xpath,true);
     }
     public static boolean intercomIconIsDisplayed(){
         return getIntercomIcon().isDisplayed();

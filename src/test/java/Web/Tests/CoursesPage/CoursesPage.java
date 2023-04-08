@@ -1,12 +1,12 @@
 package Web.Tests.CoursesPage;
 
-import Base.Utilities;
+import Base.WebFinder;
 import org.openqa.selenium.WebElement;
 
 public class CoursesPage {
     public static WebElement getCourseTitle() {
         String xpath="//*[@id=\"main\"]/div/div/article[1]/div/div[2]/div[1]/h4/a";
-        return  Utilities.getByXpath(xpath, true);
+        return  WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean courseTitleIsDisplayed() {

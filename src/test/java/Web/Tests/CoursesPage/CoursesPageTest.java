@@ -4,7 +4,7 @@ import Web.Tests.CourseDetailsPage.CourseDetailsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static Base.SetupTest.testDataWeb;
+import static Base.WebSetupTest.testDataWeb;
 
 public class CoursesPageTest {
     @Test(priority = 1)
