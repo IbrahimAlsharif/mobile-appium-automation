@@ -1,11 +1,11 @@
 package Web.Tests.SubscriptionsPage;
 
-import Base.WebFinder;
+import Base.WebSetup.WebFinder;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 
-import static Base.WebSetupTest.webDriver;
+import static Base.WebSetup.WebSetupTest.webDriver;
 
 public class SubscriptionPage {
     public static WebElement getSubscriptionTitle() {

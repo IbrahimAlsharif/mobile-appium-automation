@@ -1,9 +1,8 @@
 package Mobile.Tests.MyConversations;
 
-import Base.MobileFinder;
+import Base.MobileSetup.MobileFinder;
 import io.appium.java_client.MobileElement;
-
-import static Base.WebSetupTest.testDataMobile;
+import  static Base.MobileSetup.MobileSetupTest.testDataMobile;
 
 public class MyConversations {
     public static MobileElement getTitleAppBarOnMyConversationsPage() {

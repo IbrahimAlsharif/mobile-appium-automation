@@ -1,8 +1,7 @@
 package Mobile.Tests.MorePage;
-import Base.MobileFinder;
+import Base.MobileSetup.MobileFinder;
 import io.appium.java_client.MobileElement;
-
-import static Base.WebSetupTest.testDataMobile;
+import  static Base.MobileSetup.MobileSetupTest.testDataMobile;
 
 public class MorePage {
     public static MobileElement getLanguageIcon() {

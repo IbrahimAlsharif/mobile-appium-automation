@@ -1,4 +1,4 @@
-package Base;
+package Base.WebSetup;
 
 import Listeners.Listener;
 import Mobile.TestData.*;

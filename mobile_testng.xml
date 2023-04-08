@@ -6,12 +6,12 @@
         <parameter name="branch" value="Production"></parameter>
 
         <classes>
-            <class name="Base.MobileSetupTest"/>
+            <class name="Base.MobileSetup.MobileSetupTest"/>
             <class name="Mobile.Tests.Language.LanguageChooseTest"></class>
 <!--            <class name="Mobile.Tests.HomePage.HomePageTest"></class>-->
 <!--            <class name="Mobile.Tests.MyConversations.MyConversationsTest"></class>-->
 <!--            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>-->
-<!--            <class name="Mobile.Tests.BenchmarksPage.BenchmarksTest"></class>-->
+<!--            <class name="Mobile.Tests.BenchmarksPage.DiagnosisTest"></class>-->
             <class name="Mobile.Tests.MorePage.MorePageTest"></class>
             <class name="Base.TearDownTest"></class>
         </classes>

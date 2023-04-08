@@ -1,6 +1,6 @@
 package Web.Tests.CoursesPage;
 
-import Base.WebFinder;
+import Base.WebSetup.WebFinder;
 import org.openqa.selenium.WebElement;
 
 public class CoursesPage {

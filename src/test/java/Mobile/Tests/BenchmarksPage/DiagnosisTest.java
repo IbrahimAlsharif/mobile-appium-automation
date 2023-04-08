@@ -1,13 +1,12 @@
 package Mobile.Tests.BenchmarksPage;
 
-import Base.WebSetupTest;
+import Base.WebSetup.WebSetupTest;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-public class BenchmarksTest {
+public class DiagnosisTest {
     private String testCaseId;
 
     @Test(priority =1)

@@ -1,6 +1,6 @@
 package Mobile.Tests.SupportGroup;
 
-import Base.MobileSetupTest;
+import Base.MobileSetup.MobileSetupTest;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;

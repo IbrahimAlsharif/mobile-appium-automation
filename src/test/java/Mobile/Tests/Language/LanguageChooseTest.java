@@ -3,7 +3,7 @@ package Mobile.Tests.Language;
 import Mobile.Tests.HomePage.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import  static Base.WebSetupTest.testDataMobile;
+import  static Base.MobileSetup.MobileSetupTest.testDataMobile;
 
 
 public class LanguageChooseTest {

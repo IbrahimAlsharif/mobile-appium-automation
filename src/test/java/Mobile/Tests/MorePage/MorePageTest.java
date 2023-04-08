@@ -1,7 +1,7 @@
 package Mobile.Tests.MorePage;
 
-import Base.MobileFinder;
-import Base.MobileSetupTest;
+import Base.MobileSetup.MobileFinder;
+import Base.MobileSetup.MobileSetupTest;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 import org.testng.Assert;

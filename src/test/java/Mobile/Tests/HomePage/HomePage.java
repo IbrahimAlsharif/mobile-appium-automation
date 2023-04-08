@@ -1,8 +1,8 @@
 package Mobile.Tests.HomePage;
 
-import Base.MobileFinder;
+import Base.MobileSetup.MobileFinder;
 import org.openqa.selenium.WebElement;
-import static Base.WebSetupTest.testDataMobile;
+import  static Base.MobileSetup.MobileSetupTest.testDataMobile;
 
 public class HomePage {
     public static WebElement getWelcomeMessageText() {

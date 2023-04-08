@@ -6,7 +6,7 @@ import io.appium.java_client.touch.offset.PointOption;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static Base.MobileSetupTest.androidDriver;
+import static Base.MobileSetup.MobileSetupTest.androidDriver;
 
 
 public class MyConversationsTest {

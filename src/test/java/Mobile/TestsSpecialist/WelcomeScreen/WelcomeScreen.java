@@ -1,10 +1,8 @@
 package Mobile.TestsSpecialist.WelcomeScreen;
 
-import Base.MobileFinder;
+import Base.MobileSetup.MobileFinder;
 import io.appium.java_client.MobileElement;
-
-import static Base.WebSetupTest.*;
-
+import static Base.MobileSetup.MobileSetupTest.testDataMobileSpecialist;
 public class WelcomeScreen {
     public static String ImagesXpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView";
     public static MobileElement getLogo(){

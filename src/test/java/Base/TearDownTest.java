@@ -3,8 +3,8 @@ package Base;
 import Listeners.Listener;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import static Base.MobileSetupTest.androidDriver;
-import static Base.WebSetupTest.webDriver;
+import static Base.MobileSetup.MobileSetupTest.androidDriver;
+import static Base.WebSetup.WebSetupTest.webDriver;
 
 @Listeners(Listener.class)
 public class TearDownTest
