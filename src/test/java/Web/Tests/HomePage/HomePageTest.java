@@ -4,7 +4,7 @@ import Web.Tests.SubscriptionsPage.SubscriptionPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static Base.SetupTest.testDataWeb;
+import static Base.WebSetup.WebSetupTest.testDataWeb;
 
 public class HomePageTest {
     @Test(priority = 1)

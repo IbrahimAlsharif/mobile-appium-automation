@@ -4,11 +4,19 @@ import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class BrowserOptions {
 
 
     public ChromeOptions getChromeOptions(boolean isHeadless, boolean isIncognito) {
         ChromeOptions options = new ChromeOptions();
+
+        Map<String, String> mobileEmulation = new HashMap<>();
+        mobileEmulation.put("deviceName", "iPhone 12 Pro");
+        options.setExperimentalOption("mobileEmulation", mobileEmulation);
+
         if (isIncognito){
             options.addArguments("--incognito");
         }
@@ -38,6 +46,7 @@ public class BrowserOptions {
     }
     public FirefoxOptions getFirefixOptions(boolean isHeadless, boolean isIncognito) {
         FirefoxOptions options = new FirefoxOptions();
+        //Todo Add emulation device
         if (isIncognito){
             options.addArguments("--incognito");
         }

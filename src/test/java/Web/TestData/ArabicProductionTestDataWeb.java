@@ -21,4 +21,9 @@ public class ArabicProductionTestDataWeb implements AbstractTestData {
     public String getSixMonthsBronzePrice() {
         return "SR  345.00";
     }
+
+    @Override
+    public String getCourseTitle() {
+        return "طيف التوحد لدى الأطفال";
+    }
 }

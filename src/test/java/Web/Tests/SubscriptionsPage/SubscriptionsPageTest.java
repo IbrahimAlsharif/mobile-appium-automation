@@ -3,7 +3,7 @@ package Web.Tests.SubscriptionsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static Base.SetupTest.testDataWeb;
+import static Base.WebSetup.WebSetupTest.testDataWeb;
 
 public class SubscriptionsPageTest {
     @Test(priority = 1)
@@ -77,4 +77,11 @@ public class SubscriptionsPageTest {
     public void sixMonthsGoldIsDisplayed() {
         Assert.assertTrue(SubscriptionPage.sixMonthsGoldButtonIsDisplayed());
     }
+
+    @Test(priority = 8)
+    public void openCompleteSubscription() {
+        SubscriptionPage.clickSixMonthsBronzeButton();
+//        Assert.assertTrue(SubscriptionPage.sixMonthsGoldButtonIsDisplayed());
+    }
+
 }

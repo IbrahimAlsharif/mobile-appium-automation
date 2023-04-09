@@ -1,9 +1,9 @@
 package Mobile.Tests.Language;
 
-import Mobile.Tests.HomePage.HomePagePOM;
+import Mobile.Tests.HomePage.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import  static Base.SetupTest.testDataMobile;
+import  static Base.MobileSetup.MobileSetupTest.testDataMobile;
 
 
 public class LanguageChooseTest {
@@ -46,15 +46,12 @@ public class LanguageChooseTest {
     public void VerifyThatTheUserAbleClickIgnoreButton(){
         testCaseId="0";
         LanguageChoose.ClickOnIgnoreButton();
-        Assert.assertTrue(HomePagePOM.welcomeMessageIsDisplayed());
+        Assert.assertTrue(HomePage.welcomeMessageIsDisplayed());
     }
-
-
-
 
 //    @AfterMethod
 //    public void screenShot(ITestResult result) throws APIException, IOException {
-//        //Utilities.afterMethod(result,testCaseId);
+//        MobileFinder.afterMethod(result,testCaseId);
 //        System.out.println("After method" + result.getMethod().getMethodName());
 //    }
 }
