@@ -1,43 +1,42 @@
 package Mobile.Tests.SupportGroup;
 
-import Base.Utilities;
-import org.openqa.selenium.WebElement;
+import Base.MobileSetup.MobileFinder;
+import io.appium.java_client.MobileElement;
+import  static Base.MobileSetup.MobileSetupTest.testDataMobile;
 
-import static Base.SetupTest.testDataMobile;
+public class SupportGroups {
 
-public class SupportGroupsPOM {
-
-    public static WebElement getTitleAppBarOnSupportGroupsTestPage() {
+    public static MobileElement getTitleAppBarOnSupportGroupsTestPage() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTitleAppBarOnSupportGroupsTestPage()+"\"]";
-        return  Utilities.getByXpath(xpath,true);
+        return  MobileFinder.getByXpath(xpath,true);
     }
     public static boolean TitleAppBarOnBenchmarksPageDisplayed(){
         return getTitleAppBarOnSupportGroupsTestPage().isDisplayed();
     }
-    public static WebElement getAllGroupsTextOnSupportGroupsTestPage() {
-        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getAllGroupsTextOnSupportGroupsTestPage()+"\"]";
-        return  Utilities.getByXpath(xpath,true);
+    public static MobileElement getAllGroupsTextOnSupportGroupsTestPage() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTitleAppBarOnSupportGroupsTestPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,true);
     }
     public static boolean AllGroupsTextOnSupportGroupsTestPageIsDisplayed(){
         return getAllGroupsTextOnSupportGroupsTestPage().isDisplayed();
     }
-    public static WebElement getMyGroupsTextOnSupportGroupsTestPage() {
+    public static MobileElement getMyGroupsTextOnSupportGroupsTestPage() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getMyGroupsTextOnSupportGroupsTestPage()+"\"]";
-        return  Utilities.getByXpath(xpath,false);
+        return  MobileFinder.getByXpath(xpath,false);
     }
     public static boolean MyGroupsTextOnSupportGroupsTestPageIsDisplayed(){
         return getMyGroupsTextOnSupportGroupsTestPage().isDisplayed();
     }
-    public static WebElement getUpcomingMeetingsTextOnSupportGroupsTestPage() {
+    public static MobileElement getUpcomingMeetingsTextOnSupportGroupsTestPage() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getUpcomingMeetingsTextOnSupportGroupsTestPage()+"\"]";
-        return  Utilities.getByXpath(xpath,false);
+        return  MobileFinder.getByXpath(xpath,false);
     }
     public static boolean UpcomingMeetingsTextOnSupportGroupsTestPageIsDisplayed(){
         return getUpcomingMeetingsTextOnSupportGroupsTestPage().isDisplayed();
     }
-    public static WebElement getEndingMeetingsTextOnSupportGroupsTestPage() {
+    public static MobileElement getEndingMeetingsTextOnSupportGroupsTestPage() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getEndingMeetingsTextOnSupportGroupsTestPage()+"\"]";
-        return  Utilities.getByXpath(xpath,false);
+        return  MobileFinder.getByXpath(xpath,false);
     }
     public static boolean EndingMeetingsTextOnSupportGroupsTestPageIsDisplayed(){
         return getEndingMeetingsTextOnSupportGroupsTestPage().isDisplayed();

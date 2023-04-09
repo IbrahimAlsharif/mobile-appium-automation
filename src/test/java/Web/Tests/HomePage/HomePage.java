@@ -1,12 +1,12 @@
 package Web.Tests.HomePage;
 
-import Base.Utilities;
+import Base.WebSetup.WebFinder;
 import org.openqa.selenium.WebElement;
 
 public class HomePage {
     public static WebElement getLogo() {
         String xpath="//IMG[@src='https://famcare.app/wp-content/uploads/2023/02/full-logo-1.svg']";
-        return  Utilities.getByXpath(xpath, true);
+        return  WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean logoIsDisplayed() {
@@ -15,7 +15,7 @@ public class HomePage {
 
     public static WebElement getStartImage() {
         String xpath="//*[@id=\"heroSection\"]/div/div/div[1]/div/div[2]/img";
-        return  Utilities.getByXpath(xpath, false);
+        return  WebFinder.getByXpath(xpath, false);
     }
 
     public static boolean startImageIsDisplayed() {
@@ -24,7 +24,7 @@ public class HomePage {
 
     public static WebElement getStartText() {
         String xpath="//*[@id=\"heroText\"]/div/div[1]/h2";
-        return  Utilities.getByXpath(xpath, false);
+        return  WebFinder.getByXpath(xpath, false);
     }
 
     public static boolean startTextIsDisplayed() {
@@ -33,7 +33,7 @@ public class HomePage {
 
     public static WebElement getStartButton() {
         String xpath="//*[@id=\"heroText\"]/div/div[3]/a";
-        return  Utilities.getByXpath(xpath, true);
+        return  WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean startButtonIsDisplayed() {
@@ -46,7 +46,7 @@ public class HomePage {
 
     public static WebElement getPromotionalText() {
         String xpath="/html/body/div[1]/section[2]/div/div/div/div/div/h2";
-        return  Utilities.getByXpath(xpath, false);
+        return  WebFinder.getByXpath(xpath, false);
     }
 
     public static boolean promotionalTextIsDisplayed() {
@@ -55,7 +55,7 @@ public class HomePage {
 
     public static WebElement getPackagesImage() {
         String xpath="//IMG[@src='https://famcare.app/wp-content/uploads/2023/02/Group-4913.png']";
-        return  Utilities.getByXpath(xpath, false);
+        return  WebFinder.getByXpath(xpath, false);
     }
 
     public static boolean packagesImageIsDisplayed() {
@@ -64,7 +64,7 @@ public class HomePage {
 
     public static WebElement getPackagesTitle() {
         String xpath="(//P)[2]";
-        return  Utilities.getByXpath(xpath, false);
+        return  WebFinder.getByXpath(xpath, false);
     }
 
     public static boolean packagesTitleIsDisplayed() {
@@ -73,7 +73,7 @@ public class HomePage {
 
     public static WebElement getPackagesDescriptionText() {
         String xpath="(//P)[3]";
-        return  Utilities.getByXpath(xpath, false);
+        return  WebFinder.getByXpath(xpath, false);
     }
 
     public static boolean packagesDescriptionTextIsDisplayed() {
@@ -82,7 +82,7 @@ public class HomePage {
 
     public static WebElement getSessionsImage() {
         String xpath="//IMG[@src='https://famcare.app/wp-content/uploads/2023/02/Group-1.png']";
-        return  Utilities.getByXpath(xpath, false);
+        return  WebFinder.getByXpath(xpath, false);
     }
 
     public static boolean sessionsImageIsDisplayed() {
@@ -91,7 +91,7 @@ public class HomePage {
 
     public static WebElement getSessionsTitle() {
         String xpath="(//P)[4]";
-        return  Utilities.getByXpath(xpath, false);
+        return  WebFinder.getByXpath(xpath, false);
     }
 
     public static boolean sessionsTitleIsDisplayed() {
@@ -100,7 +100,7 @@ public class HomePage {
 
     public static WebElement getSessionsDescriptionText() {
         String xpath="(//P)[5]";
-        return  Utilities.getByXpath(xpath, false);
+        return  WebFinder.getByXpath(xpath, false);
     }
 
     public static boolean sessionsDescriptionTextIsDisplayed() {
@@ -109,7 +109,7 @@ public class HomePage {
 
     public static WebElement getRatingImage() {
         String xpath="//IMG[@src='https://famcare.app/wp-content/uploads/2023/02/rating.png']";
-        return  Utilities.getByXpath(xpath, false);
+        return  WebFinder.getByXpath(xpath, false);
     }
 
     public static boolean ratingImageIsDisplayed() {
@@ -118,7 +118,7 @@ public class HomePage {
 
     public static WebElement getRatingTitle() {
         String xpath="(//P)[6]";
-        return  Utilities.getByXpath(xpath, false);
+        return  WebFinder.getByXpath(xpath, false);
     }
 
     public static boolean ratingTitleIsDisplayed() {
@@ -127,7 +127,7 @@ public class HomePage {
 
     public static WebElement getRatingDescriptionText() {
         String xpath="(//P)[7]";
-        return  Utilities.getByXpath(xpath, false);
+        return  WebFinder.getByXpath(xpath, false);
     }
 
     public static boolean ratingDescriptionTextIsDisplayed() {
@@ -136,7 +136,7 @@ public class HomePage {
 
     public static WebElement getSubscriptionImage() {
         String xpath="//IMG[@src='https://famcare.app/wp-content/uploads/2023/03/mobile.png']";
-        return  Utilities.getByXpath(xpath, true);
+        return  WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean subscriptionImageIsDisplayed() {
@@ -145,7 +145,7 @@ public class HomePage {
 
     public static WebElement getConsultantButton() {
         String xpath="//a[@href=\"https://famcare.onelink.me/v4gj/y2wra5uz\" and contains(text(),'اختر مستشارك')]";
-        return  Utilities.getByXpath(xpath, true);
+        return  WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean consultantButtonIsDisplayed() {
@@ -154,7 +154,7 @@ public class HomePage {
 
     public static WebElement getStartChangeButton() {
         String xpath="//a[@href=\"https://famcare.onelink.me/v4gj/y2wra5uz\" and contains(text(),'ابدأ التغيير')]";
-        return  Utilities.getByXpath(xpath, true);
+        return  WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean startChangeButtonIsDisplayed() {
@@ -163,7 +163,7 @@ public class HomePage {
 
     public static WebElement getGooglePlayButton() {
         String xpath="//IMG[@src='https://famcare.app/wp-content/themes/famkeer/images/hamed/Google_Play_Store_badge_EN.svg']";
-        return  Utilities.getByXpath(xpath, true);
+        return  WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean googlePlayButtonIsDisplayed() {
@@ -172,7 +172,7 @@ public class HomePage {
 
     public static WebElement getAppStoreButton() {
         String xpath="//IMG[@src='https://famcare.app/wp-content/themes/famkeer/images/hamed/Download_on_the_App_Store_Badge.svg']";
-        return  Utilities.getByXpath(xpath, true);
+        return  WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean appStoreButtonIsDisplayed() {
@@ -181,7 +181,7 @@ public class HomePage {
 
     public static WebElement getBlogButton() {
         String xpath="//a[@title=\"مدونة الأسرة الأولى\"]";
-        return  Utilities.getByXpath(xpath, true);
+        return  WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean blogButtonIsDisplayed() {
@@ -190,7 +190,7 @@ public class HomePage {
 
     public static WebElement getFooterGooglePlayButton() {
         String xpath="//IMG[@src='https://famcare.app/wp-content/themes/famkeer/images/Google-Play.svg']";
-        return  Utilities.getByXpath(xpath, true);
+        return  WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean footerGooglePlayButtonIsDisplayed() {
@@ -199,7 +199,7 @@ public class HomePage {
 
     public static WebElement getFooterAppStoreButton() {
         String xpath="//IMG[@src='https://famcare.app/wp-content/themes/famkeer/images/App-Store.svg']";
-        return  Utilities.getByXpath(xpath, true);
+        return  WebFinder.getByXpath(xpath, true);
     }
 
     public static boolean footerAppStoreButtonIsDisplayed() {

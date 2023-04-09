@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="APIs Suite">
+    <test name="Test Setup">
+        <classes>
+            <class name="API.LoginTest"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="Listeners.Listener"/>
+    </listeners>
+</suite>

@@ -7,10 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="raselWeb" />
+        <module name="mobile-appium-automation" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="18">
-      <module name="mobile-appium-automation" target="11" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="18" />
   </component>
 </project>

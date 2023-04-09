@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test Setup"
+           tests="23"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.231">
+  <properties />
+  
+  
+            <testcase name="ratingDescriptionTextIsDisplayed" time="0.017" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="ratingTitleIsDisplayed" time="0.018" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="promotionalTextIsDisplayed" time="0.018" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="packagesTitleIsDisplayed" time="0.018" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="packagesDescriptionTextIsDisplayed" time="0.023" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="sessionsImageIsDisplayed" time="0.018" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="startImageIsDisplayed" time="0.018" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="openSubscriptionPage" time="0.655" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="packagesImageIsDisplayed" time="0.018" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="footerGooglePlayButtonIsDisplayed" time="0.040" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="footerAppStoreButtonIsDisplayed" time="0.032" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="startButtonIsDisplayed" time="0.032" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="googlePlayButtonIsDisplayed" time="0.033" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="logoIsDisplayed" time="0.032" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="consultantButtonIsDisplayed" time="0.034" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="blogButtonIsDisplayed" time="0.034" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="appStoreButtonIsDisplayed" time="0.055" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="ratingImageIsDisplayed" time="0.018" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="subscriptionImageIsDisplayed" time="0.032" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="startChangeButtonIsDisplayed" time="0.032" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="sessionsTitleIsDisplayed" time="0.019" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="sessionsDescriptionTextIsDisplayed" time="0.017" classname="Web.Tests.HomePage.HomePageTest" />
+                <testcase name="startTextIsDisplayed" time="0.018" classname="Web.Tests.HomePage.HomePageTest" />
+      
+</testsuite>
