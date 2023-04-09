@@ -63,15 +63,19 @@ public class AcademyPageTest {
         Assert.assertTrue(AcademyPage.UnlimitedViewingDivIsDisplayed());
     }
 
-    @Test(priority = 7)
+    @Test(priority = 8)
     public void TrainersTextIsDisplayed() {
         Assert.assertTrue(AcademyPage.TrainersTextIsDisplayed());
     }
-    @Test(priority = 20)
+    @Test(priority = 9)
+    public void OfficialAgenciesTextIsDisplayed() {
+        Assert.assertTrue(AcademyPage.OfficialAgenciesTextIsDisplayed());
+    }
+    @Test(priority = 10)
     public void BrowseCoursesButtonIsDisplayed() {
         Assert.assertTrue(AcademyPage.BrowseCoursesButtonIsDisplayed());
     }
-    @Test(priority = 20)
+    @Test(priority = 11)
     public void browseButtonIsClickable() {
         AcademyPage.clickOnBrowseCoursesButton();
         Assert.assertTrue(AcademyPage.CoursesTextIsDisplayed());

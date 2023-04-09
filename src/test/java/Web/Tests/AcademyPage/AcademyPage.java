@@ -61,7 +61,7 @@ public class AcademyPage {
     }
 
     public static WebElement getCoursesText() {
-        String xpath = "//DIV[@class='page-header_title'][text()='الدورات']";
+        String xpath = "/html/body/div/div/div/div/div[1]";
         return Utilities.getByXpath(xpath, true);
     }
     public static boolean CoursesTextIsDisplayed() {
@@ -134,6 +134,12 @@ public class AcademyPage {
     public static boolean TrainersTextIsDisplayed() {
         return getTrainersText().isDisplayed();
     }
-
+    public static WebElement getOfficialAgenciesText() {
+        String xpath = "//div[@data-id='7f32926']";
+        return Utilities.getByXpath(xpath, true);
+    }
+    public static boolean OfficialAgenciesTextIsDisplayed() {
+        return getOfficialAgenciesText().isDisplayed();
+    }
 
 }
