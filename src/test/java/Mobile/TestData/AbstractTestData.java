@@ -37,6 +37,10 @@ String getTitleAppBarOnMyConversationsPage();
 String getEmptyChatTitleOnMyConversationsPage();
 String getSpecialistsBrowseButtonOnMyConversationsPage();
 String getEmptyChatSubTitleOnMyConversationsPage();
+String getTitleAppBarOnPsychologistPage();
+String getFilterOnPsychologistPageText();
+String getDataInputOnSearchFieldText();
+String getPsychologistNameText();
 
 
 

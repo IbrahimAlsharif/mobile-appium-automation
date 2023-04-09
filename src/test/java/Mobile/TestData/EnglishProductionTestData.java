@@ -146,7 +146,22 @@ public class EnglishProductionTestData implements AbstractTestData {
     public String getEmptyChatSubTitleOnMyConversationsPage() {
         return null;
     }
-
+    @Override
+    public String getTitleAppBarOnPsychologistPage() {
+        return null;
+    }
+    @Override
+    public String getFilterOnPsychologistPageText() {
+        return null;
+    }
+    @Override
+    public String getDataInputOnSearchFieldText() {
+        return null;
+    }
+    @Override
+    public String getPsychologistNameText() {
+        return null;
+    }
 }
 
 

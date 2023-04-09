@@ -181,5 +181,26 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
         return "حجزك للجلسة الأولى تمكنك من التحدث مع الأخصائي مباشرة للحالات الطارئة فقط ولا يغني عن الجلسة، ولا تزيد عن ١٠٠ كلمة.";
     }
 
+    @Override
+    public String getTitleAppBarOnPsychologistPage() {
+        return "اختر أخصائي";
+    }
+
+    @Override
+    public String getFilterOnPsychologistPageText() {
+        return "تصفية\n" +
+                "1";
+    }
+
+    @Override
+    public String getDataInputOnSearchFieldText() {
+        return "زبيدة";
+    }
+
+    @Override
+    public String getPsychologistNameText() {
+        return "زبيدة القبيشي";
+    }
+
 
 }
