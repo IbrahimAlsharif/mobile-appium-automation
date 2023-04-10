@@ -1,9 +1,12 @@
 package Web.Tests.SubscriptionsPage;
 
+import Web.Tests.CheckoutPage.CheckoutPage;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static Base.WebSetup.WebSetupTest.testDataWeb;
+import static Base.WebSetup.WebSetupTest.webDriver;
 
 public class SubscriptionsPageTest {
     @Test(priority = 1)
@@ -81,7 +84,42 @@ public class SubscriptionsPageTest {
     @Test(priority = 8)
     public void openCompleteSubscription() {
         SubscriptionPage.clickSixMonthsBronzeButton();
-//        Assert.assertTrue(SubscriptionPage.sixMonthsGoldButtonIsDisplayed());
+        Assert.assertEquals(SubscriptionPage.getLoginPopUpTitleText(), testDataWeb.getLoginPopUpText());
     }
 
+    @Test(priority = 9)
+    public void signInButtonIsDisplayed() {
+        webDriver.switchTo().frame(webDriver.findElement(By.tagName("iframe")));
+        Assert.assertTrue(SubscriptionPage.signInButtonIsDisplayed());
+    }
+
+    @Test(priority = 9)
+    public void signInWithGoogle() {
+        SubscriptionPage.clickSignInWithGoogleButton();
+        Assert.assertEquals(SubscriptionPage.getSignInWindowTitleText(), testDataWeb.getSignInWindowTitleText());
+    }
+
+    @Test(priority = 10)
+    public void inputOnEmailField() {
+        SubscriptionPage.inputOnEmailField();
+        Assert.assertEquals(SubscriptionPage.getEmailFieldInputText(), testDataWeb.getEmail());
+    }
+
+    @Test(priority = 11)
+    public void clickOnNextToPasswordButton() {
+        SubscriptionPage.clickOnNextToPasswordButton();
+        Assert.assertEquals(SubscriptionPage.getLoggedInEmailLabelText(), testDataWeb.getEmail());
+    }
+
+    @Test(priority = 12)
+    public void inputOnPasswordField() {
+        SubscriptionPage.inputOnPasswordField();
+        Assert.assertEquals(SubscriptionPage.getPasswordFieldInputText(), testDataWeb.getPassword());
+    }
+
+    @Test(priority = 13)
+    public void clickOnNextButton() {
+        SubscriptionPage.clickOnNextButton();
+        Assert.assertEquals(CheckoutPage.getCheckoutTitleText(), testDataWeb.getCheckoutTitleText());
+    }
 }
