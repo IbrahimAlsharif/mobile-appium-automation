@@ -11,6 +11,7 @@
         <classes>
             <class name="Base.MobileSetup.MobileSetupTest"/>
             <class name="Mobile.TestsSpecialist.WelcomeScreen.WelcomeScreenTest"/>
+            <class name="Mobile.TestsSpecialist.SignUpScreen.SignUpScreenTest"/>
             <class name="Base.TearDownTest"/>
 
         </classes>
