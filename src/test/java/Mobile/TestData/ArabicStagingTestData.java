@@ -153,7 +153,23 @@ public class ArabicStagingTestData implements AbstractTestData {
     }
 
 
-
+    @Override
+    public String getTitleAppBarOnPsychologistPage() {
+        return "اختر أخصائي";
+    }
+    @Override
+    public String getFilterOnPsychologistPageText() {
+        return "تصفية\n" +
+                "1";
+    }
+    @Override
+    public String getDataInputOnSearchFieldText() {
+        return "زبيدة";
+    }
+    @Override
+    public String getPsychologistNameText() {
+        return "زبيدة القبيشي";
+    }
 
 }
 

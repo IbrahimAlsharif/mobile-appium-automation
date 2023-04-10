@@ -7,6 +7,8 @@ import io.appium.java_client.touch.offset.PointOption;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static Base.MobileSetup.MobileSetupTest.testDataMobile;
+
 public class MorePageTest {
     private String testCaseId;
     @Test(priority =1)
@@ -81,7 +83,7 @@ public class MorePageTest {
     @Test(priority = 14)
     public void TechnicalSupportIsDisplayed(){
         testCaseId="0";
-        MobileFinder.js.executeScript("arguments[0].scrollIntoView();", MorePage.getTechnicalSupportButton());
+        MobileSetupTest.androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getTechnicalSupportButton()+"\"))");
         Assert.assertTrue(MorePage.TechnicalSupportIsDisplayed());
     }
     @Test(priority = 15)
