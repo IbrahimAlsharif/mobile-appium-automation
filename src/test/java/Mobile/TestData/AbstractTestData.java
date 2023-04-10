@@ -41,6 +41,10 @@ String getTitleAppBarOnPsychologistPage();
 String getFilterOnPsychologistPageText();
 String getDataInputOnSearchFieldText();
 String getPsychologistNameText();
+String getSpecialistNameOnDetailsPsychologistPage();
+String getSpecialisOfTypeOnDetailsPsychologistPage();
+String getSpecialistRateOnDetailsPsychologistPage();
+String getExperienceOfYearsOnDetailsPsychologistPage();
 
 
 

@@ -162,6 +162,22 @@ public class EnglishProductionTestData implements AbstractTestData {
     public String getPsychologistNameText() {
         return null;
     }
+    @Override
+    public String getSpecialistNameOnDetailsPsychologistPage() {
+        return null;
+    }
+    @Override
+    public String getSpecialisOfTypeOnDetailsPsychologistPage() {
+        return null;
+    }
+    @Override
+    public String getSpecialistRateOnDetailsPsychologistPage() {
+        return null;
+    }
+    @Override
+    public String getExperienceOfYearsOnDetailsPsychologistPage() {
+        return null;
+    }
 }
 
 
