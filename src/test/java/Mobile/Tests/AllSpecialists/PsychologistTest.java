@@ -41,13 +41,13 @@ public class PsychologistTest {
         Assert.assertTrue(Psychologist.FilterOnPsychologistPageIsDisplayed());
     }
     @Test(priority = 5,enabled = false)
-    public void InputOnSearchField()  {
+    public void InputOnSearchField() throws InterruptedException {
         //todo refer to it again
-        String searchText = "بدور الراضي";
-
+        String searchText = testDataMobile.getPsychologistNameText();
         for (int i = 0; i < searchText.length(); i++) {
             char letter = searchText.charAt(i);
             Psychologist.getSearchFieldOnPsychologistPage().sendKeys(String.valueOf(letter));
+            Thread.sleep(500);
         }
         Psychologist.getSearchFieldOnPsychologistPage().click();
         Psychologist.InputOnSearchField();
@@ -55,10 +55,8 @@ public class PsychologistTest {
     }
     @Test(priority = 6 ,enabled = true)
     public void PsychologistNameOnPsychologistPageIsDisplayed(){
-        androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getPsychologistNameText()+"\"))");
-        Psychologist.ClickOnPsychologist();
-      //  Assert.assertTrue(Psychologist.SpecialistNameOnDetailsPsychologistPageIsDisplayed());
-
+        androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getPsychologistNameText()+"\"))").click();
+       Assert.assertTrue(Psychologist.SpecialistNameOnDetailsPsychologistPageIsDisplayed());
     }
 
 

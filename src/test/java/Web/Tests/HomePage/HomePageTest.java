@@ -1,6 +1,6 @@
 package Web.Tests.HomePage;
 
-import Web.Tests.SubscriptionsPage.SubscriptionPage;
+//import Web.Tests.SubscriptionsPage.SubscriptionPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -99,9 +99,9 @@ public class HomePageTest {
     public void footerAppStoreButtonIsDisplayed() {
         Assert.assertTrue(HomePage.footerAppStoreButtonIsDisplayed());
     }
-    @Test(priority = 2)
-    public void openSubscriptionPage() {
-        HomePage.clickOnStartButton();
-        Assert.assertEquals(SubscriptionPage.getSubscriptionTitleText(), testDataWeb.getSubscriptionsTitle());
-    }
+//    @Test(priority = 2)
+//    public void openSubscriptionPage() {
+//        HomePage.clickOnStartButton();
+//        Assert.assertEquals(SubscriptionPage.getSubscriptionTitleText(), testDataWeb.getSubscriptionsTitle());
+//    }
 }

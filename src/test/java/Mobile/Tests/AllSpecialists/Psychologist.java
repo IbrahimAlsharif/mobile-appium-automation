@@ -84,7 +84,50 @@ public class Psychologist {
     public static boolean ExperienceOfYearsOnDetailsPsychologistPageIsDisplayed(){
         return getSpecialistRateOnDetailsPsychologistPage().isDisplayed();
     }
+    public static WebElement getDateOfJoinOnDetailsPsychologistPage() {
 
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getDateOfJoinOnDetailsPsychologistPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean DateOfJoinOnDetailsPsychologistPageIsDisplayed(){
+        return getDateOfJoinOnDetailsPsychologistPage().isDisplayed();
+    }
+    public static WebElement getBriefAboutMeOnDetailsPsychologistPage() {
+
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getBriefAboutMeOnDetailsPsychologistPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean BriefAboutMeOnDetailsPsychologistPageIsDisplayed(){
+        return getBriefAboutMeOnDetailsPsychologistPage().isDisplayed();
+    }
+    public static WebElement getSessionsPresentationWrittenOnDetailsPsychologistPage() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getSessionsPresentationWrittenOnDetailsPsychologistPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean SessionsPresentationWrittenOnDetailsPsychologistPageIsDisplayed(){
+        return getSessionsPresentationWrittenOnDetailsPsychologistPage().isDisplayed();
+    }
+    public static WebElement getSessionsPresentationAudioOnDetailsPsychologistPage() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getSessionsPresentationAudioOnDetailsPsychologistPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean SessionsPresentationAudioOnDetailsPsychologistPageIsDisplayed(){
+        return getSessionsPresentationWrittenOnDetailsPsychologistPage().isDisplayed();
+    }
+    public static WebElement getSessionsPresentationVideoOnDetailsPsychologistPage() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getSessionsPresentationVideoOnDetailsPsychologistPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean SessionsPresentationVideoOnDetailsPsychologistPageIsDisplayed(){
+        return getSessionsPresentationWrittenOnDetailsPsychologistPage().isDisplayed();
+    }
+ public static WebElement getSubSpecialtiesOnDetailsPsychologistPage() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getSubSpecialtiesOnDetailsPsychologistPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean SubSpecialtiesOnDetailsPsychologistPageIsDisplayed(){
+        return getSubSpecialtiesOnDetailsPsychologistPage().isDisplayed();
+    }
 
 
 

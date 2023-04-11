@@ -109,4 +109,44 @@ public class ArabicProductionTestDataWeb implements AbstractTestData {
     public String getCouponCode() {
         return "test";
     }
+
+    @Override
+    public String getJoinAsSpecialistTitleText() {
+        return "الرجاء إدخال المعلومات لنقوم بالتواصل معكم";
+    }
+
+    @Override
+    public String getSpecialistName() {
+        return "Noor";
+    }
+
+    @Override
+    public String getSpecialistMobile() {
+        return "0987654321";
+    }
+
+    @Override
+    public String getSpecialistDegree() {
+        return "بكالوريوس";
+    }
+
+    @Override
+    public String getSpecialistSpecialization() {
+        return "إرشاد تربوي";
+    }
+
+    @Override
+    public String getSpecialistNumExperience() {
+        return "5";
+    }
+
+    @Override
+    public String getSpecialistSocialMedia() {
+        return "لا";
+    }
+
+    @Override
+    public String getSuccessMessageText() {
+        return "شكراً لك. لقد تم الإرسال بنجاح.";
+    }
 }
