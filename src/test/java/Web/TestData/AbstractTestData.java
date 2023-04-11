@@ -10,4 +10,18 @@ public interface AbstractTestData {
 
     String getSixMonthsBronzePrice();
     String getCourseTitle();
+
+    String setFirstNameOnCheckoutPage();
+
+    String setLastNameOnCheckoutPage();
+
+    String setAddressOnCheckoutPage();
+
+    String setCityOnCheckoutPage();
+
+    String setPhoneOnCheckoutPage();
+
+    String getFinalTotalAmountPriceOnCheckoutPage();
+
+    String getAmountTotalPriceOnCheckoutPage();
 }

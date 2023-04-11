@@ -13,6 +13,7 @@ public class CheckoutPageTest {
     @Test(priority = 2)
     public void inputFirstNameData(){
         CheckoutPage.InputFirstNameField(testDataWeb.setFirstNameOnCheckoutPage());
+        Assert.assertEquals(CheckoutPage.getFirstNameInput().getText(),testDataWeb.setFirstNameOnCheckoutPage());
     }
     @Test(priority = 3)
     public void lastNameInputIsDisplayed() {
