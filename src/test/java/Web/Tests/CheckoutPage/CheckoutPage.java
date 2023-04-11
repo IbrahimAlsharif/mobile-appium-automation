@@ -8,7 +8,7 @@ import static Base.WebSetup.WebSetupTest.*;
 
 public class CheckoutPage {
     public static WebElement getCheckoutTitle() {
-        webDriver.switchTo().window(vars.get("root").toString());
+      ///  webDriver.switchTo().window(vars.get("root").toString());
         String xpath = "//H3[@class='text-center fs-3 pt-48 mb-12'][text()='"+testDataWeb.getCheckoutTitleText()+"']";
         return WebFinder.getByXpath(xpath, false);
     }
