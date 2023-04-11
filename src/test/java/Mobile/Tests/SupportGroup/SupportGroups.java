@@ -42,6 +42,24 @@ public class SupportGroups {
         return getEndingMeetingsTextOnSupportGroupsTestPage().isDisplayed();
     }
 
+    public static MobileElement getUpcomingMeeting() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getUpcomingMeetingText()+"\"]";
+        return  MobileFinder.getByXpath(xpath,true);
+    }
+    public static boolean UpcomingMeetingOnSupportGroupsTestPageIsDisplayed(){
+        return getUpcomingMeeting().isDisplayed();
+    }
+    public static void ClickOnUpcomingMeeting(){
+        getUpcomingMeeting().click();
+    }
+    public static MobileElement getDetailsMeetingText() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getDetailsMeetingText()+"\"]";
+        return  MobileFinder.getByXpath(xpath,true);
+    }
+    public static boolean DetailsUpcomingMeetingOnDetailsMeetingTestPageIsDisplayed(){
+        return getDetailsMeetingText().isDisplayed();
+    }
+
 
 
 }

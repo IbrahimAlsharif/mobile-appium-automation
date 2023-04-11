@@ -183,4 +183,12 @@ public class EnglishStagingTestData implements AbstractTestData {
     public String getExperienceOfYearsOnDetailsPsychologistPage() {
         return null;
     }
+    @Override
+    public String getUpcomingMeetingText() {
+        return null;
+    }
+    @Override
+    public String getDetailsMeetingText() {
+        return null;
+    }
 }
