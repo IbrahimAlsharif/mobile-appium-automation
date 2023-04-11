@@ -22,6 +22,7 @@ public class CheckoutPageTest {
     @Test(priority = 4)
     public void inputLastNameData(){
         CheckoutPage.InputLastNameField(testDataWeb.setLastNameOnCheckoutPage());
+        Assert.assertEquals(CheckoutPage.getLastNameInput().getText(),testDataWeb.setLastNameOnCheckoutPage());
     }
     @Test(priority = 5)
     public void countryNameIsDisplayed() {
@@ -34,6 +35,8 @@ public class CheckoutPageTest {
     @Test(priority = 7)
     public void inputAddressData(){
         CheckoutPage.InputAddressField(testDataWeb.setAddressOnCheckoutPage());
+        Assert.assertEquals(CheckoutPage.getAddressInput().getText(),testDataWeb.setAddressOnCheckoutPage());
+
     }
     @Test(priority = 8)
     public void cityInputIsDisplayed() {
@@ -42,6 +45,8 @@ public class CheckoutPageTest {
     @Test(priority = 9)
     public void inputCityData(){
         CheckoutPage.InputCityField(testDataWeb.setCityOnCheckoutPage());
+        Assert.assertEquals(CheckoutPage.getCityInput().getText(),testDataWeb.setCityOnCheckoutPage());
+
     }
     @Test(priority = 10)
     public void phoneInputIsDisplayed() {
