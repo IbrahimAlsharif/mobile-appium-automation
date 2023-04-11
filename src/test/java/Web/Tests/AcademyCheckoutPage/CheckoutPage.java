@@ -19,6 +19,9 @@ public class CheckoutPage {
     public static void InputFirstNameField(String FirstName) {
         getFirstNameInput().sendKeys(FirstName);
     }
+    public static String getFirstNameInputText(){
+        return getFirstNameInput().getAttribute("value");
+    }
 
     public static WebElement getLastNameInput() {
         String xpath = "//input[@name='billing_last_name']";
@@ -31,6 +34,9 @@ public class CheckoutPage {
 
     public static void InputLastNameField(String LastName) {
         getLastNameInput().sendKeys(LastName);
+    }
+    public static String getLastNameInputText(){
+        return getLastNameInput().getAttribute("value");
     }
 
     public static WebElement getCountryNameInput() {
@@ -54,6 +60,10 @@ public class CheckoutPage {
     public static void InputAddressField(String Address) {
         getAddressInput().sendKeys(Address);
     }
+    public static String getAddressInputText(){
+        return getAddressInput().getAttribute("value");
+    }
+
 
     public static WebElement getCityInput() {
         String xpath = "//input[@name='billing_city']";
@@ -67,6 +77,10 @@ public class CheckoutPage {
     public static void InputCityField(String City) {
         getCityInput().sendKeys(City);
     }
+    public static String getCityInputText(){
+        return getCityInput().getAttribute("value");
+    }
+
 
     public static WebElement getPhoneInput() {
         String xpath = "//input[@name='billing_phone']";
@@ -79,6 +93,9 @@ public class CheckoutPage {
 
     public static void InputPhoneField(String Phone) {
         getPhoneInput().sendKeys(Phone);
+    }
+    public static String getPhoneInputText(){
+        return getPhoneInput().getAttribute("value");
     }
 
     public static WebElement getEmailInput() {
