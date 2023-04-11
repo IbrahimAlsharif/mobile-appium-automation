@@ -279,4 +279,8 @@ public  class MobileFinder {
          return  (MobileElement)androidDriver.findElement(byAccessibilityId);
     }
 
+public static void scrollUntilText(String text){
+    androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+text+"\"))");
+
+}
 }
