@@ -28,4 +28,12 @@ public interface AbstractTestData {
     String getCardExpiry();
     String getCardPIN();
     String getCouponCode();
+    String getJoinAsSpecialistTitleText();
+    String getSpecialistName();
+    String getSpecialistMobile();
+    String getSpecialistDegree();
+    String getSpecialistSpecialization();
+    String getSpecialistNumExperience();
+    String getSpecialistSocialMedia();
+    String getSuccessMessageText();
 }
