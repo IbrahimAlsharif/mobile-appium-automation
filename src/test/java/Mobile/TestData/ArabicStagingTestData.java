@@ -186,6 +186,33 @@ public class ArabicStagingTestData implements AbstractTestData {
     public String getExperienceOfYearsOnDetailsPsychologistPage() {
         return "من 5 إلى 10 سنوات";
     }
+    @Override
+    public String getDateOfJoinOnDetailsPsychologistPage() {
+        return "  منذ 2 سنة و 7 شهور";
+    }
+    @Override
+    public String getBriefAboutMeOnDetailsPsychologistPage() {
+        return "مستشاره نفسيه، ماجستير في علم النفس ، عضو هيئه تدريس سابق،، \n" +
+                "Bdr كوبون خصم. \n" +
+                "9 سنوات خبره في الاستشارات النفسيه والاسريه والعلاج المعرفي السلوكي لحالات( الاكتئاب، القلق ، الرهاب الاجتماعي، نوبات الهلع ،  الوسواس القهري، هوس نتف الشعر ، العاده السريه ، الفقد، كرب بعد الصدمه ، مشكلات  زوجيه، التعلق)";
+    }
+    @Override
+    public String getSessionsPresentationWrittenOnDetailsPsychologistPage() {
+        return "كتابية";
+    }
+    @Override
+    public String getSessionsPresentationAudioOnDetailsPsychologistPage() {
+        return "صوتية";
+    }
+    @Override
+    public String getSessionsPresentationVideoOnDetailsPsychologistPage() {
+        return "مرئية";
+    }
+    @Override
+    public String getSubSpecialtiesOnDetailsPsychologistPage() {
+        return "القلق";
+    }
+
 }
 
 

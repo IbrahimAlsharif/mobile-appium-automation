@@ -45,6 +45,12 @@ String getSpecialistNameOnDetailsPsychologistPage();
 String getSpecialisOfTypeOnDetailsPsychologistPage();
 String getSpecialistRateOnDetailsPsychologistPage();
 String getExperienceOfYearsOnDetailsPsychologistPage();
+String getDateOfJoinOnDetailsPsychologistPage();
+String getBriefAboutMeOnDetailsPsychologistPage();
+String getSessionsPresentationWrittenOnDetailsPsychologistPage();
+String getSessionsPresentationAudioOnDetailsPsychologistPage();
+String getSessionsPresentationVideoOnDetailsPsychologistPage();
+String getSubSpecialtiesOnDetailsPsychologistPage();
 
 
 
