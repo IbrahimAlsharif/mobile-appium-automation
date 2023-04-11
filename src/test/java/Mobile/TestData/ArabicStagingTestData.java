@@ -187,12 +187,33 @@ public class ArabicStagingTestData implements AbstractTestData {
         return "من 5 إلى 10 سنوات";
     }
     @Override
+    public String getUpcomingMeetingText() {
+        return "الشخصية الضعيفة وسُبل تقويتها!\n" +
+                "58.00 SR\n" +
+                "د. عطالله العبار\n" +
+                "- أخصائي نفسي\n" +
+                "الموعــــد\n" +
+                "الثلاثاء، 11 إبريل | 10:00 مساء\n" +
+                "المــــــدة\n" +
+                "ساعة\n" +
+                "المقاعد المتبقية\n" +
+                "15 مقعد\n" +
+                "تسجيل";
+    }
+    @Override
+    public String getDetailsMeetingText() {
+        return "تفاصيل اللقاء";
+    }
+
+    @Override
     public String getDateOfJoinOnDetailsPsychologistPage() {
         return "  منذ 2 سنة و 7 شهور";
     }
     @Override
     public String getBriefAboutMeOnDetailsPsychologistPage() {
-        return "نبذة عني";
+        return "مستشاره نفسيه، ماجستير في علم النفس ، عضو هيئه تدريس سابق،، \n" +
+                "Bdr كوبون خصم. \n" +
+                "9 سنوات خبره في الاستشارات النفسيه والاسريه والعلاج المعرفي السلوكي لحالات( الاكتئاب، القلق ، الرهاب الاجتماعي، نوبات الهلع ،  الوسواس القهري، هوس نتف الشعر ، العاده السريه ، الفقد، كرب بعد الصدمه ، مشكلات  زوجيه، التعلق)";
     }
     @Override
     public String getSessionsPresentationWrittenOnDetailsPsychologistPage() {
@@ -211,31 +232,35 @@ public class ArabicStagingTestData implements AbstractTestData {
         return "القلق";
     }
     @Override
-    public String getSpecialistLanguageOnDetailsPsychologistPage() {
-        return "العربية";
+    public String getTitleUpcomingMeeting() {
+        return "الشخصية الضعيفة وسُبل تقويتها!";
     }
     @Override
-    public String getLanguageTitleOnDetailsPsychologistPage() {
-        return "اللغات";
-    }
-    @Override
-    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
-        return "التخصصات الدقيقة";
+    public String getPriceMeeting() {
+        return "58.0 ر.س";
     }
 
     @Override
-    public String getSpecialistRatesTitleOnDetailsPsychologistPage() {
-        return "التقييمات";
+    public String getTimeMeetingOnDetailsMeetingTestPage() {
+        return "ساعة";
+    }
+
+    @Override
+    public String getRemainingSeats() {
+        return "15 مقعد";
+    }
+
+    @Override
+    public String getTargetGroupText() {
+        return "الفئة المستهدفة";
     }
     @Override
-    public String getUserByCommentTextOnDetailsPsychologistPage() {
-        return "سي\n" +
-                "5/5\n" +
-                "شكرا من اعماق القلب";
+    public String getMeetingDetailsGoalsItem() {
+        return "أهداف اللقاء";
     }
     @Override
-    public String getBookLaterDateButtonOnDetailsPsychologistPage() {
-        return "حجز موعد لاحق";
+    public String getRegisterMeetingButton() {
+        return "التسجيل في اللقاء";
     }
 }
 

@@ -12,607 +12,11 @@
 <body>
 <h1>Test Setup</h1>
 <p>
-  Test duration: 393.210s
+  Test duration: 36.475s
 </p>
 
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">Mobile.Tests.AllSpecialists.PsychologistTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  BookLaterDateButtonOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    60.048s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.view.Button[@content-desc=&quot;حجز موعد لاحق&quot;] (tried for 60 second(s) with 500 milliseconds interval)</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br />
-              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br />
-              Base.MobileSetup.MobileFinder.waitForElementToBeVisibleBy(MobileFinder.java:190)<br />
-              Base.MobileSetup.MobileFinder.getByXpath(MobileFinder.java:253)<br />
-              Mobile.Tests.AllSpecialists.Psychologist.getBookLaterDateButtonOnDetailsPsychologistPage(Psychologist.java:164)<br />
-              Mobile.Tests.AllSpecialists.Psychologist.BookLaterDateButtonOnDetailsPsychologistPageIsDisplayed(Psychologist.java:167)<br />
-              Mobile.Tests.AllSpecialists.PsychologistTest.BookLaterDateButtonOnDetailsPsychologistPageIsDisplayed(PsychologistTest.java:121)<br />
-              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
-              java.base/java.lang.reflect.Method.invoke(Method.java:577)<br />
-              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
-              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br />
-              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br />
-              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
-              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br />
-              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br />
-              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
-              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
-              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:806)<br />
-              org.testng.TestRunner.run(TestRunner.java:601)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:330)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1099)<br />
-              org.testng.TestNG.run(TestNG.java:1067)<br />
-              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
-              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
-System info: host: &apos;DESKTOP-73NEEV9&apos;, ip: &apos;192.168.253.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;<br/>
-Driver info: io.appium.java_client.android.AndroidDriver<br/>
-Capabilities {allowTestPackages: true, app: C:\Users\mzalm\OneDrive\Des..., appPackage: sa.app.famcare, app_activity: sa.app.famcare.MainActivity, app_package: sa.app.famcare, databaseEnabled: false, desired: {allowTestPackages: true, app: C:\Users\mzalm\OneDrive\Des..., app_activity: sa.app.famcare.MainActivity, app_package: sa.app.famcare, deviceName: Mohammed, platformName: android}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 136, takesScreenshot: true, viewportRect: {height: 1936, left: 0, top: 136, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
-Session ID: f0c4ad3c-a8e1-4d49-b4ea-b6636e4b759c<br/>
-*** Element info: {Using=xpath, value=//android.view.Button[@content-desc=&quot;حجز موعد لاحق&quot;]}</a><br />
-        <div class="stackTrace" id="exception-1">
-                      java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
-                      java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
-                      java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
-                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
-                      io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
-                      io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
-                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
-                      io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
-                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)<br />
-                      Base.MobileSetup.MobileFinder.waitForElementToBeVisibleBy(MobileFinder.java:190)<br />
-                      Base.MobileSetup.MobileFinder.getByXpath(MobileFinder.java:253)<br />
-                      Mobile.Tests.AllSpecialists.Psychologist.getBookLaterDateButtonOnDetailsPsychologistPage(Psychologist.java:164)<br />
-                      Mobile.Tests.AllSpecialists.Psychologist.BookLaterDateButtonOnDetailsPsychologistPageIsDisplayed(Psychologist.java:167)<br />
-                      Mobile.Tests.AllSpecialists.PsychologistTest.BookLaterDateButtonOnDetailsPsychologistPageIsDisplayed(PsychologistTest.java:121)<br />
-                      java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
-                      java.base/java.lang.reflect.Method.invoke(Method.java:577)<br />
-                      org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br />
-                      org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
-                      org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br />
-                      org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
-                      org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
-                      java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:806)<br />
-                      org.testng.TestRunner.run(TestRunner.java:601)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:330)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1099)<br />
-                      org.testng.TestNG.run(TestNG.java:1067)<br />
-                      com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
-                      com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
-                  </div>
-          </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  BriefAboutMeOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    60.077s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.view.View[@content-desc=&quot;مستشاره نفسيه، ماجستير في علم النفس ، عضو هيئه تدريس سابق،، Bdr كوبون خصم. 9 سنوات خبره في الاستشارات النفسيه والاسريه والعلاج المعرفي السلوكي لحالات( الاكتئاب، القلق ، الرهاب الاجتماعي، نوبات الهلع ، الوسواس القهري، هوس نتف الشعر ، العاده السريه ، الفقد، كرب بعد الصدمه ، مشكلات زوجيه، التعلق)&quot;] (tried for 60 second(s) with 500 milliseconds interval)</b></a><br />
-    <div class="stackTrace" id="exception-2">
-              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br />
-              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br />
-              Base.MobileSetup.MobileFinder.waitForElementToBeVisibleBy(MobileFinder.java:190)<br />
-              Base.MobileSetup.MobileFinder.getByXpath(MobileFinder.java:253)<br />
-              Mobile.Tests.AllSpecialists.Psychologist.getBriefAboutMeOnDetailsPsychologistPage(Psychologist.java:93)<br />
-              Mobile.Tests.AllSpecialists.Psychologist.BriefAboutMeOnDetailsPsychologistPageIsDisplayed(Psychologist.java:96)<br />
-              Mobile.Tests.AllSpecialists.PsychologistTest.BriefAboutMeOnDetailsPsychologistPageIsDisplayed(PsychologistTest.java:79)<br />
-              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
-              java.base/java.lang.reflect.Method.invoke(Method.java:577)<br />
-              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
-              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br />
-              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br />
-              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
-              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br />
-              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br />
-              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
-              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
-              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:806)<br />
-              org.testng.TestRunner.run(TestRunner.java:601)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:330)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1099)<br />
-              org.testng.TestNG.run(TestNG.java:1067)<br />
-              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
-              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
-System info: host: &apos;DESKTOP-73NEEV9&apos;, ip: &apos;192.168.253.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;<br/>
-Driver info: io.appium.java_client.android.AndroidDriver<br/>
-Capabilities {allowTestPackages: true, app: C:\Users\mzalm\OneDrive\Des..., appPackage: sa.app.famcare, app_activity: sa.app.famcare.MainActivity, app_package: sa.app.famcare, databaseEnabled: false, desired: {allowTestPackages: true, app: C:\Users\mzalm\OneDrive\Des..., app_activity: sa.app.famcare.MainActivity, app_package: sa.app.famcare, deviceName: Mohammed, platformName: android}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 136, takesScreenshot: true, viewportRect: {height: 1936, left: 0, top: 136, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
-Session ID: f0c4ad3c-a8e1-4d49-b4ea-b6636e4b759c<br/>
-*** Element info: {Using=xpath, value=//android.view.View[@content-desc=&quot;مستشاره نفسيه، ماجستير في علم النفس ، عضو هيئه تدريس سابق،، Bdr كوبون خصم. 9 سنوات خبره في الاستشارات النفسيه والاسريه والعلاج المعرفي السلوكي لحالات( الاكتئاب، القلق ، الرهاب الاجتماعي، نوبات الهلع ، الوسواس القهري، هوس نتف الشعر ، العاده السريه ، الفقد، كرب بعد الصدمه ، مشكلات زوجيه، التعلق)&quot;]}</a><br />
-        <div class="stackTrace" id="exception-3">
-                      java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
-                      java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
-                      java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
-                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
-                      io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
-                      io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
-                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
-                      io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
-                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)<br />
-                      Base.MobileSetup.MobileFinder.waitForElementToBeVisibleBy(MobileFinder.java:190)<br />
-                      Base.MobileSetup.MobileFinder.getByXpath(MobileFinder.java:253)<br />
-                      Mobile.Tests.AllSpecialists.Psychologist.getBriefAboutMeOnDetailsPsychologistPage(Psychologist.java:93)<br />
-                      Mobile.Tests.AllSpecialists.Psychologist.BriefAboutMeOnDetailsPsychologistPageIsDisplayed(Psychologist.java:96)<br />
-                      Mobile.Tests.AllSpecialists.PsychologistTest.BriefAboutMeOnDetailsPsychologistPageIsDisplayed(PsychologistTest.java:79)<br />
-                      java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
-                      java.base/java.lang.reflect.Method.invoke(Method.java:577)<br />
-                      org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br />
-                      org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
-                      org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br />
-                      org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
-                      org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
-                      java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:806)<br />
-                      org.testng.TestRunner.run(TestRunner.java:601)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:330)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1099)<br />
-                      org.testng.TestNG.run(TestNG.java:1067)<br />
-                      com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
-                      com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
-                  </div>
-          </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  LanguageTitleLanguageOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    60.217s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.view.View[@content-desc=&quot;اللغات&quot;] (tried for 60 second(s) with 500 milliseconds interval)</b></a><br />
-    <div class="stackTrace" id="exception-4">
-              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br />
-              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br />
-              Base.MobileSetup.MobileFinder.waitForElementToBeVisibleBy(MobileFinder.java:190)<br />
-              Base.MobileSetup.MobileFinder.getByXpath(MobileFinder.java:253)<br />
-              Mobile.Tests.AllSpecialists.Psychologist.getLanguageTitleOnDetailsPsychologistPage(Psychologist.java:135)<br />
-              Mobile.Tests.AllSpecialists.Psychologist.LanguageTitleLanguageOnDetailsPsychologistPageIsDisplayed(Psychologist.java:138)<br />
-              Mobile.Tests.AllSpecialists.PsychologistTest.LanguageTitleLanguageOnDetailsPsychologistPageIsDisplayed(PsychologistTest.java:104)<br />
-              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
-              java.base/java.lang.reflect.Method.invoke(Method.java:577)<br />
-              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
-              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br />
-              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br />
-              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
-              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br />
-              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br />
-              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
-              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
-              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:806)<br />
-              org.testng.TestRunner.run(TestRunner.java:601)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:330)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1099)<br />
-              org.testng.TestNG.run(TestNG.java:1067)<br />
-              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
-              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
-System info: host: &apos;DESKTOP-73NEEV9&apos;, ip: &apos;192.168.253.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;<br/>
-Driver info: io.appium.java_client.android.AndroidDriver<br/>
-Capabilities {allowTestPackages: true, app: C:\Users\mzalm\OneDrive\Des..., appPackage: sa.app.famcare, app_activity: sa.app.famcare.MainActivity, app_package: sa.app.famcare, databaseEnabled: false, desired: {allowTestPackages: true, app: C:\Users\mzalm\OneDrive\Des..., app_activity: sa.app.famcare.MainActivity, app_package: sa.app.famcare, deviceName: Mohammed, platformName: android}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 136, takesScreenshot: true, viewportRect: {height: 1936, left: 0, top: 136, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
-Session ID: f0c4ad3c-a8e1-4d49-b4ea-b6636e4b759c<br/>
-*** Element info: {Using=xpath, value=//android.view.View[@content-desc=&quot;اللغات&quot;]}</a><br />
-        <div class="stackTrace" id="exception-5">
-                      java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
-                      java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
-                      java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
-                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
-                      io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
-                      io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
-                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
-                      io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
-                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)<br />
-                      Base.MobileSetup.MobileFinder.waitForElementToBeVisibleBy(MobileFinder.java:190)<br />
-                      Base.MobileSetup.MobileFinder.getByXpath(MobileFinder.java:253)<br />
-                      Mobile.Tests.AllSpecialists.Psychologist.getLanguageTitleOnDetailsPsychologistPage(Psychologist.java:135)<br />
-                      Mobile.Tests.AllSpecialists.Psychologist.LanguageTitleLanguageOnDetailsPsychologistPageIsDisplayed(Psychologist.java:138)<br />
-                      Mobile.Tests.AllSpecialists.PsychologistTest.LanguageTitleLanguageOnDetailsPsychologistPageIsDisplayed(PsychologistTest.java:104)<br />
-                      java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
-                      java.base/java.lang.reflect.Method.invoke(Method.java:577)<br />
-                      org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br />
-                      org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
-                      org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br />
-                      org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
-                      org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
-                      java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:806)<br />
-                      org.testng.TestRunner.run(TestRunner.java:601)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:330)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1099)<br />
-                      org.testng.TestNG.run(TestNG.java:1067)<br />
-                      com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
-                      com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
-                  </div>
-          </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  NavigationToSubscriptionsAndPackages
-      </td>
-  <td class="duration">
-    60.041s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.view.Button[@content-desc=&quot;حجز موعد لاحق&quot;] (tried for 60 second(s) with 500 milliseconds interval)</b></a><br />
-    <div class="stackTrace" id="exception-6">
-              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br />
-              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br />
-              Base.MobileSetup.MobileFinder.waitForElementToBeVisibleBy(MobileFinder.java:190)<br />
-              Base.MobileSetup.MobileFinder.getByXpath(MobileFinder.java:253)<br />
-              Mobile.Tests.AllSpecialists.Psychologist.getBookLaterDateButtonOnDetailsPsychologistPage(Psychologist.java:164)<br />
-              Mobile.Tests.AllSpecialists.Psychologist.ClickOnBookLaterDateButton(Psychologist.java:170)<br />
-              Mobile.Tests.AllSpecialists.PsychologistTest.NavigationToSubscriptionsAndPackages(PsychologistTest.java:125)<br />
-              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
-              java.base/java.lang.reflect.Method.invoke(Method.java:577)<br />
-              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
-              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br />
-              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br />
-              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
-              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br />
-              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br />
-              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
-              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
-              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:806)<br />
-              org.testng.TestRunner.run(TestRunner.java:601)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:330)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1099)<br />
-              org.testng.TestNG.run(TestNG.java:1067)<br />
-              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
-              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-7', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
-System info: host: &apos;DESKTOP-73NEEV9&apos;, ip: &apos;192.168.253.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;<br/>
-Driver info: io.appium.java_client.android.AndroidDriver<br/>
-Capabilities {allowTestPackages: true, app: C:\Users\mzalm\OneDrive\Des..., appPackage: sa.app.famcare, app_activity: sa.app.famcare.MainActivity, app_package: sa.app.famcare, databaseEnabled: false, desired: {allowTestPackages: true, app: C:\Users\mzalm\OneDrive\Des..., app_activity: sa.app.famcare.MainActivity, app_package: sa.app.famcare, deviceName: Mohammed, platformName: android}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 136, takesScreenshot: true, viewportRect: {height: 1936, left: 0, top: 136, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
-Session ID: f0c4ad3c-a8e1-4d49-b4ea-b6636e4b759c<br/>
-*** Element info: {Using=xpath, value=//android.view.Button[@content-desc=&quot;حجز موعد لاحق&quot;]}</a><br />
-        <div class="stackTrace" id="exception-7">
-                      java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
-                      java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
-                      java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
-                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
-                      io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
-                      io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
-                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
-                      io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
-                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)<br />
-                      Base.MobileSetup.MobileFinder.waitForElementToBeVisibleBy(MobileFinder.java:190)<br />
-                      Base.MobileSetup.MobileFinder.getByXpath(MobileFinder.java:253)<br />
-                      Mobile.Tests.AllSpecialists.Psychologist.getBookLaterDateButtonOnDetailsPsychologistPage(Psychologist.java:164)<br />
-                      Mobile.Tests.AllSpecialists.Psychologist.ClickOnBookLaterDateButton(Psychologist.java:170)<br />
-                      Mobile.Tests.AllSpecialists.PsychologistTest.NavigationToSubscriptionsAndPackages(PsychologistTest.java:125)<br />
-                      java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
-                      java.base/java.lang.reflect.Method.invoke(Method.java:577)<br />
-                      org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br />
-                      org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
-                      org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br />
-                      org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
-                      org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
-                      java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:806)<br />
-                      org.testng.TestRunner.run(TestRunner.java:601)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:330)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1099)<br />
-                      org.testng.TestNG.run(TestNG.java:1067)<br />
-                      com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
-                      com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
-                  </div>
-          </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  UserByCommentTextOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    60.082s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-8', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.view.ImageView[@content-desc=&quot;سي<br/>
-5/5<br/>
-شكرا من اعماق القلب&quot;] (tried for 60 second(s) with 500 milliseconds interval)</b></a><br />
-    <div class="stackTrace" id="exception-8">
-              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br />
-              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br />
-              Base.MobileSetup.MobileFinder.waitForElementToBeVisibleBy(MobileFinder.java:190)<br />
-              Base.MobileSetup.MobileFinder.getByXpath(MobileFinder.java:253)<br />
-              Mobile.Tests.AllSpecialists.Psychologist.getUserByCommentTextOnDetailsPsychologistPage(Psychologist.java:156)<br />
-              Mobile.Tests.AllSpecialists.Psychologist.UserByCommentTextOnDetailsPsychologistPageIsDisplayed(Psychologist.java:159)<br />
-              Mobile.Tests.AllSpecialists.PsychologistTest.UserByCommentTextOnDetailsPsychologistPageIsDisplayed(PsychologistTest.java:117)<br />
-              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
-              java.base/java.lang.reflect.Method.invoke(Method.java:577)<br />
-              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
-              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br />
-              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br />
-              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
-              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br />
-              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br />
-              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
-              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
-              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:806)<br />
-              org.testng.TestRunner.run(TestRunner.java:601)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:330)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1099)<br />
-              org.testng.TestNG.run(TestNG.java:1067)<br />
-              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
-              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-9', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br/>
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
-System info: host: &apos;DESKTOP-73NEEV9&apos;, ip: &apos;192.168.253.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2&apos;<br/>
-Driver info: io.appium.java_client.android.AndroidDriver<br/>
-Capabilities {allowTestPackages: true, app: C:\Users\mzalm\OneDrive\Des..., appPackage: sa.app.famcare, app_activity: sa.app.famcare.MainActivity, app_package: sa.app.famcare, databaseEnabled: false, desired: {allowTestPackages: true, app: C:\Users\mzalm\OneDrive\Des..., app_activity: sa.app.famcare.MainActivity, app_package: sa.app.famcare, deviceName: Mohammed, platformName: android}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 136, takesScreenshot: true, viewportRect: {height: 1936, left: 0, top: 136, width: 1080}, warnings: {}, webStorageEnabled: false}<br/>
-Session ID: f0c4ad3c-a8e1-4d49-b4ea-b6636e4b759c<br/>
-*** Element info: {Using=xpath, value=//android.view.ImageView[@content-desc=&quot;سي<br/>
-5/5<br/>
-شكرا من اعماق القلب&quot;]}</a><br />
-        <div class="stackTrace" id="exception-9">
-                      java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)<br />
-                      java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
-                      java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
-                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
-                      io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />
-                      io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />
-                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />
-                      io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />
-                      io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)<br />
-                      Base.MobileSetup.MobileFinder.waitForElementToBeVisibleBy(MobileFinder.java:190)<br />
-                      Base.MobileSetup.MobileFinder.getByXpath(MobileFinder.java:253)<br />
-                      Mobile.Tests.AllSpecialists.Psychologist.getUserByCommentTextOnDetailsPsychologistPage(Psychologist.java:156)<br />
-                      Mobile.Tests.AllSpecialists.Psychologist.UserByCommentTextOnDetailsPsychologistPageIsDisplayed(Psychologist.java:159)<br />
-                      Mobile.Tests.AllSpecialists.PsychologistTest.UserByCommentTextOnDetailsPsychologistPageIsDisplayed(PsychologistTest.java:117)<br />
-                      java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
-                      java.base/java.lang.reflect.Method.invoke(Method.java:577)<br />
-                      org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br />
-                      org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
-                      org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br />
-                      org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br />
-                      org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
-                      org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
-                      java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:806)<br />
-                      org.testng.TestRunner.run(TestRunner.java:601)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:330)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br />
-                      org.testng.TestNG.runSuites(TestNG.java:1099)<br />
-                      org.testng.TestNG.run(TestNG.java:1067)<br />
-                      com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
-                      com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
-                  </div>
-          </div>
-      </td>
-</tr>
-      </table>
 
 
   <table class="resultsTable">
@@ -626,239 +30,11 @@ Session ID: f0c4ad3c-a8e1-4d49-b4ea-b6636e4b759c<br/>
                   setUp
       </td>
   <td class="duration">
-    32.547s
+    13.669s
   </td>
   <td class="result">
         
           <i>Method arguments: </i><span class="arguments">"Arabic", "src/app-production-release.apk", "Production"</span><br />
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">Mobile.Tests.AllSpecialists.PsychologistTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  DateOfJoinOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    0.236s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  ExperienceOfYearsOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    0.201s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  FilterOnPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    0.130s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  NavigateToPsychologistPage
-      </td>
-  <td class="duration">
-    3.626s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  PsychologistNameOnPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    6.843s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  SearchFieldOnPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    0.280s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  SessionsPresentationAudioOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    0.119s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  SessionsPresentationVideoOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    0.121s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  SessionsPresentationWrittenOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    0.116s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  SpecialisOfTypeOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    0.307s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  SpecialistLanguageOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    4.601s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  SpecialistRateOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    0.281s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  SpecialistRatesTitleOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    0.113s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  SubSpecialtiesOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    0.151s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  SubSpecialtiesTitleOnDetailsPsychologistPageIsDisplayed
-      </td>
-  <td class="duration">
-    0.140s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  verifyThatTapMyConversationsButtonNavigateToMyConversationsPage
-      </td>
-  <td class="duration">
-    9.234s
-  </td>
-  <td class="result">
-        
     
         
 
@@ -873,7 +49,7 @@ Session ID: f0c4ad3c-a8e1-4d49-b4ea-b6636e4b759c<br/>
                   VerifyThatTheUserAbleClickChooseButton
       </td>
   <td class="duration">
-    3.861s
+    1.582s
   </td>
   <td class="result">
         
@@ -887,7 +63,7 @@ Session ID: f0c4ad3c-a8e1-4d49-b4ea-b6636e4b759c<br/>
                   VerifyThatTheUserAbleClickIgnoreButton
       </td>
   <td class="duration">
-    3.654s
+    8.736s
   </td>
   <td class="result">
         
@@ -901,7 +77,7 @@ Session ID: f0c4ad3c-a8e1-4d49-b4ea-b6636e4b759c<br/>
                   VerifyThatTheUserAbleSelectArabicLanguage
       </td>
   <td class="duration">
-    2.163s
+    0.768s
   </td>
   <td class="result">
         
@@ -915,7 +91,7 @@ Session ID: f0c4ad3c-a8e1-4d49-b4ea-b6636e4b759c<br/>
                   mainImageIsDisplayed
       </td>
   <td class="duration">
-    12.316s
+    0.087s
   </td>
   <td class="result">
         
@@ -929,7 +105,7 @@ Session ID: f0c4ad3c-a8e1-4d49-b4ea-b6636e4b759c<br/>
                   welcomeDescriptionIsDisplayed
       </td>
   <td class="duration">
-    11.372s
+    0.084s
   </td>
   <td class="result">
         
@@ -943,7 +119,7 @@ Session ID: f0c4ad3c-a8e1-4d49-b4ea-b6636e4b759c<br/>
                   welcomeLabelIsDisplayed
       </td>
   <td class="duration">
-    0.179s
+    4.437s
   </td>
   <td class="result">
         
@@ -957,7 +133,123 @@ Session ID: f0c4ad3c-a8e1-4d49-b4ea-b6636e4b759c<br/>
                   welcomeLabelTextIsCorrect
       </td>
   <td class="duration">
-    0.154s
+    0.091s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">Mobile.Tests.SupportGroup.SupportGroupsTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  AllGroupsTextOnSupportGroupsTestPageIsDisplayed
+      </td>
+  <td class="duration">
+    0.152s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  MyGroupsTextOnSupportGroupsTestPageIsDisplayed
+      </td>
+  <td class="duration">
+    2.416s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TitleAppBarOnBenchmarksPageDisplayed
+      </td>
+  <td class="duration">
+    0.153s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TitleUpcomingMeetingOnDetailsMeetingTestPageIsDisplayed
+      </td>
+  <td class="duration">
+    0.076s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  UpcomingMeetingOnSupportGroupsTestPageIsDisplayed
+      </td>
+  <td class="duration">
+    1.364s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  UpcomingMeetingsTextOnSupportGroupsTestPageIsDisplayed
+      </td>
+  <td class="duration">
+    1.595s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  VerifyThatTheUserAbleClickUpcomingMeeting
+      </td>
+  <td class="duration">
+    1.109s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatTapDiagnosticButtonNavigateToDiagnosticPage
+      </td>
+  <td class="duration">
+    0.156s
   </td>
   <td class="result">
         

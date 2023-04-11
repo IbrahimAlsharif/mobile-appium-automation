@@ -208,6 +208,6 @@ public class CheckoutPage {
         return getPayNowButton().isDisplayed();
     }
     public static void clickOnNowButton() {
-        click(webDriver, getPayNowButton());
+        click(getPayNowButton());
     }
 }

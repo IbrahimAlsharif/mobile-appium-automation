@@ -187,8 +187,10 @@ public  class MobileFinder {
      * @param locator
      */
     public static void waitForElementToBeVisibleBy(By locator) {
-        MobileSetupTest. wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        MobileSetupTest. wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+
+
 
     /**
      * Wait for element to be click able
@@ -279,4 +281,8 @@ public  class MobileFinder {
          return  (MobileElement)androidDriver.findElement(byAccessibilityId);
     }
 
+public static void scrollUntilText(String text){
+    androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+text+"\"))");
+
+}
 }

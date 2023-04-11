@@ -6,12 +6,12 @@ import  static Base.MobileSetup.MobileSetupTest.testDataMobile;
 
 public class SupportGroups {
 
-    public static MobileElement getTitleAppBarOnSupportGroupsTestPage() {
+    public static MobileElement getScreenTitle() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTitleAppBarOnSupportGroupsTestPage()+"\"]";
         return  MobileFinder.getByXpath(xpath,true);
     }
-    public static boolean TitleAppBarOnBenchmarksPageDisplayed(){
-        return getTitleAppBarOnSupportGroupsTestPage().isDisplayed();
+    public static boolean screenTitleIsDisplayed(){
+        return getScreenTitle().isDisplayed();
     }
     public static MobileElement getAllGroupsTextOnSupportGroupsTestPage() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTitleAppBarOnSupportGroupsTestPage()+"\"]";
@@ -41,6 +41,18 @@ public class SupportGroups {
     public static boolean EndingMeetingsTextOnSupportGroupsTestPageIsDisplayed(){
         return getEndingMeetingsTextOnSupportGroupsTestPage().isDisplayed();
     }
+
+    public static MobileElement getUpcomingMeeting() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getUpcomingMeetingText()+"\"]";
+        return  MobileFinder.getByXpath(xpath,true);
+    }
+    public static boolean UpcomingMeetingIsDisplayed(){
+        return getUpcomingMeeting().isDisplayed();
+    }
+    public static void ClickOnUpcomingMeeting(){
+        getUpcomingMeeting().click();
+    }
+
 
 
 

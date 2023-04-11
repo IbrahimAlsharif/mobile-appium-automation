@@ -30,9 +30,9 @@ public  class WebFinder {
     public static String testRunId;
     public static  JavascriptExecutor js = (JavascriptExecutor) webDriver;
 
-    public static void click(WebDriver driver, WebElement element) {
+    public static void click(WebElement element) {
         {
-            new Actions(driver).click(element).perform();
+            new Actions(webDriver).click(element).perform();
         }
     }
 

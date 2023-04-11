@@ -1,112 +1,290 @@
 package Web.TestData;
 
 public class ArabicProductionTestDataWeb implements AbstractTestData {
+
     @Override
     public String getSubscriptionsTitle() {
         return "انضم لآلاف المستفيدين من خدمات فامكير";
     }
+
     @Override
     public String getMonthlyBronzePrice() {
         return "SR  115.00";
     }
+
     @Override
     public String getThreeMonthsBronzePrice() {
         return "SR  230.00";
     }
+
     @Override
     public String getSixMonthsBronzePrice() {
         return "SR  345.00";
     }
+
     @Override
     public String getCourseTitle() {
         return "طيف التوحد لدى الأطفال";
     }
+
+    public String getPsychologicalSideText() {
+        return "الجانب النفسي";
+    }
+
+    public String getSocialSideText() {
+        return "الجانب الاجتماعي";
+    }
+
+    public String getEducationalSideText() {
+        return "الجانب التربوي";
+    }
+
+    public String getPractitionersText() {
+        return "للممارسين";
+    }
+
+    public String getProfessionalTrainersText() {
+        return "مدربين محترفين";
+    }
+
+    public String getProfessionalCoursesText() {
+        return "دورات احترافية";
+    }
+
+    public String getUnlimitedViewingText() {
+        return "مشاهدة غير محدودة للدورات";
+    }
+
+    public String getTrainerText() {
+        return "المدربين";
+    }
+
+    public String getJoinCourseButtonText() {
+        return "الالتحاق بالمساق";
+    }
+
+    public String getAddToCartButtonText() {
+        return "إضافة إلى السلة";
+    }
+
+    public String getViewCartButtonText() {
+        return "عرض السلة";
+    }
+
+    public String getCoursePriceNumberOnStorePage() {
+        return "ر.س100.00";
+
+    }
+
+    public String getProductNameOnCartPage() {
+        return "طيف التوحد لدى الأطفال";
+
+    }
+
+    public String getProductPriceOnCartPage() {
+        return "ر.س100.00";
+    }
+
+    public String getProductSubTotalPriceOnCartPage() {
+        return "ر.س100.00";
+    }
+
+    public String getAmountTotalPriceOnCartPage() {
+        return "ر.س100.00";
+    }
+
+    public String getFinalTotalAmountPriceOnCartPage() {
+        return "ر.س100.00";
+    }
+
+    @Override
+    public String setFirstNameOnCheckoutPage() {
+        return "Riham";
+    }
+
+    @Override
+    public String setLastNameOnCheckoutPage() {
+        return "Tameem";
+    }
+
+    @Override
+    public String setAddressOnCheckoutPage() {
+        return "Gaza";
+    }
+
+    @Override
+    public String setCityOnCheckoutPage() {
+        return "Gaza";
+    }
+
+    @Override
+    public String setPhoneOnCheckoutPage() {
+        return "123456789";
+    }
+
+
+    public String getAmountTotalPriceOnCheckoutPage() {
+        return "ر.س100.00";
+    }
+
+    public String getFinalTotalAmountPriceOnCheckoutPage() {
+        return "ر.س100.00";
+    }
+
+    public String getSearchInputOnBlogPage() {
+        return "تقدير الذات";
+    }
+
+    public String getSelectedCategoryOnBlogPage() {
+        return "الصحة النفسية";
+    }
+
+    public String getSearchResultOnBlogPage() {
+        return " تقدير الذات";
+    }
+
     @Override
     public String getLoginPopUpText() {
-        return "الرجاء التسجيل أولاً!";
+        return null;
     }
+
     @Override
     public String getSignInWindowTitleText() {
-        return "Use your Google Account";
+        return null;
     }
+
     @Override
     public String getEmail() {
-        return "noorkhshwadeh@gmail.com";
+        return null;
     }
+
     @Override
     public String getPassword() {
-        return "noorkhaled2023";
+        return null;
     }
+
     @Override
     public String getCheckoutTitleText() {
-        return "تفضل بوضع بيانات البطاقة الخاصة بك";
+        return null;
     }
-    @Override
-    public String getCheckoutPackageTitle() {
-        return "الاشتراك البرونزي";
-    }
-    @Override
-    public String getCheckoutPackageSTitle() {
-        return "جلسة كل شهر  ( 30 دقيقة )";
-    }
+
     @Override
     public String getPaymentDetailsTitle() {
-        return "تفاصيل الدفع";
+        return null;
     }
+
     @Override
     public String getPriceText() {
-        return "السعر";
+        return null;
     }
+
     @Override
     public String getDiscountText() {
-        return "قيمة الخصم";
+        return null;
     }
+
     @Override
     public String getTaxText() {
-        return "الضريبة المضافة";
+        return null;
     }
+
     @Override
     public String getTotalPriceText() {
-        return "إجمالي السعر";
+        return null;
     }
+
     @Override
-    public String getPriceValue() {
-        return "SR 300";
+    public CharSequence getCouponCode() {
+        return null;
     }
-    @Override
-    public String getDiscountValue() {
-        return "SR 0";
-    }
-    @Override
-    public String getTaxValue() {
-        return "SR 45";
-    }
-    @Override
-    public String getTotalPriceValue() {
-        return "SR 345";
-    }
+
     @Override
     public String getPaymentDataText() {
-        return "أدخل بيانات الدفع";
+        return null;
     }
+
     @Override
-    public String getCardNumber() {
-        return "42424242424242";
+    public CharSequence getCardNumber() {
+        return null;
     }
+
     @Override
-    public String getCardName() {
-        return "Noor";
+    public CharSequence getCardName() {
+        return null;
     }
+
     @Override
-    public String getCardExpiry() {
-        return "0424";
+    public CharSequence getCardExpiry() {
+        return null;
     }
+
     @Override
-    public String getCardPIN() {
-        return "4242";
+    public CharSequence getCardPIN() {
+        return null;
     }
+
     @Override
-    public String getCouponCode() {
-        return "test";
+    public String getCheckoutPackageTitle() {
+        return null;
+    }
+
+    @Override
+    public String getPriceValue() {
+        return null;
+    }
+
+    @Override
+    public String getDiscountValue() {
+        return null;
+    }
+
+    @Override
+    public String getTaxValue() {
+        return null;
+    }
+
+    @Override
+    public String getTotalPriceValue() {
+        return null;
+    }
+
+    @Override
+    public CharSequence getSpecialistName() {
+        return null;
+    }
+
+    @Override
+    public CharSequence getSpecialistMobile() {
+        return null;
+    }
+
+    @Override
+    public CharSequence getSpecialistDegree() {
+        return null;
+    }
+
+    @Override
+    public CharSequence getSpecialistSpecialization() {
+        return null;
+    }
+
+    @Override
+    public CharSequence getSpecialistNumExperience() {
+        return null;
+    }
+
+    @Override
+    public CharSequence getSpecialistSocialMedia() {
+        return null;
+    }
+
+    @Override
+    public String getJoinAsSpecialistTitleText() {
+        return null;
+    }
+
+    @Override
+    public String getSuccessMessageText() {
+        return null;
     }
 }
