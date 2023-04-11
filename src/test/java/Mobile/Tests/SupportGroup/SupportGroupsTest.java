@@ -1,9 +1,6 @@
 package Mobile.Tests.SupportGroup;
 
 import Base.MobileSetup.MobileFinder;
-import Base.MobileSetup.MobileSetupTest;
-import Mobile.Tests.HomePage.HomePage;
-import Mobile.Tests.Language.LanguageChoose;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
@@ -43,13 +40,13 @@ public class SupportGroupsTest {
     @Test(priority = 2)
     public void EndingMeetingsTextOnSupportGroupsTestPageIsDisplayed(){
         testCaseId="0";
-        MobileFinder.scrollUntil(testDataMobile.getEndingMeetingsTextOnSupportGroupsTestPage());
+        MobileFinder.scrollUntilText(testDataMobile.getEndingMeetingsTextOnSupportGroupsTestPage());
         Assert.assertTrue(SupportGroups.EndingMeetingsTextOnSupportGroupsTestPageIsDisplayed());
     }
     @Test(priority = 3)
     public void UpcomingMeetingOnSupportGroupsTestPageIsDisplayed(){
         testCaseId="0";
-        MobileFinder.scrollUntil(testDataMobile.getUpcomingMeetingText());
+        MobileFinder.scrollUntilText(testDataMobile.getUpcomingMeetingText());
         Assert.assertTrue(SupportGroups.UpcomingMeetingOnSupportGroupsTestPageIsDisplayed());
     }
     @Test(priority = 7)

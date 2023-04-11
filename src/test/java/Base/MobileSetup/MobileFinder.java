@@ -20,7 +20,6 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import static Base.MobileSetup.MobileSetupTest.androidDriver;
-import static Base.MobileSetup.MobileSetupTest.testDataMobile;
 
 
 public  class MobileFinder {
@@ -280,7 +279,7 @@ public  class MobileFinder {
          return  (MobileElement)androidDriver.findElement(byAccessibilityId);
     }
 
-public static void scrollUntil(String text){
+public static void scrollUntilText(String text){
     androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+text+"\"))");
 
 }
