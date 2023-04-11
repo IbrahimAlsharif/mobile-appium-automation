@@ -17,4 +17,26 @@ public class CourseDetailsPage {
         return getCourseTitle().getText();
     }
 
-   }
+    public static WebElement getJoinCourseButton() {
+        String xpath="//a[@class='btn-join']";
+        return  WebFinder.getByXpath(xpath, true);
+    }
+    public static boolean JoinCourseButtonIsDisplayed() {
+        return getJoinCourseButton().isDisplayed();
+    }
+    public static String getJoinCourseButtonText () {
+        return getJoinCourseButton().getText();
+    }
+    public static void clickOnJoinCourseButton() {
+        getJoinCourseButton().click();
+    }
+    public static WebElement getStoreText() {
+        String xpath="//div[@class='page-header_title']";
+        return  WebFinder.getByXpath(xpath, false);
+    }
+    public static boolean StoreTextIsDisplayed() {
+        return getStoreText().isDisplayed();
+    }
+
+
+}

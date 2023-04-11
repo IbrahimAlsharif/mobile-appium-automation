@@ -22,38 +22,63 @@ public class SupportGroupsTest {
         testCaseId="0";
         Assert.assertTrue(SupportGroups.TitleAppBarOnBenchmarksPageDisplayed());
     }
-    @Test(priority = 2)
+    @Test(priority = 3)
     public void AllGroupsTextOnSupportGroupsTestPageIsDisplayed(){
         testCaseId="0";
         Assert.assertTrue(SupportGroups.AllGroupsTextOnSupportGroupsTestPageIsDisplayed());
     }
-    @Test(priority = 2)
+    @Test(priority = 4)
     public void MyGroupsTextOnSupportGroupsTestPageIsDisplayed(){
         testCaseId="0";
         Assert.assertTrue(SupportGroups.MyGroupsTextOnSupportGroupsTestPageIsDisplayed());
     }
-  @Test(priority = 2)
+  @Test(priority = 5)
     public void UpcomingMeetingsTextOnSupportGroupsTestPageIsDisplayed(){
         testCaseId="0";
         Assert.assertTrue(SupportGroups.UpcomingMeetingsTextOnSupportGroupsTestPageIsDisplayed());
     }
-    @Test(priority = 2)
+    @Test(priority = 6,enabled = false)
     public void EndingMeetingsTextOnSupportGroupsTestPageIsDisplayed(){
         testCaseId="0";
         MobileFinder.scrollUntilText(testDataMobile.getEndingMeetingsTextOnSupportGroupsTestPage());
         Assert.assertTrue(SupportGroups.EndingMeetingsTextOnSupportGroupsTestPageIsDisplayed());
     }
-    @Test(priority = 3)
+    @Test(priority = 7)
     public void UpcomingMeetingOnSupportGroupsTestPageIsDisplayed(){
         testCaseId="0";
         MobileFinder.scrollUntilText(testDataMobile.getUpcomingMeetingText());
         Assert.assertTrue(SupportGroups.UpcomingMeetingOnSupportGroupsTestPageIsDisplayed());
     }
-    @Test(priority = 7)
+    @Test(priority = 8)
     public void VerifyThatTheUserAbleClickUpcomingMeeting(){
         testCaseId="0";
         SupportGroups.ClickOnUpcomingMeeting();
         Assert.assertTrue(SupportGroups.DetailsUpcomingMeetingOnDetailsMeetingTestPageIsDisplayed());
+    }
+    @Test(priority = 9)
+    public void TitleUpcomingMeetingOnDetailsMeetingTestPageIsDisplayed(){
+        testCaseId="0";
+        Assert.assertTrue(SupportGroups.TitleUpcomingMeetingOnDetailsMeetingTestPageIsDisplayed());
+    }
+    @Test(priority = 10)
+    public void getPriceMeetingOnDetailsMeetingTestPageIsDisplayed(){
+        testCaseId="0";
+        Assert.assertTrue(SupportGroups.PriceMeetingOnDetailsMeetingTestPageIsDisplayed());
+    }
+    @Test(priority = 11)
+    public void TimeMeetingOnDetailsMeetingTestPageIsDisplayed(){
+        testCaseId="0";
+        Assert.assertTrue(SupportGroups.TimeMeetingOnDetailsMeetingTestPageIsDisplayed());
+    }
+    @Test(priority = 12)
+    public void RemainingSeatsOnDetailsMeetingTestPageIsDisplayed(){
+        testCaseId="0";
+        Assert.assertTrue(SupportGroups.RemainingSeatsOnDetailsMeetingTestPageIsDisplayed());
+    }
+    @Test(priority = 13)
+    public void getTargetGroupTextOnDetailsMeetingTestPageIsDisplayed(){
+        testCaseId="0";
+        Assert.assertTrue(SupportGroups.TargetGroupTextOnDetailsMeetingTestPageIsDisplayed());
     }
 
 

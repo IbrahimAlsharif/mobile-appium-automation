@@ -269,4 +269,29 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
         return "القلق";
     }
 
+    @Override
+    public String getTitleUpcomingMeetingOnDetailsMeetingTestPage() {
+        return "الشخصية الضعيفة وسُبل تقويتها!";
+    }
+
+    @Override
+    public String getPriceMeetingOnDetailsMeetingTestPage() {
+        return "58.0 ر.س";
+    }
+
+    @Override
+    public String getTimeMeetingOnDetailsMeetingTestPage() {
+        return "ساعة";
+    }
+
+    @Override
+    public String getRemainingSeatsOnDetailsMeetingTestPage() {
+        return "15 مقعد";
+    }
+
+    @Override
+    public String getTargetGroupTextOnDetailsMeetingTestPage() {
+        return "الفئة المستهدفة";
+    }
+
 }
