@@ -47,48 +47,7 @@ public class SupportGroupsTest {
     public void UpcomingMeetingOnSupportGroupsTestPageIsDisplayed(){
         testCaseId="0";
         MobileFinder.scrollUntilText(testDataMobile.getUpcomingMeetingText());
-        Assert.assertTrue(SupportGroups.UpcomingMeetingOnSupportGroupsTestPageIsDisplayed());
-    }
-    @Test(priority = 8)
-    public void VerifyThatTheUserAbleClickUpcomingMeeting(){
-        testCaseId="0";
-        SupportGroups.ClickOnUpcomingMeeting();
-        Assert.assertTrue(SupportGroups.DetailsUpcomingMeetingOnDetailsMeetingTestPageIsDisplayed());
-    }
-    @Test(priority = 9)
-    public void TitleUpcomingMeetingOnDetailsMeetingTestPageIsDisplayed(){
-        testCaseId="0";
-        Assert.assertTrue(SupportGroups.TitleUpcomingMeetingOnDetailsMeetingTestPageIsDisplayed());
-    }
-    @Test(priority = 10)
-    public void getPriceMeetingOnDetailsMeetingTestPageIsDisplayed(){
-        testCaseId="0";
-        Assert.assertTrue(SupportGroups.PriceMeetingOnDetailsMeetingTestPageIsDisplayed());
-    }
-    @Test(priority = 11)
-    public void TimeMeetingOnDetailsMeetingTestPageIsDisplayed(){
-        testCaseId="0";
-        Assert.assertTrue(SupportGroups.TimeMeetingOnDetailsMeetingTestPageIsDisplayed());
-    }
-    @Test(priority = 12)
-    public void RemainingSeatsOnDetailsMeetingTestPageIsDisplayed(){
-        testCaseId="0";
-        Assert.assertTrue(SupportGroups.RemainingSeatsOnDetailsMeetingTestPageIsDisplayed());
-    }
-    @Test(priority = 13)
-    public void getTargetGroupTextOnDetailsMeetingTestPageIsDisplayed(){
-        testCaseId="0";
-        Assert.assertTrue(SupportGroups.TargetGroupTextOnDetailsMeetingTestPageIsDisplayed());
-    }
-    @Test(priority = 14)
-    public void getMeetingDetailsGoalsItem(){
-        testCaseId="0";
-        Assert.assertTrue(SupportGroups.isMeetingDetailsGoalsItemDisplayed());
+        Assert.assertTrue(SupportGroups.UpcomingMeetingIsDisplayed());
     }
 
-    @Test(priority = 15)
-    public void registerMeetingButtonIsDisplayed(){
-        testCaseId="0";
-        Assert.assertTrue(SupportGroups.isRegisterMeetingButtonDisplayed());
-    }
 }

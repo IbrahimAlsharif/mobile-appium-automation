@@ -217,11 +217,11 @@ public class EnglishStagingTestData implements AbstractTestData {
         return null;
     }
     @Override
-    public String getTitleUpcomingMeetingOnDetailsMeetingTestPage() {
+    public String getTitleUpcomingMeeting() {
         return null;
     }
     @Override
-    public String getPriceMeetingOnDetailsMeetingTestPage() {
+    public String getPriceMeeting() {
         return null;
     }
 
@@ -231,11 +231,11 @@ public class EnglishStagingTestData implements AbstractTestData {
     }
 
     @Override
-    public String getRemainingSeatsOnDetailsMeetingTestPage() {
+    public String getRemainingSeats() {
         return null;
     }
     @Override
-    public String getTargetGroupTextOnDetailsMeetingTestPage() {
+    public String getTargetGroupText() {
         return null;
     }
     @Override

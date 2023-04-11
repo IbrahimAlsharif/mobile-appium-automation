@@ -270,12 +270,12 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     }
 
     @Override
-    public String getTitleUpcomingMeetingOnDetailsMeetingTestPage() {
+    public String getTitleUpcomingMeeting() {
         return "الشخصية الضعيفة وسُبل تقويتها!";
     }
 
     @Override
-    public String getPriceMeetingOnDetailsMeetingTestPage() {
+    public String getPriceMeeting() {
         return "58.0 ر.س";
     }
 
@@ -285,12 +285,12 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     }
 
     @Override
-    public String getRemainingSeatsOnDetailsMeetingTestPage() {
+    public String getRemainingSeats() {
         return "15 مقعد";
     }
 
     @Override
-    public String getTargetGroupTextOnDetailsMeetingTestPage() {
+    public String getTargetGroupText() {
         return "الفئة المستهدفة";
     }
 

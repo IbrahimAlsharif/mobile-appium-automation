@@ -53,11 +53,11 @@ String getSessionsPresentationWrittenOnDetailsPsychologistPage();
 String getSessionsPresentationAudioOnDetailsPsychologistPage();
 String getSessionsPresentationVideoOnDetailsPsychologistPage();
 String getSubSpecialtiesOnDetailsPsychologistPage();
-String getTitleUpcomingMeetingOnDetailsMeetingTestPage();
-String getPriceMeetingOnDetailsMeetingTestPage();
+String getTitleUpcomingMeeting();
+String getPriceMeeting();
 String getTimeMeetingOnDetailsMeetingTestPage();
-String getRemainingSeatsOnDetailsMeetingTestPage();
-String  getTargetGroupTextOnDetailsMeetingTestPage();
+String getRemainingSeats();
+String getTargetGroupText();
 String  getMeetingDetailsGoalsItem();
 String  getRegisterMeetingButton();
 
