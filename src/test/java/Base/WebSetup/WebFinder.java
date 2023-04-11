@@ -15,7 +15,10 @@ import TestRail.TestRailManager;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
+
+import static Base.WebSetup.WebSetupTest.vars;
 import static Base.WebSetup.WebSetupTest.webDriver;
 
 
@@ -27,7 +30,13 @@ public  class WebFinder {
     public static String testRunId;
     public static  JavascriptExecutor js = (JavascriptExecutor) webDriver;
 
-     public static void doubleClick(WebDriver driver, WebElement element) {
+    public static void click(WebDriver driver, WebElement element) {
+        {
+            new Actions(driver).click(element).perform();
+        }
+    }
+
+    public static void doubleClick(WebDriver driver, WebElement element) {
         {
             new Actions(driver).doubleClick(element).perform();
         }
@@ -108,6 +117,7 @@ public  class WebFinder {
     }
 
     public static void javascriptExecutor(String s, WebElement usedProductAllMenuItem) {
+        js.executeScript(s, usedProductAllMenuItem);
     }
 
     public void scrolltoElement(WebElement ScrolltoThisElement) {
@@ -186,8 +196,12 @@ public  class WebFinder {
      *
      * @param locator
      */
-    public static void waitForElementToBeVisibleBy(By locator) {
+    public static void waitForElementToBeAccessibleBy(By locator) {
         WebSetupTest.wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+
+    public static void waitForElementToBeVisibleBy(By locator) {
+        WebSetupTest.wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
     /**
@@ -251,6 +265,7 @@ public  class WebFinder {
     public static WebElement getByXpath(String xpath, boolean isClickable){
         By byXpath= By.xpath(xpath);
         waitForElementToBeVisibleBy(byXpath);
+        waitForElementToBeAccessibleBy(byXpath);
         if (isClickable) {waitForElementToBeClickableBy(byXpath);}
         return webDriver.findElement(byXpath);
     }
@@ -280,4 +295,35 @@ public  class WebFinder {
         return webDriver.findElement(byAccessibilityId);
     }
 
+    public static String waitForWindow(int timeout) {
+        try {
+            Thread.sleep(timeout);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Set<String> whNow = webDriver.getWindowHandles();
+        Set<String> whThen = (Set<String>) vars.get("window_handles");
+        if (whNow.size() > whThen.size()) {
+            whNow.removeAll(whThen);
+        }
+        return whNow.iterator().next();
+    }
+
+    public static void getWindowHandles(){
+        vars.put("window_handles", webDriver.getWindowHandles());
+    }
+
+    public static void switchToWindow(String tag){
+        vars.put(tag, waitForWindow(2000));
+        putWindow("root");
+        webDriver.switchTo().window(vars.get(tag).toString());
+    }
+
+    public static void backToWindow(String tag){
+        webDriver.switchTo().window(vars.get(tag).toString());
+    }
+
+    public static void putWindow(String tag){
+        vars.put(tag, webDriver.getWindowHandle());
+    }
 }
