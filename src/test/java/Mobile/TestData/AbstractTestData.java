@@ -45,14 +45,19 @@ String getSpecialistNameOnDetailsPsychologistPage();
 String getSpecialisOfTypeOnDetailsPsychologistPage();
 String getSpecialistRateOnDetailsPsychologistPage();
 String getExperienceOfYearsOnDetailsPsychologistPage();
-    String getUpcomingMeetingText();
-    String getDetailsMeetingText();
-    String getDateOfJoinOnDetailsPsychologistPage();
-    String getBriefAboutMeOnDetailsPsychologistPage();
-    String getSessionsPresentationWrittenOnDetailsPsychologistPage();
-    String getSessionsPresentationAudioOnDetailsPsychologistPage();
-    String getSessionsPresentationVideoOnDetailsPsychologistPage();
-    String getSubSpecialtiesOnDetailsPsychologistPage();
+String getUpcomingMeetingText();
+String getDetailsMeetingText();
+String getDateOfJoinOnDetailsPsychologistPage();
+String getBriefAboutMeOnDetailsPsychologistPage();
+String getSessionsPresentationWrittenOnDetailsPsychologistPage();
+String getSessionsPresentationAudioOnDetailsPsychologistPage();
+String getSessionsPresentationVideoOnDetailsPsychologistPage();
+String getSubSpecialtiesOnDetailsPsychologistPage();
+String getTitleUpcomingMeetingOnDetailsMeetingTestPage();
+String getPriceMeetingOnDetailsMeetingTestPage();
+String getTimeMeetingOnDetailsMeetingTestPage();
+String getRemainingSeatsOnDetailsMeetingTestPage();
+String  getTargetGroupTextOnDetailsMeetingTestPage();
 
 
 }

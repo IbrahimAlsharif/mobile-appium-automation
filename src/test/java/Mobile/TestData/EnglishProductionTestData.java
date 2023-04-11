@@ -178,6 +178,17 @@ public class EnglishProductionTestData implements AbstractTestData {
     public String getExperienceOfYearsOnDetailsPsychologistPage() {
         return null;
     }
+
+    @Override
+    public String getUpcomingMeetingText() {
+        return null;
+    }
+
+    @Override
+    public String getDetailsMeetingText() {
+        return null;
+    }
+
     @Override
     public String getDateOfJoinOnDetailsPsychologistPage() {
         return null;
@@ -202,6 +213,28 @@ public class EnglishProductionTestData implements AbstractTestData {
     }
     @Override
     public String getSubSpecialtiesOnDetailsPsychologistPage() {
+        return null;
+    }
+    @Override
+    public String getTitleUpcomingMeetingOnDetailsMeetingTestPage() {
+        return null;
+    }
+    @Override
+    public String getPriceMeetingOnDetailsMeetingTestPage() {
+        return null;
+    }
+
+    @Override
+    public String getTimeMeetingOnDetailsMeetingTestPage() {
+        return null;
+    }
+
+    @Override
+    public String getRemainingSeatsOnDetailsMeetingTestPage() {
+        return null;
+    }
+    @Override
+    public String getTargetGroupTextOnDetailsMeetingTestPage() {
         return null;
     }
 }
