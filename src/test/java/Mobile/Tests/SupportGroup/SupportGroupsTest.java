@@ -80,6 +80,15 @@ public class SupportGroupsTest {
         testCaseId="0";
         Assert.assertTrue(SupportGroups.TargetGroupTextOnDetailsMeetingTestPageIsDisplayed());
     }
+    @Test(priority = 14)
+    public void getMeetingDetailsGoalsItem(){
+        testCaseId="0";
+        Assert.assertTrue(SupportGroups.isMeetingDetailsGoalsItemDisplayed());
+    }
 
-
+    @Test(priority = 15)
+    public void registerMeetingButtonIsDisplayed(){
+        testCaseId="0";
+        Assert.assertTrue(SupportGroups.isRegisterMeetingButtonDisplayed());
+    }
 }

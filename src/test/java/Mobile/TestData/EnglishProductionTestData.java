@@ -237,6 +237,14 @@ public class EnglishProductionTestData implements AbstractTestData {
     public String getTargetGroupTextOnDetailsMeetingTestPage() {
         return null;
     }
+    @Override
+    public String getMeetingDetailsGoalsItem() {
+        return null;
+    }
+    @Override
+    public String getRegisterMeetingButton() {
+        return null;
+    }
 }
 
 

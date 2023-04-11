@@ -294,4 +294,14 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
         return "الفئة المستهدفة";
     }
 
+    @Override
+    public String getMeetingDetailsGoalsItem() {
+        return "أهداف اللقاء";
+    }
+
+    @Override
+    public String getRegisterMeetingButton() {
+        return "التسجيل في اللقاء";
+    }
+
 }

@@ -96,6 +96,23 @@ public class SupportGroups {
     public static boolean TargetGroupTextOnDetailsMeetingTestPageIsDisplayed(){
         return getTargetGroupTextOnDetailsMeetingTestPage().isDisplayed();
     }
+    public static MobileElement getMeetingDetailsGoalsItem() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getMeetingDetailsGoalsItem()+"\"]";
+        return MobileFinder.getByXpath(xpath, false);
+    }
+
+    public static boolean isMeetingDetailsGoalsItemDisplayed() {
+        return getMeetingDetailsGoalsItem().isDisplayed();
+    }
+    public static MobileElement getRegisterMeetingButton() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getRegisterMeetingButton()+"\"]";
+        return MobileFinder.getByXpath(xpath, true);
+    }
+
+    public static boolean isRegisterMeetingButtonDisplayed() {
+        return getRegisterMeetingButton().isDisplayed();
+    }
+
 
 
 }

@@ -58,6 +58,8 @@ String getPriceMeetingOnDetailsMeetingTestPage();
 String getTimeMeetingOnDetailsMeetingTestPage();
 String getRemainingSeatsOnDetailsMeetingTestPage();
 String  getTargetGroupTextOnDetailsMeetingTestPage();
+String  getMeetingDetailsGoalsItem();
+String  getRegisterMeetingButton();
 
 
 }
