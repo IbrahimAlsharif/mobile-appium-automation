@@ -60,6 +60,42 @@ public class SupportGroups {
         return getDetailsMeetingText().isDisplayed();
     }
 
+    public static MobileElement getTitleUpcomingMeetingOnDetailsMeetingTestPage() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTitleUpcomingMeetingOnDetailsMeetingTestPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean TitleUpcomingMeetingOnDetailsMeetingTestPageIsDisplayed(){
+        return getTitleUpcomingMeetingOnDetailsMeetingTestPage().isDisplayed();
+    }
+
+    public static MobileElement getPriceMeetingOnDetailsMeetingTestPage() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getPriceMeetingOnDetailsMeetingTestPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean PriceMeetingOnDetailsMeetingTestPageIsDisplayed(){
+        return getPriceMeetingOnDetailsMeetingTestPage().isDisplayed();
+    }
+    public static MobileElement getTimeMeetingOnDetailsMeetingTestPage() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getPriceMeetingOnDetailsMeetingTestPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean TimeMeetingOnDetailsMeetingTestPageIsDisplayed(){
+        return getTimeMeetingOnDetailsMeetingTestPage().isDisplayed();
+    }
+    public static MobileElement getRemainingSeatsOnDetailsMeetingTestPage() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getRemainingSeatsOnDetailsMeetingTestPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean RemainingSeatsOnDetailsMeetingTestPageIsDisplayed(){
+        return getRemainingSeatsOnDetailsMeetingTestPage().isDisplayed();
+    }
+    public static MobileElement getTargetGroupTextOnDetailsMeetingTestPage() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTargetGroupTextOnDetailsMeetingTestPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean TargetGroupTextOnDetailsMeetingTestPageIsDisplayed(){
+        return getTargetGroupTextOnDetailsMeetingTestPage().isDisplayed();
+    }
 
 
 }
