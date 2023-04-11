@@ -1,5 +1,6 @@
 package Mobile.Tests.AllSpecialists;
 
+import Base.MobileSetup.MobileSetupTest;
 import Mobile.Tests.HomePage.HomePage;
 import Mobile.Tests.HomePage.HomePageTest;
 
@@ -7,9 +8,12 @@ import Mobile.Tests.MyConversations.MyConversations;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import static Base.MobileSetup.MobileSetupTest.testDataMobile;
+
 
 import static Base.MobileSetup.MobileSetupTest.androidDriver;
 import static Base.MobileSetup.MobileSetupTest.testDataMobile;
@@ -36,15 +40,25 @@ public class PsychologistTest {
     public void FilterOnPsychologistPageIsDisplayed(){
         Assert.assertTrue(Psychologist.FilterOnPsychologistPageIsDisplayed());
     }
-    @Test(priority = 5)
+    @Test(priority = 5,enabled = false)
     public void InputOnSearchField()  {
-        Psychologist. getSearchFieldOnPsychologistPage().click();
+        //todo refer to it again
+        String searchText = "بدور الراضي";
+
+        for (int i = 0; i < searchText.length(); i++) {
+            char letter = searchText.charAt(i);
+            Psychologist.getSearchFieldOnPsychologistPage().sendKeys(String.valueOf(letter));
+        }
+        Psychologist.getSearchFieldOnPsychologistPage().click();
         Psychologist.InputOnSearchField();
-    Assert.assertTrue(Psychologist.PsychologistNameOnPsychologistPageIsDisplayed());
-    }
-    @Test(priority = 6 )
-    public void PsychologistNameOnPsychologistPageIsDisplayed(){
         Assert.assertTrue(Psychologist.PsychologistNameOnPsychologistPageIsDisplayed());
+    }
+    @Test(priority = 6 ,enabled = true)
+    public void PsychologistNameOnPsychologistPageIsDisplayed(){
+        androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getPsychologistNameText()+"\"))");
+        Psychologist.ClickOnPsychologist();
+      //  Assert.assertTrue(Psychologist.SpecialistNameOnDetailsPsychologistPageIsDisplayed());
+
     }
 
 

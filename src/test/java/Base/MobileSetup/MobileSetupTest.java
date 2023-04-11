@@ -53,7 +53,7 @@ public class MobileSetupTest {
     private DesiredCapabilities getDesiredCapabilities(String appPath) {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("deviceName", "Android Emulator");
+        capabilities.setCapability("deviceName", "Mohammed");
         capabilities.setCapability("app_activity", "sa.app.famcare.MainActivity");
         capabilities.setCapability("allowTestPackages", "true");
         capabilities.setCapability("app_package", "sa.app.famcare");

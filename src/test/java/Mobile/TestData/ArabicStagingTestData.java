@@ -168,9 +168,24 @@ public class ArabicStagingTestData implements AbstractTestData {
     }
     @Override
     public String getPsychologistNameText() {
-        return "زبيدة القبيشي";
+        return "مستشاره نفسيه، ماجستير في علم النفس ، عضو هيئه تدريس سابق،، ";
     }
-
+    @Override
+    public String getSpecialistNameOnDetailsPsychologistPage() {
+        return "بدور الراضي";
+    }
+    @Override
+    public String getSpecialisOfTypeOnDetailsPsychologistPage() {
+        return "أخصائي نفسي";
+    }
+    @Override
+    public String getSpecialistRateOnDetailsPsychologistPage() {
+        return "5/5";
+    }
+    @Override
+    public String getExperienceOfYearsOnDetailsPsychologistPage() {
+        return "من 5 إلى 10 سنوات";
+    }
 }
 
 

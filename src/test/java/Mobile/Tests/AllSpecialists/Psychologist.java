@@ -38,19 +38,53 @@ public class Psychologist {
         return getFilterOnPsychologistPage().isDisplayed();
     }
     public static void InputOnSearchField(){
-      //  for (int i = 0; i < testDataMobile.getPsychologistNameText().length(); i++) {
-            getSearchFieldOnPsychologistPage().sendKeys(testDataMobile.getPsychologistNameText(),Keys.TAB);
+        getSearchFieldOnPsychologistPage().sendKeys("ب",Keys.TAB);
 
-       // }
-       // getSearchFieldOnPsychologistPage().sendKeys(testDataMobile.getPsychologistNameText());
     }
     public static WebElement PsychologistNameOnPsychologistPage() {
-        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getPsychologistNameText()+"\"]";
+
+      //  String xpath="//android.view.View[contains(@content-desc="kk")]";
+       String xpath="//android.view.View[@content-desc=\""+testDataMobile.getPsychologistNameText()+"\")]";
+       // String xpath="//android.view.View[contains(@text,'بدور الراضي')]";
+
+
         return  MobileFinder.getByXpath(xpath,false);
     }
     public static boolean PsychologistNameOnPsychologistPageIsDisplayed(){
         return PsychologistNameOnPsychologistPage().isDisplayed();
     }
+   public static void ClickOnPsychologist(){
+    PsychologistNameOnPsychologistPage().click();}
+    public static WebElement getSpecialistNameOnDetailsPsychologistPage() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getSpecialistNameOnDetailsPsychologistPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean SpecialistNameOnDetailsPsychologistPageIsDisplayed(){
+        return getSpecialistNameOnDetailsPsychologistPage().isDisplayed();
+    }
+    public static WebElement getSpecialisOfTypeOnDetailsPsychologistPage() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getSpecialisOfTypeOnDetailsPsychologistPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean SpecialisOfTypeOnDetailsPsychologistPageIsDisplayed(){
+        return getSpecialisOfTypeOnDetailsPsychologistPage().isDisplayed();
+    }
+    public static WebElement getSpecialistRateOnDetailsPsychologistPage() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getSpecialistRateOnDetailsPsychologistPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean SpecialistRateOnDetailsPsychologistPageIsDisplayed(){
+        return getSpecialistRateOnDetailsPsychologistPage().isDisplayed();
+    }
+    public static WebElement getExperienceOfYearsOnDetailsPsychologistPage() {
+
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getExperienceOfYearsOnDetailsPsychologistPage()+"\"]";
+        return  MobileFinder.getByXpath(xpath,false);
+    }
+    public static boolean ExperienceOfYearsOnDetailsPsychologistPageIsDisplayed(){
+        return getSpecialistRateOnDetailsPsychologistPage().isDisplayed();
+    }
+
 
 
 
