@@ -1,6 +1,7 @@
 package Web.Tests.SubscriptionsPage;
 
 import Base.WebSetup.WebFinder;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import static Base.WebSetup.WebFinder.*;
@@ -189,7 +190,7 @@ public class SubscriptionPage {
 
     public static void clickSignInWithGoogleButton() {
         getWindowHandles();
-        click(webDriver, getSignInButton());
+        click(getSignInButton());
         switchToWindow("win405");
     }
 
@@ -253,5 +254,9 @@ public class SubscriptionPage {
 
     public static void clickOnNextButton(){
         getNextButton().click();
+    }
+
+    public static void switchToFrame(String frame) {
+        webDriver.switchTo().frame(webDriver.findElement(By.tagName(frame)));
     }
 }
