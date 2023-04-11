@@ -149,5 +149,63 @@ public class EnglishStagingTestData implements AbstractTestData {
     public String getEmptyChatSubTitleOnMyConversationsPage() {
         return null;
     }
+    @Override
+    public String getTitleAppBarOnPsychologistPage() {
+        return null;
+    }
+    @Override
+    public String getFilterOnPsychologistPageText() {
+        return null;
+    }
+    @Override
+    public String getDataInputOnSearchFieldText() {
+        return null;
+    }
+    @Override
+    public String getPsychologistNameText() {
+        return null;
+    }
+    @Override
+    public String getSpecialistNameOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSpecialisOfTypeOnDetailsPsychologistPage() {
+        return null;
+    }
+    @Override
+    public String getSpecialistRateOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getExperienceOfYearsOnDetailsPsychologistPage() {
+        return null;
+    }
+    @Override
+    public String getDateOfJoinOnDetailsPsychologistPage() {
+        return null;
+    }
+    @Override
+    public String getBriefAboutMeOnDetailsPsychologistPage() {
+        return null;
+    }
+    @Override
+    public String getSessionsPresentationWrittenOnDetailsPsychologistPage() {
+        return null;
+    }
+    @Override
+    public String getSessionsPresentationAudioOnDetailsPsychologistPage() {
+        return null;
+    }
+    @Override
+    public String getSessionsPresentationVideoOnDetailsPsychologistPage() {
+        return null;
+    }
+    @Override
+    public String getSubSpecialtiesOnDetailsPsychologistPage() {
+        return null;
+    }
 
 }

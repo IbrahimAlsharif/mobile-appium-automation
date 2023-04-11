@@ -37,7 +37,22 @@ String getTitleAppBarOnMyConversationsPage();
 String getEmptyChatTitleOnMyConversationsPage();
 String getSpecialistsBrowseButtonOnMyConversationsPage();
 String getEmptyChatSubTitleOnMyConversationsPage();
-
+String getTitleAppBarOnPsychologistPage();
+String getFilterOnPsychologistPageText();
+String getDataInputOnSearchFieldText();
+String getPsychologistNameText();
+String getSpecialistNameOnDetailsPsychologistPage();
+String getSpecialisOfTypeOnDetailsPsychologistPage();
+String getSpecialistRateOnDetailsPsychologistPage();
+String getExperienceOfYearsOnDetailsPsychologistPage();
+    String getUpcomingMeetingText();
+    String getDetailsMeetingText();
+    String getDateOfJoinOnDetailsPsychologistPage();
+    String getBriefAboutMeOnDetailsPsychologistPage();
+    String getSessionsPresentationWrittenOnDetailsPsychologistPage();
+    String getSessionsPresentationAudioOnDetailsPsychologistPage();
+    String getSessionsPresentationVideoOnDetailsPsychologistPage();
+    String getSubSpecialtiesOnDetailsPsychologistPage();
 
 
 }

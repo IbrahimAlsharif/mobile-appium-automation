@@ -14,35 +14,35 @@ public class LanguageChooseTest {
     testCaseId="0";
     Assert.assertTrue(LanguageChoose.welcomeTextIsDisplayed());
 }
-    @Test(priority = 1)
+    @Test(priority = 2)
     public void welcomeLabelTextIsCorrect(){
     testCaseId="0";
     Assert.assertEquals(LanguageChoose.getWelcomeLabelText(),"Welcome to your safe space");
 }
-    @Test(priority = 1)
+    @Test(priority = 3)
     public void mainImageIsDisplayed(){
     testCaseId="0";
     Assert.assertTrue(LanguageChoose.mainImageIsDisplayed());
 }
 
-    @Test(priority = 1)
+    @Test(priority = 4)
     public void welcomeDescriptionIsDisplayed(){
         testCaseId="0";
         Assert.assertTrue(LanguageChoose.welcomeDescriptionIsDisplayed());
     }
-    @Test(priority = 2)
+    @Test(priority = 5)
     public void VerifyThatTheUserAbleSelectArabicLanguage(){
         testCaseId="0";
         LanguageChoose.ClickOnSelectArabicText();
         Assert.assertEquals(LanguageChoose.getChooseButtonText(),testDataMobile.getChooseButtonText());
     }
-    @Test(priority = 3)
+    @Test(priority = 6)
     public void VerifyThatTheUserAbleClickChooseButton(){
         testCaseId="0";
         LanguageChoose.ClickOnChooseButton();
         Assert.assertTrue(LanguageChoose.IgnoreButtonIsDisplayed());
     }
-    @Test(priority = 4)
+    @Test(priority = 7)
     public void VerifyThatTheUserAbleClickIgnoreButton(){
         testCaseId="0";
         LanguageChoose.ClickOnIgnoreButton();

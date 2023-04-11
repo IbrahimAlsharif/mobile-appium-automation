@@ -79,6 +79,9 @@ public class HomePage {
     public static boolean PsychologistIsDisplayed(){
         return getPsychologistText().isDisplayed();
     }
+    public static void ClickOnPsychologist(){
+        getPsychologistText().click();
+    }
     public static WebElement getSocialWorkerText() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getSocialWorkerText()+"\"]";
         return MobileFinder.getByXpath(xpath,false);

@@ -181,5 +181,92 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
         return "حجزك للجلسة الأولى تمكنك من التحدث مع الأخصائي مباشرة للحالات الطارئة فقط ولا يغني عن الجلسة، ولا تزيد عن ١٠٠ كلمة.";
     }
 
+    @Override
+    public String getTitleAppBarOnPsychologistPage() {
+        return "اختر أخصائي";
+    }
+
+    @Override
+    public String getFilterOnPsychologistPageText() {
+        return "تصفية\n" +
+                "1";
+    }
+
+    @Override
+    public String getDataInputOnSearchFieldText() {
+        return "زبيدة";
+    }
+
+    @Override
+    public String getPsychologistNameText() {
+        return "مستشاره نفسيه، ماجستير في علم النفس ، عضو هيئه تدريس سابق،، ";
+    }
+
+    @Override
+    public String getSpecialistNameOnDetailsPsychologistPage() {
+        return "بدور الراضي";
+    }
+
+    @Override
+    public String getSpecialisOfTypeOnDetailsPsychologistPage() {
+        return "أخصائي نفسي";
+    }
+
+    @Override
+    public String getSpecialistRateOnDetailsPsychologistPage() {
+        return "5/5";
+    }
+
+    @Override
+    public String getExperienceOfYearsOnDetailsPsychologistPage() {
+        return "من 5 إلى 10 سنوات";
+    }
+
+    @Override
+    public String getUpcomingMeetingText() {
+        return "الشخصية الضعيفة وسُبل تقويتها!\n" +
+                "58.00 SR\n" +
+                "د. عطالله العبار\n" +
+                "- أخصائي نفسي\n" +
+                "الموعــــد\n" +
+                "الثلاثاء، 11 إبريل | 10:00 مساء\n" +
+                "المــــــدة\n" +
+                "ساعة\n" +
+                "المقاعد المتبقية\n" +
+                "15 مقعد\n" +
+                "تسجيل";
+    }
+
+    @Override
+    public String getDetailsMeetingText() {
+        return "تفاصيل اللقاء";
+    }
+
+    @Override
+    public String getDateOfJoinOnDetailsPsychologistPage() {
+        return "  منذ 2 سنة و 7 شهور";
+    }
+    @Override
+    public String getBriefAboutMeOnDetailsPsychologistPage() {
+        return "مستشاره نفسيه، ماجستير في علم النفس ، عضو هيئه تدريس سابق،، \n" +
+                "Bdr كوبون خصم. \n" +
+                "9 سنوات خبره في الاستشارات النفسيه والاسريه والعلاج المعرفي السلوكي لحالات( الاكتئاب، القلق ، الرهاب الاجتماعي، نوبات الهلع ،  الوسواس القهري، هوس نتف الشعر ، العاده السريه ، الفقد، كرب بعد الصدمه ، مشكلات  زوجيه، التعلق)";
+    }
+    @Override
+    public String getSessionsPresentationWrittenOnDetailsPsychologistPage() {
+        return "كتابية";
+    }
+    @Override
+    public String getSessionsPresentationAudioOnDetailsPsychologistPage() {
+        return "صوتية";
+    }
+    @Override
+    public String getSessionsPresentationVideoOnDetailsPsychologistPage() {
+        return "مرئية";
+    }
+    @Override
+    public String getSubSpecialtiesOnDetailsPsychologistPage() {
+        return "القلق";
+    }
 
 }

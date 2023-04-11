@@ -17,6 +17,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 
 @Listeners(Listener.class)
@@ -29,6 +31,8 @@ public class WebSetupTest {
     public static Mobile.TestDataSpecialistTests.AbstractTestData testDataMobileSpecialist;
     public static Web.TestData.AbstractTestData testDataWeb;
     public static JavascriptExecutor javascriptExecutor;
+
+    public static Map<String, Object> vars;
 
     @Test(priority = 1)
     @Parameters({"language", "branch", "browser", "url"})
@@ -51,6 +55,7 @@ public class WebSetupTest {
         }
         wait = new WebDriverWait(webDriver, 60);
         javascriptExecutor = (JavascriptExecutor) webDriver;
+        vars = new HashMap<String, Object>();
         webDriver.get(url);
 
         webDriver.manage().window().setSize(new Dimension(390, 844));
