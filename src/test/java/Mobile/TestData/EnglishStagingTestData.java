@@ -188,10 +188,12 @@ public class EnglishStagingTestData implements AbstractTestData {
     public String getUpcomingMeetingText() {
         return null;
     }
+
     @Override
     public String getDetailsMeetingText() {
         return null;
     }
+
     @Override
     public String getDateOfJoinOnDetailsPsychologistPage() {
         return null;
@@ -216,10 +218,12 @@ public class EnglishStagingTestData implements AbstractTestData {
     public String getSubSpecialtiesOnDetailsPsychologistPage() {
         return null;
     }
+
     @Override
     public String getTitleUpcomingMeeting() {
         return null;
     }
+
     @Override
     public String getPriceMeeting() {
         return null;
@@ -234,14 +238,17 @@ public class EnglishStagingTestData implements AbstractTestData {
     public String getRemainingSeats() {
         return null;
     }
+
     @Override
     public String getTargetGroupText() {
         return null;
     }
+
     @Override
     public String getMeetingDetailsGoalsItem() {
         return null;
     }
+
     @Override
     public String getRegisterMeetingButton() {
         return null;

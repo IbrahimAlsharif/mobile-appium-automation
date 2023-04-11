@@ -215,10 +215,12 @@ public class EnglishProductionTestData implements AbstractTestData {
     public String getSubSpecialtiesOnDetailsPsychologistPage() {
         return null;
     }
+
     @Override
     public String getTitleUpcomingMeeting() {
         return null;
     }
+
     @Override
     public String getPriceMeeting() {
         return null;
@@ -233,14 +235,17 @@ public class EnglishProductionTestData implements AbstractTestData {
     public String getRemainingSeats() {
         return null;
     }
+
     @Override
     public String getTargetGroupText() {
         return null;
     }
+
     @Override
     public String getMeetingDetailsGoalsItem() {
         return null;
     }
+
     @Override
     public String getRegisterMeetingButton() {
         return null;
