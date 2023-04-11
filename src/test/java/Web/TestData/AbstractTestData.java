@@ -1,39 +1,27 @@
 package Web.TestData;
 
 public interface AbstractTestData {
+
     String getSubscriptionsTitle();
+
     String getMonthlyBronzePrice();
+
     String getThreeMonthsBronzePrice();
+
     String getSixMonthsBronzePrice();
     String getCourseTitle();
-    String getLoginPopUpText();
-    String getSignInWindowTitleText();
-    String getEmail();
-    String getPassword();
-    String getCheckoutTitleText();
-    String getCheckoutPackageTitle();
-    String getCheckoutPackageSTitle();
-    String getPaymentDetailsTitle();
-    String getPriceText();
-    String getDiscountText();
-    String getTaxText();
-    String getTotalPriceText();
-    String getPriceValue();
-    String getTaxValue();
-    String getDiscountValue();
-    String getTotalPriceValue();
-    String getPaymentDataText();
-    String getCardNumber();
-    String getCardName();
-    String getCardExpiry();
-    String getCardPIN();
-    String getCouponCode();
-    String getJoinAsSpecialistTitleText();
-    String getSpecialistName();
-    String getSpecialistMobile();
-    String getSpecialistDegree();
-    String getSpecialistSpecialization();
-    String getSpecialistNumExperience();
-    String getSpecialistSocialMedia();
-    String getSuccessMessageText();
+
+    String setFirstNameOnCheckoutPage();
+
+    String setLastNameOnCheckoutPage();
+
+    String setAddressOnCheckoutPage();
+
+    String setCityOnCheckoutPage();
+
+    String setPhoneOnCheckoutPage();
+
+    String getFinalTotalAmountPriceOnCheckoutPage();
+
+    String getAmountTotalPriceOnCheckoutPage();
 }
