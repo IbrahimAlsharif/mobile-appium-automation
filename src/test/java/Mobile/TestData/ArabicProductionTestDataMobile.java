@@ -242,5 +242,35 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
         return "تفاصيل اللقاء";
     }
 
+    @Override
+    public String getDateOfJoinOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getBriefAboutMeOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSessionsPresentationWrittenOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSessionsPresentationAudioOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSessionsPresentationVideoOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSubSpecialtiesOnDetailsPsychologistPage() {
+        return null;
+    }
+
 
 }

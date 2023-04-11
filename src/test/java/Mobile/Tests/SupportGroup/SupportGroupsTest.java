@@ -1,5 +1,6 @@
 package Mobile.Tests.SupportGroup;
 
+import Base.MobileSetup.MobileFinder;
 import Base.MobileSetup.MobileSetupTest;
 import Mobile.Tests.HomePage.HomePage;
 import Mobile.Tests.Language.LanguageChoose;
@@ -42,13 +43,13 @@ public class SupportGroupsTest {
     @Test(priority = 2)
     public void EndingMeetingsTextOnSupportGroupsTestPageIsDisplayed(){
         testCaseId="0";
-        androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getEndingMeetingsTextOnSupportGroupsTestPage()+"\"))");
+        MobileFinder.scrollUntil(testDataMobile.getEndingMeetingsTextOnSupportGroupsTestPage());
         Assert.assertTrue(SupportGroups.EndingMeetingsTextOnSupportGroupsTestPageIsDisplayed());
     }
     @Test(priority = 3)
     public void UpcomingMeetingOnSupportGroupsTestPageIsDisplayed(){
         testCaseId="0";
-        androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(false).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getUpcomingMeetingText()+"\"))");
+        MobileFinder.scrollUntil(testDataMobile.getUpcomingMeetingText());
         Assert.assertTrue(SupportGroups.UpcomingMeetingOnSupportGroupsTestPageIsDisplayed());
     }
     @Test(priority = 7)
