@@ -192,9 +192,7 @@ public class ArabicStagingTestData implements AbstractTestData {
     }
     @Override
     public String getBriefAboutMeOnDetailsPsychologistPage() {
-        return "مستشاره نفسيه، ماجستير في علم النفس ، عضو هيئه تدريس سابق،، \n" +
-                "Bdr كوبون خصم. \n" +
-                "9 سنوات خبره في الاستشارات النفسيه والاسريه والعلاج المعرفي السلوكي لحالات( الاكتئاب، القلق ، الرهاب الاجتماعي، نوبات الهلع ،  الوسواس القهري، هوس نتف الشعر ، العاده السريه ، الفقد، كرب بعد الصدمه ، مشكلات  زوجيه، التعلق)";
+        return "نبذة عني";
     }
     @Override
     public String getSessionsPresentationWrittenOnDetailsPsychologistPage() {
@@ -212,7 +210,33 @@ public class ArabicStagingTestData implements AbstractTestData {
     public String getSubSpecialtiesOnDetailsPsychologistPage() {
         return "القلق";
     }
+    @Override
+    public String getSpecialistLanguageOnDetailsPsychologistPage() {
+        return "العربية";
+    }
+    @Override
+    public String getLanguageTitleOnDetailsPsychologistPage() {
+        return "اللغات";
+    }
+    @Override
+    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
+        return "التخصصات الدقيقة";
+    }
 
+    @Override
+    public String getSpecialistRatesTitleOnDetailsPsychologistPage() {
+        return "التقييمات";
+    }
+    @Override
+    public String getUserByCommentTextOnDetailsPsychologistPage() {
+        return "سي\n" +
+                "5/5\n" +
+                "شكرا من اعماق القلب";
+    }
+    @Override
+    public String getBookLaterDateButtonOnDetailsPsychologistPage() {
+        return "حجز موعد لاحق";
+    }
 }
 
 

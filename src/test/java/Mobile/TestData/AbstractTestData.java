@@ -51,6 +51,12 @@ String getSessionsPresentationWrittenOnDetailsPsychologistPage();
 String getSessionsPresentationAudioOnDetailsPsychologistPage();
 String getSessionsPresentationVideoOnDetailsPsychologistPage();
 String getSubSpecialtiesOnDetailsPsychologistPage();
+String getSpecialistLanguageOnDetailsPsychologistPage();
+String getLanguageTitleOnDetailsPsychologistPage();
+String getSubSpecialtiesTitleOnDetailsPsychologistPage();
+String getSpecialistRatesTitleOnDetailsPsychologistPage();
+String  getUserByCommentTextOnDetailsPsychologistPage();
+String getBookLaterDateButtonOnDetailsPsychologistPage();
 
 
 
