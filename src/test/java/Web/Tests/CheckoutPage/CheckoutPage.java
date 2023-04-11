@@ -2,13 +2,13 @@ package Web.Tests.CheckoutPage;
 
 import Base.WebSetup.WebFinder;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
+import static Base.WebSetup.WebFinder.*;
 import static Base.WebSetup.WebSetupTest.*;
 
 public class CheckoutPage {
     public static WebElement getCheckoutTitle() {
-        webDriver.switchTo().window(vars.get("root").toString());
+        backToWindow("root");
         String xpath = "//H3[@class='text-center fs-3 pt-48 mb-12'][text()='"+testDataWeb.getCheckoutTitleText()+"']";
         return WebFinder.getByXpath(xpath, false);
     }
@@ -208,7 +208,6 @@ public class CheckoutPage {
         return getPayNowButton().isDisplayed();
     }
     public static void clickOnNowButton() {
-        Actions builder = new Actions(webDriver);
-        builder.click(getPayNowButton()).perform();
+        click(webDriver, getPayNowButton());
     }
 }

@@ -2,10 +2,8 @@ package Web.Tests.SubscriptionsPage;
 
 import Base.WebSetup.WebFinder;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
-import java.util.Set;
-
+import static Base.WebSetup.WebFinder.*;
 import static Base.WebSetup.WebSetupTest.*;
 
 public class SubscriptionPage {
@@ -189,27 +187,10 @@ public class SubscriptionPage {
         return getSignInButton().isDisplayed();
     }
 
-    public static String waitForWindow(int timeout) {
-        try {
-            Thread.sleep(timeout);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        Set<String> whNow = webDriver.getWindowHandles();
-        Set<String> whThen = (Set<String>) vars.get("window_handles");
-        if (whNow.size() > whThen.size()) {
-            whNow.removeAll(whThen);
-        }
-        return whNow.iterator().next();
-    }
-
     public static void clickSignInWithGoogleButton() {
-        vars.put("window_handles", webDriver.getWindowHandles());
-        Actions builder = new Actions(webDriver);
-        builder.click(getSignInButton()).perform();
-        vars.put("win405", waitForWindow(2000));
-        vars.put("root", webDriver.getWindowHandle());
-        webDriver.switchTo().window(vars.get("win405").toString());
+        getWindowHandles();
+        click(webDriver, getSignInButton());
+        switchToWindow("win405");
     }
 
     public static WebElement getSignInWindowTitle() {
