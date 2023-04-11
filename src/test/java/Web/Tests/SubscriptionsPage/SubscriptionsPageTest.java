@@ -89,7 +89,7 @@ public class SubscriptionsPageTest {
 
     @Test(priority = 9)
     public void signInButtonIsDisplayed() {
-        webDriver.switchTo().frame(webDriver.findElement(By.tagName("iframe")));
+        SubscriptionPage.switchToFrame("iframe");
         Assert.assertTrue(SubscriptionPage.signInButtonIsDisplayed());
     }
 
