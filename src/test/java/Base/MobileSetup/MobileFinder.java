@@ -187,8 +187,10 @@ public  class MobileFinder {
      * @param locator
      */
     public static void waitForElementToBeVisibleBy(By locator) {
-        MobileSetupTest. wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        MobileSetupTest. wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+
+
 
     /**
      * Wait for element to be click able
