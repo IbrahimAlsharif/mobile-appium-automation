@@ -41,13 +41,13 @@ public class PsychologistTest {
         Assert.assertTrue(Psychologist.FilterOnPsychologistPageIsDisplayed());
     }
     @Test(priority = 5,enabled = false)
-    public void InputOnSearchField()  {
+    public void InputOnSearchField() throws InterruptedException {
         //todo refer to it again
-        String searchText = "بدور الراضي";
-
+        String searchText = testDataMobile.getPsychologistNameText();
         for (int i = 0; i < searchText.length(); i++) {
             char letter = searchText.charAt(i);
             Psychologist.getSearchFieldOnPsychologistPage().sendKeys(String.valueOf(letter));
+            Thread.sleep(500);
         }
         Psychologist.getSearchFieldOnPsychologistPage().click();
         Psychologist.InputOnSearchField();
