@@ -1,10 +1,6 @@
 package Mobile.Tests.SupportGroup;
 
 import Base.MobileSetup.MobileFinder;
-import io.appium.java_client.PerformsTouchActions;
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.touch.offset.PointOption;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static Base.MobileSetup.MobileSetupTest.androidDriver;
@@ -18,7 +14,7 @@ public class SupportGroupsTest {
         String accessibility = "مجموعات الدعم\n" +
                 "علامة التبويب 3 من 5";
        MobileFinder.getByAccessibilityId(accessibility,false).click();
-        Assert.assertTrue(SupportGroups.screenTitleIsDisplayed());
+       assertTrue(SupportGroups.screenTitleIsDisplayed());
     }
     @Test(priority = 2)
     public void AllGroupsTextIsDisplayed(){

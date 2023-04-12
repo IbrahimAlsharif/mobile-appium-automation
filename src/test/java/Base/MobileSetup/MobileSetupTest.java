@@ -13,7 +13,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
+import static org.testng.Assert.*;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -41,7 +41,7 @@ public class MobileSetupTest {
         initializeTestData(language, branch);
         TestRailManager testRailManager = new TestRailManager();
         MobileFinder.testRunId = testRailManager.addTestRun();
-        Assert.assertTrue(true);
+        assertTrue(true);
     }
 
     private void initializeMobileDriver(String appPath, String deviceName) throws MalformedURLException {

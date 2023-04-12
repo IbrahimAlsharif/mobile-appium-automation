@@ -1,5 +1,4 @@
 package Web.Tests.Navbar;
-
 import Base.WebSetup.WebFinder;
 import org.openqa.selenium.WebElement;
 
