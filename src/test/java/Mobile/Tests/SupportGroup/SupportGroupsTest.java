@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import static Base.MobileSetup.MobileSetupTest.androidDriver;
 import static Base.MobileSetup.MobileSetupTest.testDataMobile;
+import static org.testng.Assert.*;
 
 public class SupportGroupsTest {
     private String testCaseId;
@@ -18,68 +19,36 @@ public class SupportGroupsTest {
         touchAction.tap(PointOption.point(563, 1931)).release().perform();
     }
     @Test(priority = 2)
-    public void TitleAppBarOnBenchmarksPageDisplayed(){
+    public void TitleAppBarIsDisplayed(){
         testCaseId="0";
-        Assert.assertTrue(SupportGroups.TitleAppBarOnBenchmarksPageDisplayed());
+        assertTrue(SupportGroups.screenTitleIsDisplayed());
     }
     @Test(priority = 3)
-    public void AllGroupsTextOnSupportGroupsTestPageIsDisplayed(){
+    public void AllGroupsTextIsDisplayed(){
         testCaseId="0";
-        Assert.assertTrue(SupportGroups.AllGroupsTextOnSupportGroupsTestPageIsDisplayed());
+        assertTrue(SupportGroups.AllGroupsTextOnSupportGroupsTestPageIsDisplayed());
     }
     @Test(priority = 4)
-    public void MyGroupsTextOnSupportGroupsTestPageIsDisplayed(){
+    public void MyGroupsTextIsDisplayed(){
         testCaseId="0";
-        Assert.assertTrue(SupportGroups.MyGroupsTextOnSupportGroupsTestPageIsDisplayed());
+        assertTrue(SupportGroups.MyGroupsTextOnSupportGroupsTestPageIsDisplayed());
     }
   @Test(priority = 5)
-    public void UpcomingMeetingsTextOnSupportGroupsTestPageIsDisplayed(){
+    public void UpcomingMeetingsTextIsDisplayed(){
         testCaseId="0";
-        Assert.assertTrue(SupportGroups.UpcomingMeetingsTextOnSupportGroupsTestPageIsDisplayed());
+       assertTrue(SupportGroups.UpcomingMeetingsTextOnSupportGroupsTestPageIsDisplayed());
     }
     @Test(priority = 6,enabled = false)
-    public void EndingMeetingsTextOnSupportGroupsTestPageIsDisplayed(){
+    public void EndingMeetingsTextIsDisplayed(){
         testCaseId="0";
         MobileFinder.scrollUntilText(testDataMobile.getEndingMeetingsTextOnSupportGroupsTestPage());
-        Assert.assertTrue(SupportGroups.EndingMeetingsTextOnSupportGroupsTestPageIsDisplayed());
+        assertTrue(SupportGroups.EndingMeetingsTextOnSupportGroupsTestPageIsDisplayed());
     }
     @Test(priority = 7)
-    public void UpcomingMeetingOnSupportGroupsTestPageIsDisplayed(){
+    public void UpcomingMeetingIsDisplayed(){
         testCaseId="0";
         MobileFinder.scrollUntilText(testDataMobile.getUpcomingMeetingText());
-        Assert.assertTrue(SupportGroups.UpcomingMeetingOnSupportGroupsTestPageIsDisplayed());
+       assertTrue(SupportGroups.UpcomingMeetingIsDisplayed());
     }
-    @Test(priority = 8)
-    public void VerifyThatTheUserAbleClickUpcomingMeeting(){
-        testCaseId="0";
-        SupportGroups.ClickOnUpcomingMeeting();
-        Assert.assertTrue(SupportGroups.DetailsUpcomingMeetingOnDetailsMeetingTestPageIsDisplayed());
-    }
-    @Test(priority = 9)
-    public void TitleUpcomingMeetingOnDetailsMeetingTestPageIsDisplayed(){
-        testCaseId="0";
-        Assert.assertTrue(SupportGroups.TitleUpcomingMeetingOnDetailsMeetingTestPageIsDisplayed());
-    }
-    @Test(priority = 10)
-    public void getPriceMeetingOnDetailsMeetingTestPageIsDisplayed(){
-        testCaseId="0";
-        Assert.assertTrue(SupportGroups.PriceMeetingOnDetailsMeetingTestPageIsDisplayed());
-    }
-    @Test(priority = 11)
-    public void TimeMeetingOnDetailsMeetingTestPageIsDisplayed(){
-        testCaseId="0";
-        Assert.assertTrue(SupportGroups.TimeMeetingOnDetailsMeetingTestPageIsDisplayed());
-    }
-    @Test(priority = 12)
-    public void RemainingSeatsOnDetailsMeetingTestPageIsDisplayed(){
-        testCaseId="0";
-        Assert.assertTrue(SupportGroups.RemainingSeatsOnDetailsMeetingTestPageIsDisplayed());
-    }
-    @Test(priority = 13)
-    public void getTargetGroupTextOnDetailsMeetingTestPageIsDisplayed(){
-        testCaseId="0";
-        Assert.assertTrue(SupportGroups.TargetGroupTextOnDetailsMeetingTestPageIsDisplayed());
-    }
-
 
 }

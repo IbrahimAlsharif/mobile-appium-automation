@@ -6,12 +6,12 @@ import  static Base.MobileSetup.MobileSetupTest.testDataMobile;
 
 public class SupportGroups {
 
-    public static MobileElement getTitleAppBarOnSupportGroupsTestPage() {
+    public static MobileElement getScreenTitle() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTitleAppBarOnSupportGroupsTestPage()+"\"]";
         return  MobileFinder.getByXpath(xpath,true);
     }
-    public static boolean TitleAppBarOnBenchmarksPageDisplayed(){
-        return getTitleAppBarOnSupportGroupsTestPage().isDisplayed();
+    public static boolean screenTitleIsDisplayed(){
+        return getScreenTitle().isDisplayed();
     }
     public static MobileElement getAllGroupsTextOnSupportGroupsTestPage() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTitleAppBarOnSupportGroupsTestPage()+"\"]";
@@ -46,56 +46,14 @@ public class SupportGroups {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getUpcomingMeetingText()+"\"]";
         return  MobileFinder.getByXpath(xpath,true);
     }
-    public static boolean UpcomingMeetingOnSupportGroupsTestPageIsDisplayed(){
+    public static boolean UpcomingMeetingIsDisplayed(){
         return getUpcomingMeeting().isDisplayed();
     }
     public static void ClickOnUpcomingMeeting(){
         getUpcomingMeeting().click();
     }
-    public static MobileElement getDetailsMeetingText() {
-        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getDetailsMeetingText()+"\"]";
-        return  MobileFinder.getByXpath(xpath,true);
-    }
-    public static boolean DetailsUpcomingMeetingOnDetailsMeetingTestPageIsDisplayed(){
-        return getDetailsMeetingText().isDisplayed();
-    }
 
-    public static MobileElement getTitleUpcomingMeetingOnDetailsMeetingTestPage() {
-        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTitleUpcomingMeetingOnDetailsMeetingTestPage()+"\"]";
-        return  MobileFinder.getByXpath(xpath,false);
-    }
-    public static boolean TitleUpcomingMeetingOnDetailsMeetingTestPageIsDisplayed(){
-        return getTitleUpcomingMeetingOnDetailsMeetingTestPage().isDisplayed();
-    }
 
-    public static MobileElement getPriceMeetingOnDetailsMeetingTestPage() {
-        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getPriceMeetingOnDetailsMeetingTestPage()+"\"]";
-        return  MobileFinder.getByXpath(xpath,false);
-    }
-    public static boolean PriceMeetingOnDetailsMeetingTestPageIsDisplayed(){
-        return getPriceMeetingOnDetailsMeetingTestPage().isDisplayed();
-    }
-    public static MobileElement getTimeMeetingOnDetailsMeetingTestPage() {
-        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getPriceMeetingOnDetailsMeetingTestPage()+"\"]";
-        return  MobileFinder.getByXpath(xpath,false);
-    }
-    public static boolean TimeMeetingOnDetailsMeetingTestPageIsDisplayed(){
-        return getTimeMeetingOnDetailsMeetingTestPage().isDisplayed();
-    }
-    public static MobileElement getRemainingSeatsOnDetailsMeetingTestPage() {
-        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getRemainingSeatsOnDetailsMeetingTestPage()+"\"]";
-        return  MobileFinder.getByXpath(xpath,false);
-    }
-    public static boolean RemainingSeatsOnDetailsMeetingTestPageIsDisplayed(){
-        return getRemainingSeatsOnDetailsMeetingTestPage().isDisplayed();
-    }
-    public static MobileElement getTargetGroupTextOnDetailsMeetingTestPage() {
-        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTargetGroupTextOnDetailsMeetingTestPage()+"\"]";
-        return  MobileFinder.getByXpath(xpath,false);
-    }
-    public static boolean TargetGroupTextOnDetailsMeetingTestPageIsDisplayed(){
-        return getTargetGroupTextOnDetailsMeetingTestPage().isDisplayed();
-    }
 
 
 }

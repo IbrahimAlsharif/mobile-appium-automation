@@ -270,12 +270,12 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     }
 
     @Override
-    public String getTitleUpcomingMeetingOnDetailsMeetingTestPage() {
+    public String getTitleUpcomingMeeting() {
         return "الشخصية الضعيفة وسُبل تقويتها!";
     }
 
     @Override
-    public String getPriceMeetingOnDetailsMeetingTestPage() {
+    public String getPriceMeeting() {
         return "58.0 ر.س";
     }
 
@@ -285,13 +285,53 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     }
 
     @Override
-    public String getRemainingSeatsOnDetailsMeetingTestPage() {
+    public String getRemainingSeats() {
         return "15 مقعد";
     }
 
     @Override
-    public String getTargetGroupTextOnDetailsMeetingTestPage() {
+    public String getTargetGroupText() {
         return "الفئة المستهدفة";
+    }
+
+    @Override
+    public String getMeetingDetailsGoalsItem() {
+        return "أهداف اللقاء";
+    }
+
+    @Override
+    public String getRegisterMeetingButton() {
+        return "التسجيل في اللقاء";
+    }
+
+    @Override
+    public String getSpecialistRatesTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getUserByCommentTextOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getBookLaterDateButtonOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getLanguageTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSpecialistLanguageOnDetailsPsychologistPage() {
+        return null;
     }
 
 }

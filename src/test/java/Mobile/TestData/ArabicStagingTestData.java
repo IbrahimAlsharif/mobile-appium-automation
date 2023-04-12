@@ -186,23 +186,15 @@ public class ArabicStagingTestData implements AbstractTestData {
     public String getExperienceOfYearsOnDetailsPsychologistPage() {
         return "من 5 إلى 10 سنوات";
     }
+
     @Override
     public String getUpcomingMeetingText() {
-        return "الشخصية الضعيفة وسُبل تقويتها!\n" +
-                "58.00 SR\n" +
-                "د. عطالله العبار\n" +
-                "- أخصائي نفسي\n" +
-                "الموعــــد\n" +
-                "الثلاثاء، 11 إبريل | 10:00 مساء\n" +
-                "المــــــدة\n" +
-                "ساعة\n" +
-                "المقاعد المتبقية\n" +
-                "15 مقعد\n" +
-                "تسجيل";
+        return null;
     }
+
     @Override
     public String getDetailsMeetingText() {
-        return "تفاصيل اللقاء";
+        return null;
     }
 
     @Override
@@ -231,29 +223,72 @@ public class ArabicStagingTestData implements AbstractTestData {
     public String getSubSpecialtiesOnDetailsPsychologistPage() {
         return "القلق";
     }
+
     @Override
-    public String getTitleUpcomingMeetingOnDetailsMeetingTestPage() {
-        return "الشخصية الضعيفة وسُبل تقويتها!";
+    public String getTitleUpcomingMeeting() {
+        return null;
     }
+
     @Override
-    public String getPriceMeetingOnDetailsMeetingTestPage() {
-        return "58.0 ر.س";
+    public String getPriceMeeting() {
+        return null;
     }
 
     @Override
     public String getTimeMeetingOnDetailsMeetingTestPage() {
-        return "ساعة";
+        return null;
     }
 
     @Override
-    public String getRemainingSeatsOnDetailsMeetingTestPage() {
-        return "15 مقعد";
+    public String getRemainingSeats() {
+        return null;
     }
 
     @Override
-    public String getTargetGroupTextOnDetailsMeetingTestPage() {
-        return "الفئة المستهدفة";
+    public String getTargetGroupText() {
+        return null;
     }
+
+    @Override
+    public String getMeetingDetailsGoalsItem() {
+        return null;
+    }
+
+    @Override
+    public String getRegisterMeetingButton() {
+        return null;
+    }
+
+    @Override
+    public String getSpecialistRatesTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getUserByCommentTextOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getBookLaterDateButtonOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getLanguageTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSpecialistLanguageOnDetailsPsychologistPage() {
+        return null;
+    }
+
 }
 
 
