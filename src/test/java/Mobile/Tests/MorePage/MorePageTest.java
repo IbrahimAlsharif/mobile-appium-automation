@@ -15,8 +15,8 @@ public class MorePageTest {
     public void verifyThatTapMoreButtonNavigateToMorePage()  {
         String accessibility = "المزيد\n" +
                 "علامة التبويب 5 من 5";
-       MobileFinder.getByAccessibilityId(accessibility,false).click();
-        assertTrue(MorePage.LanguageIconIsDisplayed());
+       MobileFinder.getByAccessibilityId(accessibility,true).click();
+        assertTrue(MorePage.SignInButtonIsDisplayed());
     }
 
     @Test(priority = 2)

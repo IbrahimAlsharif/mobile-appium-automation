@@ -5,6 +5,7 @@ import io.appium.java_client.MobileElement;
 import org.openqa.selenium.Keys;
 
 import static Base.MobileSetup.MobileSetupTest.testDataMobile;
+import static org.aspectj.weaver.Shadow.Initialization;
 
 public class Login {
 
@@ -19,7 +20,7 @@ public class Login {
 
 
     public static MobileElement getLogInByPhoneButton() {
-        String xpath = "//android.widget.ImageView[@content-desc=\"" + testDataMobile.getLogInByPhone() + "\"]";
+        String xpath = "//android.widget.ImageView[@content-desc=\"" +testDataMobile.getLogInByPhone()+ "\"]";
         return MobileFinder.getByXpath(xpath, false);
     }
 
@@ -34,13 +35,15 @@ public class Login {
 
     public static MobileElement getPhoneField() {
         String xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView[1]";
-        return MobileFinder.getByXpath(xpath, false);
+        return MobileFinder.getByXpath(xpath, true);
     }
     public static void ClickOnPhoneField() {
         getPhoneField().click();
     }
-    public static void InputOnPhoneField(String phone){
-        getPhoneField().sendKeys(phone, Keys.TAB);
+    public static void InputOnPhoneField(String phone) {
+        getPhoneField().sendKeys(phone);
+
+
 
     }
 
