@@ -184,15 +184,6 @@ public class EnglishStagingTestData implements AbstractTestData {
         return null;
     }
 
-    @Override
-    public String getUpcomingMeetingText() {
-        return null;
-    }
-
-    @Override
-    public String getDetailsMeetingText() {
-        return null;
-    }
 
     @Override
     public String getDateOfJoinOnDetailsPsychologistPage() {
@@ -220,38 +211,34 @@ public class EnglishStagingTestData implements AbstractTestData {
     }
 
     @Override
-    public String getTitleUpcomingMeeting() {
+    public String getSpecialistLanguageOnDetailsPsychologistPage() {
         return null;
     }
 
     @Override
-    public String getPriceMeeting() {
+    public String getLanguageTitleOnDetailsPsychologistPage() {
         return null;
     }
 
     @Override
-    public String getTimeMeetingOnDetailsMeetingTestPage() {
+    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
         return null;
     }
 
     @Override
-    public String getRemainingSeats() {
+    public String getSpecialistRatesTitleOnDetailsPsychologistPage() {
         return null;
     }
 
     @Override
-    public String getTargetGroupText() {
+    public String getUserByCommentTextOnDetailsPsychologistPage() {
         return null;
     }
 
     @Override
-    public String getMeetingDetailsGoalsItem() {
+    public String getBookLaterDateButtonOnDetailsPsychologistPage() {
         return null;
     }
 
-    @Override
-    public String getRegisterMeetingButton() {
-        return null;
-    }
 
 }

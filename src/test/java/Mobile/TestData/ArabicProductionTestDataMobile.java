@@ -223,26 +223,6 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     }
 
     @Override
-    public String getUpcomingMeetingText() {
-        return "الشخصية الضعيفة وسُبل تقويتها!\n" +
-                "58.00 SR\n" +
-                "د. عطالله العبار\n" +
-                "- أخصائي نفسي\n" +
-                "الموعــــد\n" +
-                "الثلاثاء، 11 إبريل | 10:00 مساء\n" +
-                "المــــــدة\n" +
-                "ساعة\n" +
-                "المقاعد المتبقية\n" +
-                "15 مقعد\n" +
-                "تسجيل";
-    }
-
-    @Override
-    public String getDetailsMeetingText() {
-        return "تفاصيل اللقاء";
-    }
-
-    @Override
     public String getDateOfJoinOnDetailsPsychologistPage() {
         return "  منذ 2 سنة و 7 شهور";
     }
@@ -270,38 +250,36 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     }
 
     @Override
-    public String getTitleUpcomingMeeting() {
-        return "الشخصية الضعيفة وسُبل تقويتها!";
+    public String getSpecialistLanguageOnDetailsPsychologistPage() {
+        return "العربية";
     }
 
     @Override
-    public String getPriceMeeting() {
-        return "58.0 ر.س";
+    public String getLanguageTitleOnDetailsPsychologistPage() {
+        return "اللغات";
     }
 
     @Override
-    public String getTimeMeetingOnDetailsMeetingTestPage() {
-        return "ساعة";
+    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
+        return "التخصصات الدقيقة";
     }
 
     @Override
-    public String getRemainingSeats() {
-        return "15 مقعد";
+    public String getSpecialistRatesTitleOnDetailsPsychologistPage() {
+        return "التقييمات";
     }
 
     @Override
-    public String getTargetGroupText() {
-        return "الفئة المستهدفة";
+    public String getUserByCommentTextOnDetailsPsychologistPage() {
+        return "سي\n" +
+                "5/5\n" +
+                "شكرا من اعماق القلب";
     }
 
     @Override
-    public String getMeetingDetailsGoalsItem() {
-        return "أهداف اللقاء";
+    public String getBookLaterDateButtonOnDetailsPsychologistPage() {
+        return "حجز موعد لاحق";
     }
 
-    @Override
-    public String getRegisterMeetingButton() {
-        return "التسجيل في اللقاء";
-    }
 
 }
