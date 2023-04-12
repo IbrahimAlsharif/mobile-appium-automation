@@ -1,9 +1,9 @@
-package Mobile.Tests.BenchmarksPage;
+package Mobile.Tests.Scales;
 import Base.MobileSetup.MobileFinder;
 import io.appium.java_client.MobileElement;
 import  static Base.MobileSetup.MobileSetupTest.testDataMobile;
 
-public class Diagnosis {
+public class ScalesPage {
 
     public static MobileElement getTitleAppBarOnBenchmarksPage() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getTitleAppBarOnBenchmarksPage()+"\"]";

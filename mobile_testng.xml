@@ -13,7 +13,7 @@
 <!--            <class name="Mobile.Tests.MyConversations.MyConversationsTest"></class>-->
             <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>
             <class name="Mobile.Tests.UpcomingMeetings.UpcomingMeetingsTest"></class>
-<!--            <class name="Mobile.Tests.BenchmarksPage.DiagnosisTest"></class>-->
+<!--            <class name="Mobile.Tests.Scales.ScalesPageTest"></class>-->
 <!--            <class name="Mobile.Tests.MorePage.MorePageTest"/>-->
             <class name="Mobile.Tests.AllSpecialists.PsychologistTest"/>
 <!--            <class name="Base.TearDownTest"/>-->

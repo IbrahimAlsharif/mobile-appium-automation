@@ -13,11 +13,10 @@ public class MorePageTest {
     private String testCaseId;
     @Test(priority =1)
     public void verifyThatTapMoreButtonNavigateToMorePage()  {
-        TouchAction touchAction=new TouchAction(MobileSetupTest.androidDriver);
-        touchAction.tap(PointOption.point(133, 1935)).release().perform();
-        touchAction.tap(PointOption.point(133, 1935)).release().perform();
+        String accessibility = "المزيد\n" +
+                "علامة التبويب 5 من 5";
+       MobileFinder.getByAccessibilityId(accessibility,false).click();
         assertTrue(MorePage.LanguageIconIsDisplayed());
-
     }
 
     @Test(priority = 2)

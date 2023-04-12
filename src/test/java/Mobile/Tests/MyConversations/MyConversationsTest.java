@@ -1,5 +1,6 @@
 package Mobile.Tests.MyConversations;
 
+import Base.MobileSetup.MobileFinder;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
@@ -13,8 +14,9 @@ public class MyConversationsTest {
 
     @Test(priority =1)
     public void verifyThatTapMyConversationsButtonNavigateToMyConversationsPage() throws InterruptedException {
-        TouchAction touchAction=new TouchAction((PerformsTouchActions) androidDriver);
-        touchAction.tap(PointOption.point(750, 1954)).release().perform();
+        String accessibility = "محادثاتي\n" +
+                "علامة التبويب 2 من 5";
+        MobileFinder.getByAccessibilityId(accessibility,false);
         Thread.sleep(9000);
         assertTrue(MyConversations.TitleAppBarOnMyConversationsDisplayed());
 
