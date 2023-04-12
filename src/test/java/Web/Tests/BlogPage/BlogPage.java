@@ -45,6 +45,9 @@ public class BlogPage {
     public static void SearchInputField(String Search) {
         getSearchInputField().sendKeys(Search);
     }
+    public static String getSearchInputText(){
+        return getSearchInputField().getAttribute("value");
+    }
 
     public static WebElement getCategoriesDropdown() {
         String xpath = "//select[@id='search-all-categories']";
@@ -57,6 +60,9 @@ public class BlogPage {
 
     public static void SelectCategory() {
         WebFinder.selectByValue(getCategoriesDropdown(), testDataWeb.getSelectedCategoryOnBlogPage());
+    }
+    public static String getSelectedCategoryText(){
+        return getCategoriesDropdown().getAttribute("value");
     }
 
     public static WebElement getSearchButton() {
@@ -81,8 +87,6 @@ public class BlogPage {
     }
 
     public static String getSearchResultText() {
-        System.out.println("**********************");
-        System.out.println(getSearchResult().getText().substring(16));
         return getSearchResult().getText().substring(16);
     }
 

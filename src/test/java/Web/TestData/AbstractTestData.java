@@ -45,6 +45,7 @@ public interface AbstractTestData {
     String getFinalTotalAmountPriceOnCheckoutPage();
     String getSearchInputOnBlogPage();
     String getSelectedCategoryOnBlogPage();
+    String getValueOfSelectedCategoryOnBlogPage();
     String getSearchResultOnBlogPage();
 
     String getLoginPopUpText();

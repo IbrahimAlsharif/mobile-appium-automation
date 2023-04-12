@@ -60,4 +60,15 @@ String getBookLaterDateButtonOnDetailsPsychologistPage();
 
 
 
+    String getSpecialistRatesTitleOnDetailsPsychologistPage();
+
+    String getUserByCommentTextOnDetailsPsychologistPage();
+
+    String getBookLaterDateButtonOnDetailsPsychologistPage();
+
+    String getSubSpecialtiesTitleOnDetailsPsychologistPage();
+
+    String getLanguageTitleOnDetailsPsychologistPage();
+
+    String getSpecialistLanguageOnDetailsPsychologistPage();
 }

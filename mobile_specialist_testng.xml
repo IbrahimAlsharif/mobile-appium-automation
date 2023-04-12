@@ -2,11 +2,10 @@
 <suite name="Arabic language Testing Suite">
     <test name="Test Setup">
         <parameter name="appPath" value="src/app-specialist_production-debug.apk"/>
+        <parameter name="deviceName" value="Emulator 12"/>
+        <parameter name="port" value="4723"></parameter>
         <parameter name="language" value="Arabic"/>
-        <parameter name="platform" value="mobile"/>
         <parameter name="branch" value="Production"/>
-        <parameter name="browser" value="chrome"/>
-        <parameter name="url" value="none"/>
 
         <classes>
             <class name="Base.MobileSetup.MobileSetupTest"/>
