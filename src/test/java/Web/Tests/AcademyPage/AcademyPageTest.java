@@ -9,18 +9,18 @@ public class AcademyPageTest {
 
 
     @Test(priority = 1)
-    public void navbarbuttonDisplayed() {
+    public void mainNavbarButtonIsDisplayed() {
         Assert.assertTrue(AcademyPage.NavbarButtonIsDisplayed());
     }
 
     @Test(priority = 2)
-    public void academyNavbarbuttonDisplayed() {
+    public void academyNavbarButtonIsDisplayed() {
         AcademyPage.clickOnNavbarButton();
         Assert.assertTrue(AcademyPage.AcademyNavbarButtonIsDisplayed());
     }
 
     @Test(priority = 3)
-    public void academyNavbarbuttonisClickable() {
+    public void academyNavbarButtonIsClickable() {
         AcademyPage.clickOnAcademyNavbarButton();
         Assert.assertTrue(AcademyPage.BrowseCoursesTextIsDisplayed());
     }
@@ -31,7 +31,7 @@ public class AcademyPageTest {
     }
 
     @Test(priority = 5)
-    public void viewPsychologicalSideText() {
+    public void psychologicalSideTextIsCorrect() {
         Assert.assertEquals(AcademyPage.getPsychologicalSideText(), testDataWeb.getPsychologicalSideText());
     }
 
@@ -41,7 +41,7 @@ public class AcademyPageTest {
     }
 
     @Test(priority = 5)
-    public void viewSocialSideText() {
+    public void socialSideTextIsCorrect() {
         Assert.assertEquals(AcademyPage.getSocialSideText(), testDataWeb.getSocialSideText());
     }
 
@@ -51,7 +51,7 @@ public class AcademyPageTest {
     }
 
     @Test(priority = 5)
-    public void viewEducationalSideText() {
+    public void educationalSideTextIsCorrect() {
         Assert.assertEquals(AcademyPage.getEducationalSideText(), testDataWeb.getEducationalSideText());
     }
 
@@ -61,7 +61,7 @@ public class AcademyPageTest {
     }
 
     @Test(priority = 5)
-    public void viewPractitionersText() {
+    public void practitionersTextIsCorrect() {
         Assert.assertEquals(AcademyPage.getPractitionersText(), testDataWeb.getPractitionersText());
     }
 
@@ -75,7 +75,7 @@ public class AcademyPageTest {
         Assert.assertTrue(AcademyPage.ProfessionalTrainersDivIsDisplayed());
     }
     @Test(priority = 7)
-    public void viewProfessionalTrainersText() {
+    public void professionalTrainersTextIsCorrect() {
         Assert.assertEquals(AcademyPage.getProfessionalTrainersText(), testDataWeb.getProfessionalTrainersText());
     }
     @Test(priority = 7)
@@ -83,7 +83,7 @@ public class AcademyPageTest {
         Assert.assertTrue(AcademyPage.ProfessionalCoursesDivIsDisplayed());
     }
     @Test(priority = 7)
-    public void viewProfessionalCoursesText() {
+    public void professionalCoursesTextIsCorrect() {
         Assert.assertEquals(AcademyPage.getProfessionalCourses(), testDataWeb.getProfessionalCoursesText());
     }
     @Test(priority = 7)
@@ -92,7 +92,7 @@ public class AcademyPageTest {
     }
 
     @Test(priority = 7)
-    public void viewUnlimitedViewingText() {
+    public void unlimitedViewingTextIsCorrect() {
         Assert.assertEquals(AcademyPage.getUnlimitedViewing(), testDataWeb.getUnlimitedViewingText());
     }
     @Test(priority = 8)
@@ -100,7 +100,7 @@ public class AcademyPageTest {
         Assert.assertTrue(AcademyPage.TrainersTextIsDisplayed());
     }
     @Test(priority = 7)
-    public void viewTrainersTextText() {
+    public void trainersTextIsCorrect() {
         Assert.assertEquals(AcademyPage.getTrainerText(), testDataWeb.getTrainerText());
     }
     @Test(priority = 9)

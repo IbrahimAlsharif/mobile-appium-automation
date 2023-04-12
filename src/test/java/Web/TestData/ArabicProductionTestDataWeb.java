@@ -139,6 +139,10 @@ public class ArabicProductionTestDataWeb implements AbstractTestData {
         return "الصحة النفسية";
     }
 
+    public String getValueOfSelectedCategoryOnBlogPage(){
+        return "4";
+
+    }
     public String getSearchResultOnBlogPage() {
         return " تقدير الذات";
     }

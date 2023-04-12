@@ -84,11 +84,11 @@ public class CheckoutPageTest {
     }
 
     @Test(priority = 16)
-    public void viewAmountTotalPriceText() {
+    public void amountTotalPriceTextIsCorrect() {
         Assert.assertEquals(CheckoutPage.getAmountPriceText(), testDataWeb.getAmountTotalPriceOnCheckoutPage());
     }
     @Test(priority = 17)
-    public void viewFinalTotalAmountPriceText() {
+    public void finalTotalAmountPriceTextIsCorrect() {
         Assert.assertEquals(CheckoutPage.getFinalTotalAmountPriceText(), testDataWeb.getFinalTotalAmountPriceOnCheckoutPage());
     }
     @Test(priority = 18)
