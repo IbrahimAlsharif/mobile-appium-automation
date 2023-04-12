@@ -7,12 +7,12 @@ import static Base.WebSetup.WebSetupTest.testDataWeb;
 
 public class BlogPageTest {
     @Test(priority = 1)
-    public void navbarbuttonDisplayed() {
+    public void navbarButtonIsDisplayed() {
         Assert.assertTrue(BlogPage.NavbarButtonIsDisplayed());
     }
 
     @Test(priority = 2)
-    public void academyNavbarbuttonDisplayed() {
+    public void blogNavbarButtonIsDisplayed() {
         BlogPage.clickOnNavbarButton();
         Assert.assertTrue(BlogPage.BlogButtonIsDisplayed());
     }
@@ -24,6 +24,7 @@ public class BlogPageTest {
     @Test(priority = 4)
     public void searchInputData(){
         BlogPage.SearchInputField(testDataWeb.getSearchInputOnBlogPage());
+        Assert.assertEquals(BlogPage.getSearchInputText(),testDataWeb.getSearchInputOnBlogPage());
     }
     @Test(priority = 5)
     public void categoriesDropdownIsDisplayed() {
@@ -32,6 +33,7 @@ public class BlogPageTest {
     @Test(priority = 6)
     public void selectCategory() {
         BlogPage.SelectCategory();
+        Assert.assertEquals(BlogPage.getSelectedCategoryText(),testDataWeb.getValueOfSelectedCategoryOnBlogPage());
     }
 
     @Test(priority =7)

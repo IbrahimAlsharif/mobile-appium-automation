@@ -215,10 +215,42 @@ public class EnglishProductionTestData implements AbstractTestData {
     public String getSubSpecialtiesOnDetailsPsychologistPage() {
         return null;
     }
+
+    @Override
+    public String getSpecialistLanguageOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getLanguageTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSpecialistRatesTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getUserByCommentTextOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getBookLaterDateButtonOnDetailsPsychologistPage() {
+        return null;
+    }
+
     @Override
     public String getTitleUpcomingMeeting() {
         return null;
     }
+
     @Override
     public String getPriceMeeting() {
         return null;
@@ -233,16 +265,49 @@ public class EnglishProductionTestData implements AbstractTestData {
     public String getRemainingSeats() {
         return null;
     }
+
     @Override
     public String getTargetGroupText() {
         return null;
     }
+
     @Override
     public String getMeetingDetailsGoalsItem() {
         return null;
     }
+
     @Override
     public String getRegisterMeetingButton() {
+        return null;
+    }
+
+    @Override
+    public String getSpecialistRatesTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getUserByCommentTextOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getBookLaterDateButtonOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getLanguageTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSpecialistLanguageOnDetailsPsychologistPage() {
         return null;
     }
 }

@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import static Base.MobileSetup.MobileSetupTest.androidDriver;
 import static Base.MobileSetup.MobileSetupTest.testDataMobile;
+import static org.testng.Assert.*;
 
 public class SupportGroupsTest {
     private String testCaseId;
@@ -22,29 +23,29 @@ public class SupportGroupsTest {
     @Test(priority = 2)
     public void AllGroupsTextIsDisplayed(){
         testCaseId="0";
-        Assert.assertTrue(SupportGroups.AllGroupsTextOnSupportGroupsTestPageIsDisplayed());
+        assertTrue(SupportGroups.AllGroupsTextOnSupportGroupsTestPageIsDisplayed());
     }
     @Test(priority = 3)
     public void MyGroupsTextIsDisplayed(){
         testCaseId="0";
-        Assert.assertTrue(SupportGroups.MyGroupsTextOnSupportGroupsTestPageIsDisplayed());
+        assertTrue(SupportGroups.MyGroupsTextOnSupportGroupsTestPageIsDisplayed());
     }
   @Test(priority = 4)
     public void UpcomingMeetingsTextIsDisplayed(){
         testCaseId="0";
-        Assert.assertTrue(SupportGroups.UpcomingMeetingsTextOnSupportGroupsTestPageIsDisplayed());
+       assertTrue(SupportGroups.UpcomingMeetingsTextOnSupportGroupsTestPageIsDisplayed());
     }
     @Test(priority = 6,enabled = false)
     public void EndingMeetingsTextIsDisplayed(){
         testCaseId="0";
         MobileFinder.scrollUntilText(testDataMobile.getEndingMeetingsTextOnSupportGroupsTestPage());
-        Assert.assertTrue(SupportGroups.EndingMeetingsTextOnSupportGroupsTestPageIsDisplayed());
+        assertTrue(SupportGroups.EndingMeetingsTextOnSupportGroupsTestPageIsDisplayed());
     }
     @Test(priority = 7)
     public void UpcomingMeetingIsDisplayed(){
         testCaseId="0";
         MobileFinder.scrollUntilText(testDataMobile.getUpcomingMeetingText());
-        Assert.assertTrue(SupportGroups.UpcomingMeetingIsDisplayed());
+       assertTrue(SupportGroups.UpcomingMeetingIsDisplayed());
     }
 
 }

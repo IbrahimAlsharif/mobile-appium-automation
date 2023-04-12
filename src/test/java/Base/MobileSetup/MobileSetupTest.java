@@ -32,28 +32,29 @@ public class MobileSetupTest {
     public static Mobile.TestDataSpecialistTests.AbstractTestData testDataMobileSpecialist;
     public static Web.TestData.AbstractTestData testDataWeb;
     public static JavascriptExecutor javascriptExecutor;
-
+    private String port;
     @Test(priority = 1)
-    @Parameters({"language", "appPath", "branch"})
-    public void setUp(String language, String appPath, String branch) throws APIException, IOException {
-        initializeMobileDriver(appPath);
+    @Parameters({"language", "appPath", "branch","deviceName", "port"})
+    public void setUp(String language, String appPath, String branch, String deviceName,String port) throws APIException, IOException {
+        this.port = port;
+        initializeMobileDriver(appPath,deviceName);
         initializeTestData(language, branch);
         TestRailManager testRailManager = new TestRailManager();
         MobileFinder.testRunId = testRailManager.addTestRun();
         Assert.assertTrue(true);
     }
 
-    private void initializeMobileDriver(String appPath) throws MalformedURLException {
-        androidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), getDesiredCapabilities(appPath));
-        androidDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        wait = new WebDriverWait(androidDriver, 60);
+    private void initializeMobileDriver(String appPath, String deviceName) throws MalformedURLException {
+        androidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+port+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
+        androidDriver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
+        wait = new WebDriverWait(androidDriver, 35);
         javascriptExecutor = (JavascriptExecutor) androidDriver;
     }
 
-    private DesiredCapabilities getDesiredCapabilities(String appPath) {
+    private DesiredCapabilities getDesiredCapabilities(String appPath, String deviceName) {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("deviceName", "Mohammad Albaba");
+        capabilities.setCapability("deviceName", deviceName);
         capabilities.setCapability("app_activity", "sa.app.famcare.MainActivity");
         capabilities.setCapability("allowTestPackages", "true");
         capabilities.setCapability("app_package", "sa.app.famcare");

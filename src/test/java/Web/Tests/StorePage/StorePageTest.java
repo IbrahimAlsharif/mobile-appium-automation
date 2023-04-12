@@ -11,11 +11,11 @@ public class StorePageTest {
         Assert.assertTrue(StorePage.AddToCartButtonIsDisplayed());
     }
     @Test(priority = 1)
-    public void viewCoursePriceText() {
+    public void coursePriceTextIsCorrect() {
         Assert.assertEquals(StorePage.getCoursePriceText(), testDataWeb.getCoursePriceNumberOnStorePage());
     }
     @Test(priority = 2)
-    public void viewAddToCartButtonText() {
+    public void addToCartButtonTextIsCorrect() {
         Assert.assertEquals(StorePage.getAddToCartButtonText(), testDataWeb.getAddToCartButtonText());
     }
 
@@ -29,7 +29,7 @@ public class StorePageTest {
         Assert.assertTrue(StorePage.ViewCartButtonIsDisplayed());
     }
     @Test(priority = 6)
-    public void viewViewCartButtonText() {
+    public void viewCartButtonTextIsCorrect() {
         Assert.assertEquals(StorePage.getViewCartButtonText(), testDataWeb.getViewCartButtonText());
     }
     @Test(priority = 7)

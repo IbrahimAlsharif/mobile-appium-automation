@@ -18,17 +18,17 @@ public class CartPageTest {
     }
 
     @Test(priority = 2)
-    public void viewProductNameText() {
+    public void productNameTextIsCorrect() {
         Assert.assertEquals(CartPage.getProductNameText(), testDataWeb.getProductNameOnCartPage());
     }
 
     @Test(priority = 3)
-    public void viewProductPriceText() {
+    public void productPriceTextIsCorrect() {
         Assert.assertEquals(CartPage.getProductPriceText(), testDataWeb.getProductPriceOnCartPage());
     }
 
     @Test(priority = 4)
-    public void viewProductSubTotalText() {
+    public void productSubTotalTextIsCorrect() {
         Assert.assertEquals(CartPage.getProductSubTotalPriceText(), testDataWeb.getProductSubTotalPriceOnCartPage());
     }
 
@@ -48,11 +48,11 @@ public class CartPageTest {
     }
 
     @Test(priority = 8)
-    public void viewAmountTotalPriceText() {
+    public void amountTotalPriceTextIsCorrect() {
         Assert.assertEquals(CartPage.getAmountPriceText(), testDataWeb.getAmountTotalPriceOnCartPage());
     }
     @Test(priority = 9)
-    public void viewFinalTotalAmountPriceText() {
+    public void finalTotalAmountPriceTextIsCorrect() {
         Assert.assertEquals(CartPage.getFinalTotalAmountPriceText(), testDataWeb.getFinalTotalAmountPriceOnCartPage());
     }
 
