@@ -179,15 +179,7 @@ public class EnglishProductionTestData implements AbstractTestData {
         return null;
     }
 
-    @Override
-    public String getUpcomingMeetingText() {
-        return null;
-    }
 
-    @Override
-    public String getDetailsMeetingText() {
-        return null;
-    }
 
     @Override
     public String getDateOfJoinOnDetailsPsychologistPage() {
@@ -213,41 +205,6 @@ public class EnglishProductionTestData implements AbstractTestData {
     }
     @Override
     public String getSubSpecialtiesOnDetailsPsychologistPage() {
-        return null;
-    }
-
-    @Override
-    public String getTitleUpcomingMeeting() {
-        return null;
-    }
-
-    @Override
-    public String getPriceMeeting() {
-        return null;
-    }
-
-    @Override
-    public String getTimeMeetingOnDetailsMeetingTestPage() {
-        return null;
-    }
-
-    @Override
-    public String getRemainingSeats() {
-        return null;
-    }
-
-    @Override
-    public String getTargetGroupText() {
-        return null;
-    }
-
-    @Override
-    public String getMeetingDetailsGoalsItem() {
-        return null;
-    }
-
-    @Override
-    public String getRegisterMeetingButton() {
         return null;
     }
 
@@ -280,6 +237,8 @@ public class EnglishProductionTestData implements AbstractTestData {
     public String getSpecialistLanguageOnDetailsPsychologistPage() {
         return null;
     }
+
+
 }
 
 

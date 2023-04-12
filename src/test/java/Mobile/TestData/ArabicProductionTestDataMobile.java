@@ -223,26 +223,6 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     }
 
     @Override
-    public String getUpcomingMeetingText() {
-        return "الشخصية الضعيفة وسُبل تقويتها!\n" +
-                "58.00 SR\n" +
-                "د. عطالله العبار\n" +
-                "- أخصائي نفسي\n" +
-                "الموعــــد\n" +
-                "الثلاثاء، 11 إبريل | 10:00 مساء\n" +
-                "المــــــدة\n" +
-                "ساعة\n" +
-                "المقاعد المتبقية\n" +
-                "15 مقعد\n" +
-                "تسجيل";
-    }
-
-    @Override
-    public String getDetailsMeetingText() {
-        return "تفاصيل اللقاء";
-    }
-
-    @Override
     public String getDateOfJoinOnDetailsPsychologistPage() {
         return "  منذ 2 سنة و 7 شهور";
     }
@@ -270,68 +250,35 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     }
 
     @Override
-    public String getTitleUpcomingMeeting() {
-        return "الشخصية الضعيفة وسُبل تقويتها!";
-    }
-
-    @Override
-    public String getPriceMeeting() {
-        return "58.0 ر.س";
-    }
-
-    @Override
-    public String getTimeMeetingOnDetailsMeetingTestPage() {
-        return "ساعة";
-    }
-
-    @Override
-    public String getRemainingSeats() {
-        return "15 مقعد";
-    }
-
-    @Override
-    public String getTargetGroupText() {
-        return "الفئة المستهدفة";
-    }
-
-    @Override
-    public String getMeetingDetailsGoalsItem() {
-        return "أهداف اللقاء";
-    }
-
-    @Override
-    public String getRegisterMeetingButton() {
-        return "التسجيل في اللقاء";
-    }
-
-    @Override
-    public String getSpecialistRatesTitleOnDetailsPsychologistPage() {
-        return null;
-    }
-
-    @Override
-    public String getUserByCommentTextOnDetailsPsychologistPage() {
-        return null;
-    }
-
-    @Override
-    public String getBookLaterDateButtonOnDetailsPsychologistPage() {
-        return null;
-    }
-
-    @Override
-    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
-        return null;
+    public String getSpecialistLanguageOnDetailsPsychologistPage() {
+        return "العربية";
     }
 
     @Override
     public String getLanguageTitleOnDetailsPsychologistPage() {
-        return null;
+        return "اللغات";
     }
 
     @Override
-    public String getSpecialistLanguageOnDetailsPsychologistPage() {
-        return null;
+    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
+        return "التخصصات الدقيقة";
+    }
+
+    @Override
+    public String getSpecialistRatesTitleOnDetailsPsychologistPage() {
+        return "التقييمات";
+    }
+
+    @Override
+    public String getUserByCommentTextOnDetailsPsychologistPage() {
+        return "سي\n" +
+                "5/5\n" +
+                "شكرا من اعماق القلب";
+    }
+
+    @Override
+    public String getBookLaterDateButtonOnDetailsPsychologistPage() {
+        return "حجز موعد لاحق";
     }
 
 }
