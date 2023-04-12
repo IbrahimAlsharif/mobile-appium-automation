@@ -1,10 +1,6 @@
 package Mobile.Tests.SupportGroup;
 
 import Base.MobileSetup.MobileFinder;
-import io.appium.java_client.PerformsTouchActions;
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.touch.offset.PointOption;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static Base.MobileSetup.MobileSetupTest.androidDriver;
@@ -15,27 +11,22 @@ public class SupportGroupsTest {
     private String testCaseId;
     @Test(priority =1)
     public void verifyThatTapDiagnosticButtonNavigateToDiagnosticPage()  {
-        TouchAction touchAction=new TouchAction((PerformsTouchActions) androidDriver);
-        touchAction.tap(PointOption.point(563, 1931)).release().perform();
-        Assert.assertTrue(SupportGroups.screenTitleIsDisplayed());
-
+        String accessibility = "مجموعات الدعم\n" +
+                "علامة التبويب 3 من 5";
+       MobileFinder.getByAccessibilityId(accessibility,false).click();
+       assertTrue(SupportGroups.screenTitleIsDisplayed());
     }
     @Test(priority = 2)
-    public void TitleAppBarIsDisplayed(){
-        testCaseId="0";
-        assertTrue(SupportGroups.screenTitleIsDisplayed());
-    }
-    @Test(priority = 3)
     public void AllGroupsTextIsDisplayed(){
         testCaseId="0";
         assertTrue(SupportGroups.AllGroupsTextOnSupportGroupsTestPageIsDisplayed());
     }
-    @Test(priority = 4)
+    @Test(priority = 3)
     public void MyGroupsTextIsDisplayed(){
         testCaseId="0";
         assertTrue(SupportGroups.MyGroupsTextOnSupportGroupsTestPageIsDisplayed());
     }
-  @Test(priority = 5)
+  @Test(priority = 4)
     public void UpcomingMeetingsTextIsDisplayed(){
         testCaseId="0";
        assertTrue(SupportGroups.UpcomingMeetingsTextOnSupportGroupsTestPageIsDisplayed());
