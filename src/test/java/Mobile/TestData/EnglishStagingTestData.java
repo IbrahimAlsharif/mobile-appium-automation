@@ -220,6 +220,36 @@ public class EnglishStagingTestData implements AbstractTestData {
     }
 
     @Override
+    public String getSpecialistLanguageOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getLanguageTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getSpecialistRatesTitleOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getUserByCommentTextOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
+    public String getBookLaterDateButtonOnDetailsPsychologistPage() {
+        return null;
+    }
+
+    @Override
     public String getTitleUpcomingMeeting() {
         return null;
     }

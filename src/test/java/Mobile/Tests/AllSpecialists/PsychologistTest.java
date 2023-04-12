@@ -21,6 +21,8 @@ public class PsychologistTest {
         TouchAction touchAction = new TouchAction((PerformsTouchActions) androidDriver);
         touchAction.tap(PointOption.point(956, 1946)).release().perform();
         Thread.sleep(9000);
+        Assert.assertTrue(Psychologist.ScreenTitleIsDisplayed());
+
     }
     @Test(priority = 2)
     public void NavigateToPsychologistPage(){

@@ -16,6 +16,8 @@ public class SupportGroupsTest {
     public void verifyThatTapDiagnosticButtonNavigateToDiagnosticPage()  {
         TouchAction touchAction=new TouchAction((PerformsTouchActions) androidDriver);
         touchAction.tap(PointOption.point(563, 1931)).release().perform();
+        Assert.assertTrue(SupportGroups.screenTitleIsDisplayed());
+
     }
     @Test(priority = 2)
     public void TitleAppBarIsDisplayed(){

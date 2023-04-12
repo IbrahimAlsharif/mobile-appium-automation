@@ -16,6 +16,8 @@ public class MyConversationsTest {
         TouchAction touchAction=new TouchAction((PerformsTouchActions) androidDriver);
         touchAction.tap(PointOption.point(750, 1954)).release().perform();
         Thread.sleep(9000);
+        Assert.assertTrue(MyConversations.TitleAppBarOnMyConversationsDisplayed());
+
     }
     @Test(priority = 2)
     public void TitleAppBarOnMyConversationsDisplayed(){

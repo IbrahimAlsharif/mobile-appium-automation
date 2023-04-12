@@ -13,6 +13,8 @@ public class DiagnosisTest {
     public void verifyThatTapDiagnosticButtonNavigateToDiagnosticPage()  {
         TouchAction touchAction=new TouchAction((PerformsTouchActions) WebSetupTest.webDriver);
         touchAction.tap(PointOption.point(334, 1946)).release().perform();
+        Assert.assertTrue(Diagnosis.TitleAppBarOnBenchmarksPageDisplayed());
+
     }
     @Test(priority = 2)
     public void TitleAppBarOnBenchmarksPageDisplayed(){
