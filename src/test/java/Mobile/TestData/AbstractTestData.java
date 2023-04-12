@@ -51,12 +51,7 @@ String getSessionsPresentationWrittenOnDetailsPsychologistPage();
 String getSessionsPresentationAudioOnDetailsPsychologistPage();
 String getSessionsPresentationVideoOnDetailsPsychologistPage();
 String getSubSpecialtiesOnDetailsPsychologistPage();
-String getSpecialistLanguageOnDetailsPsychologistPage();
-String getLanguageTitleOnDetailsPsychologistPage();
-String getSubSpecialtiesTitleOnDetailsPsychologistPage();
-String getSpecialistRatesTitleOnDetailsPsychologistPage();
-String  getUserByCommentTextOnDetailsPsychologistPage();
-String getBookLaterDateButtonOnDetailsPsychologistPage();
+
 String getTitleUpcomingMeeting();
 String getPriceMeeting();
 String getTimeMeetingOnDetailsMeetingTestPage();
@@ -67,8 +62,6 @@ String getRegisterMeetingButton();
 String getUpcomingMeetingText();
 
 String getDetailsMeetingText();
-
-
 
     String getSpecialistRatesTitleOnDetailsPsychologistPage();
 
@@ -81,4 +74,10 @@ String getDetailsMeetingText();
     String getLanguageTitleOnDetailsPsychologistPage();
 
     String getSpecialistLanguageOnDetailsPsychologistPage();
+    String getLogInByPhone();
+    String getPhoneNumberOnLoginPage();
+    String getPasswordOnLoginPage();
+
+
+
 }

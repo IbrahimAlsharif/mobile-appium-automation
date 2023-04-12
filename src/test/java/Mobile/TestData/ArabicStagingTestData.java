@@ -289,36 +289,20 @@ public class ArabicStagingTestData implements AbstractTestData {
         return null;
     }
 
+
     @Override
-    public String getSpecialistRatesTitleOnDetailsPsychologistPage() {
-        return null;
+    public String getLogInByPhone() {
+        return "دخول باستخدام رقم الهاتف";
+    }
+    @Override
+    public String getPhoneNumberOnLoginPage() {
+        return "599370787";
     }
 
     @Override
-    public String getUserByCommentTextOnDetailsPsychologistPage() {
-        return null;
+    public String getPasswordOnLoginPage() {
+        return "123456789";
     }
-
-    @Override
-    public String getBookLaterDateButtonOnDetailsPsychologistPage() {
-        return null;
-    }
-
-    @Override
-    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
-        return null;
-    }
-
-    @Override
-    public String getLanguageTitleOnDetailsPsychologistPage() {
-        return null;
-    }
-
-    @Override
-    public String getSpecialistLanguageOnDetailsPsychologistPage() {
-        return null;
-    }
-
 }
 
 

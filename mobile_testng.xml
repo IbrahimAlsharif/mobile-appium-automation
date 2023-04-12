@@ -11,10 +11,11 @@
             <class name="Mobile.Tests.Language.LanguageChooseTest"/>
 <!--            <class name="Mobile.Tests.HomePage.HomePageTest"></class>-->
 <!--            <class name="Mobile.Tests.MyConversations.MyConversationsTest"></class>-->
-            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>
-<!--            <class name="Mobile.Tests.BenchmarksPage.DiagnosisTest"></class>-->
-<!--            <class name="Mobile.Tests.MorePage.MorePageTest"/>-->
-            <class name="Mobile.Tests.AllSpecialists.PsychologistTest"/>
+<!--            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>-->
+<!--&lt;!&ndash;            <class name="Mobile.Tests.BenchmarksPage.DiagnosisTest"></class>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="Mobile.Tests.MorePage.MorePageTest"/>&ndash;&gt;-->
+<!--            <class name="Mobile.Tests.AllSpecialists.PsychologistTest"/>-->
+                        <class name="Mobile.Tests.Auth.LoginTest"/>
 <!--            <class name="Base.TearDownTest"/>-->
         </classes>
     </test>

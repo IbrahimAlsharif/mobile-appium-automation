@@ -280,36 +280,20 @@ public class EnglishProductionTestData implements AbstractTestData {
     public String getRegisterMeetingButton() {
         return null;
     }
-
     @Override
-    public String getSpecialistRatesTitleOnDetailsPsychologistPage() {
+    public String getLogInByPhone() {
         return null;
+    }
+    @Override
+    public String getPhoneNumberOnLoginPage() {
+        return "599370787";
     }
 
     @Override
-    public String getUserByCommentTextOnDetailsPsychologistPage() {
-        return null;
+    public String getPasswordOnLoginPage() {
+        return "123456789";
     }
 
-    @Override
-    public String getBookLaterDateButtonOnDetailsPsychologistPage() {
-        return null;
-    }
-
-    @Override
-    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
-        return null;
-    }
-
-    @Override
-    public String getLanguageTitleOnDetailsPsychologistPage() {
-        return null;
-    }
-
-    @Override
-    public String getSpecialistLanguageOnDetailsPsychologistPage() {
-        return null;
-    }
 }
 
 
