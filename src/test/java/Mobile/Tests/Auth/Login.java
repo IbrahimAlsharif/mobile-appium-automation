@@ -78,6 +78,13 @@ public class Login {
     public static boolean welcomeMessageIsDisplayed(){
         return getWelcomeMessageText().isDisplayed();
     }
+    public static WebElement getUserNameText() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getUserNameTextAfterLogin()+"\"]";
+        return  MobileFinder.getByXpath(xpath, false);
+    }
+    public static boolean UserNameIsDisplayed(){
+        return getUserNameText().isDisplayed();
+    }
 
 
 

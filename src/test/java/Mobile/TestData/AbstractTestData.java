@@ -78,6 +78,9 @@ String getDetailsMeetingText();
     String getPhoneNumberOnLoginPage();
     String getPasswordOnLoginPage();
     String getLogInButton();
+    String getUserNameTextAfterLogin();
+    String getPasswordEncryption();
+
 
 
 

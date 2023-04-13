@@ -25,7 +25,7 @@ public class LoginTest {
         morePageTest.SignInButtonIsDisplayed();
     }
     @Test(priority = 3)
-    public void ClickOnSignInButton(){
+    public void NavigateToSignInPage(){
         MorePage.ClickOnSignInButton();
         assertTrue(Login.LogInByPhoneButtonIsDisplayed());
     }
@@ -52,13 +52,14 @@ public class LoginTest {
         testCaseId="1";
        Login.ClickOnPasswordField();
         Login.InputOnPasswordField(testDataMobile.getPasswordOnLoginPage());
-       Assert.assertEquals(Login.getPasswordField().getText(),"•••••••••");
+       Assert.assertEquals(Login.getPasswordField().getText(),testDataMobile.getPasswordEncryption());
     }
     @Test(priority =8)
-    public void ClickOnLoginButtonNavigteToMorePage() throws InterruptedException {
+    public void ClickOnLoginButtonNavigteToMorePage() {
         testCaseId="1";
         Login.ClickOnLogInButton();
         assertTrue(Login.welcomeMessageIsDisplayed());
+        assertTrue(Login.UserNameIsDisplayed());
     }
 
 
