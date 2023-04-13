@@ -275,6 +275,21 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     }
 
     @Override
+    public String getLogInByPhone() {
+        return "دخول باستخدام رقم الهاتف";
+    }
+
+    @Override
+    public String getPhoneNumberOnLoginPage() {
+        return "599370787";
+    }
+
+    @Override
+    public String getPasswordOnLoginPage() {
+        return "123456789";
+    }
+
+    @Override
     public String getLanguageTitleOnDetailsPsychologistPage() {
         return null;
     }
@@ -333,6 +348,7 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     public String getRegisterMeetingButton() {
         return "التسجيل في اللقاء";
     }
+
 
 
 }

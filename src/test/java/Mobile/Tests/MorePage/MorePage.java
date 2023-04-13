@@ -75,8 +75,12 @@ public class MorePage {
         return MobileFinder.getByXpath(xpath,true);
     }
     public static boolean SignInButtonIsDisplayed(){
-        return getBlogButton().isDisplayed();
+        return getSignInButton().isDisplayed();
     }
+    public static void ClickOnSignInButton() {
+        getSignInButton().click();
+    }
+
     public static MobileElement getFriendsInviteButton() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getFriendsInviteButton()+"\"]";
         return MobileFinder.getByXpath(xpath,true);
