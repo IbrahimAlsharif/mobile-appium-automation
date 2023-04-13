@@ -297,4 +297,8 @@ public class EnglishStagingTestData implements AbstractTestData {
     public String getPasswordOnLoginPage() {
         return "123456789";
     }
+    @Override
+    public String getLogInButton() {
+        return null;
+    }
 }
