@@ -189,14 +189,23 @@ public class ArabicStagingTestData implements AbstractTestData {
 
     @Override
     public String getUpcomingMeetingText() {
-        return null;
+        return "تست اتوميشن 2\n" +
+                "69.00 SR\n" +
+                "مدير الجودة\n" +
+                "- طبيب نفسي\n" +
+                "الموعــــد\n" +
+                "الثلاثاء، 17 أكتوبر | 12:00 مساء\n" +
+                "المــــــدة\n" +
+                "دقيقتان\n" +
+                "المقاعد المتبقية\n" +
+                "مقعدين\n" +
+                "تسجيل";
     }
 
     @Override
     public String getDetailsMeetingText() {
-        return null;
+        return "تفاصيل اللقاء";
     }
-
     @Override
     public String getDateOfJoinOnDetailsPsychologistPage() {
         return "  منذ 2 سنة و 7 شهور";
@@ -256,37 +265,37 @@ public class ArabicStagingTestData implements AbstractTestData {
 
     @Override
     public String getTitleUpcomingMeeting() {
-        return null;
+        return "تست اتوميشن 2";
     }
 
     @Override
     public String getPriceMeeting() {
-        return null;
+        return "69.0 ر.س";
     }
 
     @Override
     public String getTimeMeetingOnDetailsMeetingTestPage() {
-        return null;
+        return "دقيقتان";
     }
 
     @Override
     public String getRemainingSeats() {
-        return null;
+        return "دقيقتان";
     }
 
     @Override
     public String getTargetGroupText() {
-        return null;
+        return "الفئة المستهدفة";
     }
 
     @Override
     public String getMeetingDetailsGoalsItem() {
-        return null;
+        return "أهداف اللقاء";
     }
 
     @Override
     public String getRegisterMeetingButton() {
-        return null;
+        return "التسجيل في اللقاء";
     }
 
 

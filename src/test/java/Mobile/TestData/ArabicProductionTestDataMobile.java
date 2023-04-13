@@ -331,7 +331,7 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
 
     @Override
     public String getRemainingSeats() {
-        return "دقيقتان";
+        return "مقعدين";
     }
 
     @Override
