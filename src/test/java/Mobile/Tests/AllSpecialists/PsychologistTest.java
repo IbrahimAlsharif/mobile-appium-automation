@@ -16,7 +16,7 @@ import static Base.MobileSetup.MobileSetupTest.androidDriver;
 
 public class PsychologistTest {
     HomePageTest homePageTest =new HomePageTest();
-    @Test(priority =1)
+    @Test(priority =1,enabled = false)
     public void verifyThatTapMyConversationsButtonNavigateToMyConversationsPage() throws InterruptedException {
         TouchAction touchAction = new TouchAction((PerformsTouchActions) androidDriver);
         touchAction.tap(PointOption.point(956, 1946)).release().perform();

@@ -301,4 +301,13 @@ public class EnglishStagingTestData implements AbstractTestData {
     public String getLogInButton() {
         return null;
     }
+    @Override
+    public String getUserNameTextAfterLogin() {
+        return null;
+    }
+    @Override
+    public String getPasswordEncryption() {
+        return "•••••••••";
+    }
+
 }

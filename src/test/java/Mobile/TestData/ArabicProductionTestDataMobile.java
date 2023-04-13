@@ -199,12 +199,19 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
 
     @Override
     public String getPsychologistNameText() {
-        return "مستشاره نفسيه، ماجستير في علم النفس ، عضو هيئه تدريس سابق،، ";
+        return "Mohamed AlWhaidi\n" +
+                "أخصائي نفسي\n" +
+                "منضم حديثا\n" +
+                "أخصائي من الفريق التقني\n" +
+                "تقديم جلسات\n" +
+                "كتابية\n" +
+                "صوتية\n" +
+                "مرئية";
     }
 
     @Override
     public String getSpecialistNameOnDetailsPsychologistPage() {
-        return "بدور الراضي";
+        return "Mohamed AlWhaidi";
     }
 
     @Override
@@ -294,6 +301,15 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
         return "تسجيل الدخول";
     }
 
+    @Override
+    public String getUserNameTextAfterLogin() {
+        return "محمد";
+    }
+
+    @Override
+    public String getPasswordEncryption() {
+        return "•••••••••";
+    }
 
 
     @Override
