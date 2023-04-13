@@ -65,20 +65,6 @@ String getTargetGroupText();
 String getMeetingDetailsGoalsItem();
 String getRegisterMeetingButton();
 String getUpcomingMeetingText();
-
 String getDetailsMeetingText();
 
-
-
-    String getSpecialistRatesTitleOnDetailsPsychologistPage();
-
-    String getUserByCommentTextOnDetailsPsychologistPage();
-
-    String getBookLaterDateButtonOnDetailsPsychologistPage();
-
-    String getSubSpecialtiesTitleOnDetailsPsychologistPage();
-
-    String getLanguageTitleOnDetailsPsychologistPage();
-
-    String getSpecialistLanguageOnDetailsPsychologistPage();
 }
