@@ -105,4 +105,5 @@ public interface AbstractTestData {
     String getJoinAsSpecialistTitleText();
 
     String getSuccessMessageText();
+    String getCheckoutPackageSTitle();
 }
