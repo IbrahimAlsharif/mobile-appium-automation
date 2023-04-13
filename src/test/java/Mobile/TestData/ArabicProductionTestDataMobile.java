@@ -290,6 +290,13 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     }
 
     @Override
+    public String getLogInButton() {
+        return "تسجيل الدخول";
+    }
+
+
+
+    @Override
     public String getLanguageTitleOnDetailsPsychologistPage() {
         return null;
     }

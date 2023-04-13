@@ -27,8 +27,8 @@ public class LoginTest {
     @Test(priority = 3)
     public void ClickOnSignInButton(){
         MorePage.ClickOnSignInButton();
+        assertTrue(Login.LogInByPhoneButtonIsDisplayed());
     }
-
     @Test(priority = 4)
     public void logInByPhoneButtonIsDisplayed(){
         testCaseId="1";
@@ -36,27 +36,29 @@ public class LoginTest {
     }
     @Test(priority = 5)
     public void clickOnLogInByPhoneButton(){
-        //todo teststep
         Login.ClickOnLogInByPhoneButton();
-
+        assertTrue(Login.LogInTitleIsDisplayed());
     }
-    @Test(priority = 6)
-    public void ClickOnPhoneField(){
-        //todo teststep
-
-        Login.ClickOnPhoneField();
-
-    }
-
-    @Test(priority =7)
-    public void inputOnPhoneField()  {
-        //todo teststep
-
+    @Test(priority =6)
+    public void inputOnPhoneField() throws InterruptedException {
         testCaseId="1";
+        Login.ClickOnPhoneField();
+        Thread.sleep(4000);
         Login.InputOnPhoneField(testDataMobile.getPhoneNumberOnLoginPage());
-       // MobileSetupTest.androidDriver.hideKeyboard();
-      //  Assert.assertEquals(SignupPOM.getPasswordConfirmField().getAttribute("value"), testData.getPasswordConfirmFieldText());
-
+        Assert.assertEquals(Login.getPhoneField().getText(), testDataMobile.getPhoneNumberOnLoginPage());
+    }
+    @Test(priority =7)
+    public void inputOnPasswordField()  {
+        testCaseId="1";
+       Login.ClickOnPasswordField();
+        Login.InputOnPasswordField(testDataMobile.getPasswordOnLoginPage());
+       Assert.assertEquals(Login.getPasswordField().getText(),"•••••••••");
+    }
+    @Test(priority =8)
+    public void ClickOnLoginButtonNavigteToMorePage() throws InterruptedException {
+        testCaseId="1";
+        Login.ClickOnLogInButton();
+        assertTrue(Login.welcomeMessageIsDisplayed());
     }
 
 
