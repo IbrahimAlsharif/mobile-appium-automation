@@ -46,8 +46,8 @@ public class MobileSetupTest {
 
     private void initializeMobileDriver(String appPath, String deviceName) throws MalformedURLException {
         androidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+port+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
-        androidDriver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
-        wait = new WebDriverWait(androidDriver, 35);
+        androidDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        wait = new WebDriverWait(androidDriver, 60);
         javascriptExecutor = (JavascriptExecutor) androidDriver;
     }
 
@@ -55,9 +55,10 @@ public class MobileSetupTest {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", deviceName);
-        capabilities.setCapability("app_activity", "sa.app.famcare.MainActivity");
-        capabilities.setCapability("allowTestPackages", "true");
-        capabilities.setCapability("app_package", "sa.app.famcare");
+        capabilities.setCapability("udid", deviceName);
+//        capabilities.setCapability("app_activity", "sa.app.famcare.MainActivity");
+//        capabilities.setCapability("allowTestPackages", "true");
+//        capabilities.setCapability("app_package", "sa.app.famcare");
         capabilities.setCapability(MobileCapabilityType.APP, appPath);
         File app = new File(appPath);
         capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
