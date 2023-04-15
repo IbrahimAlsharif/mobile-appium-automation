@@ -2,6 +2,7 @@ package Mobile.Tests.Scales;
 
 import Base.MobileSetup.MobileFinder;
 
+import static Base.MobileSetup.MobileSetupTest.clientMobileFinder;
 import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 public class ScalesPageTest {
@@ -11,7 +12,7 @@ public class ScalesPageTest {
     public void verifyThatTapScalesButtonNavigateToScalesPage()  {
         String accessibility = "المقاييس\n" +
                 "علامة التبويب 4 من 5";
-        MobileFinder.getByAccessibilityId(accessibility,false);
+        clientMobileFinder.getByAccessibilityId(accessibility,false);
         assertTrue(ScalesPage.TitleAppBarOnBenchmarksPageDisplayed());
     }
     @Test(priority = 2)

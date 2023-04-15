@@ -27,8 +27,6 @@ public class WebSetupTest {
 
     public static WebDriver webDriver;
     public static WebDriverWait wait;
-    public static AbstractTestData testDataMobile;
-    public static Mobile.TestDataSpecialistTests.AbstractTestData testDataMobileSpecialist;
     public static Web.TestData.AbstractTestData testDataWeb;
     public static JavascriptExecutor javascriptExecutor;
 

@@ -26,29 +26,48 @@ import java.util.concurrent.TimeUnit;
 @Listeners(Listener.class)
 public class MobileSetupTest {
 
-    public static AndroidDriver  androidDriver;
+    public static AndroidDriver  clientAndroidDriver;
+    public static AndroidDriver  serviceProviderAndroidDriver;
+    public static MobileFinder clientMobileFinder;
+    public static MobileFinder serviceProviderMobileFinder;
     public static WebDriverWait wait;
     public static AbstractTestData testDataMobile;
     public static Mobile.TestDataSpecialistTests.AbstractTestData testDataMobileSpecialist;
-    public static Web.TestData.AbstractTestData testDataWeb;
     public static JavascriptExecutor javascriptExecutor;
-    private String port;
+    private String appiumPort;
+    private String app;
     @Test(priority = 1)
-    @Parameters({"language", "appPath", "branch","deviceName", "port"})
-    public void setUp(String language, String appPath, String branch, String deviceName,String port) throws APIException, IOException {
-        this.port = port;
+    @Parameters({"language", "appPath", "branch","deviceName", "appiumPort","app"})
+    public void setUp(String language, String appPath, String branch, String deviceName,String appiumPort, String app) throws APIException, IOException {
+        this.appiumPort = appiumPort;
+        this.app=app;
         initializeMobileDriver(appPath,deviceName);
         initializeTestData(language, branch);
         TestRailManager testRailManager = new TestRailManager();
-        MobileFinder.testRunId = testRailManager.addTestRun();
+        if (app.equalsIgnoreCase("client")){
+            clientMobileFinder = new MobileFinder(clientAndroidDriver);
+            clientMobileFinder.setTestRunId(testRailManager.addTestRun());
+        }
+        else {
+            serviceProviderMobileFinder = new MobileFinder(serviceProviderAndroidDriver);
+            serviceProviderMobileFinder.setTestRunId(testRailManager.addTestRun());
+        }
         assertTrue(true);
     }
 
     private void initializeMobileDriver(String appPath, String deviceName) throws MalformedURLException {
-        androidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+port+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
-        androidDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        wait = new WebDriverWait(androidDriver, 60);
-        javascriptExecutor = (JavascriptExecutor) androidDriver;
+        if (app.equalsIgnoreCase("client")){
+        clientAndroidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+appiumPort+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
+        clientAndroidDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        wait = new WebDriverWait(clientAndroidDriver, 60);
+        javascriptExecutor = (JavascriptExecutor) clientAndroidDriver;
+        }
+        else {
+            serviceProviderAndroidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+appiumPort+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
+            serviceProviderAndroidDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+            wait = new WebDriverWait(serviceProviderAndroidDriver, 60);
+            javascriptExecutor = (JavascriptExecutor) serviceProviderAndroidDriver;
+        }
     }
 
     private DesiredCapabilities getDesiredCapabilities(String appPath, String deviceName) {

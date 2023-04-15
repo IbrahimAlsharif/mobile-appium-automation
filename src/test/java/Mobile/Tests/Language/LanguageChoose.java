@@ -1,4 +1,5 @@
 package Mobile.Tests.Language;
+import static Base.MobileSetup.MobileSetupTest.clientMobileFinder;
 import  static Base.MobileSetup.MobileSetupTest.testDataMobile;
 import Base.MobileSetup.MobileFinder;
 import io.appium.java_client.MobileElement;
@@ -7,7 +8,7 @@ import io.appium.java_client.MobileElement;
 public class LanguageChoose {
     public static MobileElement getWelcomeLabel() {
         String xpath="//android.view.View[@content-desc=\"Welcome to your safe space\"]";
-        return MobileFinder.getByXpath(xpath,false);
+        return clientMobileFinder.getByXpath(xpath,false);
     }
 
     public static boolean welcomeTextIsDisplayed() {
@@ -20,7 +21,7 @@ public class LanguageChoose {
 
     public static MobileElement getMainImage(){
         String xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[1]";
-        return MobileFinder.getByXpath(xpath,false);
+        return clientMobileFinder.getByXpath(xpath,false);
 
     }
     public static boolean mainImageIsDisplayed(){
@@ -29,7 +30,7 @@ public class LanguageChoose {
 
     public static MobileElement getWelcomeDescription() {
         String xpath="//android.view.View[@content-desc=\"You can now choose your own service language to be more comfortable with the language that suits you best\"]";
-        return MobileFinder.getByXpath(xpath,false);
+        return clientMobileFinder.getByXpath(xpath,false);
 
     }
     public static boolean welcomeDescriptionIsDisplayed() {
@@ -38,7 +39,7 @@ public class LanguageChoose {
 
     public static MobileElement getSelectArabicText() {
         String xpath="//android.widget.ImageView[@content-desc=\""+testDataMobile.getArabicLanguageText()+"\"]";
-        return MobileFinder.getByXpath(xpath,false);
+        return clientMobileFinder.getByXpath(xpath,false);
 
     }
     public static void ClickOnSelectArabicText(){
@@ -46,7 +47,7 @@ public class LanguageChoose {
     }
     public static MobileElement getChooseButton() {
         String xpath="//android.widget.Button[@content-desc=\""+testDataMobile.getChooseButtonText()+"\"]";
-        return MobileFinder.getByXpath(xpath,true);
+        return clientMobileFinder.getByXpath(xpath,true);
 
     }
     public static void ClickOnChooseButton(){
@@ -57,7 +58,7 @@ public class LanguageChoose {
     }
     public static MobileElement getIgnoreButton() {
         String xpath="//android.widget.Button[@content-desc=\""+testDataMobile.getIgnoreButtonText()+"\"]";
-        return MobileFinder.getByXpath(xpath,false);
+        return clientMobileFinder.getByXpath(xpath,false);
 
     }
     public static void ClickOnIgnoreButton(){
