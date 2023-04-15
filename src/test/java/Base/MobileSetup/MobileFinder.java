@@ -19,18 +19,27 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import static Base.MobileSetup.MobileSetupTest.androidDriver;
-
 
 public  class MobileFinder {
 
     public static Faker faker = new Faker();
-    private static final Shot shot= new Shot(androidDriver);
+    private static Shot shot;
     private static final TestRailManager testRail= new TestRailManager();
     public static String testRunId;
+    public static AndroidDriver androidDriver;
+
+    public MobileFinder(AndroidDriver androidDriver){
+        this.androidDriver= androidDriver;
+        shot= new Shot(androidDriver);
+    }
+
+
+    public void setTestRunId(String testRunId){
+        this.testRunId= testRunId;
+    }
     public static  JavascriptExecutor js = (JavascriptExecutor) androidDriver;
 
-     public static void doubleClick(AndroidDriver androidDriver, MobileElement element) {
+     public static void doubleClick(MobileElement element) {
         {
             new Actions(androidDriver).doubleClick(element).perform();
         }
@@ -250,31 +259,31 @@ public  class MobileFinder {
         }
     }
 
-    public static MobileElement getByXpath(String xpath, boolean isClickable){
+    public MobileElement getByXpath(String xpath, boolean isClickable){
         By byXpath= By.xpath(xpath);
         waitForElementToBeVisibleBy(byXpath);
         if (isClickable) {waitForElementToBeClickableBy(byXpath);}
          return (MobileElement) androidDriver.findElement(byXpath);
     }
-    public static MobileElement getById(String id, boolean isClickable){
+    public MobileElement getById(String id, boolean isClickable){
         By byId= By.id(id);
         waitForElementToBeVisibleBy(byId);
         if (isClickable) {waitForElementToBeClickableBy(byId);}
          return (MobileElement) androidDriver.findElement(byId);
     }
-    public static MobileElement getByClassName(String className, boolean isClickable){
+    public MobileElement getByClassName(String className, boolean isClickable){
         By byClassName= By.className(className);
         waitForElementToBeVisibleBy(byClassName);
         if (isClickable) {waitForElementToBeClickableBy(byClassName);}
          return (MobileElement) androidDriver.findElement(byClassName);
     }
-    public static MobileElement getByCssSelector(String cssSelector, boolean isClickable){
+    public MobileElement getByCssSelector(String cssSelector, boolean isClickable){
         By byCssSelector= By.cssSelector(cssSelector);
         waitForElementToBeVisibleBy(byCssSelector);
         if (isClickable) {waitForElementToBeClickableBy(byCssSelector);}
          return  (MobileElement)androidDriver.findElement(byCssSelector);
     }
-    public static MobileElement getByAccessibilityId(String AccessibilityId, boolean isClickable){
+    public MobileElement getByAccessibilityId(String AccessibilityId, boolean isClickable){
         By byAccessibilityId= MobileBy.AccessibilityId(AccessibilityId);
         waitForElementToBeVisibleBy(byAccessibilityId);
         if (isClickable) {waitForElementToBeClickableBy(byAccessibilityId);}

@@ -3,24 +3,26 @@
     <test name="client" parallel="false">
         <parameter name="appPath" value="src/app-production-release.apk"/>
         <parameter name="deviceName" value="emulator-5554"/>
-        <parameter name="port" value="4723"></parameter>
+        <parameter name="appiumPort" value="4723"></parameter>
+        <parameter name="app" value="client"></parameter>
         <parameter name="language" value="Arabic"/>
         <parameter name="branch" value="Production"/>
         <classes>
             <class name="Base.MobileSetup.MobileSetupTest"/>
-<!--            <class name="Mobile.Tests.Language.LanguageChooseTest"/>-->
+            <class name="Mobile.Tests.Language.LanguageChooseTest"/>
             <class name="Base.TearDownTest"/>
         </classes>
     </test>
-    <test name="specialist" parallel="false">
+    <test name="service provider" parallel="false">
         <parameter name="appPath" value="src/app-production-release.apk"/>
         <parameter name="deviceName" value="emulator-5556"></parameter>
-        <parameter name="port" value="4725"></parameter>
+        <parameter name="appiumPort" value="4725"></parameter>
+        <parameter name="app" value="serviceProvider"></parameter>
         <parameter name="language" value="Arabic"/>
         <parameter name="branch" value="Production"/>
         <classes>
         <class name="Base.MobileSetup.MobileSetupTest"/>
-<!--        <class name="Mobile.Tests.Language.LanguageChooseTest"/>-->
+        <class name="Mobile.Tests.Language.LanguageChooseTest"/>
             <class name="Base.TearDownTest"/>
         </classes>
     </test>

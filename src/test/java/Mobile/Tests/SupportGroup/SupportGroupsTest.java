@@ -3,7 +3,7 @@ package Mobile.Tests.SupportGroup;
 import Base.MobileSetup.MobileFinder;
 import org.testng.annotations.Test;
 
-import static Base.MobileSetup.MobileSetupTest.androidDriver;
+import static Base.MobileSetup.MobileSetupTest.clientMobileFinder;
 import static Base.MobileSetup.MobileSetupTest.testDataMobile;
 import static org.testng.Assert.*;
 
@@ -13,7 +13,7 @@ public class SupportGroupsTest {
     public void verifyThatTapDiagnosticButtonNavigateToDiagnosticPage()  {
         String accessibility = "مجموعات الدعم\n" +
                 "علامة التبويب 3 من 5";
-       MobileFinder.getByAccessibilityId(accessibility,false).click();
+        clientMobileFinder.getByAccessibilityId(accessibility,false).click();
        assertTrue(SupportGroups.screenTitleIsDisplayed());
     }
     @Test(priority = 2)
