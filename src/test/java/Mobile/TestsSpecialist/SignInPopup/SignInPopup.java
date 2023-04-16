@@ -3,60 +3,57 @@ package Mobile.TestsSpecialist.SignInPopup;
 import Base.MobileSetup.MobileFinder;
 import io.appium.java_client.MobileElement;
 
-import static Base.MobileSetup.MobileSetupTest.testDataMobileSpecialist;
+import static Base.MobileSetup.MobileSetupTest.*;
 
 public class SignInPopup {
-    //Title
+    public static String xpath;
     public static MobileElement getTitle(){
-        return MobileFinder.getByXpath(testDataMobileSpecialist.(), false);
+        String xpath = "//android.view.View[@content-desc=\"" +testDataMobileSpecialist.getTitleInSignInPopup()+ "\"]";
+        return serviceProviderMobileFinder.getByXpath(xpath, false);
+
     }
-    //TitleIsDisplayed
     public static Boolean titleIsDisplayed(){
         return getTitle().isDisplayed();
     }
 
-    //Description
     public static MobileElement getDescriptionText(){
-        return MobileFinder.getByXpath(testDataMobileSpecialist.(), false);
+        return serviceProviderMobileFinder.getByXpath("//android.view.View[@content-desc=\""+testDataMobileSpecialist.getDescriptionTextInSignInPopup()+"\"]", false);
     }
-    //DescriptionIsDisplayed
     public static Boolean descriptionTextIsDisplayed(){
         return getDescriptionText().isDisplayed();
     }
 
-    //MobileField
     public static MobileElement getMobileField(){
-        return MobileFinder.getByXpath(testDataMobileSpecialist.(), false);
+        xpath ="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView[1]";
+        return serviceProviderMobileFinder.getByXpath(xpath, true);
     }
-    //MobileFieldIsDisplayed
     public static Boolean mobileFieldIsDisplayed(){
         return getMobileField().isDisplayed();
     }
-    //PasswordField
     public static MobileElement getPasswordField(){
-        return MobileFinder.getByXpath(testDataMobileSpecialist.(), false);
+        xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.ImageView[2]/android.widget.EditText";
+        return serviceProviderMobileFinder.getByXpath(xpath, true);
     }
-    //PasswordFieldIsDisplayed
     public static Boolean passwordFieldIsDisplayed(){
         return getPasswordField().isDisplayed();
     }
 
-    //ForgetPassword
     public static MobileElement getForgetPasswordLinked(){
-        return MobileFinder.getByXpath(testDataMobileSpecialist.(), false);
+        xpath = "//android.view.View[@content-desc=\""+testDataMobileSpecialist.getForgetPasswordInSignInPopup()+"\"]";
+        return serviceProviderMobileFinder.getByXpath(xpath, false);
     }
-    //ForgetPasswordIsDisplayed
     public static Boolean forgetPasswordLinkedIsDisplayed(){
         return getForgetPasswordLinked().isDisplayed();
     }
-
-    //SignInButton
     public static MobileElement getSignInButton(){
-        return MobileFinder.getByXpath(testDataMobileSpecialist.(), false);
+        xpath ="//android.widget.Button[@content-desc=\""+testDataMobileSpecialist.getSignInButtonInSignInPopup()+"\"]";
+        return serviceProviderMobileFinder.getByXpath(xpath, true);
     }
-    //SignInButtonIsDisplayed
     public static Boolean signInButtonIsDisplayed(){
         return getSignInButton().isDisplayed();
+    }
+    public static Boolean signInButtonIsEnabled(){
+        return getSignInButton().isEnabled();
     }
 
 }
