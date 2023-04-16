@@ -13,7 +13,6 @@
             <class name="Mobile.TestsSpecialist.WelcomeScreen.WelcomeScreenTest"/>
             <class name="Mobile.TestsSpecialist.SignInScreen.SignInScreenTest"/>
             <class name="Mobile.TestsSpecialist.SignInPopup.SignInPopupTest"/>
-            <class name="Base.TearDownTest"/>
 
         </classes>
     </test>
