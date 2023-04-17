@@ -6,7 +6,7 @@ public interface AbstractTestData {
     String getLoginButtonInWelcomeScreen();
     String getSignUpButtonInWelcomeScreen();
 
-    //Start SignUp Screen Tests
+    //Start Git SignUp Screen Elements
     String getTitleInSignUpScreen();
     String getMainTextInSignUpScreen();
     String getDescriptionTextInSignUpScreen();
@@ -17,5 +17,23 @@ public interface AbstractTestData {
     String getPrivacyPolicyTextInSignUpScreen();
     String getAndTextInSignUpScreen();
     String getTermsUseTextInSignUpScreen();
+
+    //Start Git SignIn Screen Elements
+    String getTitleInSignInScreen();
+    String getMainTextInSignInScreen();
+    String getDescriptionTextInSignInScreen();
+    String getLoginButtonInSignInScreen();
+    String getHaveNotAccountTextInSignInScreen();
+    String getSignUpLinkedTextInSignInScreen();
+    String getBottomBarTextInSignInScreen();
+    String getPrivacyPolicyTextInSignInScreen();
+    String getAndTextInSignInScreen();
+    String getTermsUseTextInSignInScreen();
+
+    //Start Git Create Account Popup Elements
+    String getTitleInCreateAccountPopup();
+    String getDescriptionTextInCreateAccountPopup();
+    String getCreateAccountButtonInCreateAccountPopup();
+    //Start Git SignIn Popup Elements
 
 }

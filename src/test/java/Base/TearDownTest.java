@@ -11,6 +11,7 @@ public class TearDownTest
 {
     @Test
     public void tearDown(){
+        System.out.println(androidDriver.getConnection().toString());
         if (webDriver!= null) webDriver.quit();
         else androidDriver.quit();
     }

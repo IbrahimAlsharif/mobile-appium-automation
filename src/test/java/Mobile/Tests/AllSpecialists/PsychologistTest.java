@@ -6,7 +6,7 @@ import Mobile.Tests.HomePage.HomePageTest;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
-import org.testng.Assert;
+import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 import static Base.MobileSetup.MobileSetupTest.testDataMobile;
 
@@ -16,24 +16,26 @@ import static Base.MobileSetup.MobileSetupTest.androidDriver;
 
 public class PsychologistTest {
     HomePageTest homePageTest =new HomePageTest();
-    @Test(priority =1)
+    @Test(priority =1,enabled = false)
     public void verifyThatTapMyConversationsButtonNavigateToMyConversationsPage() throws InterruptedException {
         TouchAction touchAction = new TouchAction((PerformsTouchActions) androidDriver);
         touchAction.tap(PointOption.point(956, 1946)).release().perform();
         Thread.sleep(9000);
+        assertTrue(Psychologist.ScreenTitleIsDisplayed());
+
     }
     @Test(priority = 2)
     public void NavigateToPsychologistPage(){
         HomePage.ClickOnPsychologist();
-        Assert.assertTrue(Psychologist.ScreenTitleIsDisplayed());
+        assertTrue(Psychologist.ScreenTitleIsDisplayed());
     }
     @Test(priority = 3)
     public void SearchFieldIsDisplayed(){
-        Assert.assertTrue(Psychologist.SearchFieldIsDisplayed());
+        assertTrue(Psychologist.SearchFieldIsDisplayed());
     }
     @Test(priority = 4)
     public void FilterIsDisplayed(){
-        Assert.assertTrue(Psychologist.FilterIsDisplayed());
+        assertTrue(Psychologist.FilterIsDisplayed());
     }
     @Test(priority = 5,enabled = false)
     public void InputOnSearchField()  {
@@ -46,75 +48,75 @@ public class PsychologistTest {
         }
         Psychologist.getSearchField().click();
         Psychologist.InputOnSearchField();
-        Assert.assertTrue(Psychologist.PsychologistNameIsDisplayed());
+        assertTrue(Psychologist.PsychologistNameIsDisplayed());
     }
     @Test(priority = 6 )
     public void PsychologistNameIsDisplayed(){
         androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getPsychologistNameText()+"\"))").click();
-       Assert.assertTrue(Psychologist.SpecialistNameIsDisplayed());
+       assertTrue(Psychologist.SpecialistNameIsDisplayed());
     }
     @Test(priority = 7)
     public void SpecialisOfTypeIsDisplayed(){
-       Assert.assertTrue(Psychologist.SpecialisOfTypeIsDisplayed());
+       assertTrue(Psychologist.SpecialisOfTypeIsDisplayed());
     }
     @Test(priority = 8)
     public void SpecialistRateIsDisplayed(){
-       Assert.assertTrue(Psychologist.SpecialistRateIsDisplayed());
+       assertTrue(Psychologist.SpecialistRateIsDisplayed());
     }
  @Test(priority = 9)
     public void ExperienceOfYearsIsDisplayed(){
-       Assert.assertTrue(Psychologist.ExperienceOfYearsIsDisplayed());
+       assertTrue(Psychologist.ExperienceOfYearsIsDisplayed());
     }
     @Test(priority = 10)
     public void DateOfJoinIsDisplayed(){
-       Assert.assertTrue(Psychologist.DateOfJoinIsDisplayed());
+       assertTrue(Psychologist.DateOfJoinIsDisplayed());
     }
    @Test(priority = 11)
     public void BriefAboutMeTitleIsDisplayed(){
-       Assert.assertTrue(Psychologist.BriefAboutMeTitleIsDisplayed());
+        assertTrue(Psychologist.BriefAboutMeTitleIsDisplayed());
     }
     @Test(priority = 12)
     public void SessionsPresentationWrittenIsDisplayed(){
-       Assert.assertTrue(Psychologist.SessionsPresentationWrittenIsDisplayed());
+       assertTrue(Psychologist.SessionsPresentationWrittenIsDisplayed());
     }
     @Test(priority = 13)
     public void SessionsPresentationAudioIsDisplayed(){
-       Assert.assertTrue(Psychologist.SessionsPresentationAudioIsDisplayed());
+        assertTrue(Psychologist.SessionsPresentationAudioIsDisplayed());
     }
     @Test(priority = 14)
     public void SessionsPresentationVideoOnDetailsPsychologistPageIsDisplayed(){
-       Assert.assertTrue(Psychologist.SessionsPresentationVideoIsDisplayed());
+        assertTrue(Psychologist.SessionsPresentationVideoIsDisplayed());
     }
     @Test(priority = 15)
     public void SubSpecialtiesIsDisplayed(){
-       Assert.assertTrue(Psychologist.SubSpecialtiesIsDisplayed());
+       assertTrue(Psychologist.SubSpecialtiesIsDisplayed());
     }
     @Test(priority = 16)
     public void SubSpecialtiesTitleIsDisplayed(){
-       Assert.assertTrue(Psychologist.SubSpecialtiesTitleIsDisplayed());
+       assertTrue(Psychologist.SubSpecialtiesTitleIsDisplayed());
     }
     @Test(priority = 17)
     public void LanguageTitleLanguageIsDisplayed(){
 
      /// androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(false).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getLanguageTitleOnDetailsPsychologistPage()+"\"))");
-        Assert.assertTrue(Psychologist.LanguageTitleLanguageIsDisplayed());
+        assertTrue(Psychologist.LanguageTitleLanguageIsDisplayed());
     }
     @Test(priority = 18)
     public void SpecialistLanguagIsDisplayed(){
-       Assert.assertTrue(Psychologist.SpecialistLanguageIsDisplayed());
+       assertTrue(Psychologist.SpecialistLanguageIsDisplayed());
     }
     @Test(priority = 19)
     public void SpecialistRatesTitleIsDisplayed(){
-       Assert.assertTrue(Psychologist.SpecialistRatesTitleIsDisplayed());
+       assertTrue(Psychologist.SpecialistRatesTitleIsDisplayed());
     }
     @Test(priority = 20)
     public void UserByCommentTextIsDisplayed(){
 //        androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getUserByCommentTextOnDetailsPsychologistPage()+"\"))");
-        Assert.assertTrue(Psychologist.UserByCommentTextIsDisplayed());
+        assertTrue(Psychologist.UserByCommentTextIsDisplayed());
     }
     @Test(priority = 21)
     public void BookLaterDateButtonIsDisplayed(){
-       Assert.assertTrue(Psychologist.BookLaterDateButtonIsDisplayed());
+       assertTrue(Psychologist.BookLaterDateButtonIsDisplayed());
     }
     @Test(priority = 22)
     public void NavigationToSubscriptionsAndPackages(){

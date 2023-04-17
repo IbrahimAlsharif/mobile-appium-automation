@@ -2,19 +2,26 @@
 <suite name="Arabic language Testing Suite">
     <test name="Test Setup">
         <parameter name="appPath" value="src/app-production-release.apk"/>
-        <parameter name="deviceName" value="Emulator 12"/>
+        <parameter name="deviceName" value="Android Emulator"/>
         <parameter name="port" value="4723"></parameter>
         <parameter name="language" value="Arabic"/>
         <parameter name="branch" value="Production"/>
         <classes>
             <class name="Base.MobileSetup.MobileSetupTest"/>
             <class name="Mobile.Tests.Language.LanguageChooseTest"/>
-<!--            <class name="Mobile.Tests.HomePage.HomePageTest"></class>-->
-<!--            <class name="Mobile.Tests.MyConversations.MyConversationsTest"></class>-->
-            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>
-<!--            <class name="Mobile.Tests.BenchmarksPage.DiagnosisTest"></class>-->
-<!--            <class name="Mobile.Tests.MorePage.MorePageTest"/>-->
+            <class name="Mobile.Tests.Auth.LoginTest"/>
+            <class name="Mobile.Tests.HomePage.HomePageTest"></class>
 <!--            <class name="Mobile.Tests.AllSpecialists.PsychologistTest"/>-->
+
+            <!--            <class name="Mobile.Tests.MyConversations.MyConversationsTest"></class>-->
+<!--            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>-->
+<!--&lt;!&ndash;            <class name="Mobile.Tests.BenchmarksPage.DiagnosisTest"></class>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="Mobile.Tests.MorePage.MorePageTest"/>&ndash;&gt;-->
+<!--            <class name="Mobile.Tests.AllSpecialists.PsychologistTest"/>-->
+<!--            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>-->
+<!--            <class name="Mobile.Tests.UpcomingMeetings.UpcomingMeetingsTest"></class>-->
+<!--&lt;!&ndash;            <class name="Mobile.Tests.Scales.ScalesPageTest"></class>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="Mobile.Tests.MorePage.MorePageTest"/>&ndash;&gt;-->
 <!--            <class name="Base.TearDownTest"/>-->
         </classes>
     </test>

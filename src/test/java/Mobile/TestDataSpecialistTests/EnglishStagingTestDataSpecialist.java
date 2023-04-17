@@ -70,4 +70,69 @@ public class EnglishStagingTestDataSpecialist implements AbstractTestData{
     public String getTermsUseTextInSignUpScreen() {
         return null;
     }
+
+    @Override
+    public String getTitleInSignInScreen() {
+        return null;
+    }
+
+    @Override
+    public String getMainTextInSignInScreen() {
+        return null;
+    }
+
+    @Override
+    public String getDescriptionTextInSignInScreen() {
+        return null;
+    }
+
+    @Override
+    public String getLoginButtonInSignInScreen() {
+        return null;
+    }
+
+    @Override
+    public String getHaveNotAccountTextInSignInScreen() {
+        return null;
+    }
+
+    @Override
+    public String getSignUpLinkedTextInSignInScreen() {
+        return null;
+    }
+
+    @Override
+    public String getBottomBarTextInSignInScreen() {
+        return null;
+    }
+
+    @Override
+    public String getPrivacyPolicyTextInSignInScreen() {
+        return null;
+    }
+
+    @Override
+    public String getAndTextInSignInScreen() {
+        return null;
+    }
+
+    @Override
+    public String getTermsUseTextInSignInScreen() {
+        return null;
+    }
+
+    @Override
+    public String getTitleInCreateAccountPopup() {
+        return null;
+    }
+
+    @Override
+    public String getDescriptionTextInCreateAccountPopup() {
+        return null;
+    }
+
+    @Override
+    public String getCreateAccountButtonInCreateAccountPopup() {
+        return null;
+    }
 }

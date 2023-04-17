@@ -1,9 +1,10 @@
 package Mobile.Tests.MyConversations;
 
+import Base.MobileSetup.MobileFinder;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
-import org.testng.Assert;
+import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 
 import static Base.MobileSetup.MobileSetupTest.androidDriver;
@@ -13,38 +14,41 @@ public class MyConversationsTest {
 
     @Test(priority =1)
     public void verifyThatTapMyConversationsButtonNavigateToMyConversationsPage() throws InterruptedException {
-        TouchAction touchAction=new TouchAction((PerformsTouchActions) androidDriver);
-        touchAction.tap(PointOption.point(750, 1954)).release().perform();
+        String accessibility = "محادثاتي\n" +
+                "علامة التبويب 2 من 5";
+        MobileFinder.getByAccessibilityId(accessibility,false);
         Thread.sleep(9000);
+        assertTrue(MyConversations.TitleAppBarOnMyConversationsDisplayed());
+
     }
     @Test(priority = 2)
     public void TitleAppBarOnMyConversationsDisplayed(){
 
-        Assert.assertTrue(MyConversations.TitleAppBarOnMyConversationsDisplayed());
+        assertTrue(MyConversations.TitleAppBarOnMyConversationsDisplayed());
     }
     @Test(priority = 2)
     public void SearchFieldOnMyConversationsDisplayed(){
-        Assert.assertTrue(MyConversations.SearchFieldOnMyConversationsDisplayed());
+        assertTrue(MyConversations.SearchFieldOnMyConversationsDisplayed());
     }
     @Test(priority = 2)
     public void FilterIconOnMyConversationsDisplayed(){
-        Assert.assertTrue(MyConversations.FilterIconOnMyConversationsDisplayed());
+        assertTrue(MyConversations.FilterIconOnMyConversationsDisplayed());
     }
     @Test(priority = 2)
     public void ChatIconOnMyConversationsDisplayed(){
-        Assert.assertTrue(MyConversations.ChatIconOnMyConversationsDisplayed());
+        assertTrue(MyConversations.ChatIconOnMyConversationsDisplayed());
     }
     @Test(priority = 2)
     public void EmptyChatTitleOnMyConversationsDisplayed(){
-        Assert.assertTrue(MyConversations.EmptyChatTitleOnMyConversationsDisplayed());
+        assertTrue(MyConversations.EmptyChatTitleOnMyConversationsDisplayed());
     }
    @Test(priority = 2)
     public void EmptyChatSubTitleOnMyConversationsDisplayed(){
-        Assert.assertTrue(MyConversations.EmptyChatSubTitleOnMyConversationsDisplayed());
+        assertTrue(MyConversations.EmptyChatSubTitleOnMyConversationsDisplayed());
     }
     @Test(priority = 2)
     public void SpecialistsBrowseButtonOnMyConversationsDisplayed(){
-        Assert.assertTrue(MyConversations.SpecialistsBrowseButtonOnMyConversationsDisplayed());
+        assertTrue(MyConversations.SpecialistsBrowseButtonOnMyConversationsDisplayed());
     }
 
 

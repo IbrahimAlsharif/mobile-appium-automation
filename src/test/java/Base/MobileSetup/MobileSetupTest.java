@@ -13,7 +13,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
+import static org.testng.Assert.*;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -41,13 +41,13 @@ public class MobileSetupTest {
         initializeTestData(language, branch);
         TestRailManager testRailManager = new TestRailManager();
         MobileFinder.testRunId = testRailManager.addTestRun();
-        Assert.assertTrue(true);
+        assertTrue(true);
     }
 
     private void initializeMobileDriver(String appPath, String deviceName) throws MalformedURLException {
         androidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+port+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
-        androidDriver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
-        wait = new WebDriverWait(androidDriver, 35);
+        androidDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        wait = new WebDriverWait(androidDriver, 60);
         javascriptExecutor = (JavascriptExecutor) androidDriver;
     }
 
@@ -55,9 +55,10 @@ public class MobileSetupTest {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", deviceName);
-        capabilities.setCapability("app_activity", "sa.app.famcare.MainActivity");
-        capabilities.setCapability("allowTestPackages", "true");
-        capabilities.setCapability("app_package", "sa.app.famcare");
+        capabilities.setCapability("udid", deviceName);
+//        capabilities.setCapability("app_activity", "sa.app.famcare.MainActivity");
+//        capabilities.setCapability("allowTestPackages", "true");
+//        capabilities.setCapability("app_package", "sa.app.famcare");
         capabilities.setCapability(MobileCapabilityType.APP, appPath);
         File app = new File(appPath);
         capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());

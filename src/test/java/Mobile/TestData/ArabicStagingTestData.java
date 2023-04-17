@@ -166,13 +166,10 @@ public class ArabicStagingTestData implements AbstractTestData {
     public String getDataInputOnSearchFieldText() {
         return "زبيدة";
     }
-    @Override
-    public String getPsychologistNameText() {
-        return "مستشاره نفسيه، ماجستير في علم النفس ، عضو هيئه تدريس سابق،، ";
-    }
+
     @Override
     public String getSpecialistNameOnDetailsPsychologistPage() {
-        return "بدور الراضي";
+        return "Mohamed AlWhaidi";
     }
     @Override
     public String getSpecialisOfTypeOnDetailsPsychologistPage() {
@@ -189,14 +186,23 @@ public class ArabicStagingTestData implements AbstractTestData {
 
     @Override
     public String getUpcomingMeetingText() {
-        return null;
+        return "تست اتوميشن 2\n" +
+                "69.00 SR\n" +
+                "مدير الجودة\n" +
+                "- طبيب نفسي\n" +
+                "الموعــــد\n" +
+                "الثلاثاء، 17 أكتوبر | 12:00 مساء\n" +
+                "المــــــدة\n" +
+                "دقيقتان\n" +
+                "المقاعد المتبقية\n" +
+                "مقعدين\n" +
+                "تسجيل";
     }
 
     @Override
     public String getDetailsMeetingText() {
-        return null;
+        return "تفاصيل اللقاء";
     }
-
     @Override
     public String getDateOfJoinOnDetailsPsychologistPage() {
         return "  منذ 2 سنة و 7 شهور";
@@ -225,37 +231,17 @@ public class ArabicStagingTestData implements AbstractTestData {
     }
 
     @Override
-    public String getTitleUpcomingMeeting() {
+    public String getSpecialistLanguageOnDetailsPsychologistPage() {
         return null;
     }
 
     @Override
-    public String getPriceMeeting() {
+    public String getLanguageTitleOnDetailsPsychologistPage() {
         return null;
     }
 
     @Override
-    public String getTimeMeetingOnDetailsMeetingTestPage() {
-        return null;
-    }
-
-    @Override
-    public String getRemainingSeats() {
-        return null;
-    }
-
-    @Override
-    public String getTargetGroupText() {
-        return null;
-    }
-
-    @Override
-    public String getMeetingDetailsGoalsItem() {
-        return null;
-    }
-
-    @Override
-    public String getRegisterMeetingButton() {
+    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
         return null;
     }
 
@@ -275,18 +261,76 @@ public class ArabicStagingTestData implements AbstractTestData {
     }
 
     @Override
-    public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
-        return null;
+    public String getTitleUpcomingMeeting() {
+        return "تست اتوميشن 2";
     }
 
     @Override
-    public String getLanguageTitleOnDetailsPsychologistPage() {
-        return null;
+    public String getPriceMeeting() {
+        return "69.0 ر.س";
     }
 
     @Override
-    public String getSpecialistLanguageOnDetailsPsychologistPage() {
-        return null;
+    public String getTimeMeetingOnDetailsMeetingTestPage() {
+        return "دقيقتان";
+    }
+
+    @Override
+    public String getRemainingSeats() {
+        return "دقيقتان";
+    }
+
+    @Override
+    public String getTargetGroupText() {
+        return "الفئة المستهدفة";
+    }
+
+    @Override
+    public String getMeetingDetailsGoalsItem() {
+        return "أهداف اللقاء";
+    }
+
+    @Override
+    public String getRegisterMeetingButton() {
+        return "التسجيل في اللقاء";
+    }
+
+
+    @Override
+    public String getLogInByPhone() {
+        return "دخول باستخدام رقم الهاتف";
+    }
+    @Override
+    public String getPhoneNumberOnLoginPage() {
+        return "599370787";
+    }
+
+    @Override
+    public String getPasswordOnLoginPage() {
+        return "123456789";
+    }
+    @Override
+    public String getLogInButton() {
+        return "تسجيل الدخول";
+    }
+    @Override
+    public String getUserNameTextAfterLogin() {
+        return "محمد";
+    }
+    @Override
+    public String getPasswordEncryption() {
+        return "•••••••••";
+    }
+    @Override
+    public String getPsychologistNameText() {
+        return "Mohamed AlWhaidi\n" +
+                "أخصائي نفسي\n" +
+                "منضم حديثا\n" +
+                "أخصائي من الفريق التقني\n" +
+                "تقديم جلسات\n" +
+                "كتابية\n" +
+                "صوتية\n" +
+                "مرئية";
     }
 
 }
