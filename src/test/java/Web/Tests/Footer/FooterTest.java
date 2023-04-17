@@ -6,13 +6,13 @@ import org.testng.annotations.Test;
 public class FooterTest {
     private String testCaseId;
     @Test(priority = 1)
-    public void footerGooglePlayButtonIsDisplayed() {
+    public void googlePlayButtonIsDisplayed() {
         testCaseId="C10154";
-        Assert.assertTrue(Footer.footerGooglePlayButtonIsDisplayed());
+        Assert.assertTrue(Footer.googlePlayButtonIsDisplayed());
     }
     @Test(priority = 1)
-    public void footerAppStoreButtonIsDisplayed() {
+    public void appStoreButtonIsDisplayed() {
         testCaseId="C10152";
-        Assert.assertTrue(Footer.footerAppStoreButtonIsDisplayed());
+        Assert.assertTrue(Footer.appStoreButtonIsDisplayed());
     }
 }
