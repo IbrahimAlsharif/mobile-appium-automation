@@ -34,6 +34,7 @@ public interface AbstractTestData {
     String getTitleInCreateAccountPopup();
     String getDescriptionTextInCreateAccountPopup();
     String getCreateAccountButtonInCreateAccountPopup();
+
     //Start Git SignIn Popup Elements
     String getTitleInSignInPopup();
     String getDescriptionTextInSignInPopup();
