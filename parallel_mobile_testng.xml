@@ -1,10 +1,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Arabic language Testing Suite" parallel="tests">
-    <test name="client" parallel="false">
+    <test name="client" parallel="false" enabled="false">
         <parameter name="appPath" value="src/app-production-release.apk"/>
-        <parameter name="deviceName" value="emulator-5554"/>
-        <parameter name="appiumPort" value="4723"></parameter>
-        <parameter name="app" value="client"></parameter>
+        <parameter name="deviceName" value="emulator-5556"/>
+        <parameter name="appiumPort" value="10001"/>
+        <parameter name="mjpegServerPort" value="8001"></parameter>
+        <parameter name="systemPort" value="8201"></parameter>
+        <parameter name="app" value="client"/>
         <parameter name="language" value="Arabic"/>
         <parameter name="branch" value="Production"/>
         <classes>
@@ -13,16 +15,20 @@
             <class name="Base.TearDownTest"/>
         </classes>
     </test>
-    <test name="service provider" parallel="false">
-        <parameter name="appPath" value="src/app-production-release.apk"/>
-        <parameter name="deviceName" value="emulator-5556"></parameter>
-        <parameter name="appiumPort" value="4725"></parameter>
-        <parameter name="app" value="serviceProvider"></parameter>
+    <test name="service provider" parallel="false" enabled="true">
+        <parameter name="appPath" value="src/app-specialist_production-debug.apk"/>
+        <parameter name="deviceName" value="emulator-5554"/>
+        <parameter name="appiumPort" value="10000"/>
+        <parameter name="mjpegServerPort" value="8000"></parameter>
+        <parameter name="systemPort" value="8200"></parameter>
+        <parameter name="app" value="serviceProvider"/>
         <parameter name="language" value="Arabic"/>
         <parameter name="branch" value="Production"/>
         <classes>
-        <class name="Base.MobileSetup.MobileSetupTest"/>
-        <class name="Mobile.Tests.Language.LanguageChooseTest"/>
+            <class name="Base.MobileSetup.MobileSetupTest"/>
+            <class name="Mobile.TestsSpecialist.WelcomeScreen.WelcomeScreenTest"/>
+            <class name="Mobile.TestsSpecialist.SignInScreen.SignInScreenTest"/>
+            <class name="Mobile.TestsSpecialist.SignInPopup.SignInPopupTest"/>
             <class name="Base.TearDownTest"/>
         </classes>
     </test>

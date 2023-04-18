@@ -1,35 +1,1198 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test Setup"
+<testsuite name="Chrome"
            tests="23"
-           failures="0"
+           failures="23"
            errors="0"
            skipped="0"
-           time="5.060">
+           time="62.321">
   <properties />
+            <testcase name="consultantButtonIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getConsultantButton(HomePage.java:148)
+  Web.Tests.HomePage.HomePage.consultantButtonIsDisplayed(HomePage.java:152)
+  Web.Tests.HomePage.HomePageTest.consultantButtonIsDisplayed(HomePageTest.java:76)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="promotionalTextIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getPromotionalText(HomePage.java:49)
+  Web.Tests.HomePage.HomePage.promotionalTextIsDisplayed(HomePage.java:53)
+  Web.Tests.HomePage.HomePageTest.promotionalTextIsDisplayed(HomePageTest.java:32)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="subscriptionImageIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getSubscriptionImage(HomePage.java:139)
+  Web.Tests.HomePage.HomePage.subscriptionImageIsDisplayed(HomePage.java:143)
+  Web.Tests.HomePage.HomePageTest.subscriptionImageIsDisplayed(HomePageTest.java:72)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="startTextIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getStartText(HomePage.java:27)
+  Web.Tests.HomePage.HomePage.startTextIsDisplayed(HomePage.java:31)
+  Web.Tests.HomePage.HomePageTest.startTextIsDisplayed(HomePageTest.java:22)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="appStoreButtonIsDisplayed" time="60.292" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.TimeoutException"
+                  message="Expected condition failed: waiting for visibility of element located by By.xpath: //IMG[@src=&apos;https://famcare.app/wp-content/themes/famkeer/images/hamed/Download_on_the_App_Store_Badge.svg&apos;] (tried for 60 second(s) with 500 milliseconds interval)"
+              >
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //IMG[@src='https://famcare.app/wp-content/themes/famkeer/images/hamed/Download_on_the_App_Store_Badge.svg'] (tried for 60 second(s) with 500 milliseconds interval)
+  org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getAppStoreButton(HomePage.java:175)
+  Web.Tests.HomePage.HomePage.appStoreButtonIsDisplayed(HomePage.java:179)
+  Web.Tests.HomePage.HomePageTest.appStoreButtonIsDisplayed(HomePageTest.java:88)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.121)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/vg/1gyc_6x909j...}, goog:chromeOptions: {debuggerAddress: localhost:49369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd9af9c4b30b734438ae3dc20ce76901
+*** Element info: {Using=xpath, value=//IMG[@src='https://famcare.app/wp-content/themes/famkeer/images/hamed/Download_on_the_App_Store_Badge.svg']}
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getAppStoreButton(HomePage.java:175)
+  Web.Tests.HomePage.HomePage.appStoreButtonIsDisplayed(HomePage.java:179)
+  Web.Tests.HomePage.HomePageTest.appStoreButtonIsDisplayed(HomePageTest.java:88)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="packagesImageIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getPackagesImage(HomePage.java:58)
+  Web.Tests.HomePage.HomePage.packagesImageIsDisplayed(HomePage.java:62)
+  Web.Tests.HomePage.HomePageTest.packagesImageIsDisplayed(HomePageTest.java:36)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="ratingTitleIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getRatingTitle(HomePage.java:121)
+  Web.Tests.HomePage.HomePage.ratingTitleIsDisplayed(HomePage.java:125)
+  Web.Tests.HomePage.HomePageTest.ratingTitleIsDisplayed(HomePageTest.java:64)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="ratingDescriptionTextIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getRatingDescriptionText(HomePage.java:130)
+  Web.Tests.HomePage.HomePage.ratingDescriptionTextIsDisplayed(HomePage.java:134)
+  Web.Tests.HomePage.HomePageTest.ratingDescriptionTextIsDisplayed(HomePageTest.java:68)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="startChangeButtonIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getStartChangeButton(HomePage.java:157)
+  Web.Tests.HomePage.HomePage.startChangeButtonIsDisplayed(HomePage.java:161)
+  Web.Tests.HomePage.HomePageTest.startChangeButtonIsDisplayed(HomePageTest.java:80)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="sessionsImageIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getSessionsImage(HomePage.java:85)
+  Web.Tests.HomePage.HomePage.sessionsImageIsDisplayed(HomePage.java:89)
+  Web.Tests.HomePage.HomePageTest.sessionsImageIsDisplayed(HomePageTest.java:48)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="ratingImageIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getRatingImage(HomePage.java:112)
+  Web.Tests.HomePage.HomePage.ratingImageIsDisplayed(HomePage.java:116)
+  Web.Tests.HomePage.HomePageTest.ratingImageIsDisplayed(HomePageTest.java:60)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="blogButtonIsDisplayed" time="2.027" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getBlogButton(HomePage.java:184)
+  Web.Tests.HomePage.HomePage.blogButtonIsDisplayed(HomePage.java:188)
+  Web.Tests.HomePage.HomePageTest.blogButtonIsDisplayed(HomePageTest.java:92)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="footerGooglePlayButtonIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getFooterGooglePlayButton(HomePage.java:193)
+  Web.Tests.HomePage.HomePage.footerGooglePlayButtonIsDisplayed(HomePage.java:197)
+  Web.Tests.HomePage.HomePageTest.footerGooglePlayButtonIsDisplayed(HomePageTest.java:96)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="logoIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getLogo(HomePage.java:9)
+  Web.Tests.HomePage.HomePage.logoIsDisplayed(HomePage.java:13)
+  Web.Tests.HomePage.HomePageTest.logoIsDisplayed(HomePageTest.java:12)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="packagesTitleIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getPackagesTitle(HomePage.java:67)
+  Web.Tests.HomePage.HomePage.packagesTitleIsDisplayed(HomePage.java:71)
+  Web.Tests.HomePage.HomePageTest.packagesTitleIsDisplayed(HomePageTest.java:40)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="footerAppStoreButtonIsDisplayed" time="0.001" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getFooterAppStoreButton(HomePage.java:202)
+  Web.Tests.HomePage.HomePage.footerAppStoreButtonIsDisplayed(HomePage.java:206)
+  Web.Tests.HomePage.HomePageTest.footerAppStoreButtonIsDisplayed(HomePageTest.java:100)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="sessionsTitleIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getSessionsTitle(HomePage.java:94)
+  Web.Tests.HomePage.HomePage.sessionsTitleIsDisplayed(HomePage.java:98)
+  Web.Tests.HomePage.HomePageTest.sessionsTitleIsDisplayed(HomePageTest.java:52)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="startButtonIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getStartButton(HomePage.java:36)
+  Web.Tests.HomePage.HomePage.startButtonIsDisplayed(HomePage.java:40)
+  Web.Tests.HomePage.HomePageTest.startButtonIsDisplayed(HomePageTest.java:27)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="openSubscriptionPage" time="0.001" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getStartButton(HomePage.java:36)
+  Web.Tests.HomePage.HomePage.clickOnStartButton(HomePage.java:44)
+  Web.Tests.HomePage.HomePageTest.openSubscriptionPage(HomePageTest.java:104)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="googlePlayButtonIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getGooglePlayButton(HomePage.java:166)
+  Web.Tests.HomePage.HomePage.googlePlayButtonIsDisplayed(HomePage.java:170)
+  Web.Tests.HomePage.HomePageTest.googlePlayButtonIsDisplayed(HomePageTest.java:84)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="sessionsDescriptionTextIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getSessionsDescriptionText(HomePage.java:103)
+  Web.Tests.HomePage.HomePage.sessionsDescriptionTextIsDisplayed(HomePage.java:107)
+  Web.Tests.HomePage.HomePageTest.sessionsDescriptionTextIsDisplayed(HomePageTest.java:56)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="packagesDescriptionTextIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getPackagesDescriptionText(HomePage.java:76)
+  Web.Tests.HomePage.HomePage.packagesDescriptionTextIsDisplayed(HomePage.java:80)
+  Web.Tests.HomePage.HomePageTest.packagesDescriptionTextIsDisplayed(HomePageTest.java:44)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="startImageIsDisplayed" time="0.000" classname="Web.Tests.HomePage.HomePageTest">
+                <failure type="org.openqa.selenium.NoSuchSessionException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Ibrahims-MBP&apos;, ip: &apos;fe80:0:0:0:c3:48d9:b72f:b095%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ibrahims-MBP', ip: 'fe80:0:0:0:c3:48d9:b72f:b095%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+  Base.WebSetup.WebFinder.waitForElementToBeVisibleBy(WebFinder.java:204)
+  Base.WebSetup.WebFinder.getByXpath(WebFinder.java:267)
+  Web.Tests.HomePage.HomePage.getStartImage(HomePage.java:18)
+  Web.Tests.HomePage.HomePage.startImageIsDisplayed(HomePage.java:22)
+  Web.Tests.HomePage.HomePageTest.startImageIsDisplayed(HomePageTest.java:17)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="startChangeButtonIsDisplayed" time="0.119" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="appStoreButtonIsDisplayed" time="0.280" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="ratingDescriptionTextIsDisplayed" time="0.073" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="googlePlayButtonIsDisplayed" time="0.128" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="startButtonIsDisplayed" time="0.112" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="ratingTitleIsDisplayed" time="0.070" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="sessionsDescriptionTextIsDisplayed" time="0.070" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="sessionsImageIsDisplayed" time="0.075" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="subscriptionImageIsDisplayed" time="0.114" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="footerAppStoreButtonIsDisplayed" time="0.116" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="consultantButtonIsDisplayed" time="0.493" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="packagesImageIsDisplayed" time="0.071" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="footerGooglePlayButtonIsDisplayed" time="0.113" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="promotionalTextIsDisplayed" time="0.069" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="ratingImageIsDisplayed" time="0.079" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="startTextIsDisplayed" time="0.076" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="sessionsTitleIsDisplayed" time="0.075" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="packagesTitleIsDisplayed" time="0.073" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="openSubscriptionPage" time="1.486" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="packagesDescriptionTextIsDisplayed" time="0.070" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="logoIsDisplayed" time="0.114" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="startImageIsDisplayed" time="0.078" classname="Web.Tests.HomePage.HomePageTest" />
-                <testcase name="blogButtonIsDisplayed" time="1.106" classname="Web.Tests.HomePage.HomePageTest" />
-      
+  
 </testsuite>

@@ -1,7 +1,6 @@
 package Mobile.Tests.Language;
 import static Base.MobileSetup.MobileSetupTest.clientMobileFinder;
 import  static Base.MobileSetup.MobileSetupTest.testDataMobile;
-import Base.MobileSetup.MobileFinder;
 import io.appium.java_client.MobileElement;
 
 
