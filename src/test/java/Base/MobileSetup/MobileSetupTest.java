@@ -36,31 +36,41 @@ public class MobileSetupTest {
     public static JavascriptExecutor javascriptExecutor;
     private String appiumPort;
     private String app;
+    private String mjpegServerPort;
+    private String systemPort;
     @Test(priority = 1)
-    @Parameters({"language", "appPath", "branch","deviceName", "appiumPort","app"})
-    public void setUp(String language, String appPath, String branch, String deviceName,String appiumPort, String app) throws APIException, IOException {
+    @Parameters({"language", "appPath", "branch","deviceName", "appiumPort","app","mjpegServerPort","systemPort"})
+    public AndroidDriver setUp(
+            String language, String appPath, String branch, String deviceName,String appiumPort,
+            String app,String mjpegServerPort, String systemPort) throws APIException, IOException {
         this.appiumPort = appiumPort;
         this.app=app;
+        this.systemPort =systemPort;
+        this.mjpegServerPort =mjpegServerPort;
         initializeMobileDriver(appPath,deviceName);
         initializeTestData(language, branch);
         TestRailManager testRailManager = new TestRailManager();
         if (app.equalsIgnoreCase("client")){
             clientMobileFinder = new MobileFinder(clientAndroidDriver);
-            clientMobileFinder.setTestRunId(testRailManager.createTestRun("Famcare Mobile",2));
+            clientMobileFinder.setTestRunId(testRailManager.addTestRun());
+            assertTrue(true);
+            return clientAndroidDriver;
         }
         else {
             serviceProviderMobileFinder = new MobileFinder(serviceProviderAndroidDriver);
-            serviceProviderMobileFinder.setTestRunId(testRailManager.createTestRun("Famcare Mobile", 2));
+            serviceProviderMobileFinder.setTestRunId(testRailManager.addTestRun());
+            assertTrue(true);
+            return serviceProviderAndroidDriver;
         }
-        assertTrue(true);
+
     }
 
     private void initializeMobileDriver(String appPath, String deviceName) throws MalformedURLException {
         if (app.equalsIgnoreCase("client")){
-        clientAndroidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+appiumPort+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
-        clientAndroidDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        wait = new WebDriverWait(clientAndroidDriver, 60);
-        javascriptExecutor = (JavascriptExecutor) clientAndroidDriver;
+            clientAndroidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+appiumPort+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
+            clientAndroidDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+            wait = new WebDriverWait(clientAndroidDriver, 60);
+            javascriptExecutor = (JavascriptExecutor) clientAndroidDriver;
         }
         else {
             serviceProviderAndroidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+appiumPort+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
@@ -75,6 +85,8 @@ public class MobileSetupTest {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", deviceName);
         capabilities.setCapability("udid", deviceName);
+        capabilities.setCapability("mjpegServerPort",mjpegServerPort);
+        capabilities.setCapability("systemPort",systemPort);
 //        capabilities.setCapability("app_activity", "sa.app.famcare.MainActivity");
 //        capabilities.setCapability("allowTestPackages", "true");
 //        capabilities.setCapability("app_package", "sa.app.famcare");
@@ -98,5 +110,27 @@ public class MobileSetupTest {
             testDataMobile = new EnglishProductionTestData();
             testDataMobileSpecialist = new EnglishProductionTestDataSpecialist();
         }
+    }
+    public AndroidDriver createClientDriver() throws APIException, IOException {
+        String language= "Arabic";
+        String appPath="src/app-production-release.apk";
+        String branch= "Production";
+        String deviceName= "emulator-5556";
+        String appiumPort="10001";
+        String app="client";
+        String mjpegServerPort="8001";
+        String systemPort="8201";
+        return setUp(language, appPath,branch, deviceName,appiumPort,app,mjpegServerPort,systemPort);
+    }
+    public AndroidDriver createSpecialistDriver() throws APIException, IOException {
+        String language= "Arabic";
+        String appPath="src/app-specialist_production-debug.apk";
+        String branch= "Production";
+        String deviceName= "emulator-5554";
+        String appiumPort="10000";
+        String app="specialist";
+        String mjpegServerPort="8000";
+        String systemPort="8200";
+        return setUp(language, appPath,branch, deviceName,appiumPort,app,mjpegServerPort,systemPort);
     }
 }

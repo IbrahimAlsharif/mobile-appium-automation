@@ -135,4 +135,24 @@ public class EnglishProductionTestDataSpecialist implements AbstractTestData{
     public String getCreateAccountButtonInCreateAccountPopup() {
         return null;
     }
+
+    @Override
+    public String getTitleInSignInPopup() {
+        return null;
+    }
+
+    @Override
+    public String getDescriptionTextInSignInPopup() {
+        return null;
+    }
+
+    @Override
+    public String getForgetPasswordInSignInPopup() {
+        return null;
+    }
+
+    @Override
+    public String getSignInButtonInSignInPopup() {
+        return null;
+    }
 }
