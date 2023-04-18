@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-import static Base.MobileSetup.MobileSetupTest.androidDriver;
+import static Base.MobileSetup.MobileSetupTest.clientAndroidDriver;
 import static Base.MobileSetup.MobileSetupTest.clientMobileFinder;
 import static Base.MobileSetup.MobileSetupTest.testDataMobile;
 import static org.testng.Assert.*;

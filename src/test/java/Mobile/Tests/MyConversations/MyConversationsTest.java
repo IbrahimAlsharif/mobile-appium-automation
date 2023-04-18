@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-import static Base.MobileSetup.MobileSetupTest.androidDriver;
+import static Base.MobileSetup.MobileSetupTest.clientAndroidDriver;
 
 
 public class MyConversationsTest {

@@ -90,7 +90,6 @@ public class MorePageTest {
     @Test(priority = 14)
     public void TechnicalSupportIsDisplayed(){
         testCaseId="10299";
-        MobileSetupTest.androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getTechnicalSupportButton()+"\"))");
         MobileSetupTest.clientAndroidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getTechnicalSupportButton()+"\"))");
         assertTrue(MorePage.TechnicalSupportIsDisplayed());
     }
