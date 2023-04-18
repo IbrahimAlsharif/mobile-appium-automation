@@ -2,10 +2,11 @@
 <suite name="Arabic language Testing Suite">
     <test name="Test Setup">
         <parameter name="appPath" value="src/app-production-release.apk"/>
-        <parameter name="deviceName" value="Android Emulator"/>
-        <parameter name="port" value="4723"></parameter>
+        <parameter name="deviceName" value="emulator-5554"/>
+        <parameter name="appiumPort" value="4723"></parameter>
         <parameter name="language" value="Arabic"/>
         <parameter name="branch" value="Production"/>
+        <parameter name="app" value="client"/>
         <classes>
             <class name="Base.MobileSetup.MobileSetupTest"/>
             <class name="Mobile.Tests.Language.LanguageChooseTest"/>
