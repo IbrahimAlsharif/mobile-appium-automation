@@ -1,9 +1,8 @@
 package Mobile.TestsSpecialist.SignInPopup;
 
-import Base.MobileSetup.MobileFinder;
 import io.appium.java_client.MobileElement;
-
-import static Base.MobileSetup.MobileSetupTest.*;
+import static Base.MobileSetup.MobileSetupTest.serviceProviderMobileFinder;
+import static Base.MobileSetup.MobileSetupTest.testDataMobileSpecialist;
 
 public class SignInPopup {
     public static String xpath;
