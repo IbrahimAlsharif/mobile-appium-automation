@@ -1,6 +1,5 @@
 package Mobile.TestsSpecialist.SignInScreen;
 
-import Mobile.TestsSpecialist.SignUpScreen.SignUpScreen;
 import Mobile.TestsSpecialist.WelcomeScreen.WelcomeScreen;
 import org.testng.Assert;
 import org.testng.annotations.Test;
