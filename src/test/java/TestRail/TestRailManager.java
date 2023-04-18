@@ -51,9 +51,6 @@ public class TestRailManager {
         client.sendPost("add_attachment_to_result/"+result_id, shotPTH);
         }
     }
-
-    public String addTestRun() throws APIException, IOException {
-        int projectId=2;
     public String createTestRun(String projectName, int projectId) throws APIException, IOException {
         Map data = new HashMap();
         data.put("name", projectName+ new Date().toString());
