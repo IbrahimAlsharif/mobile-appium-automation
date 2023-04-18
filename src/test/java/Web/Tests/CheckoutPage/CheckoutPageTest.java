@@ -1,7 +1,13 @@
 package Web.Tests.CheckoutPage;
 
+import Base.WebSetup.WebFinder;
+import TestRail.APIException;
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
 
 import static Base.WebSetup.WebSetupTest.testDataWeb;
 
@@ -182,5 +188,9 @@ public class CheckoutPageTest {
     public void clickOnNowButton() {
 //        CheckoutPage.clickOnNowButton();
 //        Assert.assertTrue(CheckoutPage.clickOnNowButton());
+    }
+    @AfterMethod
+    public void reportResult(ITestResult result) throws APIException, IOException {
+        WebFinder.afterMethod(result,testCaseId);
     }
 }

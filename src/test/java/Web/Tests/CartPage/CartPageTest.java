@@ -1,7 +1,13 @@
 package Web.Tests.CartPage;
 
+import Base.WebSetup.WebFinder;
+import TestRail.APIException;
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
 
 import static Base.WebSetup.WebSetupTest.testDataWeb;
 
@@ -80,5 +86,8 @@ public class CartPageTest {
         CartPage.clickOnCheckoutButton();
         Assert.assertTrue(CartPage.CompleteOrderIsDisplayed());
     }
-
+    @AfterMethod
+    public void reportResult(ITestResult result) throws APIException, IOException {
+        WebFinder.afterMethod(result,testCaseId);
+    }
 }
