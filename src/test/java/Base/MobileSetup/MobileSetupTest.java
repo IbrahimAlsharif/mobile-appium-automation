@@ -46,11 +46,11 @@ public class MobileSetupTest {
         TestRailManager testRailManager = new TestRailManager();
         if (app.equalsIgnoreCase("client")){
             clientMobileFinder = new MobileFinder(clientAndroidDriver);
-            clientMobileFinder.setTestRunId(testRailManager.addTestRun());
+            clientMobileFinder.setTestRunId(testRailManager.createTestRun("Famcare Mobile",2));
         }
         else {
             serviceProviderMobileFinder = new MobileFinder(serviceProviderAndroidDriver);
-            serviceProviderMobileFinder.setTestRunId(testRailManager.addTestRun());
+            serviceProviderMobileFinder.setTestRunId(testRailManager.createTestRun("Famcare Mobile", 2));
         }
         assertTrue(true);
     }

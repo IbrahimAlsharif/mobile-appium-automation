@@ -52,10 +52,9 @@ public class TestRailManager {
         }
     }
 
-    public String addTestRun() throws APIException, IOException {
-        int projectId=6;
+    public String createTestRun(String projectName, int projectId) throws APIException, IOException {
         Map data = new HashMap();
-        data.put("name", "In2World Academy TestRun"+ new Date().toString());
+        data.put("name", projectName+ new Date().toString());
         data.put("include_all", true);
         JSONObject response = (JSONObject) client.sendPost("add_run/"+projectId,data);
         return response.get("id").toString();

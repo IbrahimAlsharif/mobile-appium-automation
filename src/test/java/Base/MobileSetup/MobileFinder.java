@@ -259,31 +259,31 @@ public  class MobileFinder {
         }
     }
 
-    public MobileElement getByXpath(String xpath, boolean isClickable){
+    public static MobileElement getByXpath(String xpath, boolean isClickable){
         By byXpath= By.xpath(xpath);
         waitForElementToBeVisibleBy(byXpath);
         if (isClickable) {waitForElementToBeClickableBy(byXpath);}
          return (MobileElement) androidDriver.findElement(byXpath);
     }
-    public MobileElement getById(String id, boolean isClickable){
+    public static MobileElement getById(String id, boolean isClickable){
         By byId= By.id(id);
         waitForElementToBeVisibleBy(byId);
         if (isClickable) {waitForElementToBeClickableBy(byId);}
          return (MobileElement) androidDriver.findElement(byId);
     }
-    public MobileElement getByClassName(String className, boolean isClickable){
+    public static MobileElement getByClassName(String className, boolean isClickable){
         By byClassName= By.className(className);
         waitForElementToBeVisibleBy(byClassName);
         if (isClickable) {waitForElementToBeClickableBy(byClassName);}
          return (MobileElement) androidDriver.findElement(byClassName);
     }
-    public MobileElement getByCssSelector(String cssSelector, boolean isClickable){
+    public static MobileElement getByCssSelector(String cssSelector, boolean isClickable){
         By byCssSelector= By.cssSelector(cssSelector);
         waitForElementToBeVisibleBy(byCssSelector);
         if (isClickable) {waitForElementToBeClickableBy(byCssSelector);}
          return  (MobileElement)androidDriver.findElement(byCssSelector);
     }
-    public MobileElement getByAccessibilityId(String AccessibilityId, boolean isClickable){
+    public static MobileElement getByAccessibilityId(String AccessibilityId, boolean isClickable){
         By byAccessibilityId= MobileBy.AccessibilityId(AccessibilityId);
         waitForElementToBeVisibleBy(byAccessibilityId);
         if (isClickable) {waitForElementToBeClickableBy(byAccessibilityId);}
