@@ -80,7 +80,7 @@ public class Login {
     }
     public static WebElement getUserNameText() {
         String xpath="//android.view.View[@content-desc=\""+testDataMobile.getUserNameTextAfterLogin()+"\"]";
-        return  MobileFinder.getByXpath(xpath, false);
+        return  MobileFinder.getByXpath(xpath, true);
     }
     public static boolean UserNameIsDisplayed(){
         return getUserNameText().isDisplayed();

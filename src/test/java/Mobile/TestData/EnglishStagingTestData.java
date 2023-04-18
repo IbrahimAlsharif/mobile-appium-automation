@@ -309,5 +309,8 @@ public class EnglishStagingTestData implements AbstractTestData {
     public String getPasswordEncryption() {
         return "•••••••••";
     }
-
+    @Override
+    public String getAccountSettingText() {
+        return null;
+    }
 }

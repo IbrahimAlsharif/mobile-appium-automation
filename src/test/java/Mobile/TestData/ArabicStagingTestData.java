@@ -322,6 +322,10 @@ public class ArabicStagingTestData implements AbstractTestData {
         return "•••••••••";
     }
     @Override
+    public String getAccountSettingText() {
+        return "اعدادات الحساب";
+    }
+    @Override
     public String getPsychologistNameText() {
         return "Mohamed AlWhaidi\n" +
                 "أخصائي نفسي\n" +
