@@ -226,7 +226,7 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
 
     @Override
     public String getExperienceOfYearsOnDetailsPsychologistPage() {
-        return "من 5 إلى 10 سنوات";
+        return "من 3 إلى 5 سنوات";
     }
 
     @Override
@@ -251,13 +251,11 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
 
     @Override
     public String getDateOfJoinOnDetailsPsychologistPage() {
-        return "  منذ 2 سنة و 7 شهور";
+        return "  منذ 6 شهور";
     }
     @Override
     public String getBriefAboutMeOnDetailsPsychologistPage() {
-        return "مستشاره نفسيه، ماجستير في علم النفس ، عضو هيئه تدريس سابق،، \n" +
-                "Bdr كوبون خصم. \n" +
-                "9 سنوات خبره في الاستشارات النفسيه والاسريه والعلاج المعرفي السلوكي لحالات( الاكتئاب، القلق ، الرهاب الاجتماعي، نوبات الهلع ،  الوسواس القهري، هوس نتف الشعر ، العاده السريه ، الفقد، كرب بعد الصدمه ، مشكلات  زوجيه، التعلق)";
+        return "أخصائي من الفريق التقني";
     }
     @Override
     public String getSessionsPresentationWrittenOnDetailsPsychologistPage() {
@@ -273,12 +271,12 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     }
     @Override
     public String getSubSpecialtiesOnDetailsPsychologistPage() {
-        return "القلق";
+        return "الضغوط";
     }
 
     @Override
     public String getSpecialistLanguageOnDetailsPsychologistPage() {
-        return null;
+        return "العربية";
     }
 
     @Override
@@ -324,7 +322,7 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
 
     @Override
     public String getSubSpecialtiesTitleOnDetailsPsychologistPage() {
-        return null;
+        return "التخصصات الدقيقة";
     }
 
     @Override
@@ -339,7 +337,7 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
 
     @Override
     public String getBookLaterDateButtonOnDetailsPsychologistPage() {
-        return null;
+        return "حجز موعد لاحق";
     }
 
     @Override
@@ -377,6 +375,9 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
         return "التسجيل في اللقاء";
     }
 
-
+    @Override
+    public String getSubscriptionsAndPackages() {
+        return "الاشتراكات والباقات";
+    }
 
 }

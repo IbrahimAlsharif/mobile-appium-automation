@@ -36,21 +36,27 @@ public class MobileSetupTest {
     public static JavascriptExecutor javascriptExecutor;
     private String appiumPort;
     private String app;
+    public static String testrailReport;
     @Test(priority = 1)
-    @Parameters({"language", "appPath", "branch","deviceName", "appiumPort","app"})
-    public void setUp(String language, String appPath, String branch, String deviceName,String appiumPort, String app) throws APIException, IOException {
+    @Parameters({"language", "appPath", "branch","deviceName", "appiumPort","app","testrailReport"})
+    public void setUp(String language, String appPath, String branch, String deviceName,String appiumPort, String app, String testrailReport) throws APIException, IOException {
         this.appiumPort = appiumPort;
         this.app=app;
+        this.testrailReport=testrailReport;
         initializeMobileDriver(appPath,deviceName);
         initializeTestData(language, branch);
         TestRailManager testRailManager = new TestRailManager();
         if (app.equalsIgnoreCase("client")){
             clientMobileFinder = new MobileFinder(clientAndroidDriver);
+            if (testrailReport.equalsIgnoreCase("true")){
             clientMobileFinder.setTestRunId(testRailManager.createTestRun("Famcare Mobile",2));
+            }
         }
         else {
             serviceProviderMobileFinder = new MobileFinder(serviceProviderAndroidDriver);
-            serviceProviderMobileFinder.setTestRunId(testRailManager.createTestRun("Famcare Mobile", 2));
+            if (testrailReport.equalsIgnoreCase("true")) {
+                serviceProviderMobileFinder.setTestRunId(testRailManager.createTestRun("Famcare Mobile", 2));
+            }
         }
         assertTrue(true);
     }

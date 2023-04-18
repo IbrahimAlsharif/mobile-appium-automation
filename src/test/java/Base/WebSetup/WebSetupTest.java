@@ -30,14 +30,17 @@ public class WebSetupTest {
     public static JavascriptExecutor javascriptExecutor;
 
     public static Map<String, Object> vars;
-
+    public static String testrailReport;
     @Test(priority = 1)
-    @Parameters({"language", "branch", "browser", "url"})
-    public void setUp(String language, String branch, String browser, String url) throws APIException, IOException {
+    @Parameters({"language", "branch", "browser", "url","testrailReport"})
+    public void setUp(String language, String branch, String browser, String url, String testrailReport) throws APIException, IOException {
+        this.testrailReport=testrailReport;
         initializeWebDriver(browser, url);
         initializeTestData(language, branch);
+        if (testrailReport.equalsIgnoreCase("true")){
         TestRailManager testRailManager = new TestRailManager();
         WebFinder.testRunId = testRailManager.createTestRun("Famcare Web",7);
+        }
         Assert.assertTrue(true);
     }
 

@@ -18,8 +18,7 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import static Base.WebSetup.WebSetupTest.vars;
-import static Base.WebSetup.WebSetupTest.webDriver;
+import static Base.WebSetup.WebSetupTest.*;
 
 
 public  class WebFinder {
@@ -256,9 +255,13 @@ public  class WebFinder {
         File screenShot;
         if(!result.isSuccess()){
             screenShot = shot.snapError(result.getMethod().getMethodName());
+            if (testrailReport.equalsIgnoreCase("true")){
             testRail.setResult(testRunId,testCaseId, TestRailManager.FAILED,screenShot.getAbsolutePath());
+            }
         }else {
+            if (testrailReport.equalsIgnoreCase("true")){
             testRail.setResult(testRunId,testCaseId, TestRailManager.PASSED, null);
+            }
         }
     }
 

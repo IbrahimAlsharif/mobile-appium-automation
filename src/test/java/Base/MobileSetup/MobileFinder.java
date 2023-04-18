@@ -19,6 +19,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import static Base.MobileSetup.MobileSetupTest.testrailReport;
+
 
 public  class MobileFinder {
 
@@ -253,9 +255,12 @@ public  class MobileFinder {
         File screenShot;
         if(!result.isSuccess()){
             screenShot = shot.snapError(result.getMethod().getMethodName());
-            testRail.setResult(testRunId,testCaseId, TestRailManager.FAILED,screenShot.getAbsolutePath());
+            if (testrailReport.equalsIgnoreCase("true")){
+                testRail.setResult(testRunId,testCaseId, TestRailManager.FAILED,screenShot.getAbsolutePath());}
         }else {
+            if (testrailReport.equalsIgnoreCase("true")){
             testRail.setResult(testRunId,testCaseId, TestRailManager.PASSED, null);
+            }
         }
     }
 
