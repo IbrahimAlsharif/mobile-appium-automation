@@ -1,11 +1,21 @@
 package Mobile.Tests.AllSpecialists;
 
+import Base.MobileSetup.MobileFinder;
 import Mobile.Tests.HomePage.HomePage;
+import Mobile.Tests.HomePage.HomePageTest;
+
+import TestRail.APIException;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 import static org.testng.Assert.*;
+
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
+
 import static Base.MobileSetup.MobileSetupTest.testDataMobile;
 import static Base.MobileSetup.MobileSetupTest.clientAndroidDriver;
 
@@ -118,4 +128,7 @@ public class PsychologistTest {
     public void NavigationToSubscriptionsAndPackages(){
         Psychologist.ClickOnBookLaterDateButton();
     }
+
+
+
 }

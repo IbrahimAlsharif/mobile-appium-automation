@@ -134,4 +134,24 @@ public class ArabicProductionTestDataSpecialist implements AbstractTestData {
     public String getCreateAccountButtonInCreateAccountPopup() {
         return "انشاء حساب";
     }
+
+    @Override
+    public String getTitleInSignInPopup() {
+        return "تسجيل الدخول";
+    }
+
+    @Override
+    public String getDescriptionTextInSignInPopup() {
+        return "سوف تصل إلى عدد كبير من العملاء من خلال فامكير";
+    }
+
+    @Override
+    public String getForgetPasswordInSignInPopup() {
+        return "هل نسيت كلمة المرور ؟";
+    }
+
+    @Override
+    public String getSignInButtonInSignInPopup() {
+        return "تسجيل الدخول";
+    }
 }

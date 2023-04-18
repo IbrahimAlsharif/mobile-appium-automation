@@ -79,6 +79,13 @@ public class MorePage {
     public static boolean SignInButtonIsDisplayed(){
         return getSignInButton().isDisplayed();
     }
+    public static MobileElement getAccountSettingBuuton() {
+        String xpath="//android.view.View[@content-desc=\""+testDataMobile.getAccountSettingText()+"\"]";
+        return MobileFinder.getByXpath(xpath,true);
+    }
+    public static boolean AccountSettingButtonIsDisplayed(){
+        return getAccountSettingBuuton().isDisplayed();
+    }
     public static void ClickOnSignInButton() {
         getSignInButton().click();
     }

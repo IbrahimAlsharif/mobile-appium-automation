@@ -34,6 +34,7 @@ public class WelcomeScreenTest {
     public void existanceOfSignUpButtonInWelcomeScreen(){
         testCaseId="6";
         assertTrue(WelcomeScreen.existanceOfSignUpButton());
+        WelcomeScreen.getSignUpButton().click();
     }
 
 }

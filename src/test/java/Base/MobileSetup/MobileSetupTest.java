@@ -57,10 +57,10 @@ public class MobileSetupTest {
 
     private void initializeMobileDriver(String appPath, String deviceName) throws MalformedURLException {
         if (app.equalsIgnoreCase("client")){
-        clientAndroidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+appiumPort+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
-        clientAndroidDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        wait = new WebDriverWait(clientAndroidDriver, 60);
-        javascriptExecutor = (JavascriptExecutor) clientAndroidDriver;
+            clientAndroidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+appiumPort+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
+            clientAndroidDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+            wait = new WebDriverWait(clientAndroidDriver, 60);
+            javascriptExecutor = (JavascriptExecutor) clientAndroidDriver;
         }
         else {
             serviceProviderAndroidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+appiumPort+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
