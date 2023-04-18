@@ -3,12 +3,7 @@ import static Base.MobileSetup.MobileSetupTest.clientMobileFinder;
 import static org.testng.Assert.*;
 
 import Base.MobileSetup.MobileFinder;
-import Mobile.Tests.AllSpecialists.Psychologist;
-import Mobile.Tests.SupportGroup.SupportGroups;
 import TestRail.APIException;
-import io.appium.java_client.PerformsTouchActions;
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.touch.offset.PointOption;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
@@ -100,7 +95,7 @@ public class HomePageTest {
     }
 
     @AfterMethod
-    public void screenShot(ITestResult result) throws APIException, IOException {
+    public void reportResult(ITestResult result) throws APIException, IOException {
         MobileFinder.afterMethod(result,testCaseId);
         System.out.println("After method" + result.getMethod().getMethodName());
     }

@@ -19,8 +19,7 @@ public class DiagnosticPageTest {
         testCaseId="10330";
         String accessibility = "المقاييس\n" +
                 "علامة التبويب 4 من 5";
-        MobileFinder.getByAccessibilityId(accessibility,true);
-      //  assertTrue(DiagnosticPage.TitleAppBarOnBenchmarksPageDisplayed());
+        MobileFinder.getByAccessibilityId(accessibility,false);
         assertTrue(DiagnosticPage.DiagnosticScalesTypesIsDisplayed());
 
     }
@@ -36,7 +35,7 @@ public class DiagnosticPageTest {
     }
 
     @AfterMethod
-    public void screenShot(ITestResult result) throws APIException, IOException {
+    public void reportResult(ITestResult result) throws APIException, IOException {
         MobileFinder.afterMethod(result,testCaseId);
         System.out.println("After method" + result.getMethod().getMethodName());
     }

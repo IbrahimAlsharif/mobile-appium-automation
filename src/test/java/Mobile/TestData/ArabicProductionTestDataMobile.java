@@ -317,7 +317,7 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
 
     @Override
     public String getLanguageTitleOnDetailsPsychologistPage() {
-        return null;
+        return "اللغات";
     }
 
     @Override
@@ -327,7 +327,7 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
 
     @Override
     public String getSpecialistRatesTitleOnDetailsPsychologistPage() {
-        return null;
+        return "التقييمات";
     }
 
     @Override

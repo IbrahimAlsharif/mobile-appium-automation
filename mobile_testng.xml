@@ -6,17 +6,19 @@
         <parameter name="appiumPort" value="4723"></parameter>
         <parameter name="language" value="Arabic"/>
         <parameter name="branch" value="Production"/>
+        <parameter name="testrailReport" value="true"/>
+
         <parameter name="app" value="client"/>
         <parameter name="testrailReport" value="false"/>
         <classes>
             <class name="Base.MobileSetup.MobileSetupTest"/>
             <class name="Mobile.Tests.Language.LanguageChooseTest"/>
-            <class name="Mobile.Tests.Diagnostic.DiagnosticPageTest"></class>
-            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>
-            <class name="Mobile.Tests.MorePage.MorePageTest"></class>
+<!--            <class name="Mobile.Tests.Diagnostic.DiagnosticPageTest"></class>-->
+<!--            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>-->
+<!--            <class name="Mobile.Tests.MorePage.MorePageTest"></class>-->
             <class name="Mobile.Tests.Auth.LoginTest"/>
             <class name="Mobile.Tests.HomePage.HomePageTest"></class>
-<!--            <class name="Mobile.Tests.AllSpecialists.PsychologistTest"/>-->
+            <class name="Mobile.Tests.AllSpecialists.PsychologistTest"/>
 
             <!--            <class name="Mobile.Tests.MyConversations.MyConversationsTest"></class>-->
 <!--            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>-->

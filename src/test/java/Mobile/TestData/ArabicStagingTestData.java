@@ -342,7 +342,10 @@ public class ArabicStagingTestData implements AbstractTestData {
                 "صوتية\n" +
                 "مرئية";
     }
-
+    @Override
+    public String getSubscriptionsAndPackages() {
+        return "الاشتراكات والباقات";
+    }
 }
 
 
