@@ -80,6 +80,7 @@ String getDetailsMeetingText();
     String getLogInButton();
     String getUserNameTextAfterLogin();
     String getPasswordEncryption();
+    String getAccountSettingText();
 
 
 

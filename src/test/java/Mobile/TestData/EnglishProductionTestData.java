@@ -305,6 +305,10 @@ public class EnglishProductionTestData implements AbstractTestData {
     public String getPasswordEncryption() {
         return "•••••••••";
     }
+    @Override
+    public String getAccountSettingText() {
+       return null;
+    }
 
 }
 

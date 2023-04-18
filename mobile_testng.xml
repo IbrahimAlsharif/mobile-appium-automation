@@ -9,6 +9,9 @@
         <classes>
             <class name="Base.MobileSetup.MobileSetupTest"/>
             <class name="Mobile.Tests.Language.LanguageChooseTest"/>
+            <class name="Mobile.Tests.Diagnostic.DiagnosticPageTest"></class>
+            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>
+            <class name="Mobile.Tests.MorePage.MorePageTest"></class>
             <class name="Mobile.Tests.Auth.LoginTest"/>
             <class name="Mobile.Tests.HomePage.HomePageTest"></class>
 <!--            <class name="Mobile.Tests.AllSpecialists.PsychologistTest"/>-->
@@ -20,7 +23,7 @@
 <!--            <class name="Mobile.Tests.AllSpecialists.PsychologistTest"/>-->
 <!--            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>-->
 <!--            <class name="Mobile.Tests.UpcomingMeetings.UpcomingMeetingsTest"></class>-->
-<!--&lt;!&ndash;            <class name="Mobile.Tests.Scales.ScalesPageTest"></class>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="Mobile.Tests.Diagnostic.DiagnosticPageTest"></class>&ndash;&gt;-->
 <!--&lt;!&ndash;            <class name="Mobile.Tests.MorePage.MorePageTest"/>&ndash;&gt;-->
 <!--            <class name="Base.TearDownTest"/>-->
         </classes>

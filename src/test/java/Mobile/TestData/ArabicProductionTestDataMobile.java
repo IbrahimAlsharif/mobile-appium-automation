@@ -311,6 +311,11 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
         return "•••••••••";
     }
 
+    @Override
+    public String getAccountSettingText() {
+        return "اعدادات الحساب";
+    }
+
 
     @Override
     public String getLanguageTitleOnDetailsPsychologistPage() {
