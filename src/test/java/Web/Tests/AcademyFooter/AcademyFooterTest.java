@@ -7,7 +7,7 @@ public class AcademyFooterTest {
     private String testCaseId;
     @Test(priority = 1)
     public void logoImageIsDisplayed() {
-        testCaseId="C10335";
+       testCaseId = "10335";
         Assert.assertTrue(AcademyFooter.logoImageIsDisplayed());
     }
 }
