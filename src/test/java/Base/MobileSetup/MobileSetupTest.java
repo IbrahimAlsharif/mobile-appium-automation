@@ -38,8 +38,10 @@ public class MobileSetupTest {
     private String app;
     private String mjpegServerPort;
     private String systemPort;
+    public static String testrailReport;
+
     @Test(priority = 1)
-    @Parameters({"language", "appPath", "branch","deviceName", "appiumPort","app","mjpegServerPort","systemPort"})
+    @Parameters({"language", "appPath", "branch","deviceName", "appiumPort","app","mjpegServerPort","systemPort","testrailReport"})
     public AndroidDriver setUp(
             String language, String appPath, String branch, String deviceName,String appiumPort,
             String app,String mjpegServerPort, String systemPort) throws APIException, IOException {
@@ -47,19 +49,23 @@ public class MobileSetupTest {
         this.app=app;
         this.systemPort =systemPort;
         this.mjpegServerPort =mjpegServerPort;
+        this.testrailReport=testrailReport;
         initializeMobileDriver(appPath,deviceName);
         initializeTestData(language, branch);
         TestRailManager testRailManager = new TestRailManager();
         if (app.equalsIgnoreCase("client")){
             clientMobileFinder = new MobileFinder(clientAndroidDriver);
-           clientMobileFinder.setTestRunId(testRailManager.createTestRun("Famcare Mobile",2));
-            clientMobileFinder.setTestRunId(testRailManager.createTestRun("Famcare Mobile",2));
+            if(testrailReport.equalsIgnoreCase("true")) {
+                clientMobileFinder.setTestRunId(testRailManager.createTestRun("Famcare Mobile", 2));
+            }
             assertTrue(true);
             return clientAndroidDriver;
         }
         else {
             serviceProviderMobileFinder = new MobileFinder(serviceProviderAndroidDriver);
-            serviceProviderMobileFinder.setTestRunId(testRailManager.createTestRun("Famcare Mobile",2));
+            if(testrailReport.equalsIgnoreCase("true")) {
+                serviceProviderMobileFinder.setTestRunId(testRailManager.createTestRun("Famcare Mobile", 2));
+            }
             assertTrue(true);
             return serviceProviderAndroidDriver;
         }
