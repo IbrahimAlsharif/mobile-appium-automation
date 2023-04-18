@@ -1,5 +1,6 @@
 package Mobile.TestsSpecialist.SignInPopup;
 
+import Mobile.Tests.Auth.Login;
 import Mobile.TestsSpecialist.CreateAccountPopup.CreateAccountPopup;
 import Mobile.TestsSpecialist.SignInScreen.SignInScreen;
 import org.testng.Assert;
@@ -40,11 +41,24 @@ public class SignInPopupTest {
         testCaseId = "1";
         Assert.assertTrue(SignInPopup.signInButtonIsDisplayed());
     }
-    @Test(priority = 2)
-    public void signInButtonIsEnabledAfterAddingMobileAndPassword(){
+    @Test(priority = 3)
+    public void signInButtonIsEnabledAfterAddingMobileAndPassword() throws InterruptedException {
         testCaseId = "1";
+
+        SignInPopup.getMobileField().click();
+        Thread.sleep(2000);
         SignInPopup.getMobileField().sendKeys("0592100200");
+        SignInPopup.getPasswordField().click();
+        Thread.sleep(2000);
         SignInPopup.getPasswordField().sendKeys("100200");
+        System.out.println(SignInPopup.getMobileField().getText());
         Assert.assertTrue(SignInPopup.signInButtonIsEnabled());
+    }
+    @Test(priority = 3)
+    public void signInWithLoggedUserDisplaysHomeScreen(){
+        testCaseId = "1";
+        Assert.assertTrue(SignInPopup.signInButtonIsEnabled());
+
+        SignInPopup.getSignInButton().click();
     }
 }
