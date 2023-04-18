@@ -70,7 +70,8 @@ public class MobileSetupTest {
             return serviceProviderAndroidDriver;
         }
 
-    }
+        }
+
 
     private void initializeMobileDriver(String appPath, String deviceName) throws MalformedURLException {
         if (app.equalsIgnoreCase("client")){
