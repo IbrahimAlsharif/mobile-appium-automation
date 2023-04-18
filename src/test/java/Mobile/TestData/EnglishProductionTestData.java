@@ -314,10 +314,6 @@ public class EnglishProductionTestData implements AbstractTestData {
         return null;
     }
 
-    @Override
-    public String getSubscriptionsAndPackages() {
-        return null;
-    }
 
 }
 
