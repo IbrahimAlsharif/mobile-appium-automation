@@ -81,6 +81,8 @@ String getDetailsMeetingText();
     String getUserNameTextAfterLogin();
     String getPasswordEncryption();
     String getAccountSettingText();
+    String getSubscriptionsAndPackages();
+
 
 
 

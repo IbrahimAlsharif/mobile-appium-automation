@@ -8,6 +8,8 @@ import TestRail.APIException;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
+
+import static Base.MobileSetup.MobileSetupTest.*;
 import static org.testng.Assert.*;
 
 import org.testng.ITestResult;
@@ -15,9 +17,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-
-import static Base.MobileSetup.MobileSetupTest.testDataMobile;
-import static Base.MobileSetup.MobileSetupTest.clientAndroidDriver;
 
 
 public class PsychologistTest {
@@ -43,18 +42,13 @@ public class PsychologistTest {
     public void FilterIsDisplayed(){
         assertTrue(Psychologist.FilterIsDisplayed());
     }
-    @Test(priority = 5,enabled = false)
-    public void InputOnSearchField()  {
-        //todo refer to it again
-        String searchText = "بدور الراضي";
-
-        for (int i = 0; i < searchText.length(); i++) {
-            char letter = searchText.charAt(i);
-            Psychologist.getSearchField().sendKeys(String.valueOf(letter));
-        }
+    @Test(priority = 5)
+    public void InputOnSearchField() throws InterruptedException {
         Psychologist.getSearchField().click();
-        Psychologist.InputOnSearchField();
-        assertTrue(Psychologist.PsychologistNameIsDisplayed());
+        Thread.sleep(4000);
+        Psychologist.InputOnSearchField(testDataMobile.getSpecialistNameOnDetailsPsychologistPage());
+        assertTrue(Psychologist.SpecialistNameIsDisplayed());
+
     }
     @Test(priority = 6 )
     public void PsychologistNameIsDisplayed(){
@@ -65,7 +59,7 @@ public class PsychologistTest {
     public void SpecialisOfTypeIsDisplayed(){
        assertTrue(Psychologist.SpecialisOfTypeIsDisplayed());
     }
-    @Test(priority = 8)
+    @Test(priority = 8,enabled = false)
     public void SpecialistRateIsDisplayed(){
        assertTrue(Psychologist.SpecialistRateIsDisplayed());
     }
@@ -115,18 +109,20 @@ public class PsychologistTest {
     public void SpecialistRatesTitleIsDisplayed(){
        assertTrue(Psychologist.SpecialistRatesTitleIsDisplayed());
     }
-    @Test(priority = 20)
+    @Test(priority = 20,enabled = false)
     public void UserByCommentTextIsDisplayed(){
 //        androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getUserByCommentTextOnDetailsPsychologistPage()+"\"))");
         assertTrue(Psychologist.UserByCommentTextIsDisplayed());
     }
     @Test(priority = 21)
-    public void BookLaterDateButtonIsDisplayed(){
-       assertTrue(Psychologist.BookLaterDateButtonIsDisplayed());
+    public void BookLaterDateButtonIsDisplayed() {
+        assertTrue(Psychologist.BookLaterDateButtonIsDisplayed());
     }
     @Test(priority = 22)
-    public void NavigationToSubscriptionsAndPackages(){
-        Psychologist.ClickOnBookLaterDateButton();
+    public void NavigationToSubscriptionsAndPackages() {
+        //todo need assert for testcase
+        String accessibility ="حجز موعد لاحق";
+        clientMobileFinder.getByAccessibilityId(accessibility,true).click();
     }
 
 

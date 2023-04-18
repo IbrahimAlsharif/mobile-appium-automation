@@ -32,8 +32,8 @@ public class Psychologist {
     public static boolean FilterIsDisplayed(){
         return getFilter().isDisplayed();
     }
-    public static void InputOnSearchField(){
-        getSearchField().sendKeys("ب",Keys.TAB);
+    public static void InputOnSearchField(String name){
+        getSearchField().sendKeys(name);
 
     }
     public static WebElement PsychologistName() {
@@ -72,7 +72,7 @@ public class Psychologist {
         return  clientMobileFinder.getByXpath(xpath,false);
     }
     public static boolean ExperienceOfYearsIsDisplayed(){
-        return getSpecialistRate().isDisplayed();
+        return getExperienceOfYears().isDisplayed();
     }
     public static WebElement getDateOfJoin() {
 
@@ -155,8 +155,8 @@ public class Psychologist {
     }
 
     public static WebElement getBookLaterDateButton() {
-        String xpath="//android.view.Button[@content-desc=\""+testDataMobile.getBookLaterDateButtonOnDetailsPsychologistPage()+"\"]";
-        return  clientMobileFinder.getByXpath(xpath,false);
+        String accessibility ="حجز موعد لاحق";
+        return   clientMobileFinder.getByAccessibilityId(accessibility,false);
     }
     public static boolean BookLaterDateButtonIsDisplayed(){
         return getBookLaterDateButton().isDisplayed();

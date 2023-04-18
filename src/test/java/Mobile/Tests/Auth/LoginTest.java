@@ -72,7 +72,7 @@ public class LoginTest {
         assertTrue(Login.UserNameIsDisplayed());
     }
     @AfterMethod
-    public void screenShot(ITestResult result) throws APIException, IOException {
+    public void reportResult(ITestResult result) throws APIException, IOException {
         MobileFinder.afterMethod(result,testCaseId);
         System.out.println("After method" + result.getMethod().getMethodName());
     }

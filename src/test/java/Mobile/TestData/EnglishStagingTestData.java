@@ -313,4 +313,8 @@ public class EnglishStagingTestData implements AbstractTestData {
     public String getAccountSettingText() {
         return null;
     }
+    @Override
+    public String getSubscriptionsAndPackages() {
+        return null;
+    }
 }
