@@ -1,7 +1,6 @@
 package Base.WebSetup;
 
 import Listeners.Listener;
-import Mobile.TestData.*;
 import TestRail.APIException;
 import TestRail.TestRailManager;
 import Web.BrowserOptions;
@@ -27,8 +26,6 @@ public class WebSetupTest {
 
     public static WebDriver webDriver;
     public static WebDriverWait wait;
-    public static AbstractTestData testDataMobile;
-    public static Mobile.TestDataSpecialistTests.AbstractTestData testDataMobileSpecialist;
     public static Web.TestData.AbstractTestData testDataWeb;
     public static JavascriptExecutor javascriptExecutor;
 
@@ -40,7 +37,7 @@ public class WebSetupTest {
         initializeWebDriver(browser, url);
         initializeTestData(language, branch);
         TestRailManager testRailManager = new TestRailManager();
-        WebFinder.testRunId = testRailManager.addTestRun();
+        WebFinder.testRunId = testRailManager.createTestRun("Famcare Web",7);
         Assert.assertTrue(true);
     }
 

@@ -1,27 +1,42 @@
 package Web.Tests.CourseDetailsPage;
 
-import static org.testng.Assert.*;
+import Base.WebSetup.WebFinder;
+import TestRail.APIException;
+import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
 
 import static Base.WebSetup.WebSetupTest.testDataWeb;
 
 public class CourseDetailsPageTest {
+    private String testCaseId;
     @Test(priority = 1)
     public void courseTitleIsDisplayed() {
-        assertTrue(CourseDetailsPage.courseTitleIsDisplayed());
+        testCaseId="10263";
+        Assert.assertTrue(CourseDetailsPage.courseTitleIsDisplayed());
     }
     @Test(priority = 2)
 
     public void joinCourseButtonIsDisplayed() {
-        assertTrue(CourseDetailsPage.JoinCourseButtonIsDisplayed());
+        testCaseId="10265";
+        Assert.assertTrue(CourseDetailsPage.JoinCourseButtonIsDisplayed());
     }
     @Test(priority = 2)
     public void viewJoinCourseButtonText() {
-        assertEquals(CourseDetailsPage.getJoinCourseButtonText(), testDataWeb.getJoinCourseButtonText());
+        testCaseId="10268";
+        Assert.assertEquals(CourseDetailsPage.getJoinCourseButtonText(), testDataWeb.getJoinCourseButtonText());
     }
     @Test(priority = 3)
     public void joinButtonIsClickable() {
+        testCaseId="10269";
         CourseDetailsPage.clickOnJoinCourseButton();
-        assertTrue(CourseDetailsPage.StoreTextIsDisplayed());
+        Assert.assertTrue(CourseDetailsPage.StoreTextIsDisplayed());
+    }
+    @AfterMethod
+    public void reportResult(ITestResult result) throws APIException, IOException {
+        WebFinder.afterMethod(result,testCaseId);
     }
 }

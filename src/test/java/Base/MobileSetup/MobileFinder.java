@@ -19,18 +19,27 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import static Base.MobileSetup.MobileSetupTest.androidDriver;
-
 
 public  class MobileFinder {
 
     public static Faker faker = new Faker();
-    private static final Shot shot= new Shot(androidDriver);
+    private static Shot shot;
     private static final TestRailManager testRail= new TestRailManager();
     public static String testRunId;
+    public static AndroidDriver androidDriver;
+
+    public MobileFinder(AndroidDriver androidDriver){
+        this.androidDriver= androidDriver;
+        shot= new Shot(androidDriver);
+    }
+
+
+    public void setTestRunId(String testRunId){
+        this.testRunId= testRunId;
+    }
     public static  JavascriptExecutor js = (JavascriptExecutor) androidDriver;
 
-     public static void doubleClick(AndroidDriver androidDriver, MobileElement element) {
+     public static void doubleClick(MobileElement element) {
         {
             new Actions(androidDriver).doubleClick(element).perform();
         }

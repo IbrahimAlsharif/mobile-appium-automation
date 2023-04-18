@@ -1,9 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Arabic language Testing Suite" parallel="tests">
-    <test name="client">
+    <test name="client" parallel="false">
         <parameter name="appPath" value="src/app-production-release.apk"/>
-        <parameter name="deviceName" value="Emulator 12"/>
-        <parameter name="port" value="4723"></parameter>
+        <parameter name="deviceName" value="emulator-5554"/>
+        <parameter name="appiumPort" value="4723"></parameter>
+        <parameter name="app" value="client"></parameter>
         <parameter name="language" value="Arabic"/>
         <parameter name="branch" value="Production"/>
         <classes>
@@ -16,17 +17,20 @@
 <!--            <class name="Mobile.Tests.MorePage.MorePageTest"/>-->
 <!--            <class name="Mobile.Tests.AllSpecialists.PsychologistTest"/>-->
 <!--            <class name="Base.TearDownTest"/>-->
+            <class name="Base.TearDownTest"/>
         </classes>
     </test>
-    <test name="specialist">
+    <test name="service provider" parallel="false">
         <parameter name="appPath" value="src/app-production-release.apk"/>
-        <parameter name="deviceName" value="Nexus 6P API 32"></parameter>
-        <parameter name="port" value="4725"></parameter>
+        <parameter name="deviceName" value="emulator-5556"></parameter>
+        <parameter name="appiumPort" value="4725"></parameter>
+        <parameter name="app" value="serviceProvider"></parameter>
         <parameter name="language" value="Arabic"/>
         <parameter name="branch" value="Production"/>
         <classes>
         <class name="Base.MobileSetup.MobileSetupTest"/>
         <class name="Mobile.Tests.Language.LanguageChooseTest"/>
+            <class name="Base.TearDownTest"/>
         </classes>
     </test>
     <listeners>

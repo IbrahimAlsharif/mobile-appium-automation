@@ -1,126 +1,160 @@
 package Web.Tests.AcademyPage;
 
-import static org.testng.Assert.*;
+import Base.WebSetup.WebFinder;
+import TestRail.APIException;
+import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
 
 import static Base.WebSetup.WebSetupTest.testDataWeb;
 
 public class AcademyPageTest {
 
-
+    private String testCaseId;
     @Test(priority = 1)
     public void mainNavbarButtonIsDisplayed() {
-        assertTrue(AcademyPage.NavbarButtonIsDisplayed());
+        testCaseId="10126";
+        Assert.assertTrue(AcademyPage.NavbarButtonIsDisplayed());
     }
 
     @Test(priority = 2)
     public void academyNavbarButtonIsDisplayed() {
+        testCaseId="10129";
         AcademyPage.clickOnNavbarButton();
-        assertTrue(AcademyPage.AcademyNavbarButtonIsDisplayed());
+        Assert.assertTrue(AcademyPage.AcademyNavbarButtonIsDisplayed());
     }
 
     @Test(priority = 3)
     public void academyNavbarButtonIsClickable() {
+        testCaseId="10132";
         AcademyPage.clickOnAcademyNavbarButton();
-        assertTrue(AcademyPage.BrowseCoursesTextIsDisplayed());
+        Assert.assertTrue(AcademyPage.BrowseCoursesTextIsDisplayed());
     }
 
     @Test(priority = 5)
     public void psychologicalSideDivIsDisplayed() {
-        assertTrue(AcademyPage.PsychologicalSideDivIsDisplayed());
+        testCaseId="10283";
+        Assert.assertTrue(AcademyPage.PsychologicalSideDivIsDisplayed());
     }
 
     @Test(priority = 5)
     public void psychologicalSideTextIsCorrect() {
-        assertEquals(AcademyPage.getPsychologicalSideText(), testDataWeb.getPsychologicalSideText());
+        testCaseId="10149";
+        Assert.assertEquals(AcademyPage.getPsychologicalSideText(), testDataWeb.getPsychologicalSideText());
     }
 
     @Test(priority = 5)
     public void socialSideDivIsDisplayed() {
-        assertTrue(AcademyPage.SocialSideDivIsDisplayed());
+        testCaseId="10150";
+        Assert.assertTrue(AcademyPage.SocialSideDivIsDisplayed());
     }
 
     @Test(priority = 5)
     public void socialSideTextIsCorrect() {
-        assertEquals(AcademyPage.getSocialSideText(), testDataWeb.getSocialSideText());
+        testCaseId="10151";
+        Assert.assertEquals(AcademyPage.getSocialSideText(), testDataWeb.getSocialSideText());
     }
 
     @Test(priority = 5)
     public void educationalSideDivIsDisplayed() {
-        assertTrue(AcademyPage.EducationalSideDivIsDisplayed());
+        testCaseId="10153";
+        Assert.assertTrue(AcademyPage.EducationalSideDivIsDisplayed());
     }
 
     @Test(priority = 5)
     public void educationalSideTextIsCorrect() {
-        assertEquals(AcademyPage.getEducationalSideText(), testDataWeb.getEducationalSideText());
+        testCaseId="10155";
+        Assert.assertEquals(AcademyPage.getEducationalSideText(), testDataWeb.getEducationalSideText());
     }
 
     @Test(priority = 5)
     public void practitionersDivIsDisplayed() {
-        assertTrue(AcademyPage.PractitionersDivIsDisplayed());
+        testCaseId="10156";
+        Assert.assertTrue(AcademyPage.PractitionersDivIsDisplayed());
     }
 
     @Test(priority = 5)
     public void practitionersTextIsCorrect() {
-        assertEquals(AcademyPage.getPractitionersText(), testDataWeb.getPractitionersText());
+        testCaseId="10284";
+        Assert.assertEquals(AcademyPage.getPractitionersText(), testDataWeb.getPractitionersText());
     }
 
     @Test(priority = 6)
     public void registerNowTextIsDisplayed() {
-        assertTrue(AcademyPage.RegisterNowTextIsDisplayed());
+        testCaseId="10157";
+        Assert.assertTrue(AcademyPage.RegisterNowTextIsDisplayed());
     }
 
     @Test(priority = 7)
     public void professionalTrainersDivIsDisplayed() {
-        assertTrue(AcademyPage.ProfessionalTrainersDivIsDisplayed());
+        testCaseId="10158";
+        Assert.assertTrue(AcademyPage.ProfessionalTrainersDivIsDisplayed());
     }
     @Test(priority = 7)
     public void professionalTrainersTextIsCorrect() {
-        assertEquals(AcademyPage.getProfessionalTrainersText(), testDataWeb.getProfessionalTrainersText());
+        testCaseId="10159";
+        Assert.assertEquals(AcademyPage.getProfessionalTrainersText(), testDataWeb.getProfessionalTrainersText());
     }
     @Test(priority = 7)
     public void professionalCoursesDivIsDisplayed() {
-        assertTrue(AcademyPage.ProfessionalCoursesDivIsDisplayed());
+        testCaseId="10160";
+        Assert.assertTrue(AcademyPage.ProfessionalCoursesDivIsDisplayed());
     }
     @Test(priority = 7)
     public void professionalCoursesTextIsCorrect() {
-        assertEquals(AcademyPage.getProfessionalCourses(), testDataWeb.getProfessionalCoursesText());
+        testCaseId="10161";
+        Assert.assertEquals(AcademyPage.getProfessionalCourses(), testDataWeb.getProfessionalCoursesText());
     }
     @Test(priority = 7)
     public void UnlimitedViewingDivIsDisplayed() {
-        assertTrue(AcademyPage.UnlimitedViewingDivIsDisplayed());
+        testCaseId="10162";
+        Assert.assertTrue(AcademyPage.UnlimitedViewingDivIsDisplayed());
     }
 
     @Test(priority = 7)
     public void unlimitedViewingTextIsCorrect() {
-        assertEquals(AcademyPage.getUnlimitedViewing(), testDataWeb.getUnlimitedViewingText());
+        testCaseId="10163";
+        Assert.assertEquals(AcademyPage.getUnlimitedViewing(), testDataWeb.getUnlimitedViewingText());
     }
     @Test(priority = 8)
     public void TrainersTextIsDisplayed() {
-        assertTrue(AcademyPage.TrainersTextIsDisplayed());
+        testCaseId="10164";
+        Assert.assertTrue(AcademyPage.TrainersTextIsDisplayed());
     }
     @Test(priority = 7)
     public void trainersTextIsCorrect() {
-        assertEquals(AcademyPage.getTrainerText(), testDataWeb.getTrainerText());
+        testCaseId="10165";
+        Assert.assertEquals(AcademyPage.getTrainerText(), testDataWeb.getTrainerText());
     }
     @Test(priority = 9)
     public void OfficialAgenciesTextIsDisplayed() {
-        assertTrue(AcademyPage.OfficialAgenciesTextIsDisplayed());
+        testCaseId="10168";
+        Assert.assertTrue(AcademyPage.OfficialAgenciesTextIsDisplayed());
     }
 
     @Test(priority = 10)
     public void academyImageIsDisplayed() {
-        assertTrue(AcademyPage.academyImageIsDisplayed());
+        testCaseId="10172";
+        Assert.assertTrue(AcademyPage.academyImageIsDisplayed());
     }
 
     @Test(priority = 10)
     public void BrowseCoursesButtonIsDisplayed() {
-        assertTrue(AcademyPage.BrowseCoursesButtonIsDisplayed());
+        testCaseId="10174";
+        Assert.assertTrue(AcademyPage.BrowseCoursesButtonIsDisplayed());
     }
 
     @Test(priority = 11)
     public void browseButtonIsClickable() {
+        testCaseId="10177";
         AcademyPage.clickOnBrowseCoursesButton();
-        assertTrue(AcademyPage.CoursesTextIsDisplayed());
+        Assert.assertTrue(AcademyPage.CoursesTextIsDisplayed());
+    }
+    @AfterMethod
+    public void reportResult(ITestResult result) throws APIException, IOException {
+        WebFinder.afterMethod(result,testCaseId);
     }
 }

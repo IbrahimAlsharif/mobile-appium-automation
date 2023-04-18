@@ -1,6 +1,5 @@
 package Mobile.Tests.HomePage;
-
-import static Base.MobileSetup.MobileSetupTest.androidDriver;
+import static Base.MobileSetup.MobileSetupTest.clientMobileFinder;
 import static org.testng.Assert.*;
 
 import Base.MobileSetup.MobileFinder;
@@ -17,6 +16,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class HomePageTest {
+
     private String testCaseId;
     @Test(priority =1)
     public void verifyThatTapHomeButtonNavigateHomePage() throws InterruptedException {
@@ -24,7 +24,7 @@ public class HomePageTest {
         String accessibility = "الرئيسية\n" +
                 "علامة التبويب 1 من 5";
 
-        MobileFinder.getByAccessibilityId(accessibility,true).click();
+        clientMobileFinder.getByAccessibilityId(accessibility,true).click();
         assertTrue(HomePage.NotificationIconIsDisplayed());
     }
 

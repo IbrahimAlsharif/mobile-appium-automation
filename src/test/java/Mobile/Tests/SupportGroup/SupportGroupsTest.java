@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 import static Base.MobileSetup.MobileSetupTest.androidDriver;
+import static Base.MobileSetup.MobileSetupTest.clientMobileFinder;
 import static Base.MobileSetup.MobileSetupTest.testDataMobile;
 import static org.testng.Assert.*;
 
@@ -19,7 +20,7 @@ public class SupportGroupsTest {
         testCaseId="4426";
         String accessibility = "مجموعات الدعم\n" +
                 "علامة التبويب 3 من 5";
-       MobileFinder.getByAccessibilityId(accessibility,false).click();
+        clientMobileFinder.getByAccessibilityId(accessibility,false).click();
        assertTrue(SupportGroups.screenTitleIsDisplayed());
     }
     @Test(priority = 2)

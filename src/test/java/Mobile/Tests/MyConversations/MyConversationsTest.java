@@ -2,6 +2,7 @@ package Mobile.Tests.MyConversations;
 
 import Base.MobileSetup.MobileFinder;
 import TestRail.APIException;
+import Base.MobileSetup.MobileSetupTest;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
@@ -18,13 +19,14 @@ import static Base.MobileSetup.MobileSetupTest.androidDriver;
 
 public class MyConversationsTest {
     private String testCaseId;
+    private static MobileFinder mobileFinder = new MobileFinder(MobileSetupTest.clientAndroidDriver);
 
     @Test(priority =1)
     public void verifyThatTapMyConversationsButtonNavigateToMyConversationsPage() throws InterruptedException {
         testCaseId="4233";
         String accessibility = "محادثاتي\n" +
                 "علامة التبويب 2 من 5";
-        MobileFinder.getByAccessibilityId(accessibility,false);
+        mobileFinder.getByAccessibilityId(accessibility,false);
         Thread.sleep(9000);
         assertTrue(MyConversations.TitleAppBarOnMyConversationsDisplayed());
 

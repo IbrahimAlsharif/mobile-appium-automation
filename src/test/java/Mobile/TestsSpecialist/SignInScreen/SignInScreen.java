@@ -1,14 +1,11 @@
-package Mobile.TestsSpecialist.SignUpScreen;
+package Mobile.TestsSpecialist.SignInScreen;
 
 import Base.MobileSetup.MobileFinder;
-import com.github.javafaker.Bool;
 import io.appium.java_client.MobileElement;
 
-import static Base.MobileSetup.MobileSetupTest.serviceProviderMobileFinder;
 import static Base.MobileSetup.MobileSetupTest.testDataMobileSpecialist;
-
-public class SignUpScreen {
-
+import static Base.MobileSetup.MobileSetupTest.serviceProviderMobileFinder;
+public class SignInScreen {
     public static MobileElement getCloseButton(){
         return serviceProviderMobileFinder.getByAccessibilityId("A red up arrow", true);
     }
@@ -16,7 +13,7 @@ public class SignUpScreen {
         return getCloseButton().isDisplayed();
     }
     public static MobileElement getTitle(){
-        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getTitleInSignUpScreen(), false);
+        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getTitleInSignInScreen(), false);
     }
     public static Boolean titleIsDisplayed(){
         return getTitle().isDisplayed();
@@ -29,56 +26,56 @@ public class SignUpScreen {
         return getLogo().isDisplayed();
     }
     public static MobileElement getMainText(){
-        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getMainTextInSignUpScreen(), false);
+        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getMainTextInSignInScreen(), false);
     }
     public static Boolean mainTextIsDisplayed(){
         return getMainText().isDisplayed();
     }
     public static MobileElement getDescriptionText(){
-        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getDescriptionTextInSignUpScreen(), false);
+        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getDescriptionTextInSignInScreen(), false);
     }
     public static Boolean descriptionTextIsDisplayed(){
         return getDescriptionText().isDisplayed();
     }
-    public static MobileElement getRegisterButton(){
-        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getRegisterTextInSignUpScreen(), true);
+    public static MobileElement getLoginButton(){
+        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getLoginButtonInSignInScreen(), true);
     }
-    public static Boolean registerButtonIsDisplayed(){
-        return getRegisterButton().isDisplayed();
+    public static Boolean loginButtonIsDisplayed(){
+        return getLoginButton().isDisplayed();
     }
 
-    public static MobileElement getHaveAccountText(){
-        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getHaveAccountTextInSignUpScreen(), false);
+    public static MobileElement getHaveNotAccountText(){
+        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getHaveNotAccountTextInSignInScreen(), false);
     }
-    public static Boolean haveAccountTextIsDisplayed(){
-        return getHaveAccountText().isDisplayed();
+    public static Boolean haveNotAccountTextIsDisplayed(){
+        return getHaveNotAccountText().isDisplayed();
     }
-    public static MobileElement getLoginLinkedText(){
-        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getLoginLinkedTextInSignUpScreen(), true);
+    public static MobileElement getSignUpLinkedText(){
+        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getSignUpLinkedTextInSignInScreen(), true);
     }
-    public static Boolean loginLinkedTextIsDisplayed(){
-        return getLoginLinkedText().isDisplayed();
+    public static Boolean signUpLinkedTextIsDisplayed(){
+        return getSignUpLinkedText().isDisplayed();
     }
     public static MobileElement getBottomBarText(){
-        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getBottomBarTextInSignUpScreen(), false);
+        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getBottomBarTextInSignInScreen(), false);
     }
     public static Boolean bottomBarTextIsDisplayed(){
         return getBottomBarText().isDisplayed();
     }
     public static MobileElement getPrivacyPolicyText(){
-        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getPrivacyPolicyTextInSignUpScreen(), true);
+        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getPrivacyPolicyTextInSignInScreen(), true);
     }
     public static Boolean privacyPolicyTextIsDisplayed(){
         return getPrivacyPolicyText().isDisplayed();
     }
     public static MobileElement getAndText(){
-        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getAndTextInSignUpScreen(), false);
+        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getAndTextInSignInScreen(), false);
     }
     public static Boolean andTextIsDisplayed(){
         return getAndText().isDisplayed();
     }
     public static MobileElement getTermsUseText(){
-        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getTermsUseTextInSignUpScreen(), true);
+        return serviceProviderMobileFinder.getByAccessibilityId(testDataMobileSpecialist.getTermsUseTextInSignInScreen(), true);
     }
     public static Boolean termsUseTextIsDisplayed(){
         return getTermsUseText().isDisplayed();

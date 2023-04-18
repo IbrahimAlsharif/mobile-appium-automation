@@ -51,7 +51,6 @@ public class Listener implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult Result)
     {
-
         System.out.println("PASSED : "+Result.getName());
     }
 }

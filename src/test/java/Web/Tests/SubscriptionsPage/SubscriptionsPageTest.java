@@ -1,125 +1,156 @@
 package Web.Tests.SubscriptionsPage;
 
+import Base.WebSetup.WebFinder;
+import TestRail.APIException;
 import Web.Tests.CheckoutPage.CheckoutPage;
-import org.openqa.selenium.By;
-import static org.testng.Assert.*;
+import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 import static Base.WebSetup.WebSetupTest.testDataWeb;
-import static Base.WebSetup.WebSetupTest.webDriver;
 
 public class SubscriptionsPageTest {
+    private String testCaseId;
     @Test(priority = 1)
     public void monthlyButtonIsDisplayed() {
-        assertTrue(SubscriptionPage.monthlyButtonIsDisplayed());
+        testCaseId="10166";
+        Assert.assertTrue(SubscriptionPage.monthlyButtonIsDisplayed());
     }
 
     @Test(priority = 1)
     public void threeMonthsButtonIsDisplayed() {
-        assertTrue(SubscriptionPage.threeMonthsButtonIsDisplayed());
+        testCaseId="10167";
+        Assert.assertTrue(SubscriptionPage.threeMonthsButtonIsDisplayed());
     }
 
     @Test(priority = 1)
     public void sixMonthsButtonIsDisplayed() {
-        assertTrue(SubscriptionPage.sixMonthsButtonIsDisplayed());
+        testCaseId="10169";
+        Assert.assertTrue(SubscriptionPage.sixMonthsButtonIsDisplayed());
     }
 
     @Test(priority = 2)
     public void viewMonthlySubscriptions() {
+        testCaseId="10170";
         SubscriptionPage.clickOnMonthlyButton();
-        assertEquals(SubscriptionPage.getMonthlyBronzePriceText(), testDataWeb.getMonthlyBronzePrice());
+        Assert.assertEquals(SubscriptionPage.getMonthlyBronzePriceText(), testDataWeb.getMonthlyBronzePrice());
     }
     @Test(priority = 3)
     public void monthlyBronzeIsDisplayed() {
-        assertTrue(SubscriptionPage.monthlyBronzeButtonIsDisplayed());
+        testCaseId="10171";
+        Assert.assertTrue(SubscriptionPage.monthlyBronzeButtonIsDisplayed());
     }
     @Test(priority = 3)
     public void monthlySilverIsDisplayed() {
-        assertTrue(SubscriptionPage.monthlySilverButtonIsDisplayed());
+        testCaseId="10173";
+        Assert.assertTrue(SubscriptionPage.monthlySilverButtonIsDisplayed());
     }
 
     @Test(priority = 3)
     public void monthlyGoldIsDisplayed() {
-        assertTrue(SubscriptionPage.monthlyGoldButtonIsDisplayed());
+        testCaseId="10175";
+        Assert.assertTrue(SubscriptionPage.monthlyGoldButtonIsDisplayed());
     }
 
     @Test(priority = 4)
     public void viewThreeMonthSubscriptions() {
+        testCaseId="10176";
         SubscriptionPage.clickThreeMonthsButton();
-        assertEquals(SubscriptionPage.getThreeMonthsBronzePriceText(), testDataWeb.getThreeMonthsBronzePrice());
+        Assert.assertEquals(SubscriptionPage.getThreeMonthsBronzePriceText(), testDataWeb.getThreeMonthsBronzePrice());
     }
     @Test(priority = 5)
     public void threeMonthsBronzeIsDisplayed() {
-        assertTrue(SubscriptionPage.threeMonthsBronzeButtonIsDisplayed());
+        testCaseId="10178";
+        Assert.assertTrue(SubscriptionPage.threeMonthsBronzeButtonIsDisplayed());
     }
 
     @Test(priority = 5)
     public void threeMonthsSilverIsDisplayed() {
-        assertTrue(SubscriptionPage.threeMonthsSilverButtonIsDisplayed());
+        testCaseId="10179";
+        Assert.assertTrue(SubscriptionPage.threeMonthsSilverButtonIsDisplayed());
     }
 
     @Test(priority = 5)
     public void threeMonthsGoldIsDisplayed() {
-        assertTrue(SubscriptionPage.threeMonthsGoldButtonIsDisplayed());
+        testCaseId="10180";
+        Assert.assertTrue(SubscriptionPage.threeMonthsGoldButtonIsDisplayed());
     }
     @Test(priority = 6)
     public void viewSixMonthSubscriptions() {
+        testCaseId="10181";
         SubscriptionPage.clickSixMonthsButton();
-        assertEquals(SubscriptionPage.getSixMonthsBronzePriceText(), testDataWeb.getSixMonthsBronzePrice());
+        Assert.assertEquals(SubscriptionPage.getSixMonthsBronzePriceText(), testDataWeb.getSixMonthsBronzePrice());
     }
     @Test(priority = 7)
     public void sixMonthsBronzeIsDisplayed() {
-        assertTrue(SubscriptionPage.sixMonthsBronzeButtonIsDisplayed());
+        testCaseId="10182";
+        Assert.assertTrue(SubscriptionPage.sixMonthsBronzeButtonIsDisplayed());
     }
     @Test(priority = 7)
     public void sixMonthsSilverIsDisplayed() {
-        assertTrue(SubscriptionPage.sixMonthsSilverButtonIsDisplayed());
+        testCaseId="10183";
+        Assert.assertTrue(SubscriptionPage.sixMonthsSilverButtonIsDisplayed());
     }
 
     @Test(priority = 7)
     public void sixMonthsGoldIsDisplayed() {
-        assertTrue(SubscriptionPage.sixMonthsGoldButtonIsDisplayed());
+        testCaseId="10184";
+        Assert.assertTrue(SubscriptionPage.sixMonthsGoldButtonIsDisplayed());
     }
 
     @Test(priority = 8)
     public void openCompleteSubscription() {
+        testCaseId="10185";
         SubscriptionPage.clickSixMonthsBronzeButton();
-        assertEquals(SubscriptionPage.getLoginPopUpTitleText(), testDataWeb.getLoginPopUpText());
+        Assert.assertEquals(SubscriptionPage.getLoginPopUpTitleText(), testDataWeb.getLoginPopUpText());
     }
 
     @Test(priority = 9)
     public void signInButtonIsDisplayed() {
+        testCaseId="10187";
         SubscriptionPage.switchToFrame("iframe");
-        assertTrue(SubscriptionPage.signInButtonIsDisplayed());
+        Assert.assertTrue(SubscriptionPage.signInButtonIsDisplayed());
     }
 
     @Test(priority = 9)
     public void signInWithGoogle() {
+        testCaseId="10188";
         SubscriptionPage.clickSignInWithGoogleButton();
-        assertEquals(SubscriptionPage.getSignInWindowTitleText(), testDataWeb.getSignInWindowTitleText());
+        Assert.assertEquals(SubscriptionPage.getSignInWindowTitleText(), testDataWeb.getSignInWindowTitleText());
     }
 
     @Test(priority = 10)
     public void inputOnEmailField() {
+        testCaseId="10190";
         SubscriptionPage.inputOnEmailField();
-        assertEquals(SubscriptionPage.getEmailFieldInputText(), testDataWeb.getEmail());
+        Assert.assertEquals(SubscriptionPage.getEmailFieldInputText(), testDataWeb.getEmail());
     }
 
     @Test(priority = 11)
     public void clickOnNextToPasswordButton() {
+        testCaseId="10191";
         SubscriptionPage.clickOnNextToPasswordButton();
-        assertEquals(SubscriptionPage.getLoggedInEmailLabelText(), testDataWeb.getEmail());
+        Assert.assertEquals(SubscriptionPage.getLoggedInEmailLabelText(), testDataWeb.getEmail());
     }
 
     @Test(priority = 12)
     public void inputOnPasswordField() {
+        testCaseId="10193";
         SubscriptionPage.inputOnPasswordField();
-        assertEquals(SubscriptionPage.getPasswordFieldInputText(), testDataWeb.getPassword());
+        Assert.assertEquals(SubscriptionPage.getPasswordFieldInputText(), testDataWeb.getPassword());
     }
 
     @Test(priority = 13)
     public void clickOnNextButton() {
+        testCaseId="10194";
         SubscriptionPage.clickOnNextButton();
-        assertEquals(CheckoutPage.getCheckoutTitleText(), testDataWeb.getCheckoutTitleText());
+        Assert.assertEquals(CheckoutPage.getCheckoutTitleText(), testDataWeb.getCheckoutTitleText());
+    }
+    @AfterMethod
+    public void reportResult(ITestResult result) throws APIException, IOException {
+        WebFinder.afterMethod(result,testCaseId);
     }
 }

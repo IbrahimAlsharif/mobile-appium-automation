@@ -1,70 +1,93 @@
 package Web.Tests.CartPage;
 
-import static org.testng.Assert.*;
+import Base.WebSetup.WebFinder;
+import TestRail.APIException;
+import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
 
 import static Base.WebSetup.WebSetupTest.testDataWeb;
 
 public class CartPageTest {
+    private String testCaseId;
 
     @Test(priority = 1)
     public void cartItemIsDisplayed() {
-        assertTrue(CartPage.CartItemIsDisplayed());
+        testCaseId="10200";
+        Assert.assertTrue(CartPage.CartItemIsDisplayed());
     }
 
     @Test(priority = 2)
     public void productNameIsDisplayed() {
-        assertTrue(CartPage.ProductNameIsDisplayed());
+        testCaseId="10201";
+        Assert.assertTrue(CartPage.ProductNameIsDisplayed());
     }
 
     @Test(priority = 2)
     public void productNameTextIsCorrect() {
-        assertEquals(CartPage.getProductNameText(), testDataWeb.getProductNameOnCartPage());
+        testCaseId="10202";
+        Assert.assertEquals(CartPage.getProductNameText(), testDataWeb.getProductNameOnCartPage());
     }
 
     @Test(priority = 3)
     public void productPriceTextIsCorrect() {
-        assertEquals(CartPage.getProductPriceText(), testDataWeb.getProductPriceOnCartPage());
+        testCaseId="10203";
+        Assert.assertEquals(CartPage.getProductPriceText(), testDataWeb.getProductPriceOnCartPage());
     }
 
     @Test(priority = 4)
     public void productSubTotalTextIsCorrect() {
-        assertEquals(CartPage.getProductSubTotalPriceText(), testDataWeb.getProductSubTotalPriceOnCartPage());
+        testCaseId="10204";
+        Assert.assertEquals(CartPage.getProductSubTotalPriceText(), testDataWeb.getProductSubTotalPriceOnCartPage());
     }
 
     @Test(priority = 5)
     public void couponCodeInputIsDisplayed() {
-        assertTrue(CartPage.CouponCodeInputIsDisplayed());
+        testCaseId="10205";
+        Assert.assertTrue(CartPage.CouponCodeInputIsDisplayed());
     }
 
     @Test(priority = 6)
     public void applyCouponButtonIsDisplayed() {
-        assertTrue(CartPage.ApplyCouponButtonIsDisplayed());
+        testCaseId="10206";
+        Assert.assertTrue(CartPage.ApplyCouponButtonIsDisplayed());
     }
 
     @Test(priority = 7)
     public void totalShoppingCartTextIsDisplayed() {
-        assertTrue(CartPage.TotalShoppingCartTextIsDisplayed());
+        testCaseId="10207";
+        Assert.assertTrue(CartPage.TotalShoppingCartTextIsDisplayed());
     }
 
     @Test(priority = 8)
     public void amountTotalPriceTextIsCorrect() {
-        assertEquals(CartPage.getAmountPriceText(), testDataWeb.getAmountTotalPriceOnCartPage());
+        testCaseId="10208";
+        Assert.assertEquals(CartPage.getAmountPriceText(), testDataWeb.getAmountTotalPriceOnCartPage());
     }
+
     @Test(priority = 9)
     public void finalTotalAmountPriceTextIsCorrect() {
-        assertEquals(CartPage.getFinalTotalAmountPriceText(), testDataWeb.getFinalTotalAmountPriceOnCartPage());
+        testCaseId="10209";
+        Assert.assertEquals(CartPage.getFinalTotalAmountPriceText(), testDataWeb.getFinalTotalAmountPriceOnCartPage());
     }
 
     @Test(priority = 10)
     public void checkoutButtonIsDisplayed() {
-        assertTrue(CartPage.CheckoutButtonIsDisplayed());
+        testCaseId="10210";
+        Assert.assertTrue(CartPage.CheckoutButtonIsDisplayed());
     }
 
     @Test(priority = 11)
     public void checkoutButtonIsClickable() {
+        testCaseId="10211";
         CartPage.clickOnCheckoutButton();
-        assertTrue(CartPage.CompleteOrderIsDisplayed());
+        Assert.assertTrue(CartPage.CompleteOrderIsDisplayed());
     }
-
+    @AfterMethod
+    public void reportResult(ITestResult result) throws APIException, IOException {
+        WebFinder.afterMethod(result,testCaseId);
+    }
 }

@@ -26,38 +26,70 @@ import java.util.concurrent.TimeUnit;
 @Listeners(Listener.class)
 public class MobileSetupTest {
 
-    public static AndroidDriver  androidDriver;
+    public static AndroidDriver  clientAndroidDriver;
+    public static AndroidDriver  serviceProviderAndroidDriver;
+    public static MobileFinder clientMobileFinder;
+    public static MobileFinder serviceProviderMobileFinder;
     public static WebDriverWait wait;
     public static AbstractTestData testDataMobile;
     public static Mobile.TestDataSpecialistTests.AbstractTestData testDataMobileSpecialist;
-    public static Web.TestData.AbstractTestData testDataWeb;
     public static JavascriptExecutor javascriptExecutor;
-    private String port;
+    private String appiumPort;
+    private String app;
+    private String mjpegServerPort;
+    private String systemPort;
     @Test(priority = 1)
-    @Parameters({"language", "appPath", "branch","deviceName", "port"})
-    public void setUp(String language, String appPath, String branch, String deviceName,String port) throws APIException, IOException {
-        this.port = port;
+    @Parameters({"language", "appPath", "branch","deviceName", "appiumPort","app","mjpegServerPort","systemPort"})
+    public AndroidDriver setUp(
+            String language, String appPath, String branch, String deviceName,String appiumPort,
+            String app,String mjpegServerPort, String systemPort) throws APIException, IOException {
+        this.appiumPort = appiumPort;
+        this.app=app;
+        this.systemPort =systemPort;
+        this.mjpegServerPort =mjpegServerPort;
         initializeMobileDriver(appPath,deviceName);
         initializeTestData(language, branch);
         TestRailManager testRailManager = new TestRailManager();
-        MobileFinder.testRunId = testRailManager.addTestRun();
-        assertTrue(true);
+        if (app.equalsIgnoreCase("client")){
+            clientMobileFinder = new MobileFinder(clientAndroidDriver);
+            clientMobileFinder.setTestRunId(testRailManager.addTestRun());
+            assertTrue(true);
+            return clientAndroidDriver;
+        }
+        else {
+            serviceProviderMobileFinder = new MobileFinder(serviceProviderAndroidDriver);
+            serviceProviderMobileFinder.setTestRunId(testRailManager.addTestRun());
+            assertTrue(true);
+            return serviceProviderAndroidDriver;
+        }
+
     }
 
     private void initializeMobileDriver(String appPath, String deviceName) throws MalformedURLException {
-        androidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+port+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
-        androidDriver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
-        wait = new WebDriverWait(androidDriver, 35);
-        javascriptExecutor = (JavascriptExecutor) androidDriver;
+        if (app.equalsIgnoreCase("client")){
+            clientAndroidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+appiumPort+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
+            clientAndroidDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+            wait = new WebDriverWait(clientAndroidDriver, 60);
+            javascriptExecutor = (JavascriptExecutor) clientAndroidDriver;
+        }
+        else {
+            serviceProviderAndroidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:"+appiumPort+"/wd/hub"), getDesiredCapabilities(appPath,deviceName));
+            serviceProviderAndroidDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+            wait = new WebDriverWait(serviceProviderAndroidDriver, 60);
+            javascriptExecutor = (JavascriptExecutor) serviceProviderAndroidDriver;
+        }
     }
 
     private DesiredCapabilities getDesiredCapabilities(String appPath, String deviceName) {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", deviceName);
-        capabilities.setCapability("app_activity", "sa.app.famcare.MainActivity");
-        capabilities.setCapability("allowTestPackages", "true");
-        capabilities.setCapability("app_package", "sa.app.famcare");
+        capabilities.setCapability("udid", deviceName);
+        capabilities.setCapability("mjpegServerPort",mjpegServerPort);
+        capabilities.setCapability("systemPort",systemPort);
+//        capabilities.setCapability("app_activity", "sa.app.famcare.MainActivity");
+//        capabilities.setCapability("allowTestPackages", "true");
+//        capabilities.setCapability("app_package", "sa.app.famcare");
         capabilities.setCapability(MobileCapabilityType.APP, appPath);
         File app = new File(appPath);
         capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
@@ -78,5 +110,27 @@ public class MobileSetupTest {
             testDataMobile = new EnglishProductionTestData();
             testDataMobileSpecialist = new EnglishProductionTestDataSpecialist();
         }
+    }
+    public AndroidDriver createClientDriver() throws APIException, IOException {
+        String language= "Arabic";
+        String appPath="src/app-production-release.apk";
+        String branch= "Production";
+        String deviceName= "emulator-5556";
+        String appiumPort="10001";
+        String app="client";
+        String mjpegServerPort="8001";
+        String systemPort="8201";
+        return setUp(language, appPath,branch, deviceName,appiumPort,app,mjpegServerPort,systemPort);
+    }
+    public AndroidDriver createSpecialistDriver() throws APIException, IOException {
+        String language= "Arabic";
+        String appPath="src/app-specialist_production-debug.apk";
+        String branch= "Production";
+        String deviceName= "emulator-5554";
+        String appiumPort="10000";
+        String app="specialist";
+        String mjpegServerPort="8000";
+        String systemPort="8200";
+        return setUp(language, appPath,branch, deviceName,appiumPort,app,mjpegServerPort,systemPort);
     }
 }

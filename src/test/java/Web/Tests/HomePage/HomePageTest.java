@@ -1,107 +1,132 @@
 package Web.Tests.HomePage;
 
+import Base.WebSetup.WebFinder;
+import TestRail.APIException;
 import Web.Tests.SubscriptionsPage.SubscriptionPage;
-import static org.testng.Assert.*;
+import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
 
 import static Base.WebSetup.WebSetupTest.testDataWeb;
 
 public class HomePageTest {
+    private String testCaseId;
     @Test(priority = 1)
     public void logoIsDisplayed() {
-        assertTrue(HomePage.logoIsDisplayed());
+        testCaseId="10125";
+        Assert.assertTrue(HomePage.logoIsDisplayed());
     }
 
     @Test(priority = 1)
     public void startImageIsDisplayed() {
-        assertTrue(HomePage.startImageIsDisplayed());
+        testCaseId="10127";
+        Assert.assertTrue(HomePage.startImageIsDisplayed());
     }
 
     @Test(priority = 1)
     public void startTextIsDisplayed() {
-        assertTrue(HomePage.startTextIsDisplayed());
+        testCaseId="10128";
+        Assert.assertTrue(HomePage.startTextIsDisplayed());
     }
 
     @Test(priority = 1)
     public void startButtonIsDisplayed() {
-        assertTrue(HomePage.startButtonIsDisplayed());
+        testCaseId="10130";
+        Assert.assertTrue(HomePage.startButtonIsDisplayed());
     }
 
     @Test(priority = 1)
     public void promotionalTextIsDisplayed() {
-       assertTrue(HomePage.promotionalTextIsDisplayed());
+        testCaseId="10131";
+        Assert.assertTrue(HomePage.promotionalTextIsDisplayed());
     }
     @Test(priority = 1)
     public void packagesImageIsDisplayed() {
-        assertTrue(HomePage.packagesImageIsDisplayed());
+        testCaseId="10133";
+        Assert.assertTrue(HomePage.packagesImageIsDisplayed());
     }
     @Test(priority = 1)
     public void packagesTitleIsDisplayed() {
-        assertTrue(HomePage.packagesTitleIsDisplayed());
+        testCaseId="10134";
+        Assert.assertTrue(HomePage.packagesTitleIsDisplayed());
     }
     @Test(priority = 1)
     public void packagesDescriptionTextIsDisplayed() {
-        assertTrue(HomePage.packagesDescriptionTextIsDisplayed());
+        testCaseId="10135";
+        Assert.assertTrue(HomePage.packagesDescriptionTextIsDisplayed());
     }
     @Test(priority = 1)
     public void sessionsImageIsDisplayed() {
-        assertTrue(HomePage.sessionsImageIsDisplayed());
+        testCaseId="10136";
+        Assert.assertTrue(HomePage.sessionsImageIsDisplayed());
     }
     @Test(priority = 1)
     public void sessionsTitleIsDisplayed() {
-        assertTrue(HomePage.sessionsTitleIsDisplayed());
+        testCaseId="10137";
+        Assert.assertTrue(HomePage.sessionsTitleIsDisplayed());
     }
     @Test(priority = 1)
     public void sessionsDescriptionTextIsDisplayed() {
-        assertTrue(HomePage.sessionsDescriptionTextIsDisplayed());
+        testCaseId="10138";
+        Assert.assertTrue(HomePage.sessionsDescriptionTextIsDisplayed());
     }
     @Test(priority = 1)
     public void ratingImageIsDisplayed() {
-        assertTrue(HomePage.ratingImageIsDisplayed());
+        testCaseId="10139";
+        Assert.assertTrue(HomePage.ratingImageIsDisplayed());
     }
     @Test(priority = 1)
     public void ratingTitleIsDisplayed() {
-        assertTrue(HomePage.ratingTitleIsDisplayed());
+        testCaseId="10140";
+        Assert.assertTrue(HomePage.ratingTitleIsDisplayed());
     }
     @Test(priority = 1)
     public void ratingDescriptionTextIsDisplayed() {
-        assertTrue(HomePage.ratingDescriptionTextIsDisplayed());
+        testCaseId="10141";
+        Assert.assertTrue(HomePage.ratingDescriptionTextIsDisplayed());
     }
     @Test(priority = 1)
     public void subscriptionImageIsDisplayed() {
-        assertTrue(HomePage.subscriptionImageIsDisplayed());
+        testCaseId="10142";
+        Assert.assertTrue(HomePage.subscriptionImageIsDisplayed());
     }
     @Test(priority = 1)
     public void consultantButtonIsDisplayed() {
-        assertTrue(HomePage.consultantButtonIsDisplayed());
+        testCaseId="10143";
+        Assert.assertTrue(HomePage.consultantButtonIsDisplayed());
     }
     @Test(priority = 1)
     public void startChangeButtonIsDisplayed() {
-        assertTrue(HomePage.startChangeButtonIsDisplayed());
+        testCaseId="10144";
+        Assert.assertTrue(HomePage.startChangeButtonIsDisplayed());
     }
     @Test(priority = 1)
     public void googlePlayButtonIsDisplayed() {
-        assertTrue(HomePage.googlePlayButtonIsDisplayed());
+        testCaseId="10336";
+        Assert.assertTrue(HomePage.googlePlayButtonIsDisplayed());
     }
     @Test(priority = 1)
     public void appStoreButtonIsDisplayed() {
-        assertTrue(HomePage.appStoreButtonIsDisplayed());
+        testCaseId="10337";
+        Assert.assertTrue(HomePage.appStoreButtonIsDisplayed());
     }
     @Test(priority = 1)
     public void blogButtonIsDisplayed() {
-        assertTrue(HomePage.blogButtonIsDisplayed());
+        testCaseId="10147";
+        Assert.assertTrue(HomePage.blogButtonIsDisplayed());
     }
-    @Test(priority = 1)
-    public void footerGooglePlayButtonIsDisplayed() {
-        assertTrue(HomePage.footerGooglePlayButtonIsDisplayed());
-    }
-    @Test(priority = 1)
-    public void footerAppStoreButtonIsDisplayed() {
-        assertTrue(HomePage.footerAppStoreButtonIsDisplayed());
-    }
+
     @Test(priority = 2)
     public void openSubscriptionPage() {
+        testCaseId="10148";
         HomePage.clickOnStartButton();
-        assertEquals(SubscriptionPage.getSubscriptionTitleText(), testDataWeb.getSubscriptionsTitle());
+        Assert.assertEquals(SubscriptionPage.getSubscriptionTitleText(), testDataWeb.getSubscriptionsTitle());
+    }
+    @AfterMethod
+    public void reportResult(ITestResult result) throws APIException, IOException {
+        WebFinder.afterMethod(result,testCaseId);
     }
 }

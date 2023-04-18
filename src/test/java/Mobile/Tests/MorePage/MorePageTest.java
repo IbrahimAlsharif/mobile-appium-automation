@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static Base.MobileSetup.MobileSetupTest.clientMobileFinder;
 import static Base.MobileSetup.MobileSetupTest.testDataMobile;
 
 public class MorePageTest {
@@ -22,7 +23,7 @@ public class MorePageTest {
         testCaseId="10290";
         String accessibility = "المزيد\n" +
                 "علامة التبويب 5 من 5";
-       MobileFinder.getByAccessibilityId(accessibility,true).click();
+        clientMobileFinder.getByAccessibilityId(accessibility,true).click();
         assertTrue(MorePage.SignInButtonIsDisplayed());
     }
 
@@ -90,6 +91,7 @@ public class MorePageTest {
     public void TechnicalSupportIsDisplayed(){
         testCaseId="10299";
         MobileSetupTest.androidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getTechnicalSupportButton()+"\"))");
+        MobileSetupTest.clientAndroidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getTechnicalSupportButton()+"\"))");
         assertTrue(MorePage.TechnicalSupportIsDisplayed());
     }
     @Test(priority = 15)
