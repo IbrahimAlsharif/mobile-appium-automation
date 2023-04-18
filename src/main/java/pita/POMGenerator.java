@@ -3,14 +3,19 @@ package pita;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class POMGenerator {
 
     public static void main(String[] args) {
-        Map<String, String> elements = new HashMap<>();
-        elements.put("notificationButton", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[1]");
-        elements.put("famcareLogo", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[2]");
-        elements.put("availabilitySwitcher", "//android.view.View[@content-desc=\"غير متاح\"]");
+        Map<String, String> elements = readElementMappingsFromFile("element_mappings.txt");
+//        Map<String, String> elements = new HashMap<>();
+//        elements.put("notificationButton", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[1]");
+//        elements.put("famcareLogo", "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[2]");
+//        elements.put("availabilitySwitcher", "//android.view.View[@content-desc=\"غير متاح\"]");
+
 
         String pomCode = generatePOMMethods("HomeScreen", elements);
         System.out.println(pomCode);
@@ -112,6 +117,23 @@ public class POMGenerator {
         code.append("}");
 
         return code.toString();
+    }
+    public static Map<String, String> readElementMappingsFromFile(String filePath) {
+        Map<String, String> elements = new HashMap<>();
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",", 2);
+                if (parts.length == 2) {
+                    elements.put(parts[0].trim(), parts[1].trim());
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return elements;
     }
 }
 
