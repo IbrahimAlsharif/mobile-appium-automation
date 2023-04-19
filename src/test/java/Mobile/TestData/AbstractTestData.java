@@ -82,6 +82,15 @@ String getDetailsMeetingText();
     String getPasswordEncryption();
     String getAccountSettingText();
     String getSubscriptionsAndPackages();
+    String getSessionWithSpecialist();
+    String getBronzeSubscriptionText();
+    String getSilverSubscription();
+    String getGoldSubscription();
+    String getThreeMonthsSubscription();
+    String getSubscribeButton();
+
+
+
 
 
 

@@ -19,6 +19,7 @@
             <class name="Mobile.Tests.Auth.LoginTest"/>
             <class name="Mobile.Tests.HomePage.HomePageTest"></class>
             <class name="Mobile.Tests.AllSpecialists.PsychologistTest"/>
+            <class name="Mobile.Tests.Subscriptions.SubscriptionsAndPackagesTest"/>
 
             <!--            <class name="Mobile.Tests.MyConversations.MyConversationsTest"></class>-->
 <!--            <class name="Mobile.Tests.SupportGroup.SupportGroupsTest"></class>-->

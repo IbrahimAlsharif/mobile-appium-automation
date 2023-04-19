@@ -342,7 +342,33 @@ public class ArabicStagingTestData implements AbstractTestData {
                 "صوتية\n" +
                 "مرئية";
     }
-
+    @Override
+    public String getSessionWithSpecialist() {
+        return "جلسة مع أخصائي أو طبيب\n30 دقيقة للجلسة";
+    }
+    @Override
+    public String getBronzeSubscriptionText() {
+        return "115.00 SR\n" +
+                "شهريا\n" +
+                "الاشتراك البرونزي\n" +
+                "جلسة كل شهر  ( 30 دقيقة )";
+    }
+    @Override
+    public String getSilverSubscription() {
+        return "230.00 SR\nشهريا\nالاشتراك الفضي\nجلستان كل شهر( 30 دقيقة )";
+    }
+    @Override
+    public String getGoldSubscription() {
+        return "460.00 SR شهريا الاشتراك الذهبي أربع جلسات كل شهر ( 30 دقيقة )";
+    }
+    @Override
+    public String getThreeMonthsSubscription() {
+        return "اشتراك 3 شهور\nتوفير 33%\nعدد لا نهائي من جلسات الدعم\n230.00 SR";
+    }
+    @Override
+    public String getSubscribeButton() {
+        return "اشترك الآن";
+    }
 }
 
 

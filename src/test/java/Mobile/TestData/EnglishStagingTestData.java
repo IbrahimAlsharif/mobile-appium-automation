@@ -317,4 +317,28 @@ public class EnglishStagingTestData implements AbstractTestData {
     public String getSubscriptionsAndPackages() {
         return null;
     }
+    @Override
+    public String getSessionWithSpecialist() {
+        return null;
+    }
+    @Override
+    public String getBronzeSubscriptionText() {
+        return null;
+    }
+    @Override
+    public String getSilverSubscription() {
+        return null;
+    }
+    @Override
+    public String getGoldSubscription() {
+        return null;
+    }
+    @Override
+    public String getThreeMonthsSubscription() {
+        return null;
+    }
+    @Override
+    public String getSubscribeButton() {
+        return null;
+    }
 }

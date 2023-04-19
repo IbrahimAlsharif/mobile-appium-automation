@@ -62,13 +62,13 @@ public class LoginTest {
         testCaseId="2929";
        Login.ClickOnPasswordField();
         Login.InputOnPasswordField(testDataMobile.getPasswordOnLoginPage());
-       Assert.assertEquals(Login.getPasswordField().getText(),testDataMobile.getPasswordEncryption());
+       Assert.assertEquals(Login.getPasswordField().getText(),testDataMobile.getPasswordOnLoginPage());
     }
     @Test(priority =8)
     public void ClickOnLoginButtonNavigteToMorePage() {
         testCaseId="2930";
         Login.ClickOnLogInButton();
-       // assertTrue(Login.welcomeMessageIsDisplayed());
+        assertTrue(Login.welcomeMessageIsDisplayed());
         assertTrue(Login.UserNameIsDisplayed());
     }
     @AfterMethod
