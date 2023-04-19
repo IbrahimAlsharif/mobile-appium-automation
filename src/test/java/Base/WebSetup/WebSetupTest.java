@@ -31,16 +31,15 @@ public class WebSetupTest {
 
     public static Map<String, Object> vars;
     public static String testrailReport;
-
     @Test(priority = 1)
-    @Parameters({"language", "branch", "browser", "url", "testrailReport"})
+    @Parameters({"language", "branch", "browser", "url","testrailReport"})
     public void setUp(String language, String branch, String browser, String url, String testrailReport) throws APIException, IOException {
         this.testrailReport=testrailReport;
         initializeWebDriver(browser, url);
         initializeTestData(language, branch);
-        if(testrailReport.equalsIgnoreCase("true")) {
-            TestRailManager testRailManager = new TestRailManager();
-            WebFinder.testRunId = testRailManager.createTestRun("Famcare Web", 7);
+        if (testrailReport.equalsIgnoreCase("true")){
+        TestRailManager testRailManager = new TestRailManager();
+        WebFinder.testRunId = testRailManager.createTestRun("Famcare Web",7);
         }
         Assert.assertTrue(true);
     }
@@ -49,10 +48,10 @@ public class WebSetupTest {
     private void initializeWebDriver(String browser, String url) {
         if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
-            webDriver = new ChromeDriver(new BrowserOptions().getChromeOptions(false, true));
+            webDriver = new ChromeDriver(new BrowserOptions().getChromeOptions(false,true));
         } else {
             WebDriverManager.firefoxdriver().setup();
-            webDriver = new FirefoxDriver(new BrowserOptions().getFirefixOptions(false, true));
+            webDriver = new FirefoxDriver(new BrowserOptions().getFirefixOptions(false,true));
         }
         wait = new WebDriverWait(webDriver, 60);
         javascriptExecutor = (JavascriptExecutor) webDriver;
@@ -65,9 +64,9 @@ public class WebSetupTest {
 
     private void initializeTestData(String language, String branch) {
         if (language.equalsIgnoreCase("Arabic") && branch.equalsIgnoreCase("Production")) {
-            testDataWeb = new ArabicProductionTestDataWeb();
+            testDataWeb =  new ArabicProductionTestDataWeb();
         } else if (language.equalsIgnoreCase("Arabic") && branch.equalsIgnoreCase("Staging")) {
-            //
+           //
         } else if (language.equalsIgnoreCase("English") && branch.equalsIgnoreCase("Staging")) {
             //
         } else {

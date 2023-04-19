@@ -9,6 +9,7 @@
         <parameter name="testrailReport" value="true"/>
 
         <parameter name="app" value="client"/>
+        <parameter name="testrailReport" value="false"/>
         <classes>
             <class name="Base.MobileSetup.MobileSetupTest"/>
             <class name="Mobile.Tests.Language.LanguageChooseTest"/>
