@@ -9,7 +9,7 @@ import static Base.WebSetup.WebSetupTest.*;
 
 public class SubscriptionPage {
     public static WebElement getSubscriptionTitle() {
-        String xpath = "/html/body/div[1]/div/h5";
+        String xpath = "//H5[@class='text-center text-white mb-3 font-weight-normal'][text()='"+testDataWeb.getSubscriptionsTitle()+"']";
         return WebFinder.getByXpath(xpath, false);
     }
 
@@ -257,6 +257,6 @@ public class SubscriptionPage {
     }
 
     public static void switchToFrame(String frame) {
-        webDriver.switchTo().frame(webDriver.findElement(By.tagName(frame)));
+        WebFinder.switchToFrame(frame);
     }
 }
