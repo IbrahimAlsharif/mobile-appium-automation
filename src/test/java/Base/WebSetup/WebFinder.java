@@ -329,4 +329,8 @@ public  class WebFinder {
     public static void putWindow(String tag){
         vars.put(tag, webDriver.getWindowHandle());
     }
+
+    public static void switchToFrame(String frame) {
+        webDriver.switchTo().frame(webDriver.findElement(By.tagName(frame)));
+    }
 }

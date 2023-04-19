@@ -257,6 +257,6 @@ public class SubscriptionPage {
     }
 
     public static void switchToFrame(String frame) {
-        webDriver.switchTo().frame(webDriver.findElement(By.tagName(frame)));
+        WebFinder.switchToFrame(frame);
     }
 }
