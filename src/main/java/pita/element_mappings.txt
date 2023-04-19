@@ -1,3 +1,6 @@
-usernameLabelText,/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[1],false
-passwordLabelText,/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[2],true
-passwordLabelTextt,/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[2],true
+#in this Class you must Add the Details of the Elements with this Structure:
+#Methode Name,Locator(xpath, AccessibilityID),IsClickable,HasTestData,ProductionArabicValue,ProductionEnglishValue,StagingArabicValue,StagingEnglishValue
+
+usernameLabelText,/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[1],false,false,PA,PE,SA,SE
+
+passwordLabelText,/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.widget.ImageView[2],true,true,PA,PE,SA,SE
