@@ -27,7 +27,7 @@ public  class MobileFinder {
     public static Faker faker = new Faker();
     private static Shot shot;
     private static final TestRailManager testRail= new TestRailManager();
-    public static String testRunId;
+    private static String testRunId;
     public static AndroidDriver androidDriver;
 
     public MobileFinder(AndroidDriver androidDriver){
