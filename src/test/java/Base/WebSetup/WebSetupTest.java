@@ -51,7 +51,7 @@ public class WebSetupTest {
             webDriver = new ChromeDriver(new BrowserOptions().getChromeOptions(true,true));
         } else {
             WebDriverManager.firefoxdriver().setup();
-            webDriver = new FirefoxDriver(new BrowserOptions().getFirefixOptions(false,true));
+            webDriver = new FirefoxDriver(new BrowserOptions().getFirefixOptions(true,true));
         }
         wait = new WebDriverWait(webDriver, 60);
         javascriptExecutor = (JavascriptExecutor) webDriver;

@@ -6,6 +6,7 @@
         <parameter name="browser" value="chrome"/>
         <parameter name="branch" value="Production"/>
         <parameter name="testrailReport" value="false"/>
+        <parameter name="app" value="web"/>
         <classes>
             <class name="Base.WebSetup.WebSetupTest"/>
             <class name="Web.Tests.HomePage.HomePageTest"/>
