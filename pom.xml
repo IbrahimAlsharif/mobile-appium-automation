@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>pita</groupId>
-    <artifactId>raselWeb</artifactId>
+    <groupId>WEWILL</groupId>
+    <artifactId>Famcare</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
         <java.version>11</java.version>
@@ -145,6 +145,8 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <suiteXmlFile>web_testng.xml</suiteXmlFile>
+                        <suiteXmlFile>mobile_testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <properties> <property>
                         <name>usedefaultlisteners</name>
