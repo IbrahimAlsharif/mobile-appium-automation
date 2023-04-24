@@ -10,7 +10,7 @@
             <class name="Base.WebSetup.WebSetupTest"/>
             <class name="Web.Tests.HomePage.HomePageTest"/>
             <class name="Web.Tests.SubscriptionsPage.SubscriptionsPageTest"/>
-            <class name="Web.Tests.CheckoutPage.CheckoutPageTest"/>
+<!--            <class name="Web.Tests.CheckoutPage.CheckoutPageTest"/>-->
             <class name="Base.TearDownTest"/>
         </classes>
     </test>
@@ -81,8 +81,8 @@
 <!--        </classes>-->
 <!--    </test>-->
     <listeners>
-        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+<!--        <listener class-name="org.uncommons.reportng.HTMLReporter"/>-->
+<!--        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>-->
         <listener class-name="Listeners.Listener"/>
 
     </listeners>

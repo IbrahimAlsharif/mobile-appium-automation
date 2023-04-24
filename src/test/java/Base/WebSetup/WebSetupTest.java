@@ -48,7 +48,7 @@ public class WebSetupTest {
     private void initializeWebDriver(String browser, String url) {
         if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
-            webDriver = new ChromeDriver(new BrowserOptions().getChromeOptions(false,true));
+            webDriver = new ChromeDriver(new BrowserOptions().getChromeOptions(true,true));
         } else {
             WebDriverManager.firefoxdriver().setup();
             webDriver = new FirefoxDriver(new BrowserOptions().getFirefixOptions(false,true));
