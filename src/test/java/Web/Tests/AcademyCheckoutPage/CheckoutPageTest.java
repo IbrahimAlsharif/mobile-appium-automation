@@ -1,4 +1,5 @@
 package Web.Tests.AcademyCheckoutPage;
+// -*- coding: utf-8 -*-
 
 import Base.WebSetup.WebFinder;
 import TestRail.APIException;

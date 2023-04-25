@@ -58,6 +58,7 @@ public class MobileSetupTest {
                 serviceProviderMobileFinder.setTestRunId(testRailManager.createTestRun("Famcare Mobile", 2));
             }
         }
+        printParamters( language,  appPath,  branch,  deviceName, appiumPort,  app,  testrailReport);
         assertTrue(true);
     }
 
@@ -104,5 +105,19 @@ public class MobileSetupTest {
             testDataMobile = new EnglishProductionTestData();
             testDataMobileSpecialist = new EnglishProductionTestDataSpecialist();
         }
+    }
+    private void printParamters(String language, String appPath, String branch, String deviceName,String appiumPort, String app, String testrailReport){
+        System.out.println(language);
+        System.out.println(appPath);
+        System.out.println(branch);
+        System.out.println(deviceName);
+        System.out.println(appiumPort);
+        System.out.println(app);
+        System.out.println(testrailReport);
+        if (app.equalsIgnoreCase("client"))
+        System.out.println("clientAndroidDriver "+clientAndroidDriver.getConnection());
+        else
+        System.out.println("serviceProviderAndroidDriver "+serviceProviderAndroidDriver.getConnection());
+        System.out.println("--------------------");
     }
 }

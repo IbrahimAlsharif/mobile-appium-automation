@@ -1,48 +1,51 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Arabic language Testing Suite" parallel="tests">
-    <test name="Subscriptions flow" parallel="false">
+<suite name="Arabic language Testing Suite" parallel="false">
+<!--    <test name="Subscriptions flow" parallel="false">-->
+<!--        <parameter name="url" value="https://famcare.app/"/>-->
+<!--        <parameter name="language" value="Arabic"/>-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <parameter name="branch" value="Production"/>-->
+<!--        <parameter name="testrailReport" value="false"/>-->
+<!--        <parameter name="app" value="web"/>-->
+<!--        <classes>-->
+<!--            <class name="Base.WebSetup.WebSetupTest"/>-->
+<!--            <class name="Web.Tests.HomePage.HomePageTest"/>-->
+<!--            <class name="Web.Tests.SubscriptionsPage.SubscriptionsPageTest"/>-->
+<!--&lt;!&ndash;            <class name="Web.Tests.CheckoutPage.CheckoutPageTest"/>&ndash;&gt;-->
+<!--            <class name="Base.TearDownTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="Courses Flow" parallel="false">
         <parameter name="url" value="https://famcare.app/"/>
         <parameter name="language" value="Arabic"/>
         <parameter name="browser" value="chrome"/>
         <parameter name="branch" value="Production"/>
-        <parameter name="testrailReport" value="false"/>
+        <parameter name="testrailReport" value="true"/>
         <classes>
             <class name="Base.WebSetup.WebSetupTest"/>
-            <class name="Web.Tests.HomePage.HomePageTest"/>
-            <class name="Web.Tests.SubscriptionsPage.SubscriptionsPageTest"/>
-            <class name="Web.Tests.CheckoutPage.CheckoutPageTest"/>
+            <class name="Web.Tests.AcademyPage.AcademyPageTest"/>
+            <class name="Web.Tests.CoursesPage.CoursesPageTest"/>
+            <class name="Web.Tests.CourseDetailsPage.CourseDetailsPageTest"/>
+            <class name="Web.Tests.StorePage.StorePageTest"/>
+            <class name="Web.Tests.CartPage.CartPageTest"/>
+            <class name="Web.Tests.AcademyCheckoutPage.CheckoutPageTest"/>
             <class name="Base.TearDownTest"/>
         </classes>
     </test>
-<!--    <test name="Courses Flow" parallel="false">-->
-<!--        <parameter name="url" value="https://famcare.app/"/>-->
-<!--        <parameter name="language" value="Arabic"/>-->
-<!--        <parameter name="browser" value="chrome"/>-->
-<!--        <parameter name="branch" value="Production"/>-->
-<!--        <parameter name="testrailReport" value="true"/>-->
-<!--        <classes>-->
-<!--            <class name="Base.WebSetup.WebSetupTest"/>-->
-<!--            <class name="Web.Tests.AcademyPage.AcademyPageTest"/>-->
-<!--            <class name="Web.Tests.CoursesPage.CoursesPageTest"/>-->
-<!--            <class name="Web.Tests.CourseDetailsPage.CourseDetailsPageTest"/>-->
-<!--            <class name="Web.Tests.StorePage.StorePageTest"/>-->
-<!--            <class name="Web.Tests.CartPage.CartPageTest"/>-->
-<!--            <class name="Web.Tests.AcademyCheckoutPage.CheckoutPageTest"/>-->
-<!--            <class name="Base.TearDownTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="Blog Flow" parallel="false">-->
-<!--        <parameter name="url" value="https://famcare.app/"/>-->
-<!--        <parameter name="language" value="Arabic"/>-->
-<!--        <parameter name="browser" value="chrome"/>-->
-<!--        <parameter name="branch" value="Production"/>-->
-<!--        <parameter name="testrailReport" value="true"/>-->
-<!--        <classes>-->
-<!--            <class name="Base.WebSetup.WebSetupTest"/>-->
-<!--            <class name="Web.Tests.BlogPage.BlogPageTest"/>-->
-<!--            <class name="Base.TearDownTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+
+    <test name="Blog Flow" parallel="false">
+        <parameter name="url" value="https://famcare.app/"/>
+        <parameter name="language" value="Arabic"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="branch" value="Production"/>
+        <parameter name="testrailReport" value="true"/>
+        <classes>
+            <class name="Base.WebSetup.WebSetupTest"/>
+            <class name="Web.Tests.BlogPage.BlogPageTest"/>
+            <class name="Base.TearDownTest"/>
+        </classes>
+    </test>
 <!--    <test name="Join As Specialist Flow" parallel="false">-->
 <!--        <parameter name="url" value="https://famcare.app/"/>-->
 <!--        <parameter name="language" value="Arabic"/>-->
@@ -81,8 +84,8 @@
 <!--        </classes>-->
 <!--    </test>-->
     <listeners>
-        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+<!--        <listener class-name="org.uncommons.reportng.HTMLReporter"/>-->
+<!--        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>-->
         <listener class-name="Listeners.Listener"/>
 
     </listeners>

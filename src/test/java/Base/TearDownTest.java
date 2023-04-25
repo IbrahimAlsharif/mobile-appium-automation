@@ -1,7 +1,9 @@
 package Base;
 
 import Listeners.Listener;
+import io.appium.java_client.android.AndroidDriver;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import static Base.MobileSetup.MobileSetupTest.clientAndroidDriver;
 import static Base.MobileSetup.MobileSetupTest.serviceProviderAndroidDriver;
@@ -11,11 +13,12 @@ import static Base.WebSetup.WebSetupTest.webDriver;
 public class TearDownTest
 {
     @Test
-    public void tearDown(){
+    @Parameters("app")
+    public void tearDown(String app){
         if (webDriver!= null) webDriver.quit();
         else {
-            if (clientAndroidDriver != null) clientAndroidDriver.quit();
-            if (serviceProviderAndroidDriver != null) serviceProviderAndroidDriver.quit();
+            if (app.equalsIgnoreCase("client")) clientAndroidDriver.quit();
+            else serviceProviderAndroidDriver.quit();
     }
     }
 }

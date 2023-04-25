@@ -4,14 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>pita</groupId>
-    <artifactId>raselWeb</artifactId>
+    <groupId>WEWILL</groupId>
+    <artifactId>Famcare</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
         <java.version>11</java.version>
         <maven.compiler.release>11</maven.compiler.release>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
     </properties>
 
     <dependencies>
@@ -50,11 +51,6 @@
             <version>1.0.2</version>
         </dependency>
         <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.3.0</version>
-        </dependency>
-        <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
             <version>3.141.59</version>
@@ -78,7 +74,11 @@
             <artifactId>guice</artifactId>
             <version>4.2.3</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.9.0</version>
+        </dependency>
         <dependency>
             <groupId>com.codepine.api</groupId>
             <artifactId>testrail-api-java-client</artifactId>
@@ -94,18 +94,6 @@
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
             <version>1.1</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.3.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.6.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -138,21 +126,45 @@
     </dependencies>
     <build>
         <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
+            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <source>10</source>-->
+<!--                    <target>10</target>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <suiteXmlFile>web_testng.xml</suiteXmlFile>
+                        <!--                        <suiteXmlFile>mobile_testng.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
-                    <properties> <property>
-                        <name>usedefaultlisteners</name>
-                        <value>true</value>
-                    </property>
+                    <properties>
+
+                        <property>
+                            <name>usedefaultlisteners</name>
+                            <value>true</value>
+                        </property>
                         <property>
                             <name>listener</name>
-                        </property> </properties>
+                        </property>
+
+                        <properties>
+                            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                        </properties>
+                    </properties>
+
                 </configuration>
             </plugin>
         </plugins>
