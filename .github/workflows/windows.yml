@@ -9,8 +9,8 @@
 name: Web flow 1
 
 on:
-#  push:
-#    branches: [ "main" ]
+  push:
+   branches: [ "main" ]
   schedule:
     - cron: '00 5 * * *'
 

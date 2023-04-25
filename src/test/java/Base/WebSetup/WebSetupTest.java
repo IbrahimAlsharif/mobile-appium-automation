@@ -55,7 +55,6 @@ public class WebSetupTest {
         }
         wait = new WebDriverWait(webDriver, 60);
         javascriptExecutor = (JavascriptExecutor) webDriver;
-        vars = new HashMap<String, Object>();
         webDriver.get(url);
 
         webDriver.manage().window().setSize(new Dimension(390, 844));
