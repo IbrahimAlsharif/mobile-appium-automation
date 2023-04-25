@@ -102,6 +102,8 @@ String getDetailsMeetingText();
     String getPaymentMethodSelection();
     String getPaymentByTabbyButton();
     String getCouponText();
+    String getCheckButton();
+    String getCompletedButton();
 
 
 

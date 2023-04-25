@@ -432,7 +432,7 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
 
     @Override
     public String getCouponWithPrice() {
-        return null;
+        return "200.00 SR";
     }
 
     @Override
@@ -442,17 +442,19 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
 
     @Override
     public String getCouponWithDiscount() {
-        return null;
+        return "200.00 SR";
     }
 
     @Override
     public String getCouponWithoutVATCollected() {
+
         return "30.00 SR";
     }
 
     @Override
     public String getCouponWithVATCollected() {
-        return null;
+
+        return "0.00 SR";
     }
 
     @Override
@@ -462,7 +464,7 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
 
     @Override
     public String getCouponWithTotalAfterVAT() {
-        return null;
+        return "0.00 SR";
     }
 
     @Override
@@ -483,5 +485,15 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     @Override
     public String getCouponText() {
         return "qa5o5qa100";
+    }
+
+    @Override
+    public String getCheckButton() {
+        return "اضافة";
+    }
+
+    @Override
+    public String getCompletedButton() {
+        return "استكمال";
     }
 }

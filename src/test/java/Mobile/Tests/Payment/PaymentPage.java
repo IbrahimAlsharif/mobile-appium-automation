@@ -136,4 +136,61 @@ public class PaymentPage {
     }
 
 
+    public static MobileElement getCheckButton() {
+
+        String xpath = "//android.view.View[@content-desc=\"" + testDataMobile.getCheckButton() + "\"]";
+        return MobileFinder.getByXpath(xpath, true);
+    }
+
+    public static boolean CheckButtonIsDisplayed() {
+        return getCheckButton().isDisplayed();
+    }
+    public  static  void  clickOnCheckButton(){
+        getCheckButton().click();
+    }
+
+    public static MobileElement getCompletedButton() {
+        String xpath = "//android.widget.Button[@content-desc=\"" + testDataMobile.getCompletedButton() + "\"]";
+        return MobileFinder.getByXpath(xpath, true);
+    }
+
+    public static boolean CompletedButtonIsDisplayed() {
+        return getCompletedButton().isDisplayed();
+    }
+    public  static  void  clickOnCompletedButton(){
+        getCompletedButton().click();
+    }
+
+    public static MobileElement getCouponWithPrice() {
+        String xpath = "//android.view.View[@content-desc=\"" + testDataMobile.getCouponWithoutPrice() + "\"]";
+        return MobileFinder.getByXpath(xpath, true);
+    }
+
+    public static boolean CouponWithPriceIsDisplayed() {
+        return getBronzeSubscription().isDisplayed();
+    }
+    public static MobileElement getCouponWithDiscount() {
+        String xpath = "//android.view.View[@content-desc=\"" + testDataMobile.getCouponWithoutDiscount() + "\"]";
+        return MobileFinder.getByXpath(xpath, true);
+    }
+
+    public static boolean CouponWithDiscountIsDisplayed() {
+        return getCouponWithoutDiscount().isDisplayed();
+    }
+    public static MobileElement getCouponWithVATCollected() {
+        String xpath = "//android.view.View[@content-desc=\"" + testDataMobile.getCouponWithoutVATCollected() + "\"]";
+        return MobileFinder.getByXpath(xpath, true);
+    }
+
+    public static boolean CouponWithVATCollectedIsDisplayed() {
+        return getCouponWithoutDiscount().isDisplayed();
+    }
+    public static MobileElement getCouponWithTotalAfterVAT() {
+        String xpath = "//android.view.View[@content-desc=\"" + testDataMobile.getCouponWithoutTotalAfterVAT() + "\"]";
+        return MobileFinder.getByXpath(xpath, true);
+    }
+    public static boolean CouponWithTotalAfterVATIsDisplayed() {
+        return getCouponWithoutTotalAfterVAT().isDisplayed();
+    }
+
 }
