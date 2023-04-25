@@ -1,4 +1,5 @@
 package Web.TestData;
+// -*- coding: utf-8 -*-
 
 public class ArabicProductionTestDataWeb implements AbstractTestData {
 
