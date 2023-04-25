@@ -12,6 +12,7 @@
         <maven.compiler.release>11</maven.compiler.release>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
     </properties>
 
     <dependencies>
@@ -73,7 +74,11 @@
             <artifactId>guice</artifactId>
             <version>4.2.3</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.9.0</version>
+        </dependency>
         <dependency>
             <groupId>com.codepine.api</groupId>
             <artifactId>testrail-api-java-client</artifactId>
@@ -121,6 +126,21 @@
     </dependencies>
     <build>
         <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
+            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <source>10</source>-->
+<!--                    <target>10</target>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -128,15 +148,23 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>web_testng.xml</suiteXmlFile>
-<!--                        <suiteXmlFile>mobile_testng.xml</suiteXmlFile>-->
+                        <!--                        <suiteXmlFile>mobile_testng.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
-                    <properties> <property>
-                        <name>usedefaultlisteners</name>
-                        <value>true</value>
-                    </property>
+                    <properties>
+
+                        <property>
+                            <name>usedefaultlisteners</name>
+                            <value>true</value>
+                        </property>
                         <property>
                             <name>listener</name>
-                        </property> </properties>
+                        </property>
+
+                        <properties>
+                            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                        </properties>
+                    </properties>
+
                 </configuration>
             </plugin>
         </plugins>
