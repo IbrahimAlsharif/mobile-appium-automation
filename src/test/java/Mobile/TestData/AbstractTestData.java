@@ -88,6 +88,23 @@ String getDetailsMeetingText();
     String getGoldSubscription();
     String getThreeMonthsSubscription();
     String getSubscribeButton();
+    String getPaymentButton();
+    String getSubscriptionNameSelect();
+    String getCouponWithoutPrice();
+    String getCouponWithPrice();
+    String getCouponWithoutDiscount();
+    String getCouponWithDiscount();
+ String getCouponWithoutVATCollected();
+    String getCouponWithVATCollected();
+    String getCouponWithoutTotalAfterVAT();
+    String getCouponWithTotalAfterVAT();
+    String   getPayButton();
+    String getPaymentMethodSelection();
+    String getPaymentByTabbyButton();
+    String getCouponText();
+
+
+
 
 
 

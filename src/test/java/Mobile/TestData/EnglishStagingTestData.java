@@ -341,4 +341,68 @@ public class EnglishStagingTestData implements AbstractTestData {
     public String getSubscribeButton() {
         return null;
     }
+    @Override
+    public String getPaymentButton() {
+        return null;
+    }
+    @Override
+    public String getSubscriptionNameSelect() {
+        return  null;
+    }
+    @Override
+    public String getCouponWithoutPrice() {
+        return "200.00 SR";
+    }
+
+    @Override
+    public String getCouponWithPrice() {
+        return null;
+    }
+
+    @Override
+    public String getCouponWithoutDiscount() {
+        return "0.00 SR";
+    }
+
+    @Override
+    public String getCouponWithDiscount() {
+        return null;
+    }
+
+    @Override
+    public String getCouponWithoutVATCollected() {
+        return "30.00 SR";
+    }
+
+    @Override
+    public String getCouponWithVATCollected() {
+        return null;
+    }
+
+    @Override
+    public String getCouponWithoutTotalAfterVAT() {
+        return "230.00 SR";
+    }
+
+    @Override
+    public String getCouponWithTotalAfterVAT() {
+        return null;
+    }
+
+    @Override
+    public String getPayButton() {
+        return null;
+    }
+    @Override
+    public String getPaymentMethodSelection() {
+        return null;
+    }
+    @Override
+    public String getPaymentByTabbyButton() {
+        return null;
+    }
+    @Override
+    public String getCouponText() {
+        return "qa5o5qa100";
+    }
 }

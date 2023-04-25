@@ -2,6 +2,7 @@ package Mobile.Tests.Subscriptions;
 
 import Base.MobileSetup.MobileSetupTest;
 import Mobile.Tests.MorePage.MorePage;
+import Mobile.Tests.Payment.PaymentPage;
 import org.testng.annotations.Test;
 
 import static Base.MobileSetup.MobileSetupTest.testDataMobile;
@@ -37,25 +38,33 @@ public class SubscriptionsAndPackagesTest {
         MobileSetupTest.clientAndroidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getGoldSubscription()+"\"))");
         assertTrue(SubscriptionsAndPackages.goldSubscriptionIsDisplayed());
     }
- @Test(priority = 6)
-     public void paidSupportIsDisplayed() {
+
+    @Test(priority = 6)
+    public void threeMonthsSubscriptionIsDisplayed() {
+        testCaseId = "3";
+        SubscriptionsAndPackages.clickOnBronzeSubscription();
+        SubscriptionsAndPackages.clickOnThreeMonthsSubscription();
+        MobileSetupTest.clientAndroidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getSubscribeButton()+"\"))");
+        assertTrue(SubscriptionsAndPackages.subscribeButtonIsDisplayed());
+
+    }
+    @Test(priority = 7)
+    public void subscribeButtonIsDisplayed() {
+        testCaseId = "3";
+        MobileSetupTest.clientAndroidDriver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().description(\""+testDataMobile.getSubscribeButton()+"\"))");
+
+        assertTrue(SubscriptionsAndPackages.subscribeButtonIsDisplayed());
+    }
+    @Test(priority = 8)
+    public void paidSupportIsDisplayed() {
         testCaseId = "3";
         assertTrue(SubscriptionsAndPackages.paidSupportIsDisplayed());
     }
-    @Test(priority = 7)
-    public void threeMonthsSubscriptionIsDisplayed() {
+    @Test(priority = 9)
+    public void navigateToPaymentPage() {
         testCaseId = "3";
-        assertTrue(SubscriptionsAndPackages.threeMonthsSubscriptionIsDisplayed());
-    }
-    @Test(priority = 8)
-    public void subscribeButtonIsDisplayed() {
-        testCaseId = "3";
-        assertTrue(SubscriptionsAndPackages.subscribeButtonIsDisplayed());
-    }
-    @Test(priority = 8)
-    public void naivagteTo() {
-        testCaseId = "3";
-        assertTrue(SubscriptionsAndPackages.subscribeButtonIsDisplayed());
+        SubscriptionsAndPackages.clickOnSubscribeButton();
+        assertTrue(PaymentPage.paymentButtonIsDisplayed());
     }
 
 

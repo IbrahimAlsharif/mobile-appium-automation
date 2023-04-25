@@ -369,6 +369,72 @@ public class ArabicStagingTestData implements AbstractTestData {
     public String getSubscribeButton() {
         return "اشترك الآن";
     }
+    @Override
+    public String getPaymentButton() {
+        return "الدفع";
+    }
+    @Override
+    public String getSubscriptionNameSelect() {
+        return "الاشتراك البرونزي  ( ربع سنوي)\n" +
+                "صالح لغاية 3 أشهر";
+    }
+
+    @Override
+    public String getCouponWithoutPrice() {
+        return "200.00 SR";
+    }
+
+    @Override
+    public String getCouponWithPrice() {
+        return null;
+    }
+
+    @Override
+    public String getCouponWithoutDiscount() {
+        return "0.00 SR";
+    }
+
+    @Override
+    public String getCouponWithDiscount() {
+        return null;
+    }
+
+    @Override
+    public String getCouponWithoutVATCollected() {
+        return "30.00 SR";
+    }
+
+    @Override
+    public String getCouponWithVATCollected() {
+        return null;
+    }
+
+    @Override
+    public String getCouponWithoutTotalAfterVAT() {
+        return "230.00 SR";
+    }
+
+    @Override
+    public String getCouponWithTotalAfterVAT() {
+        return null;
+    }
+
+    @Override
+    public String getPayButton() {
+        return "دفع";
+    }
+    @Override
+    public String getPaymentMethodSelection() {
+        return "اختر طريقة الدفع";
+    }
+    @Override
+    public String getPaymentByTabbyButton() {
+        return "قسمها على 4 دفعات شهرية بدون رسوم";
+    }
+    @Override
+    public String getCouponText() {
+        return "qa5o5qa100";
+    }
 }
 
 
