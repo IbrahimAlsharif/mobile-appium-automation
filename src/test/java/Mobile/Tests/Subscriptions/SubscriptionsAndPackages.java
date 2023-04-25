@@ -33,7 +33,9 @@ public class SubscriptionsAndPackages {
     public static boolean BronzeSubscriptionIsDisplayed() {
         return getBronzeSubscription().isDisplayed();
     }
-
+    public  static  void  clickOnBronzeSubscription(){
+        getBronzeSubscription().click();
+    }
 
     public static MobileElement getSilverSubscription() {
         String xpath = "//android.view.View[@content-desc=\"" + testDataMobile.getSilverSubscription() + "\"]";
@@ -58,13 +60,22 @@ public class SubscriptionsAndPackages {
         return getPaidSupport().isDisplayed();
     }
     public static MobileElement getThreeMonthsSubscription() {
-        String xpath = "//android.view.View[@content-desc=\"" + testDataMobile.getThreeMonthsSubscription() + "\"]";
+        String xpath = "//android.widget.ImageView[@content-desc=\"" + testDataMobile.getThreeMonthsSubscription() + "\"]";
         return MobileFinder.getByXpath(xpath, true);
     }
 
     public static boolean threeMonthsSubscriptionIsDisplayed() {
         return getThreeMonthsSubscription().isDisplayed();
     }
+    public static MobileElement getThreeMonthsSubscriptionSelectAfter() {
+        String xpath = "//android.view.View[@content-desc=\"" + testDataMobile.getThreeMonthsSubscription() + "\"]";
+        return MobileFinder.getByXpath(xpath, true);
+    }
+
+    public static boolean threeMonthsSubscriptionSelectAfterIsDisplayed() {
+        return getThreeMonthsSubscription().isDisplayed();
+    }
+
 public  static  void  clickOnThreeMonthsSubscription(){
     getThreeMonthsSubscription().click();
 }

@@ -397,14 +397,91 @@ public class ArabicProductionTestDataMobile implements AbstractTestData {
     }
     @Override
     public String getGoldSubscription() {
-        return "460.00 SR شهريا الاشتراك الذهبي أربع جلسات كل شهر ( 30 دقيقة )";
+        return "460.00 SR\n" +
+                "شهريا\n" +
+                "الاشتراك الذهبي\n" +
+                "أربع جلسات كل شهر ( 30 دقيقة )";
     }
     @Override
     public String getThreeMonthsSubscription() {
-        return "اشتراك 3 شهور\nتوفير 33%\nعدد لا نهائي من جلسات الدعم\n230.00 SR";
+        return "اشتراك 3 شهور\n" +
+                "توفير 33%\n" +
+                "عدد لا نهائي من جلسات الدعم\n" +
+                "230.00 SR";
     }
     @Override
     public String getSubscribeButton() {
         return "اشترك الآن";
+    }
+
+    @Override
+    public String getPaymentButton() {
+        return "الدفع";
+    }
+
+    @Override
+    public String getSubscriptionNameSelect() {
+        return "الاشتراك البرونزي  ( ربع سنوي)\n" +
+                "صالح لغاية 3 أشهر";
+    }
+
+    @Override
+    public String getCouponWithoutPrice() {
+        return "200.00 SR";
+    }
+
+    @Override
+    public String getCouponWithPrice() {
+        return null;
+    }
+
+    @Override
+    public String getCouponWithoutDiscount() {
+        return "0.00 SR";
+    }
+
+    @Override
+    public String getCouponWithDiscount() {
+        return null;
+    }
+
+    @Override
+    public String getCouponWithoutVATCollected() {
+        return "30.00 SR";
+    }
+
+    @Override
+    public String getCouponWithVATCollected() {
+        return null;
+    }
+
+    @Override
+    public String getCouponWithoutTotalAfterVAT() {
+        return "230.00 SR";
+    }
+
+    @Override
+    public String getCouponWithTotalAfterVAT() {
+        return null;
+    }
+
+    @Override
+    public String getPayButton() {
+        return "دفع";
+    }
+
+    @Override
+    public String getPaymentMethodSelection() {
+        return "اختر طريقة الدفع";
+    }
+
+    @Override
+    public String getPaymentByTabbyButton() {
+        return "قسمها على 4 دفعات شهرية بدون رسوم";
+    }
+
+    @Override
+    public String getCouponText() {
+        return "qa5o5qa100";
     }
 }
