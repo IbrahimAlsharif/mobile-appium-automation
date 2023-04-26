@@ -82,7 +82,7 @@ public class PaymentPage {
         return getCouponWithoutTotalAfterVAT().isDisplayed();
     }
     public static MobileElement getPayButton() {
-        String xpath = "//android.view.View[@content-desc=\"" + testDataMobile.getPayButton() + "\"]";
+        String xpath = "//android.widget.Button[@content-desc=\"" + testDataMobile.getPayButton() + "\"]";
         return MobileFinder.getByXpath(xpath, true);
     }
 
@@ -133,6 +133,14 @@ public class PaymentPage {
 
     public static boolean PaymentByTabbyIsDisplayed() {
         return getPaymentByTabbyButton().isDisplayed();
+    }
+
+    public static MobileElement getBottomSheetHide() {
+        String xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View\n";
+        return MobileFinder.getByXpath(xpath, true);
+    }
+    public  static  void  clickOnBottomSheetHide(){
+        getBottomSheetHide().click();
     }
 
 

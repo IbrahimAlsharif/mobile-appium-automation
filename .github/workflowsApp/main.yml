@@ -1,9 +1,9 @@
 name: Appium CI
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:
 jobs:
   ui-tests:
@@ -33,3 +33,5 @@ jobs:
           arch: x86_64
           profile: Nexus 6
           script: mvn test # running the tests
+           - name: Run Web flow 1 tests
+              run: mvn clean test -Dsurefire.suiteXmlFiles=mobile_testng.xml -Dfile.encoding=UTF-8

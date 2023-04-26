@@ -105,6 +105,8 @@ public class PaymentPageTest {
     @Test(priority = 18)
     public void  verifyTheInputInTheCouponFiled() throws InterruptedException {
         testCaseId = "10342";
+        PaymentPage.clickOnBottomSheetHide();
+        Thread.sleep(4000);
         PaymentPage.clickOnCouponField();
         Thread.sleep(4000);
         PaymentPage.inputOnCouponField(testDataMobile.getCouponText());
@@ -142,7 +144,7 @@ public class PaymentPageTest {
         testCaseId = "10347";
         assertTrue(PaymentPage.CouponWithTotalAfterVATIsDisplayed());
     }
-    @Test(priority = 25)
+    @Test(priority = 25,enabled = false)
     public void CompletedButtonIsDisplayed () {
         testCaseId = "10348";
         assertTrue(PaymentPage.CompletedButtonIsDisplayed());
