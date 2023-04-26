@@ -109,12 +109,44 @@ public class PaymentPageTest {
         Thread.sleep(4000);
         PaymentPage.inputOnCouponField(testDataMobile.getCouponText());
         Assert.assertEquals(PaymentPage.getCouponField().getText(), testDataMobile.getCouponText());
-
-
-
-
+    }
+    @Test(priority = 19)
+    public void  VerifyTheExistenceOfCheckButton() {
+        testCaseId = "2789";
+        assertTrue(PaymentPage.CheckButtonIsDisplayed());
+    }
+    @Test(priority = 20)
+    public void   verifyThatDiscountActivation() {
+        testCaseId = "10343";
+       PaymentPage.clickOnCheckButton();
+        assertTrue(PaymentPage.CompletedButtonIsDisplayed());
     }
 
+    @Test(priority = 21)
+    public void VerifyTheCouponWithPriceIsCorrect () {
+        testCaseId = "10344";
+        assertTrue(PaymentPage.CouponWithPriceIsDisplayed());
+    }
+    @Test(priority = 22)
+    public void VerifyTheCouponWithDiscountIsCorrect () {
+        testCaseId = "10345";
+        assertTrue(PaymentPage.CouponWithDiscountIsDisplayed());
+    }
+    @Test(priority = 23)
+    public void VerifyCouponWithVATCollectedIsCorrect () {
+        testCaseId = "10346";
+        assertTrue(PaymentPage.CouponWithVATCollectedIsDisplayed());
+    }
+    @Test(priority = 24)
+    public void VerifyCouponWithTotalAfterVATIsCorrect () {
+        testCaseId = "10347";
+        assertTrue(PaymentPage.CouponWithTotalAfterVATIsDisplayed());
+    }
+    @Test(priority = 25)
+    public void CompletedButtonIsDisplayed () {
+        testCaseId = "10348";
+        assertTrue(PaymentPage.CompletedButtonIsDisplayed());
+    }
 
 
 }

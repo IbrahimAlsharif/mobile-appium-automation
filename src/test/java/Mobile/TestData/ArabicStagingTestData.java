@@ -435,6 +435,14 @@ public class ArabicStagingTestData implements AbstractTestData {
     public String getCouponText() {
         return "qa5o5qa100";
     }
+    @Override
+    public String getCheckButton() {
+        return "اضافة";
+    }
+    @Override
+    public String getCompletedButton() {
+        return "استكمال";
+    }
 }
 
 

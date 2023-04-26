@@ -405,4 +405,12 @@ public class EnglishStagingTestData implements AbstractTestData {
     public String getCouponText() {
         return "qa5o5qa100";
     }
+    @Override
+    public String getCheckButton() {
+        return null;
+    }
+    @Override
+    public String getCompletedButton() {
+        return null;
+    }
 }
