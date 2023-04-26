@@ -32,5 +32,5 @@ jobs:
           target: ${{ matrix.target }}
           arch: x86_64
           profile: Nexus 6
-          script:mvn clean test -Dsurefire.suiteXmlFiles=mobile_testng.xml
+          script: mvn clean test -Dsurefire.suiteXmlFiles=mobile_testng.xml
 
