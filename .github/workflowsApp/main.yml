@@ -32,4 +32,6 @@ jobs:
           target: ${{ matrix.target }}
           arch: x86_64
           profile: Nexus 6
-          script: mobile_testng.xml # running the tests
+          script: mvn test # running the tests
+           - name: Run Web flow 1 tests
+              run: mvn clean test -Dsurefire.suiteXmlFiles=mobile_testng.xml -Dfile.encoding=UTF-8
