@@ -82,6 +82,10 @@ public class MobileSetupTest {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", deviceName);
         capabilities.setCapability("udid", deviceName);
+        capabilities.setCapability("appium:ignoreHiddenApiPolicyError", "true");
+        capabilities.setCapability("appium:noReset", "true");
+
+
 //        capabilities.setCapability("app_activity", "sa.app.famcare.MainActivity");
 //        capabilities.setCapability("allowTestPackages", "true");
 //        capabilities.setCapability("app_package", "sa.app.famcare");
