@@ -82,18 +82,13 @@ public class MobileSetupTest {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", deviceName);
         capabilities.setCapability("udid", deviceName);
-        capabilities.setCapability("appium:ignoreHiddenApiPolicyError", "true");
-        capabilities.setCapability("appium:noReset", "true");
-
-
 //        capabilities.setCapability("app_activity", "sa.app.famcare.MainActivity");
 //        capabilities.setCapability("allowTestPackages", "true");
 //        capabilities.setCapability("app_package", "sa.app.famcare");
-      //  capabilities.setCapability(MobileCapabilityType.APP, appPath);
-        capabilities.setCapability("app", appPath);
+        capabilities.setCapability(MobileCapabilityType.APP, appPath);
 
-       // File app = new File(appPath);
-       // capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+        File app = new File(appPath);
+        capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
         return capabilities;
     }
 
