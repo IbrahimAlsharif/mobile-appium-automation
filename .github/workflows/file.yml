@@ -1,9 +1,0 @@
-- name: Install Git LFS
-  run: |
-    sudo apt-get install git-lfs
-    git-lfs install
-
-- name: Checkout Large Files
-  run: |
-    git lfs fetch --all
-    git lfs checkout
