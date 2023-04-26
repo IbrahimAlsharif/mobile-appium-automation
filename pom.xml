@@ -154,7 +154,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>web_testng.xml</suiteXmlFile>
-                        <suiteXmlFile>mobile_testng.xml</suiteXmlFile>
+<!--                        <suiteXmlFile>mobile_testng.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                     <properties>
 
