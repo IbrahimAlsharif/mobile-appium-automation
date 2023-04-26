@@ -2,9 +2,9 @@ name: Appium CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -31,4 +31,4 @@ jobs:
           appium &
       - name: Run Appium tests
         run: |
-          mvn test -DtestngXmlFile=mobile_testng.xml -Dgroups="group1,group2"
+          mvn test -DtestngXmlFile=mobile_testng.xml
