@@ -1,9 +1,9 @@
 name: Appium CI
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:
 jobs:
   ui-tests:
@@ -32,4 +32,4 @@ jobs:
           target: ${{ matrix.target }}
           arch: x86_64
           profile: Nexus 6
-          script: mvn test # running the tests
+          script: mobile_testng.xml # running the tests
