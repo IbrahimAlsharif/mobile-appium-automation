@@ -1,4 +1,5 @@
 package Web.Tests.AcademyPage;
+// -*- coding: utf-8 -*-
 
 import Base.WebSetup.WebFinder;
 import org.openqa.selenium.WebElement;
