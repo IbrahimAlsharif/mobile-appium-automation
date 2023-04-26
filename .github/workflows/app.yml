@@ -33,11 +33,6 @@ jobs:
           arch: x86_64
           profile: Nexus 6
           script: mvn clean test -Dsurefire.suiteXmlFiles=mobile_testng.xml
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-        fetch-depth: 0 # Fetch all history for Git LFS
-        lfs: true # Checkout large files with Git LFS
 
 
 
