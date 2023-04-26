@@ -140,10 +140,11 @@ public class ArabicProductionTestDataWeb implements AbstractTestData {
         return "الصحة النفسية";
     }
 
-    public String getValueOfSelectedCategoryOnBlogPage(){
+    public String getValueOfSelectedCategoryOnBlogPage() {
         return "4";
 
     }
+
     public String getSearchResultOnBlogPage() {
         return " تقدير الذات";
     }
@@ -187,90 +188,112 @@ public class ArabicProductionTestDataWeb implements AbstractTestData {
     public String getSuccessMessageText() {
         return "شكراً لك. لقد تم الإرسال بنجاح.";
     }
+
     @Override
     public String getLoginPopUpText() {
         return "الرجاء التسجيل أولاً!";
     }
+
     @Override
     public String getSignInWindowTitleText() {
         return "Use your Google Account";
     }
+
     @Override
     public String getEmail() {
         return "noorkhshwadeh@gmail.com";
     }
+
     @Override
     public String getPassword() {
         return "noorkhaled2023";
     }
+
     @Override
     public String getCheckoutTitleText() {
         return "تفضل بوضع بيانات البطاقة الخاصة بك";
     }
+
     @Override
     public String getCheckoutPackageTitle() {
         return "الاشتراك البرونزي";
     }
+
     @Override
     public String getCheckoutPackageSTitle() {
         return "جلسة كل شهر  ( 30 دقيقة )";
     }
+
     @Override
     public String getPaymentDetailsTitle() {
         return "تفاصيل الدفع";
     }
+
     @Override
     public String getPriceText() {
         return "السعر";
     }
+
     @Override
     public String getDiscountText() {
         return "قيمة الخصم";
     }
+
     @Override
     public String getTaxText() {
         return "الضريبة المضافة";
     }
+
     @Override
     public String getTotalPriceText() {
         return "إجمالي السعر";
     }
+
     @Override
     public String getPriceValue() {
         return "SR 300";
     }
+
     @Override
     public String getDiscountValue() {
         return "SR 0";
     }
+
     @Override
     public String getTaxValue() {
         return "SR 45";
     }
+
     @Override
     public String getTotalPriceValue() {
         return "SR 345";
     }
+
     @Override
     public String getPaymentDataText() {
         return "أدخل بيانات الدفع";
     }
+
     @Override
     public String getCardNumber() {
         return "42424242424242";
     }
+
     @Override
     public String getCardName() {
         return "Noor";
     }
+
     @Override
     public String getCardExpiry() {
         return "0424";
     }
+
     @Override
     public String getCardPIN() {
         return "4242";
     }
+
     @Override
     public String getCouponCode() {
         return "test";
