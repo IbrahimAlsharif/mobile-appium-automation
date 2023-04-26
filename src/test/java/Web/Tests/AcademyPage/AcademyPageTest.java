@@ -22,6 +22,7 @@ public class AcademyPageTest {
         Assert.assertTrue(AcademyPage.NavbarButtonIsDisplayed());
     }
 
+
     @Test(priority = 2)
     public void academyNavbarButtonIsDisplayed() {
         testCaseId = "10129";
