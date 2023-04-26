@@ -166,10 +166,14 @@
                             <name>listener</name>
                         </property>
 
+<!--                        <properties>-->
+<!--                            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+<!--                            <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>-->
+<!--&lt;!&ndash;                            <project.java.version>1.8</project.java.version>&ndash;&gt;-->
+<!--                        </properties>-->
                         <properties>
                             <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
                             <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-                            <project.java.version>1.8</project.java.version>
                         </properties>
                         <dependency>
                             <groupId>io.github.bonigarcia</groupId>
