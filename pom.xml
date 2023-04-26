@@ -153,8 +153,8 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <suiteXmlFiles>
+                        <suiteXmlFile>mobile_testng.xml</suiteXmlFile>
                         <suiteXmlFile>web_testng.xml</suiteXmlFile>
-                        <!--                        <suiteXmlFile>mobile_testng.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                     <properties>
 
@@ -169,8 +169,23 @@
                         <properties>
                             <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
                             <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+                            <project.java.version>1.8</project.java.version>
                         </properties>
+                        <dependency>
+                            <groupId>io.github.bonigarcia</groupId>
+                            <artifactId>webdrivermanager</artifactId>
+                            <version>5.3.0</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>org.slf4j</groupId>
+                            <artifactId>slf4j-simple</artifactId>
+                            <version>1.7.25</version>
+                        </dependency>
 
+                        <properties>
+                            <maven.compiler.source>11</maven.compiler.source>
+                            <maven.compiler.target>11</maven.compiler.target>
+                        </properties>
                     </properties>
 
                 </configuration>
@@ -183,7 +198,10 @@
             <id>jcenter</id>
             <url>https://dl.bintray.com/cbeust/maven/</url>
         </repository>
+
+
     </repositories>
+
 
 
 </project>
