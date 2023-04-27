@@ -10,7 +10,7 @@ name: Mac flow
 
 on:
   push:
-   branches: [ "main" ]
+#   branches: [ "main" ]
   schedule:
     - cron: '00 5 * * *'
 
