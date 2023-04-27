@@ -27,7 +27,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Run tests with TestRunner
-      run: mvn exec:java -Dexec.mainClass="src.test.java.TestRunner"
+      run: mvn exec:java -Dexec.mainClass="test.java.TestRunner"
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
