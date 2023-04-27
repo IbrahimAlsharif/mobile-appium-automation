@@ -147,53 +147,53 @@
 <!--                <version>3.0.0-M5</version>-->
 <!--            </plugin>-->
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
-                <configuration>
-                    <suiteXmlFiles>
-<!--                        <suiteXmlFile>web_testng.xml</suiteXmlFile>-->
-<!--                        <suiteXmlFile>mobile_testng.xml</suiteXmlFile>-->
-                    </suiteXmlFiles>
-                    <properties>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                <version>3.0.0-M5</version>-->
+<!--                <configuration>-->
+<!--                    <suiteXmlFiles>-->
+<!--&lt;!&ndash;                        <suiteXmlFile>web_testng.xml</suiteXmlFile>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <suiteXmlFile>mobile_testng.xml</suiteXmlFile>&ndash;&gt;-->
+<!--                    </suiteXmlFiles>-->
+<!--                    <properties>-->
 
-                        <property>
-                            <name>usedefaultlisteners</name>
-                            <value>true</value>
-                        </property>
-                        <property>
-                            <name>listener</name>
-                        </property>
+<!--                        <property>-->
+<!--                            <name>usedefaultlisteners</name>-->
+<!--                            <value>true</value>-->
+<!--                        </property>-->
+<!--                        <property>-->
+<!--                            <name>listener</name>-->
+<!--                        </property>-->
 
+<!--&lt;!&ndash;                        <properties>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                            <project.java.version>1.8</project.java.version>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                        </properties>&ndash;&gt;-->
 <!--                        <properties>-->
 <!--                            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
 <!--                            <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>-->
-<!--&lt;!&ndash;                            <project.java.version>1.8</project.java.version>&ndash;&gt;-->
 <!--                        </properties>-->
-                        <properties>
-                            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-                            <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-                        </properties>
-                        <dependency>
-                            <groupId>io.github.bonigarcia</groupId>
-                            <artifactId>webdrivermanager</artifactId>
-                            <version>5.3.0</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>org.slf4j</groupId>
-                            <artifactId>slf4j-simple</artifactId>
-                            <version>1.7.25</version>
-                        </dependency>
+<!--                        <dependency>-->
+<!--                            <groupId>io.github.bonigarcia</groupId>-->
+<!--                            <artifactId>webdrivermanager</artifactId>-->
+<!--                            <version>5.3.0</version>-->
+<!--                        </dependency>-->
+<!--                        <dependency>-->
+<!--                            <groupId>org.slf4j</groupId>-->
+<!--                            <artifactId>slf4j-simple</artifactId>-->
+<!--                            <version>1.7.25</version>-->
+<!--                        </dependency>-->
 
-                        <properties>
-                            <maven.compiler.source>11</maven.compiler.source>
-                            <maven.compiler.target>11</maven.compiler.target>
-                        </properties>
-                    </properties>
+<!--                        <properties>-->
+<!--                            <maven.compiler.source>11</maven.compiler.source>-->
+<!--                            <maven.compiler.target>11</maven.compiler.target>-->
+<!--                        </properties>-->
+<!--                    </properties>-->
 
-                </configuration>
-            </plugin>
+<!--                </configuration>-->
+<!--            </plugin>-->
         </plugins>
 
     </build>
