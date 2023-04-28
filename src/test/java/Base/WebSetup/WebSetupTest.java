@@ -32,8 +32,8 @@ public class WebSetupTest {
     public static Map<String, Object> vars;
     public static String testrailReport;
     @Test(priority = 1)
-    @Parameters({"language", "branch", "browser", "url","testrailReport"})
-    public void setUp(String language, String branch, String browser, String url, String testrailReport) throws APIException, IOException {
+    @Parameters({"language", "branch", "browser", "url","testrailReport","app"})
+    public void setUp(String language, String branch, String browser, String url, String testrailReport, String app) throws APIException, IOException {
         this.testrailReport=testrailReport;
         initializeWebDriver(browser, url);
         initializeTestData(language, branch);
