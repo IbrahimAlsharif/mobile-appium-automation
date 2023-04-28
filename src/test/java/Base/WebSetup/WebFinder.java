@@ -15,20 +15,32 @@ import TestRail.TestRailManager;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import static Base.WebSetup.WebSetupTest.*;
 
 
 public  class WebFinder {
 
-    public static Faker faker = new Faker();
-    private static final Shot shot= new Shot(webDriver);
-    private static final TestRailManager testRail= new TestRailManager();
+    public static Faker faker;
+    private static  Shot shot;
+    private static  TestRailManager testRail;
     public static String testRunId;
-    public static  JavascriptExecutor js = (JavascriptExecutor) webDriver;
 
+    private static WebDriver webDriver;
+    private static Map<String, Object> vars;
+    private static JavascriptExecutor javascriptExecutor;
+
+
+    public WebFinder(WebDriver webDriver){
+        this.webDriver= webDriver;
+        faker = new Faker();
+        shot= new Shot(webDriver);
+        testRail= new TestRailManager();
+        javascriptExecutor = (JavascriptExecutor) webDriver;
+
+    }
     public static void click(WebElement element) {
         {
             new Actions(webDriver).click(element).perform();
@@ -52,21 +64,21 @@ public  class WebFinder {
      * Scroll 150 down by javascript
      */
     public static void scrollDown150() {
-        WebSetupTest. javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
+         javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
     }
 
     /**
      * Scroll 50 down by javascript
      */
     public static void scrollDown50() {
-        WebSetupTest. javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
+        javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
     }
 
     /**
      * Scroll 30 down by javascript
      */
     public static void scrollDown30() {
-        WebSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
+        javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
     }
 
     /**
@@ -77,31 +89,31 @@ public  class WebFinder {
     public static void scrollBy(int value) {
         switch (value) {
             case 30:
-                WebSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
+                javascriptExecutor.executeScript("window.scrollBy(0,30)", "");
                 break;
             case 50:
-                WebSetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
+                javascriptExecutor.executeScript("window.scrollBy(0,50)", "");
                 break;
             case 100:
-                WebSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,100)", "");
+               javascriptExecutor.executeScript("window.scrollBy(0,100)", "");
                 break;
             case 150:
-                WebSetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
+                javascriptExecutor.executeScript("window.scrollBy(0,150)", "");
                 break;
             case -30:
-                WebSetupTest.   javascriptExecutor.executeScript("window.scrollBy(0,-30)", "");
+                javascriptExecutor.executeScript("window.scrollBy(0,-30)", "");
                 break;
             case -50:
-                WebSetupTest.    javascriptExecutor.executeScript("window.scrollBy(0,-50)", "");
+                javascriptExecutor.executeScript("window.scrollBy(0,-50)", "");
                 break;
             case -100:
-                WebSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-100)", "");
+                javascriptExecutor.executeScript("window.scrollBy(0,-100)", "");
                 break;
             case -150:
-                WebSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
+                javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
                 break;
             default:
-                WebSetupTest.  javascriptExecutor.executeScript("window.scrollBy(0,-500)", "");
+                javascriptExecutor.executeScript("window.scrollBy(0,-500)", "");
                 break;
 
         }
@@ -112,11 +124,11 @@ public  class WebFinder {
      * Scroll 150 up by java script
      */
     public static void scrollUp150() {
-        WebSetupTest.javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
+        javascriptExecutor.executeScript("window.scrollBy(0,-150)", "");
     }
 
     public static void javascriptExecutor(String s, WebElement usedProductAllMenuItem) {
-        js.executeScript(s, usedProductAllMenuItem);
+        javascriptExecutor.executeScript(s, usedProductAllMenuItem);
     }
 
     public void scrolltoElement(WebElement ScrolltoThisElement) {
@@ -142,10 +154,9 @@ public  class WebFinder {
 
     public static void highlightelement(WebElement element) {
         for (int i = 0; i < 4; i++) {
-            JavascriptExecutor js = (JavascriptExecutor) webDriver;
-            js.executeScript("arguments[0].setAttribute('style', arguments[1]);",
+            javascriptExecutor.executeScript("arguments[0].setAttribute('style', arguments[1]);",
                     element, "color: yellow; border: 4px solid blue;");
-            js.executeScript("arguments[0].setAttribute('style’' arguments[1]);",
+            javascriptExecutor.executeScript("arguments[0].setAttribute('style’' arguments[1]);",
                     element, "");
         }
     }
@@ -156,18 +167,17 @@ public  class WebFinder {
      * @param id
      */
     public static void clickItem(String id) {
-        JavascriptExecutor js = (JavascriptExecutor) webDriver;
 //        System.out.println("id= " + id);
         switch (id) {
             case "payfort_fort":
-                js.executeScript("$('input[id=payfort_fort]').click()");
+                javascriptExecutor.executeScript("$('input[id=payfort_fort]').click()");
                 break;
             case "checkout-button":
-                js.executeScript("$('input[id=checkout-button]').click()");
-                js.executeScript("$('input[id=checkout-button]').click()");
+                javascriptExecutor.executeScript("$('input[id=checkout-button]').click()");
+                javascriptExecutor.executeScript("$('input[id=checkout-button]').click()");
                 break;
             case "cod":
-                js.executeScript("$('input[id=cod]').click()");
+                javascriptExecutor.executeScript("$('input[id=cod]').click()");
                 break;
 
         }
@@ -255,11 +265,11 @@ public  class WebFinder {
         File screenShot;
         if(!result.isSuccess()){
             screenShot = shot.snapError(result.getMethod().getMethodName());
-            if (testrailReport.equalsIgnoreCase("true")){
+            if (WebSetupTest.testrailReport.equalsIgnoreCase("true")){
             testRail.setResult(testRunId,testCaseId, TestRailManager.FAILED,screenShot.getAbsolutePath());
             }
         }else {
-            if (testrailReport.equalsIgnoreCase("true")){
+            if (WebSetupTest.testrailReport.equalsIgnoreCase("true")){
             testRail.setResult(testRunId,testCaseId, TestRailManager.PASSED, null);
             }
         }
@@ -272,26 +282,26 @@ public  class WebFinder {
         if (isClickable) {waitForElementToBeClickableBy(byXpath);}
         return webDriver.findElement(byXpath);
     }
-    public static WebElement getById(String id, boolean isClickable){
+    public  WebElement getById(String id, boolean isClickable){
         By byId= By.id(id);
         waitForElementToBeVisibleBy(byId);
         if (isClickable) {waitForElementToBeClickableBy(byId);}
         return webDriver.findElement(byId);
 
     }
-    public static WebElement getByClassName(String className, boolean isClickable){
+    public  WebElement getByClassName(String className, boolean isClickable){
         By byClassName= By.className(className);
         waitForElementToBeVisibleBy(byClassName);
         if (isClickable) {waitForElementToBeClickableBy(byClassName);}
         return webDriver.findElement(byClassName);
     }
-    public static WebElement getByCssSelector(String cssSelector, boolean isClickable){
+    public  WebElement getByCssSelector(String cssSelector, boolean isClickable){
         By byCssSelector= By.cssSelector(cssSelector);
         waitForElementToBeVisibleBy(byCssSelector);
         if (isClickable) {waitForElementToBeClickableBy(byCssSelector);}
         return webDriver.findElement(byCssSelector);
     }
-    public static WebElement getByAccessibilityId(String AccessibilityId, boolean isClickable){
+    public  WebElement getByAccessibilityId(String AccessibilityId, boolean isClickable){
         By byAccessibilityId= MobileBy.AccessibilityId(AccessibilityId);
         waitForElementToBeVisibleBy(byAccessibilityId);
         if (isClickable) {waitForElementToBeClickableBy(byAccessibilityId);}
