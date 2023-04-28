@@ -7,7 +7,7 @@
         <parameter name="branch" value="Production"/>
         <parameter name="testrailReport" value="true"/>
         <classes>
-<!--            <class name="Base.WebSetup.WebSetupTest"/>-->
+            <class name="Base.WebSetup.WebSetupTest"/>
             <class name="Web.Tests.AcademyPage.AcademyPageTest"/>
             <class name="Web.Tests.CoursesPage.CoursesPageTest"/>
 <!--            <class name="Web.Tests.CourseDetailsPage.CourseDetailsPageTest"/>-->

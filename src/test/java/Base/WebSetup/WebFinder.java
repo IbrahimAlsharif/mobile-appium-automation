@@ -18,7 +18,7 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
+import static Base.WebSetup.WebSetupTest.webDriver;
 
 
 public  class WebFinder {
@@ -28,19 +28,20 @@ public  class WebFinder {
     private static  TestRailManager testRail;
     public static String testRunId;
 
-    private static WebDriver webDriver;
+
+//    private static WebDriver webDriver;
     private static Map<String, Object> vars;
     private static JavascriptExecutor javascriptExecutor;
 
 
-    public WebFinder(WebDriver webDriver){
-        this.webDriver= webDriver;
-        faker = new Faker();
-        shot= new Shot(webDriver);
-        testRail= new TestRailManager();
-        javascriptExecutor = (JavascriptExecutor) webDriver;
-
-    }
+//    public WebFinder(WebDriver webDriver){
+//        this.webDriver= webDriver;
+//        faker = new Faker();
+//        shot= new Shot(webDriver);
+//        testRail= new TestRailManager();
+//        javascriptExecutor = (JavascriptExecutor) webDriver;
+//
+//    }
     public static void click(WebElement element) {
         {
             new Actions(webDriver).click(element).perform();
