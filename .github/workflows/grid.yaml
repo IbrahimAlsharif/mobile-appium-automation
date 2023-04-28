@@ -7,24 +7,23 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    services:
+      selenium:
+        image: selenium/standalone-chrome:4.1.0
+        ports:
+          - 4444:4444
     strategy:
       matrix:
-        os: [macos-latest, windows-latest]
+        os: [mac, windows]
         browser: [chrome, firefox]
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-      
-    - name: Setup JDK
-      uses: actions/setup-java@v2
-      with:
-        java-version: '11'
-    
-    - name: Start Selenium Grid
-      uses: santiycr/selenium-grid-gh-actions@v1.1.1
-      with:
-        browsers: ${{ matrix.browser }}
-        max-sessions: 2
-    
-    - name: Run Selenium Tests
-      run: mvn test -DremoteDriverUrl=http://localhost:4444/wd/hub -Dos=${{ matrix.os }} -Dbrowser=${{ matrix.browser }} -DsuiteXmlFile=web_testng.xml
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+
+      - name: Run Selenium Tests
+        run: mvn test -DremoteDriverUrl=http://selenium:4444/wd/hub -Dos=${{ matrix.os }} -Dbrowser=${{ matrix.browser }} -DsuiteXmlFile=web_testng.xml

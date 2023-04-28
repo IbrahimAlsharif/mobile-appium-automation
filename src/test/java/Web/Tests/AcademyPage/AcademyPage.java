@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 
 
 public class AcademyPage {
-
     public static WebElement getNavbarButton() {
         String xpath = "//button[@data-target='#navbarContent']";
         return WebFinder.getByXpath(xpath, true);
