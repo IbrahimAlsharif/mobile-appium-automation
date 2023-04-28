@@ -26,6 +26,5 @@ jobs:
             java-version: '11'
             distribution: 'temurin'
             cache: maven
-
       - name: Run Selenium Tests
         run: mvn test -DremoteDriverUrl=http://selenium:4444/wd/hub -Dos=${{ matrix.os }} -Dbrowser=${{ matrix.browser }} -DsuiteXmlFile=web_testng.xml
