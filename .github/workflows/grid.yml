@@ -15,8 +15,14 @@ jobs:
           - 4444:4444
     strategy:
       matrix:
-        os: [mac, windows]
-        browser: ${{ if eq(matrix.os, 'mac') }}[chrome, safari]${{ else }}[chrome]${{ endif }}
+        os: [ mac, windows ]
+        browser:
+          - name: Chrome
+            version: latest
+            os: ${{ matrix.os }}
+          - name: Safari
+            version: latest
+            os: mac
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -28,4 +34,4 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Run Selenium Tests
-        run: mvn test -DremoteDriverUrl=http://selenium:4444/wd/hub -Dos=${{ matrix.os }} -Dbrowser=${{ matrix.browser }} -DsuiteXmlFile=web_testng.xml
+        run: mvn test -DremoteDriverUrl=http://selenium:4444/wd/hub -Dos=${{ matrix.os }} -Dbrowser=${{ matrix.browser.name }} -DsuiteXmlFile=web_testng.xml
