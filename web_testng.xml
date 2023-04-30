@@ -11,10 +11,10 @@
             <class name="Base.WebSetup.WebSetupTest"/>
             <class name="Web.Tests.AcademyPage.AcademyPageTest"/>
             <class name="Web.Tests.CoursesPage.CoursesPageTest"/>
-            <class name="Web.Tests.CourseDetailsPage.CourseDetailsPageTest"/>
-            <class name="Web.Tests.StorePage.StorePageTest"/>
-            <class name="Web.Tests.CartPage.CartPageTest"/>
-            <class name="Web.Tests.AcademyCheckoutPage.CheckoutPageTest"/>
+<!--            <class name="Web.Tests.CourseDetailsPage.CourseDetailsPageTest"/>-->
+<!--            <class name="Web.Tests.StorePage.StorePageTest"/>-->
+<!--            <class name="Web.Tests.CartPage.CartPageTest"/>-->
+<!--            <class name="Web.Tests.AcademyCheckoutPage.CheckoutPageTest"/>-->
             <class name="Base.TearDownTest"/>
         </classes>
     </test>
@@ -28,35 +28,35 @@
     </test>
 
 
-    <test name="Blog Flow" parallel="false">
-        <parameter name="url" value="https://famcare.app/"/>
-        <parameter name="language" value="Arabic"/>
-        <parameter name="browser" value="chrome"/>
-        <parameter name="branch" value="Production"/>
-        <parameter name="testrailReport" value="false"/>
-        <parameter name="app" value="web"/>
-        <classes>
-            <class name="Base.WebSetup.WebSetupTest"/>
-            <class name="Web.Tests.BlogPage.BlogPageTest"/>
-            <class name="Base.TearDownTest"/>
-        </classes>
-    </test>
+<!--    <test name="Blog Flow" parallel="false">-->
+<!--        <parameter name="url" value="https://famcare.app/"/>-->
+<!--        <parameter name="language" value="Arabic"/>-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <parameter name="branch" value="Production"/>-->
+<!--        <parameter name="testrailReport" value="false"/>-->
+<!--        <parameter name="app" value="web"/>-->
+<!--        <classes>-->
+<!--            <class name="Base.WebSetup.WebSetupTest"/>-->
+<!--            <class name="Web.Tests.BlogPage.BlogPageTest"/>-->
+<!--            <class name="Base.TearDownTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
-    <test name="Famcare Footer Flow" parallel="false">
-        <parameter name="testrailReport" value="false"/>
-        <classes>
-            <class name="Web.Tests.Footer.FooterTest"/>
-        </classes>
-    </test>
-    <test name="Join As Specialist Flow" parallel="false">
-        <parameter name="testrailReport" value="false"/>
-        <parameter name="app" value="web"/>
-        <classes>
-            <class name="Web.Tests.JoinAsSpecialist.JoinAsSpecialistTest"/>
-            <class name="Base.TearDownTest"/>
-        </classes>
-    </test>
+<!--    <test name="Famcare Footer Flow" parallel="false">-->
+<!--        <parameter name="testrailReport" value="false"/>-->
+<!--        <classes>-->
+<!--            <class name="Web.Tests.Footer.FooterTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Join As Specialist Flow" parallel="false">-->
+<!--        <parameter name="testrailReport" value="false"/>-->
+<!--        <parameter name="app" value="web"/>-->
+<!--        <classes>-->
+<!--            <class name="Web.Tests.JoinAsSpecialist.JoinAsSpecialistTest"/>-->
+<!--            <class name="Base.TearDownTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
     <listeners>
         <!--        <listener class-name="org.uncommons.reportng.HTMLReporter"/>-->

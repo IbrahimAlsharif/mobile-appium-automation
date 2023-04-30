@@ -15,8 +15,8 @@ jobs:
           - 4444:4444
     strategy:
       matrix:
-        os: [mac]
-        browser: [chrome]
+        os: [mac, windows]
+        browser: [chrome ,${{ matrix.os == 'mac' ? 'safari' : '' }}]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
