@@ -29,7 +29,7 @@ public class ArabicProductionTestDataWeb implements AbstractTestData {
     }
 
     public String getPsychologicalSideText() {
-        return "الجانب النفسي";
+        return "الجانب النفسdي";
     }
 
     public String getSocialSideText() {
