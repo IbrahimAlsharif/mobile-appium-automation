@@ -164,9 +164,9 @@ public class AcademyPageTest {
         AcademyPage.clickOnBrowseCoursesButton();
         Assert.assertTrue(AcademyPage.CoursesTextIsDisplayed());
     }
-
-    @AfterMethod
-    public void reportResult(ITestResult result) throws APIException, IOException {
-        WebFinder.afterMethod(result, testCaseId);
-    }
+//
+//    @AfterMethod
+//    public void reportResult(ITestResult result) throws APIException, IOException {
+//        WebFinder.afterMethod(result, testCaseId);
+//    }
 }
