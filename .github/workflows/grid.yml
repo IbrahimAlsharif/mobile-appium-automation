@@ -16,7 +16,7 @@ jobs:
     strategy:
       matrix:
         os: [mac, windows]
-        browser: [chrome ,${{ matrix.os == 'mac' ? 'safari' : '' }}]
+        browser: ${{ if eq(matrix.os, 'mac') }}[chrome, safari]${{ else }}[chrome]${{ endif }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
