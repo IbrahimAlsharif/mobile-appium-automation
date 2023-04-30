@@ -19,11 +19,9 @@ jobs:
         browser:
           - name: Chrome
             version: latest
-            os: ${{ matrix.os }}
           - name: Safari
             version: latest
-            os: mac
-            if: matrix.browser.name == 'Safari'
+            if: matrix.os == 'mac'
 
     steps:
       - name: Checkout code
