@@ -14,14 +14,15 @@ jobs:
         ports:
           - 4444:4444
     strategy:
+    matrix:
       os: [ mac, windows ]
       browser:
-          - name: Chrome
-            version: latest
-            os: ${{ matrix.os }}
-          - name: Safari
-            version: latest
-            os: mac
+        - name: Chrome
+          version: latest
+          os: ${{ matrix.os }}
+        - name: Safari
+          version: latest
+          os: mac
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
