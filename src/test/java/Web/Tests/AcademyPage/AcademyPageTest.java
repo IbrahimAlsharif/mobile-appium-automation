@@ -1,14 +1,14 @@
 package Web.Tests.AcademyPage;
 // -*- coding: utf-8 -*-
 
-import Base.WebSetup.WebFinder;
-import TestRail.APIException;
+//import Base.WebSetup.WebFinder;
+//import TestRail.APIException;
 import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
+//import org.testng.ITestResult;
+//import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
+//import java.io.IOException;
 
 import static Base.WebSetup.WebSetupTest.testDataWeb;
 
@@ -164,9 +164,9 @@ public class AcademyPageTest {
         AcademyPage.clickOnBrowseCoursesButton();
         Assert.assertTrue(AcademyPage.CoursesTextIsDisplayed());
     }
-//
+//*
 //    @AfterMethod
 //    public void reportResult(ITestResult result) throws APIException, IOException {
 //        WebFinder.afterMethod(result, testCaseId);
-//    }
+//    }*/
 }
