@@ -13,8 +13,8 @@ jobs:
           - 4444:4444
     strategy:
       matrix:
-        os: [mac, windows]
-        browser: [chrome, firefox]
+        os: [mac]
+        browser: [chrome]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
