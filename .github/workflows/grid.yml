@@ -14,9 +14,8 @@ jobs:
         ports:
           - 4444:4444
     strategy:
-      matrix:
-        os: [ mac, windows ]
-        browser:
+      os: [ mac, windows ]
+      browser:
           - name: Chrome
             version: latest
             os: ${{ matrix.os }}
