@@ -23,7 +23,7 @@ import static Base.WebSetup.WebSetupTest.webDriver;
 
 public  class WebFinder {
 
-    public static Faker faker;
+    public static Faker faker = new Faker();
     private static  Shot shot;
     private static  TestRailManager testRail;
     public static String testRunId;

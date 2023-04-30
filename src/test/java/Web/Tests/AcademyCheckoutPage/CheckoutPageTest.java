@@ -130,8 +130,8 @@ public class CheckoutPageTest {
         CheckoutPage.clickOnConfirmOrderButton();
         Assert.assertTrue(CheckoutPage.PayOrderAmountIsDisplayed());
     }
-    @AfterMethod
-    public void reportResult(ITestResult result) throws APIException, IOException {
-        WebFinder.afterMethod(result,testCaseId);
-    }
+//    @AfterMethod
+//    public void reportResult(ITestResult result) throws APIException, IOException {
+//        WebFinder.afterMethod(result,testCaseId);
+//    }
 }

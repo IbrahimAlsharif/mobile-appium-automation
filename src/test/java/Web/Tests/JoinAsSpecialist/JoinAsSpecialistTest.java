@@ -1,14 +1,14 @@
 package Web.Tests.JoinAsSpecialist;
 
-import Base.WebSetup.WebFinder;
-import TestRail.APIException;
+//import Base.WebSetup.WebFinder;
+//import TestRail.APIException;
 import Web.Tests.Navbar.Navbar;
 import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
+//import org.testng.ITestResult;
+//import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
+//import java.io.IOException;
 
 import static Base.WebSetup.WebSetupTest.testDataWeb;
 
@@ -136,8 +136,8 @@ public class JoinAsSpecialistTest {
         testCaseId="10321";
         Assert.assertTrue(JoinAsSpecialist.successMessageISDisplayed());
     }
-    @AfterMethod
-    public void reportResult(ITestResult result) throws APIException, IOException {
-        WebFinder.afterMethod(result,testCaseId);
-    }
+//    @AfterMethod
+//    public void reportResult(ITestResult result) throws APIException, IOException {
+//        WebFinder.afterMethod(result,testCaseId);
+//    }
 }
