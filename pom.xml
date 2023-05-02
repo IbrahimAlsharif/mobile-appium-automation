@@ -12,7 +12,7 @@
         <maven.compiler.release>11</maven.compiler.release>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <testngXml>web_testng.xml</testngXml>
+<!--        <testngXml>web_testng.xml</testngXml>-->
         <!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
     </properties>
     <dependencies>
@@ -153,8 +153,8 @@
                             <version>3.0.0-M5</version>
                             <configuration>
                                 <suiteXmlFiles>
+                                    <!--suppress UnresolvedMavenProperty -->
                                     <suiteXmlFile>${testngXml}</suiteXmlFile>
-                                     <suiteXmlFile>academy_testng.xml</suiteXmlFile>
                                 </suiteXmlFiles>
 <!--                                <suiteXmlFiles>-->
                                     <!-- <suiteXmlFile>academy_testng.xml</suiteXmlFile>-->
