@@ -8,6 +8,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+#    env:
+#      TESTNG_XML: "web_testng.xml"
     services:
       selenium:
         image: selenium/standalone-chrome:4.1.0
@@ -28,4 +30,6 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Run Selenium Tests
-        run: mvn clean test -DremoteDriverUrl=http://selenium:4444/wd/hub -Dos=${{ matrix.os }} -Dbrowser=${{ matrix.browser }} -DsuiteXmlFile=web_testng.xml
+#        run: mvn clean test -DremoteDriverUrl=http://selenium:4444/wd/hub -Dos=${{ matrix.os }} -Dbrowser=${{ matrix.browser }} -DtestngXml=${{ env.TESTNG_XML }}
+        run: mvn clean test -DremoteDriverUrl=http://selenium:4444/wd/hub -Dos=${{ matrix.os }} -Dbrowser=${{ matrix.browser }} -DtestngXml=$testngXml
+
