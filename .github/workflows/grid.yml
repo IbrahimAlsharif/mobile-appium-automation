@@ -7,7 +7,7 @@ on:
     - cron: '00 5 * * *'
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on:  ${{ matrix.os }}
     env:
       TESTNG_XML: "web_testng.xml"
     services:
@@ -17,11 +17,11 @@ jobs:
           - 4444:4444
     strategy:
       matrix:
-        os: [mac , windows]
-        browser:
-          - chrome
-          - safari:
-              only: ${{ matrix.os == 'mac' }}
+        os: [ macos-latest, windows-latest ]
+        browser: [ chrome, safari ]
+        include:
+            - os: macos-latest
+              browser: safari
 
     steps:
       - name: Checkout code
