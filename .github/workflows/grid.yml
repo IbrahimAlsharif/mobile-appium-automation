@@ -1,8 +1,8 @@
 name: Selenium Grid Test
 
 on:
-#  push:
-#     branches: [ "main" ]
+  push:
+     branches: [ "main" ]
   schedule:
     - cron: '00 5 * * *'
 jobs:
@@ -28,4 +28,4 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Run Selenium Tests
-        run: mvn test -DremoteDriverUrl=http://selenium:4444/wd/hub -Dos=${{ matrix.os }} -Dbrowser=${{ matrix.browser }} -DsuiteXmlFile=web_testng.xml
+        run: mvn clean test -DremoteDriverUrl=http://selenium:4444/wd/hub -Dos=${{ matrix.os }} -Dbrowser=${{ matrix.browser }} -DsuiteXmlFile=web_testng.xml

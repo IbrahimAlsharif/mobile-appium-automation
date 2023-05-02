@@ -12,9 +12,9 @@
         <maven.compiler.release>11</maven.compiler.release>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <testngXml>web_testng.xml</testngXml>
         <!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
@@ -124,6 +124,7 @@
             <version>4.3.1</version>
         </dependency>
     </dependencies>
+
     <build>
         <resources>
             <resource>
@@ -135,9 +136,6 @@
             </resource>
         </resources>
         <plugins>
-
-
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
@@ -155,12 +153,15 @@
                             <version>3.0.0-M5</version>
                             <configuration>
                                 <suiteXmlFiles>
-<!--                                    <suiteXmlFile>academy_testng.xml</suiteXmlFile>-->
-                                    <suiteXmlFile>web_testng.xml</suiteXmlFile>
-<!--                                    <suiteXmlFile>mobile_testng.xml</suiteXmlFile>-->
+                                    <suiteXmlFile>${testngXml}</suiteXmlFile>
                                 </suiteXmlFiles>
+<!--                                <suiteXmlFiles>-->
+<!--                                    <suiteXmlFile>${web_testng}</suiteXmlFile>-->
+<!--                                    &lt;!&ndash; <suiteXmlFile>academy_testng.xml</suiteXmlFile>&ndash;&gt;-->
+<!--                                    <suiteXmlFile>web_testng.xml</suiteXmlFile>-->
+<!--&lt;!&ndash;                                    <suiteXmlFile>mobile_testng.xml</suiteXmlFile>&ndash;&gt;-->
+<!--                                </suiteXmlFiles>-->
                                 <properties>
-
                                     <property>
                                         <name>usedefaultlisteners</name>
                                         <value>true</value>

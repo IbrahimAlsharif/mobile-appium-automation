@@ -28,8 +28,8 @@ public class CoursesPageTest {
         Assert.assertEquals(CourseDetailsPage.getCourseTitleText(), testDataWeb.getCourseTitle());
     }
 
-//    @AfterMethod
-//    public void reportResult(ITestResult result) throws APIException, IOException {
-//        WebFinder.afterMethod(result,testCaseId);
-//    }
+    @AfterMethod
+    public void reportResult(ITestResult result) throws APIException, IOException {
+        WebFinder.afterMethod(result,testCaseId);
+    }
 }
